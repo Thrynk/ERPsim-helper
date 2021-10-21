@@ -37,6 +37,8 @@ gcloud compute ssh odata-db --project m2-project-329512 --zone us-east1-b -- -L 
     ```
     2. Setup MySQL Workbench connection :
     ![MySQL Workbench connection setup](/docs/img/manage-server-connections.png)
+    3. use MySQL VS code extension :
+    ![MySQL vscode extension](/docs/img/mysql-vscode-extension.png)
 
 #### To do
 
