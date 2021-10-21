@@ -35,10 +35,10 @@ gcloud compute ssh odata-db --project m2-project-329512 --zone us-east1-b -- -L 
     ```bash
     mysql -u odata -p
     ```
-2. Setup MySQL Workbench connection :
-![MySQL Workbench connection setup](/docs/img/manage-server-connections.png)
+    2. Setup MySQL Workbench connection :
+    ![MySQL Workbench connection setup](/docs/img/manage-server-connections.png)
 
-#### TO DO
+#### To do
 
 Récupérer les données :
 - Installation de mysql sur Compute Engine (Done)
@@ -49,3 +49,7 @@ Récupérer les données :
     - Choisir le service Cloud permettant de faire ça
     - Réaliser le code pour récupérer une partie finie
     - Réaliser le code pour récupérer en streaming
+
+### Install the website server
+
+### Understand the algorithm
