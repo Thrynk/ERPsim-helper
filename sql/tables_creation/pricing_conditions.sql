@@ -1,5 +1,3 @@
-USE erpsim_games ;
-
 CREATE TABLE IF NOT EXISTS pricing_conditions (
     id_pricing_conditions BIGINT NOT NULL AUTO_INCREMENT,
     price FLOAT NOT NULL,

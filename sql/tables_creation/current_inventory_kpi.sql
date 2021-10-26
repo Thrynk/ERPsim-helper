@@ -1,5 +1,3 @@
-USE erpsim_games ;
-
 CREATE TABLE IF NOT EXISTS current_inventory_kpi (
     id_current_inventory_kpi BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,

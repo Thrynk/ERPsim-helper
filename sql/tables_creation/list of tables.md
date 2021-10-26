@@ -2,22 +2,17 @@ All tables :
 - Company_Valuation         :   OK
 - Current_Inventory         :   OK
 - Current_Inventory_KPI     :   OK
-- Current_Suppliers_Prices  :
-- Financial_Balances        :
-- Financial_Postings        :
-- Good_Movements            :
-- Independant_Requirements  :
-- Inventory                 :   OK
-- Market                    :
-- MRP_Runs                  :
-- NPS_Surveys               :
+- Current_Suppliers_Prices  :   To Test
+- Financial_Balances        :   Not Supported
+- Financial_Postings        :   To Test
+- Good_Movements            :   To Test
+- Independant_Requirements  :   To Test
+- Inventory                 :   To Test
+- Market                    :   To Test
+- MRP_Runs                  :   To Test
+- NPS_Surveys               :   To Test
 - Pricing_Conditions        :   OK
-- Purchase_Orders           :
+- Purchase_Orders           :   To Test
 - Sales                     :   OK
-- Stock_Transfers           :
-- Suppliers_Prices          :
-
-Priorities :
-- Sales                     :   OK
-- Inventory                 :   OK 
-- Pricing_Conditions        :   OK
+- Stock_Transfers           :   To Test
+- Suppliers_Prices          :   To Test

@@ -47,12 +47,9 @@ def add_data_into_mysql(table, response):
         record = tuple([rep.__getattr__(chp.upper()) for chp in CHAMPS_SQL[table]])
         list_data.append(record)
     
-    insert_command = "\
-        INSERT INTO current_inventory_kpi \
-        (" + ",".join(CHAMPS_SQL[table]) + ") \
-        VALUES (" + ",".join(["%s"] * len(CHAMPS_SQL[table])) + ")"
+    insert_statement = "INSERT INTO " + table + "(" + ",".join(CHAMPS_SQL[table]) + ") VALUES(" + ",".join(["%s"] * len(CHAMPS_SQL[table])) + ")"
     
-    return insert_command, list_data
+    return insert_statement, list_data
 
 """
 Fonction extract_data_once qui prend en argument ......... 
@@ -64,21 +61,20 @@ def extract_data_once():
     """print(TABLES_SQL)
     print(CHAMPS_SQL)
     print(ENTITY_SET_NAMES)"""
-
+    print(TABLES_SQL)
     for table in TABLES_SQL :
         print(f"Chargement de la table {table}")
         table_odata_name = [table_odata for table_odata in ENTITY_SET_NAMES if table_odata.lower() == table.lower()][0]
         
         response = service.entity_sets.__getattr__(table_odata_name).get_entities().execute()
-        query, list_data = add_data_into_mysql(table, response)  
+        query, list_data = add_data_into_mysql(table, response) 
 
-        # try : 
-        mycursor = cnx.cursor()
-        mycursor.executemany(query, list_data)
-        cnx.commit()
-        """except : 
-            print("Un champ n'est pas dans les données")"""
-        return False
+        try : 
+            mycursor = cnx.cursor()
+            mycursor.executemany(query, list_data)
+            cnx.commit()
+        except : 
+            print("Un champ n'est pas dans les données")
     
     print("\n\n*****Chargement réussi !*****")
     return True
