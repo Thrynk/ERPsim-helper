@@ -1,3 +1,5 @@
+USE erpsim_games ;
+
 CREATE TABLE IF NOT EXISTS sales (
     id_sales BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
