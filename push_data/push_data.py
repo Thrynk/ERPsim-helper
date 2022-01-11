@@ -4,6 +4,7 @@ from pyodata.v2.model import PolicyFatal, PolicyWarning, PolicyIgnore, ParserErr
 import requests
 import mysql.connector
 import os
+import time
 
 # VARIABLES STATIQUES 
 JEU_EN_COURS = True 
@@ -61,7 +62,9 @@ def extract_data_once():
     """print(TABLES_SQL)
     print(CHAMPS_SQL)
     print(ENTITY_SET_NAMES)"""
-    print(TABLES_SQL)
+    # print(TABLES_SQL)
+    
+    d1 = time.time()
     for table in TABLES_SQL :
         print(f"Chargement de la table {table}")
         table_odata_name = [table_odata for table_odata in ENTITY_SET_NAMES if table_odata.lower() == table.lower()][0]
@@ -75,7 +78,8 @@ def extract_data_once():
             cnx.commit()
         except : 
             print("Un champ n'est pas dans les données")
-    
+
+    print(f"\n--- Temps d'éxecution : {time.time()-d1}")
     print("\n\n*****Chargement réussi !*****")
     return True
 
@@ -87,6 +91,25 @@ Retourne .....
 """
 def extract_data_loop():
     print("Partie en cours...")
+    
+    d1 = time.time()
+    for table in TABLES_SQL :
+        print(f"Chargement de la table {table}")
+        table_odata_name = [table_odata for table_odata in ENTITY_SET_NAMES if table_odata.lower() == table.lower()][0]
+        
+        response = service.entity_sets.__getattr__(table_odata_name).get_entities().execute()
+        query, list_data = add_data_into_mysql(table, response) 
+
+        #try : 
+        mycursor = cnx.cursor()
+        mycursor.executemany(query, list_data)
+        cnx.commit()
+        #except : 
+        #    print("Un champ n'est pas dans les données")
+        
+
+    print(f"\n--- Temps d'éxecution : {time.time()-d1}")
+    print("\n\n*****Chargement réussi !*****")
     return True
 
 
@@ -94,6 +117,7 @@ def extract_data_loop():
 if __name__ == "__main__" :
     connexion = True
 
+    d1 = time.time()
     # CONNEXIONS 
     try :
         session = requests.Session()
@@ -111,27 +135,28 @@ if __name__ == "__main__" :
         connexion = False
         print("Error during the connexion to mySQL")
 
-
+    print(f"\n--- Durée des deux connexions : {time.time() - d1}")
     # Si la connexion est faite on lance le programme
     if connexion : 
         # Demande si les données qui vont être chargées viennent d'une partie en cours ou d'une partie terminée. 
         JEU_EN_COURS = int(input("Vous chargez les données d'une partie (1)En cours ou d'une partie (2)Terminée ? ")) == 1
 
+        d1 = time.time()
         ENTITY_SET_NAMES = [es.name for es in service.schema.entity_sets]
 
         mycursor = cnx.cursor()
-        mycursor.execute("SELECT table_name FROM information_schema.tables WHERE table_schema='erpsim_games'")
+        mycursor.execute("SELECT table_name FROM information_schema.tables WHERE table_schema='" + os.environ.get("DATABASE") + "'")
 
         TABLES_SQL = [elem[0] for elem in mycursor.fetchall()]
         CHAMPS_SQL = dict()
 
+        print(f"\n--- Temps pour aller chercher les différentes tables dans le information_schema.tables {time.time()-d1}")
         for table in TABLES_SQL : 
-            mycursor.execute("SELECT column_name FROM information_schema.columns WHERE table_schema='erpsim_games' AND table_name = '" + table + "' AND column_key<>'PRI'")
+            mycursor.execute("SELECT column_name FROM information_schema.columns WHERE table_schema='" + os.environ.get("DATABASE") +"' AND table_name = '" + table + "' AND column_key<>'PRI'")
             CHAMPS_SQL[table] = [elem[0] for elem in mycursor.fetchall()]
 
         # Lancement des fonctions en conséquence.
         if JEU_EN_COURS :
             extract_data_loop()
         else :
-            exit
             extract_data_once()

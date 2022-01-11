@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS market (
     id_market BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
     company_code CHAR(2) NOT NULL,
-    sales_organization VARCHAR(2) NOT NULL,
+    sales_organization VARCHAR(20) NOT NULL,
     sim_round INT NOT NULL,
     sim_period INT NOT NULL,
     material_description TEXT NOT NULL,

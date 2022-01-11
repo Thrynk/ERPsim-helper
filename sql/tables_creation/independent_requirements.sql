@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS independant_requirements (
+CREATE TABLE IF NOT EXISTS independent_requirements (
     id_independant_requirements BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
     plant VARCHAR(2) NOT NULL,

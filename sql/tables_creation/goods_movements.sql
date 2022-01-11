@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS good_movements (
+CREATE TABLE IF NOT EXISTS goods_movements (
     id_good_movements BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
     plant VARCHAR(2) NOT NULL,

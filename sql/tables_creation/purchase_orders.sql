@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS purchase_orders (
     quantity INT NOT NULL,
     status VARCHAR(50) NOT NULL,
     unit VARCHAR(2) NOT NULL,
-    goods_reception_round INT NOT NULL,
-    goods_reception_step INT NOT NULL,
-    goods_reception_date DATETIME NOT NULL,
+    goods_receipt_round INT NOT NULL,
+    goods_receipt_step INT NOT NULL,
+    goods_receipt_date VARCHAR(5) NOT NULL,
     PRIMARY KEY(id_purchase_orders)
 )
