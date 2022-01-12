@@ -1,6 +1,7 @@
 # IMPORTS 
 import pyodata
 from pyodata.v2.model import PolicyFatal, PolicyWarning, PolicyIgnore, ParserError, Config
+from pyodata.v2.service import GetEntitySetFilter as esf
 import requests
 import mysql.connector
 import os
@@ -28,7 +29,6 @@ TABLES_ODATA = [
             'Current_Inventory',
             'Current_Inventory_KPI'
             ]
-
 CHAMPS_SQL = [
         'inventory_opening_balance, row_number, plant, sim_round, sim_step, sim_calendar_date, sim_period, sim_elapsed_steps, storage_location, material_number, material_description, material_type, material_code, material_label, unit',
         'price, sales_organization, row_number, sim_round, sim_step, sim_calendar_date, sim_period, sim_elapsed_steps, material_number, material_description, distribution_channel, dc_name, currency',
@@ -37,11 +37,15 @@ CHAMPS_SQL = [
         'row_number, plant, material_number, material_description, storage_location, stock, restricted, unit',
         'row_number, plant, storage_location, material_number, material_description, material_type, material_code, material_label, current_inventory, quantity_sold, nb_steps_available, sim_elapsed_steps, unit'
         ]
-
 CHAMPS_ODATA = [champ.upper() for champ in CHAMPS_SQL]"""
 
-
 # DEFINITION DES FONCTIONS 
+"""
+Fonction add_data_into_mysql qui prend en argument une table et les données envoyées par le flux odata
+Elle crée list_data, une liste de tuples, chaque tuple contient une ligne de données du flux odata. 
+Elle crée aussi insert_statement qui correspond à la requete SQL pour insérer les données en base 
+Renvoie insert_statement et list_data
+"""
 def add_data_into_mysql(table, response):
     list_data = []
     for rep in response : 
@@ -49,8 +53,17 @@ def add_data_into_mysql(table, response):
         list_data.append(record)
     
     insert_statement = "INSERT INTO " + table + "(" + ",".join(CHAMPS_SQL[table]) + ") VALUES(" + ",".join(["%s"] * len(CHAMPS_SQL[table])) + ")"
-    
     return insert_statement, list_data
+
+"""
+Fonction get_max_sim_round qui prend en argument une table 
+Elle renvoie le dernier couple (round, step) inséré en base. 
+"""
+def get_max_sim_date(table):
+    mycursor = cnx.cursor()
+    # SELECT sim_round, max(sim_step) FROM erpsim_games_flux.pricing_conditions WHERE sim_round = (SELECT(max(sim_round)) FROM erpsim_games_flux.pricing_conditions) GROUP BY sim_round;
+    mycursor.execute("SELECT max(sim_calendar_date) FROM " + os.environ.get("DATABASE") + "." + table + ";")
+    return mycursor.fetchone()
 
 """
 Fonction extract_data_once qui prend en argument ......... 
@@ -96,17 +109,23 @@ def extract_data_loop():
     for table in TABLES_SQL :
         print(f"Chargement de la table {table}")
         table_odata_name = [table_odata for table_odata in ENTITY_SET_NAMES if table_odata.lower() == table.lower()][0]
-        
-        response = service.entity_sets.__getattr__(table_odata_name).get_entities().execute()
-        query, list_data = add_data_into_mysql(table, response) 
 
-        #try : 
-        mycursor = cnx.cursor()
-        mycursor.executemany(query, list_data)
-        cnx.commit()
-        #except : 
-        #    print("Un champ n'est pas dans les données")
-        
+        try : 
+            max_date = get_max_sim_date(table)[0]
+            print(max_date)
+            response = service.entity_sets.__getattr__(table_odata_name).get_entities()
+            response = response.filter(response.SIM_CALENDAR_DATE>max_date).execute()
+            query, list_data = add_data_into_mysql(table, response) 
+        except :
+            response = service.entity_sets.__getattr__(table_odata_name).get_entities().execute()
+            query, list_data = add_data_into_mysql(table, response) 
+
+        # try : 
+        #     mycursor = cnx.cursor()/
+        #     mycursor.executemany(query, list_data)
+        #     cnx.commit()
+        # except : 
+        #     print("Un champ n'est pas dans les données")
 
     print(f"\n--- Temps d'éxecution : {time.time()-d1}")
     print("\n\n*****Chargement réussi !*****")
