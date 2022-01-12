@@ -13,32 +13,6 @@ JEU_EN_COURS = True
 #'http://e02lp1.ucc.in.tum.de:8002/odata/904'
 SERVICE_URL = os.environ.get("ODATA_URL")
 
-"""TABLES_SQL = [
-            'inventory', 
-            'pricing_conditions', 
-            'sales',
-            'company_valuation',
-            'current_inventory'
-            'current_inventory_kpi'
-            ]
-TABLES_ODATA = [
-            'Inventory', 
-            'Pricing_Conditions', 
-            'Sales',
-            'Company_Valuation',
-            'Current_Inventory',
-            'Current_Inventory_KPI'
-            ]
-CHAMPS_SQL = [
-        'inventory_opening_balance, row_number, plant, sim_round, sim_step, sim_calendar_date, sim_period, sim_elapsed_steps, storage_location, material_number, material_description, material_type, material_code, material_label, unit',
-        'price, sales_organization, row_number, sim_round, sim_step, sim_calendar_date, sim_period, sim_elapsed_steps, material_number, material_description, distribution_channel, dc_name, currency',
-        'sales_organization, row_number, sim_round, sim_step, sim_calendar_date, sim_period, sim_elapsed_steps, sales_order_number, line_item, storage_location, region, area, city, country, postal_code, customer_number, distribution_channel, material_number, material_description, material_type, material_code, material_label, quantity, quantity_delivered, unit, net_price, net_value, cost, currency, contribution_margin, contribution_margin_pct',
-        'row_number, company_code, sim_round, sim_step, sim_calendar_date, sim_period, sim_elapsed_steps, bank_cash_account, accounts_receivable, bank_loan, accounts_payable, profit, debt_loading, credit_rating, company_risk_rate_pct, company_valuation, currency',
-        'row_number, plant, material_number, material_description, storage_location, stock, restricted, unit',
-        'row_number, plant, storage_location, material_number, material_description, material_type, material_code, material_label, current_inventory, quantity_sold, nb_steps_available, sim_elapsed_steps, unit'
-        ]
-CHAMPS_ODATA = [champ.upper() for champ in CHAMPS_SQL]"""
-
 # DEFINITION DES FONCTIONS 
 """
 Fonction add_data_into_mysql qui prend en argument une table et les données envoyées par le flux odata
@@ -61,7 +35,6 @@ Elle renvoie le dernier couple (round, step) inséré en base.
 """
 def get_max_sim_date(table):
     mycursor = cnx.cursor()
-    # SELECT sim_round, max(sim_step) FROM erpsim_games_flux.pricing_conditions WHERE sim_round = (SELECT(max(sim_round)) FROM erpsim_games_flux.pricing_conditions) GROUP BY sim_round;
     mycursor.execute("SELECT max(sim_calendar_date) FROM " + os.environ.get("DATABASE") + "." + table + ";")
     return mycursor.fetchone()
 
@@ -72,10 +45,6 @@ Retourne .....
 """
 def extract_data_once():
     print("*****Chargement d'une partie terminée... *****")
-    """print(TABLES_SQL)
-    print(CHAMPS_SQL)
-    print(ENTITY_SET_NAMES)"""
-    # print(TABLES_SQL)
     
     d1 = time.time()
     for table in TABLES_SQL :
