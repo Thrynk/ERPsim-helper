@@ -90,7 +90,7 @@ def extract_data_loop():
             query, list_data = add_data_into_mysql(table, response) 
 
         # try : 
-        #     mycursor = cnx.cursor()/
+        #     mycursor = cnx.cursor()
         #     mycursor.executemany(query, list_data)
         #     cnx.commit()
         # except : 
@@ -133,7 +133,7 @@ if __name__ == "__main__" :
         ENTITY_SET_NAMES = [es.name for es in service.schema.entity_sets]
 
         mycursor = cnx.cursor()
-        mycursor.execute("SELECT table_name FROM information_schema.tables WHERE table_schema='" + os.environ.get("DATABASE") + "'")
+        mycursor.execute("SELECT table_name FROM information_schema.tables WHERE table_schema='" + os.environ.get("DATABASE") + "' AND table_schema<>'games'")
 
         TABLES_SQL = [elem[0] for elem in mycursor.fetchall()]
         CHAMPS_SQL = dict()
