@@ -15,7 +15,7 @@ mydb = mysql.connector.connect(
 )
 
 #Creation des parametres en INPUT 
-joueur = "C"
+joueur = "L"
 set = "9"
 
 Materials = ["Milk","Cream","Yoghurt","Cheese","Butter","Ice Cream"]
@@ -42,24 +42,42 @@ def cursorToCsv(cursor,cursorName):
 def createDf(mydb,table):
   #Creation du cursor qui va pointer vers la collection 
   Cursor = mydb.cursor(buffered=True)
-  Cursor.execute("USE erpsim_games_temp")
+  Cursor.execute("USE erpsim_games_flux")
   cmd = str("SELECT * FROM "+table)
   Cursor.execute(cmd)
 
   CursorName = mydb.cursor()
-  CursorName.execute("USE erpsim_games_temp")
-  cmd = str("SELECT column_name FROM information_schema.columns WHERE table_schema='erpsim_games_temp' AND table_name='"+table+"'")
+  CursorName.execute("USE erpsim_games_flux")
+  cmd = str("SELECT column_name FROM information_schema.columns WHERE table_schema='erpsim_games_flux' AND table_name='"+table+"'")
   CursorName.execute(cmd)
 
   df = cursorToCsv(Cursor,CursorName)
   return df
   
+def test(db , company):
+    Cursor = db.cursor()
+    Cursor.execute("USE erpsim_games_flux")
+    cmd = str("SELECT MAX(sim_round) FROM company_valuation WHERE company_code = '"+company+"'")
+    Cursor.execute(cmd)
+    rnd = list(Cursor)[0][0]
+    Cursor.close()
 
+    if rnd :
+
+        Cursor2 = db.cursor()
+        Cursor2.execute("USE erpsim_games_flux")
+        cmd = str("SELECT MAX(sim_step)  FROM company_valuation WHERE company_code = '"+company+"'" + " AND sim_round = "+ str(rnd))
+        Cursor2.execute(cmd)
+        jour= list(Cursor2)[0][0]
+
+        return rnd,jour
+    else :
+        return 0,0
 #######################################
 # Find the matrice 
 #######################################
 
-def trouverParametres(df,sales_organization,precision=10):
+def trouverParametres(df,sales_organization,precision=80):
 
     #Affichage
     print("Les parametres tendent vers : ")
@@ -84,10 +102,22 @@ def trouverParametres(df,sales_organization,precision=10):
     
     return ListeSalesJoueur
 
-for i in range(100):
-  print(i)
-  #Donner une approximation des parametres
-  dfSales = createDf(mydb,"sales")
-  dfInventory = createDf(mydb,"inventory")
-  os.system('clear')
-  trouverParametres(dfSales,str(joueur+set))
+
+  
+
+
+
+
+
+#Donner une approximation des parametres
+dfSales = createDf(mydb,"sales")
+dfInventory = createDf(mydb,"inventory")
+os.system('clear')
+
+company = str(joueur+set)
+
+rounds, jours = test(mydb,company)
+print("Round : ",rounds,"   Jour : ",jours)
+print("")
+trouverParametres(dfSales,company)
+
