@@ -83,7 +83,7 @@ def trouverParametres(df,sales_organization,precision=80):
     print("Les parametres tendent vers : ")
     print(" ")
 
-    ListeSalesJoueur =[[] for i in range (3)]
+    ListeSalesJoueur =[]
 
     df=df[df["sales_organization"]==sales_organization]
 
