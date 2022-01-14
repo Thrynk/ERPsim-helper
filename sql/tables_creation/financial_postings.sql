@@ -1,3 +1,5 @@
+USE erpsim_games_flux;
+DROP TABLE financial_postings;
 CREATE TABLE IF NOT EXISTS financial_postings (
     id_financial_postings BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
@@ -20,5 +22,10 @@ CREATE TABLE IF NOT EXISTS financial_postings (
     amount_bs FLOAT NOT NULL,
     amount_is FLOAT NOT NULL,
     currency VARCHAR(3) NOT NULL,
+    id_game BIGINT NOT NULL,
+    CONSTRAINT fk_game_financial_postings
+    FOREIGN KEY (id_game)
+    REFERENCES erpsim_helper_game(id)
+    ON DELETE CASCADE,
     PRIMARY KEY(id_financial_postings)
 )

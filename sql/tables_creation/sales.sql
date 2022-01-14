@@ -1,3 +1,5 @@
+USE erpsim_games_flux;
+DROP TABLE sales;
 CREATE TABLE IF NOT EXISTS sales (
     id_sales BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
@@ -31,5 +33,10 @@ CREATE TABLE IF NOT EXISTS sales (
     currency VARCHAR(5) NOT NULL,
     contribution_margin FLOAT NOT NULL,
     contribution_margin_pct FLOAT NOT NULL,
+    id_game BIGINT NOT NULL,
+    CONSTRAINT fk_game_sales
+    FOREIGN KEY (id_game)
+    REFERENCES erpsim_helper_game(id)
+    ON DELETE CASCADE,
     PRIMARY KEY(id_sales)
 );

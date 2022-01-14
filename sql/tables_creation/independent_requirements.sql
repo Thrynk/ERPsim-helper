@@ -1,3 +1,5 @@
+USE erpsim_games_flux;
+DROP TABLE independent_requirements;
 CREATE TABLE IF NOT EXISTS independent_requirements (
     id_independant_requirements BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
@@ -10,5 +12,10 @@ CREATE TABLE IF NOT EXISTS independent_requirements (
     material_number VARCHAR(6) NOT NULL,
     quantity FLOAT NOT NULL,
     unit VARCHAR(2) NOT NULL,
+    id_game BIGINT NOT NULL,
+    CONSTRAINT fk_game_independent_requirements
+    FOREIGN KEY (id_game)
+    REFERENCES erpsim_helper_game(id)
+    ON DELETE CASCADE,
     PRIMARY KEY(id_independant_requirements)
 )

@@ -1,3 +1,4 @@
+USE erpsim_games_flux;
 SET SQL_SAFE_UPDATES = 0; 
 delete from company_valuation;
 delete from current_inventory_kpi;
