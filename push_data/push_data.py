@@ -55,6 +55,7 @@ def get_max_sim_date(table, id_game):
     mycursor.execute(f"SELECT max(sim_calendar_date) FROM {table} WHERE id_game={str(id_game)};")
     return mycursor.fetchone()
 
+
 """
 Fonction add_data_into_mysql pour push les données dans la base de données
 """
@@ -82,9 +83,12 @@ def extract_data_once(id_game, team, set):
         list = [lettre + str(set) for lettre in team]
         filter = " or ".join([TABLE_SOCIETE[table].upper() + " eq '" + society + "'" for society in list])
         
-        response = service.entity_sets.__getattr__(table_odata_name).get_entities()
-        response = response.filter(filter).execute()
-        query, list_data = generate_statement_data(table, response, id_game) 
+        try : 
+            response = service.entity_sets.__getattr__(table_odata_name).get_entities()
+            response = response.filter(filter).execute()
+            query, list_data = generate_statement_data(table, response, id_game) 
+        except:
+            print(f"Erreur lors du chargement de la table {table}")
 
         # Push les données 
         add_data_into_mysql(query, list_data)
@@ -112,17 +116,20 @@ def extract_data_loop(id_game, team, set):
 
         try : 
             max_date = get_max_sim_date(table, id_game)[0]
-            print(max_date)
+
             response = service.entity_sets.__getattr__(table_odata_name).get_entities()
             response = response.filter(filter and response.SIM_CALENDAR_DATE>max_date).execute()
             query, list_data = generate_statement_data(table, response, id_game) 
         except :
             # delete from table where id_game = id_game 
             sql = f"DELETE FROM {table} WHERE id_game={str(id_game)};"
-            print(sql)
-            mycursor = cnx.cursor()
-            mycursor.execute(sql)
-            cnx.commit()
+
+            try : 
+                mycursor = cnx.cursor()
+                mycursor.execute(sql)
+                cnx.commit()
+            except: 
+                print(f"Erreur lors de la suppression des données dans la table {table}")
 
             response = service.entity_sets.__getattr__(table_odata_name).get_entities()
             response = response.filter(filter).execute()
@@ -168,7 +175,6 @@ if __name__ == "__main__" :
         ENTITY_SET_NAMES = [es.name for es in service.schema.entity_sets]
 
         mycursor = cnx.cursor()
-        # mycursor.execute("SELECT table_name FROM information_schema.tables WHERE table_schema='" + os.environ.get("DATABASE") + "' AND table_name<>'games'")
 
         # TABLES_SQL = [elem[0] for elem in mycursor.fetchall()]
         TABLES_SQL = TABLE_SOCIETE.keys()
