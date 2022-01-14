@@ -1,3 +1,5 @@
+USE erpsim_games_flux;
+DROP TABLE purchase_orders;
 CREATE TABLE IF NOT EXISTS purchase_orders (
     id_purchase_orders BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
@@ -17,5 +19,10 @@ CREATE TABLE IF NOT EXISTS purchase_orders (
     goods_receipt_round INT NOT NULL,
     goods_receipt_step INT NOT NULL,
     goods_receipt_date VARCHAR(5) NOT NULL,
+    id_game BIGINT NOT NULL,
+    CONSTRAINT fk_game_purchase_orders
+    FOREIGN KEY (id_game)
+    REFERENCES erpsim_helper_game(id)
+    ON DELETE CASCADE,
     PRIMARY KEY(id_purchase_orders)
 )

@@ -1,3 +1,5 @@
+USE erpsim_games_flux;
+DROP TABLE suppliers_prices;
 CREATE TABLE IF NOT EXISTS suppliers_prices (
     id_suppliers_prices BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
@@ -13,5 +15,10 @@ CREATE TABLE IF NOT EXISTS suppliers_prices (
     vendor_name TEXT NOT NULL,
     net_price FLOAT NOT NULL,
     currency VARCHAR(3) NOT NULL,
+    id_game BIGINT NOT NULL,
+    CONSTRAINT fk_game_suppliers_prices
+    FOREIGN KEY (id_game)
+    REFERENCES erpsim_helper_game(id)
+    ON DELETE CASCADE,
     PRIMARY KEY(id_suppliers_prices)
 )

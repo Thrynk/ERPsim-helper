@@ -1,3 +1,5 @@
+USE erpsim_games_flux;
+DROP TABLE stock_transfers;
 CREATE TABLE IF NOT EXISTS stock_transfers (
     id_stock_transfers BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
@@ -15,5 +17,10 @@ CREATE TABLE IF NOT EXISTS stock_transfers (
     material_label VARCHAR(50) NOT NULL,
     unit VARCHAR(2) NOT NULL,
     quantity INT NOT NULL,    
+    id_game BIGINT NOT NULL,
+    CONSTRAINT fk_game_stock_transfers
+    FOREIGN KEY (id_game)
+    REFERENCES erpsim_helper_game(id)
+    ON DELETE CASCADE,
     PRIMARY KEY(id_stock_transfers)
 )

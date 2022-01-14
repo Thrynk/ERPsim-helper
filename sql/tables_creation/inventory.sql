@@ -1,3 +1,5 @@
+USE erpsim_games_flux;
+DROP TABLE inventory;
 CREATE TABLE IF NOT EXISTS inventory (
     id_inventory BIGINT NOT NULL AUTO_INCREMENT,
     inventory_opening_balance INT NOT NULL,
@@ -17,5 +19,10 @@ CREATE TABLE IF NOT EXISTS inventory (
     #material_size TEXT NOT NULL,
     material_label TEXT NOT NULL,
     unit VARCHAR(2) NOT NULL,
+    id_game BIGINT NOT NULL,
+    CONSTRAINT fk_game_inventory
+    FOREIGN KEY (id_game)
+    REFERENCES erpsim_helper_game(id)
+    ON DELETE CASCADE,
     PRIMARY KEY(id_inventory)
 )

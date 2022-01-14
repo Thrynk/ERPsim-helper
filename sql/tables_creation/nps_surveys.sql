@@ -1,3 +1,5 @@
+USE erpsim_games_flux;
+DROP TABLE nps_surveys;
 CREATE TABLE IF NOT EXISTS nps_surveys (
     id_nps_surveys BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
@@ -31,5 +33,10 @@ CREATE TABLE IF NOT EXISTS nps_surveys (
     score_8 INT NOT NULL,
     score_9 INT NOT NULL,
     score_10 INT NOT NULL,
+    id_game BIGINT NOT NULL,
+    CONSTRAINT fk_game_nps_surveys
+    FOREIGN KEY (id_game)
+    REFERENCES erpsim_helper_game(id)
+    ON DELETE CASCADE,
     PRIMARY KEY(id_nps_surveys)
 )
