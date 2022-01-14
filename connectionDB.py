@@ -121,3 +121,33 @@ print("Round : ",rounds,"   Jour : ",jours)
 print("")
 trouverParametres(dfSales,company)
 
+
+
+#Calcul du prix fonction du stock
+
+reaproMilk = 900
+reaproCream = 300
+reaproYoghurt = 700
+reaproCheese = 350
+reaproButter = 400
+reaproIceCream = 300
+
+matriceReapro = [reaproMilk, reaproCream, reaproYoghurt, reaproCheese, reaproButter, reaproIceCream]
+freqReapro = 5
+matriceVentes = [170,60,150,65,40,50]
+
+
+def modificationPrix(ventes, quantiteReapro, frequenceReapro):
+  matriceModificationPrix = []
+  for i in range (0,len(quantiteReapro)):
+    if (ventes[i]>=quantiteReapro[i]/frequenceReapro):
+      matriceModificationPrix.append(1.05)
+    elif (ventes[i]<0.8*quantiteReapro[i]/frequenceReapro):
+      matriceModificationPrix.append(0.95)
+    else:
+      matriceModificationPrix.append(1)
+
+  return(matriceModificationPrix)
+
+
+print(modificationPrix(matriceVentes,matriceReapro,freqReapro))
