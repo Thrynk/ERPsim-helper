@@ -1,5 +1,5 @@
 from django.db import models
-from .tasks import count_beans
+from .tasks import get_game_latest_data
 
 # Create your models here.
 
@@ -10,5 +10,5 @@ class Game(models.Model):
     creation_date = models.DateTimeField('creation date')
 
     def save(self, *args, **kwargs):
-        count_beans(2)
         super(Game, self).save(*args, **kwargs)
+        get_game_latest_data(self.id, self.odata_flow, self.game_set, self.team)

@@ -1,11 +1,7 @@
 from huey import crontab
-from huey.contrib.djhuey import periodic_task, task
+from huey.contrib.djhuey import task
 
 @task()
-def count_beans(number):
-    print('-- counted {} beans --'.format(number))
-    return 'Counted {} beans'.format(number)
-
-@periodic_task(crontab(minute='*/5'))
-def every_five_mins():
-    print('Every five minutes this will be printed by the consumer')
+def get_game_latest_data(game_id, odata_flow, game_set, team):
+    print('-- game_id : {} flow : {} set : {} team : {}--'.format(game_id, odata_flow, game_set, team))
+    return '-- game_id : {} flow : {} set : {} team : {}--'.format(game_id, odata_flow, game_set, team)
