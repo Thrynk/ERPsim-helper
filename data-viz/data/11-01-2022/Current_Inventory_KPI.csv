@@ -1,0 +1,121 @@
+ID;ROW_NUMBER;PLANT;STORAGE_LOCATION;MATERIAL_NUMBER;MATERIAL_DESCRIPTION;MATERIAL_TYPE;MATERIAL_CODE;MATERIAL_SIZE;MATERIAL_LABEL;CURRENT_INVENTORY;QUANTITY_SOLD;UNIT;NB_STEPS_AVAILABLE;SIM_ELAPSED_STEPS
+.1~91;91;D9;03S;DD-T05;Butter;Trading Goods;T05;;Butter;112;21;ST;9;10
+.1~113;113;E9;03;EE-T05;Butter;Trading Goods;T05;;Butter;400;0;ST;9;10
+.1~115;115;E9;03S;EE-T05;Butter;Trading Goods;T05;;Butter;216;19;ST;6;10
+.1~86;86;D9;03N;DD-T04;Cheese;Trading Goods;T04;;Cheese;110;0;ST;9;10
+.1~20;20;A9;03W;AA-T05;Butter;Trading Goods;T05;;Butter;242;24;ST;9;10
+.1~21;21;A9;03;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;0;0;ST;5;10
+.1~110;110;E9;03N;EE-T04;Cheese;Trading Goods;T04;;Cheese;58;0;ST;6;10
+.1~29;29;B9;03;BB-T02;Cream;Trading Goods;T02;;Cream;300;0;ST;10;10
+.1~30;30;B9;03N;BB-T02;Cream;Trading Goods;T02;;Cream;80;22;ST;9;10
+.1~11;11;A9;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;181;285;ST;9;10
+.1~13;13;A9;03;AA-T04;Cheese;Trading Goods;T04;;Cheese;50;0;ST;7;10
+.1~67;67;C9;03S;CC-T05;Butter;Trading Goods;T05;;Butter;118;144;ST;8;10
+.1~17;17;A9;03;AA-T05;Butter;Trading Goods;T05;;Butter;0;0;ST;5;10
+.1~5;5;A9;03;AA-T02;Cream;Trading Goods;T02;;Cream;0;0;ST;5;10
+.1~82;82;D9;03N;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;0;235;ST;6;10
+.1~48;48;B9;03W;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;65;44;ST;9;10
+.1~62;62;C9;03N;CC-T04;Cheese;Trading Goods;T04;;Cheese;196;26;ST;9;10
+.1~40;40;B9;03W;BB-T04;Cheese;Trading Goods;T04;;Cheese;200;76;ST;9;10
+.1~41;41;B9;03;BB-T05;Butter;Trading Goods;T05;;Butter;236;0;ST;9;10
+.1~98;98;E9;03N;EE-T01;Milk;Trading Goods;T01;;Milk;246;129;ST;6;10
+.1~28;28;B9;03W;BB-T01;Milk;Trading Goods;T01;;Milk;160;330;ST;8;10
+.1~32;32;B9;03W;BB-T02;Cream;Trading Goods;T02;;Cream;80;19;ST;9;10
+.1~14;14;A9;03N;AA-T04;Cheese;Trading Goods;T04;;Cheese;217;0;ST;9;10
+.1~46;46;B9;03N;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;160;100;ST;5;10
+.1~79;79;D9;03S;DD-T02;Cream;Trading Goods;T02;;Cream;82;18;ST;9;10
+.1~61;61;C9;03;CC-T04;Cheese;Trading Goods;T04;;Cheese;24;0;ST;5;10
+.1~43;43;B9;03S;BB-T05;Butter;Trading Goods;T05;;Butter;134;228;ST;9;10
+.1~56;56;C9;03W;CC-T02;Cream;Trading Goods;T02;;Cream;177;23;ST;9;10
+.1~59;59;C9;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;162;448;ST;7;10
+.1~105;105;E9;03;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;951;0;ST;10;10
+.1~34;34;B9;03N;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;131;340;ST;8;10
+.1~39;39;B9;03S;BB-T04;Cheese;Trading Goods;T04;;Cheese;75;23;ST;9;10
+.1~90;90;D9;03N;DD-T05;Butter;Trading Goods;T05;;Butter;93;44;ST;9;10
+.1~100;100;E9;03W;EE-T01;Milk;Trading Goods;T01;;Milk;67;83;ST;6;10
+.1~8;8;A9;03W;AA-T02;Cream;Trading Goods;T02;;Cream;200;0;ST;9;10
+.1~10;10;A9;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;234;234;ST;7;10
+.1~68;68;C9;03W;CC-T05;Butter;Trading Goods;T05;;Butter;224;27;ST;9;10
+.1~16;16;A9;03W;AA-T04;Cheese;Trading Goods;T04;;Cheese;216;0;ST;9;10
+.1~49;49;C9;03;CC-T01;Milk;Trading Goods;T01;;Milk;0;0;ST;5;10
+.1~50;50;C9;03N;CC-T01;Milk;Trading Goods;T01;;Milk;232;523;ST;8;10
+.1~112;112;E9;03W;EE-T04;Cheese;Trading Goods;T04;;Cheese;253;0;ST;6;10
+.1~66;66;C9;03N;CC-T05;Butter;Trading Goods;T05;;Butter;119;168;ST;9;10
+.1~54;54;C9;03N;CC-T02;Cream;Trading Goods;T02;;Cream;100;100;ST;9;10
+.1~57;57;C9;03;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;0;0;ST;5;10
+.1~23;23;A9;03S;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;121;79;ST;9;10
+.1~101;101;E9;03;EE-T02;Cream;Trading Goods;T02;;Cream;380;0;ST;10;10
+.1~12;12;A9;03W;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;466;0;ST;9;10
+.1~96;96;D9;03W;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;100;0;ST;9;10
+.1~1;1;A9;03;AA-T01;Milk;Trading Goods;T01;;Milk;50;0;ST;7;10
+.1~6;6;A9;03N;AA-T02;Cream;Trading Goods;T02;;Cream;200;0;ST;9;10
+.1~47;47;B9;03S;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;75;66;ST;9;10
+.1~51;51;C9;03S;CC-T01;Milk;Trading Goods;T01;;Milk;470;0;ST;9;10
+.1~119;119;E9;03S;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;106;0;ST;6;10
+.1~78;78;D9;03N;DD-T02;Cream;Trading Goods;T02;;Cream;100;0;ST;9;10
+.1~42;42;B9;03N;BB-T05;Butter;Trading Goods;T05;;Butter;66;86;ST;9;10
+.1~102;102;E9;03N;EE-T02;Cream;Trading Goods;T02;;Cream;70;0;ST;6;10
+.1~2;2;A9;03N;AA-T01;Milk;Trading Goods;T01;;Milk;222;395;ST;9;10
+.1~52;52;C9;03W;CC-T01;Milk;Trading Goods;T01;;Milk;230;445;ST;9;10
+.1~120;120;E9;03W;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;58;0;ST;6;10
+.1~99;99;E9;03S;EE-T01;Milk;Trading Goods;T01;;Milk;0;70;ST;6;10
+.1~88;88;D9;03W;DD-T04;Cheese;Trading Goods;T04;;Cheese;110;0;ST;9;10
+.1~109;109;E9;03;EE-T04;Cheese;Trading Goods;T04;;Cheese;350;0;ST;8;10
+.1~7;7;A9;03S;AA-T02;Cream;Trading Goods;T02;;Cream;160;40;ST;9;10
+.1~18;18;A9;03N;AA-T05;Butter;Trading Goods;T05;;Butter;204;64;ST;9;10
+.1~81;81;D9;03;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;700;0;ST;8;10
+.1~83;83;D9;03S;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;0;235;ST;5;10
+.1~53;53;C9;03;CC-T02;Cream;Trading Goods;T02;;Cream;0;0;ST;5;10
+.1~64;64;C9;03W;CC-T04;Cheese;Trading Goods;T04;;Cheese;170;62;ST;9;10
+.1~65;65;C9;03;CC-T05;Butter;Trading Goods;T05;;Butter;0;0;ST;5;10
+.1~58;58;C9;03N;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;162;234;ST;9;10
+.1~111;111;E9;03S;EE-T04;Cheese;Trading Goods;T04;;Cheese;39;0;ST;6;10
+.1~36;36;B9;03W;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;200;191;ST;9;10
+.1~38;38;B9;03N;BB-T04;Cheese;Trading Goods;T04;;Cheese;75;34;ST;9;10
+.1~87;87;D9;03S;DD-T04;Cheese;Trading Goods;T04;;Cheese;110;0;ST;9;10
+.1~89;89;D9;03;DD-T05;Butter;Trading Goods;T05;;Butter;400;0;ST;8;10
+.1~22;22;A9;03N;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;100;100;ST;8;10
+.1~24;24;A9;03W;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;166;34;ST;9;10
+.1~26;26;B9;03N;BB-T01;Milk;Trading Goods;T01;;Milk;334;479;ST;4;10
+.1~103;103;E9;03S;EE-T02;Cream;Trading Goods;T02;;Cream;83;22;ST;6;10
+.1~69;69;C9;03;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;0;0;ST;5;10
+.1~97;97;E9;03;EE-T01;Milk;Trading Goods;T01;;Milk;1305;0;ST;10;10
+.1~3;3;A9;03S;AA-T01;Milk;Trading Goods;T01;;Milk;444;173;ST;9;10
+.1~63;63;C9;03S;CC-T04;Cheese;Trading Goods;T04;;Cheese;197;25;ST;9;10
+.1~45;45;B9;03;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;90;0;ST;3;10
+.1~75;75;D9;03S;DD-T01;Milk;Trading Goods;T01;;Milk;177;136;ST;9;10
+.1~25;25;B9;03;BB-T01;Milk;Trading Goods;T01;;Milk;290;0;ST;6;10
+.1~27;27;B9;03S;BB-T01;Milk;Trading Goods;T01;;Milk;50;257;ST;9;10
+.1~9;9;A9;03;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;0;0;ST;5;10
+.1~19;19;A9;03S;AA-T05;Butter;Trading Goods;T05;;Butter;241;25;ST;9;10
+.1~118;118;E9;03N;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;136;0;ST;6;10
+.1~114;114;E9;03N;EE-T05;Butter;Trading Goods;T05;;Butter;131;0;ST;6;10
+.1~117;117;E9;03;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;300;0;ST;9;10
+.1~74;74;D9;03N;DD-T01;Milk;Trading Goods;T01;;Milk;0;326;ST;6;10
+.1~76;76;D9;03W;DD-T01;Milk;Trading Goods;T01;;Milk;85;226;ST;9;10
+.1~72;72;C9;03W;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;127;32;ST;9;10
+.1~85;85;D9;03;DD-T04;Cheese;Trading Goods;T04;;Cheese;370;0;ST;10;10
+.1~108;108;E9;03W;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;55;0;ST;6;10
+.1~31;31;B9;03S;BB-T02;Cream;Trading Goods;T02;;Cream;27;72;ST;9;10
+.1~84;84;D9;03W;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;230;0;ST;9;10
+.1~92;92;D9;03W;DD-T05;Butter;Trading Goods;T05;;Butter;130;0;ST;9;10
+.1~60;60;C9;03W;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;281;113;ST;9;10
+.1~116;116;E9;03W;EE-T05;Butter;Trading Goods;T05;;Butter;34;0;ST;6;10
+.1~44;44;B9;03W;BB-T05;Butter;Trading Goods;T05;;Butter;50;0;ST;9;10
+.1~73;73;D9;03;DD-T01;Milk;Trading Goods;T01;;Milk;950;0;ST;8;10
+.1~77;77;D9;03;DD-T02;Cream;Trading Goods;T02;;Cream;300;0;ST;3;10
+.1~55;55;C9;03S;CC-T02;Cream;Trading Goods;T02;;Cream;100;100;ST;9;10
+.1~104;104;E9;03W;EE-T02;Cream;Trading Goods;T02;;Cream;45;0;ST;6;10
+.1~106;106;E9;03N;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;85;0;ST;6;10
+.1~33;33;B9;03;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;160;0;ST;6;10
+.1~35;35;B9;03S;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;149;229;ST;9;10
+.1~37;37;B9;03;BB-T04;Cheese;Trading Goods;T04;;Cheese;217;0;ST;3;10
+.1~107;107;E9;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;120;189;ST;6;10
+.1~70;70;C9;03N;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;155;73;ST;9;10
+.1~71;71;C9;03S;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;155;58;ST;9;10
+.1~15;15;A9;03S;AA-T04;Cheese;Trading Goods;T04;;Cheese;199;18;ST;9;10
+.1~93;93;D9;03;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;300;0;ST;3;10
+.1~94;94;D9;03N;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;0;100;ST;4;10
+.1~95;95;D9;03S;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;0;100;ST;4;10
+.1~4;4;A9;03W;AA-T01;Milk;Trading Goods;T01;;Milk;616;0;ST;9;10
+.1~80;80;D9;03W;DD-T02;Cream;Trading Goods;T02;;Cream;100;0;ST;9;10

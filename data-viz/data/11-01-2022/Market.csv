@@ -1,0 +1,351 @@
+ID;ROW_NUMBER;COMPANY_CODE;SALES_ORGANIZATION;SIM_ROUND;SIM_PERIOD;MATERIAL_DESCRIPTION;DISTRIBUTION_CHANNEL;AREA;QUANTITY;UNIT;AVERAGE_PRICE;NET_VALUE;CURRENCY
+.1~8;8;A9;Company;01;1;Cheese;16;North;0;;0;0;
+.1~12;12;A9;Company;01;1;Cheese;16;West;0;;0;0;
+.1~14;14;A9;Company;01;1;Cream;16;North;0;;0;0;
+.1~28;28;A9;Company;01;1;Milk;16;West;0;;0;0;
+.1~34;34;A9;Company;01;1;Yoghurt;16;West;0;;0;0;
+.1~38;38;A9;Company;01;2;Butter;16;South;0;;0;0;
+.1~40;40;A9;Company;01;2;Butter;16;West;0;;0;0;
+.1~42;42;A9;Company;01;2;Cheese;16;North;0;;0;0;
+.1~44;44;A9;Company;01;2;Cheese;16;South;0;;0;0;
+.1~46;46;A9;Company;01;2;Cheese;16;West;0;;0;0;
+.1~48;48;A9;Company;01;2;Cream;16;North;0;;0;0;
+.1~52;52;A9;Company;01;2;Cream;16;West;0;;0;0;
+.1~58;58;A9;Company;01;2;Ice Cream;16;West;0;;0;0;
+.1~64;64;A9;Company;01;2;Milk;16;West;0;;0;0;
+.1~70;70;A9;Company;01;2;Yoghurt;16;West;0;;0;0;
+.1~76;76;B9;Company;01;1;Butter;16;West;0;;0;0;
+.1~110;110;B9;Company;01;2;Butter;16;West;0;;0;0;
+.1~112;112;B9;Company;01;2;Cheese;16;North;0;;0;0;
+.1~114;114;B9;Company;01;2;Cheese;16;South;0;;0;0;
+.1~118;118;B9;Company;01;2;Cream;16;North;0;;0;0;
+.1~124;124;B9;Company;01;2;Ice Cream;16;North;0;;0;0;
+.1~128;128;B9;Company;01;2;Ice Cream;16;West;0;;0;0;
+.1~142;142;C9;Company;01;1;Butter;16;North;0;;0;0;
+.1~144;144;C9;Company;01;1;Butter;16;South;0;;0;0;
+.1~146;146;C9;Company;01;1;Butter;16;West;0;;0;0;
+.1~148;148;C9;Company;01;1;Cheese;16;North;0;;0;0;
+.1~150;150;C9;Company;01;1;Cheese;16;South;0;;0;0;
+.1~154;154;C9;Company;01;1;Cream;16;North;0;;0;0;
+.1~156;156;C9;Company;01;1;Cream;16;South;0;;0;0;
+.1~162;162;C9;Company;01;1;Ice Cream;16;West;0;;0;0;
+.1~166;166;C9;Company;01;1;Milk;16;South;0;;0;0;
+.1~170;170;C9;Company;01;1;Yoghurt;16;North;0;;0;0;
+.1~174;174;C9;Company;01;1;Yoghurt;16;West;0;;0;0;
+.1~196;196;C9;Company;01;2;Ice Cream;16;South;0;;0;0;
+.1~202;202;C9;Company;01;2;Milk;16;South;0;;0;0;
+.1~216;216;D9;Company;01;1;Butter;16;West;0;;0;0;
+.1~218;218;D9;Company;01;1;Cheese;16;North;0;;0;0;
+.1~220;220;D9;Company;01;1;Cheese;16;South;0;;0;0;
+.1~222;222;D9;Company;01;1;Cheese;16;West;0;;0;0;
+.1~224;224;D9;Company;01;1;Cream;16;North;0;;0;0;
+.1~226;226;D9;Company;01;1;Cream;16;South;0;;0;0;
+.1~232;232;D9;Company;01;1;Ice Cream;16;West;0;;0;0;
+.1~244;244;D9;Company;01;1;Yoghurt;16;West;0;;0;0;
+.1~246;246;D9;Company;01;2;Butter;16;North;0;;0;0;
+.1~248;248;D9;Company;01;2;Butter;16;South;0;;0;0;
+.1~250;250;D9;Company;01;2;Butter;16;West;0;;0;0;
+.1~252;252;D9;Company;01;2;Cheese;16;North;0;;0;0;
+.1~254;254;D9;Company;01;2;Cheese;16;South;0;;0;0;
+.1~256;256;D9;Company;01;2;Cheese;16;West;0;;0;0;
+.1~258;258;D9;Company;01;2;Cream;16;North;0;;0;0;
+.1~262;262;D9;Company;01;2;Cream;16;West;0;;0;0;
+.1~264;264;D9;Company;01;2;Ice Cream;16;North;0;;0;0;
+.1~266;266;D9;Company;01;2;Ice Cream;16;South;0;;0;0;
+.1~268;268;D9;Company;01;2;Ice Cream;16;West;0;;0;0;
+.1~272;272;D9;Company;01;2;Milk;16;South;0;;0;0;
+.1~280;280;D9;Company;01;2;Yoghurt;16;West;0;;0;0;
+.1~282;282;E9;Company;01;1;Butter;16;North;0;;0;0;
+.1~284;284;E9;Company;01;1;Butter;16;South;0;;0;0;
+.1~286;286;E9;Company;01;1;Butter;16;West;0;;0;0;
+.1~288;288;E9;Company;01;1;Cheese;16;North;0;;0;0;
+.1~290;290;E9;Company;01;1;Cheese;16;South;0;;0;0;
+.1~292;292;E9;Company;01;1;Cheese;16;West;0;;0;0;
+.1~294;294;E9;Company;01;1;Cream;16;North;0;;0;0;
+.1~296;296;E9;Company;01;1;Cream;16;South;0;;0;0;
+.1~298;298;E9;Company;01;1;Ice Cream;16;North;0;;0;0;
+.1~300;300;E9;Company;01;1;Ice Cream;16;South;0;;0;0;
+.1~302;302;E9;Company;01;1;Ice Cream;16;West;0;;0;0;
+.1~306;306;E9;Company;01;1;Milk;16;South;0;;0;0;
+.1~310;310;E9;Company;01;1;Yoghurt;16;North;0;;0;0;
+.1~314;314;E9;Company;01;1;Yoghurt;16;West;0;;0;0;
+.1~316;316;E9;Company;01;2;Butter;16;North;0;;0;0;
+.1~320;320;E9;Company;01;2;Butter;16;West;0;;0;0;
+.1~322;322;E9;Company;01;2;Cheese;16;North;0;;0;0;
+.1~324;324;E9;Company;01;2;Cheese;16;South;0;;0;0;
+.1~326;326;E9;Company;01;2;Cheese;16;West;0;;0;0;
+.1~328;328;E9;Company;01;2;Cream;16;North;0;;0;0;
+.1~332;332;E9;Company;01;2;Cream;16;West;0;;0;0;
+.1~334;334;E9;Company;01;2;Ice Cream;16;North;0;;0;0;
+.1~336;336;E9;Company;01;2;Ice Cream;16;South;0;;0;0;
+.1~338;338;E9;Company;01;2;Ice Cream;16;West;0;;0;0;
+.1~346;346;E9;Company;01;2;Yoghurt;16;North;0;;0;0;
+.1~350;350;E9;Company;01;2;Yoghurt;16;West;0;;0;0;
+.1~6;6;A9;Company;01;1;Butter;16;West;24;ST;72,46;1739,04;EUR
+.1~22;22;A9;Company;01;1;Ice Cream;16;West;34;ST;52,22;1775,48;EUR
+.1~82;82;B9;Company;01;1;Cheese;16;West;16;ST;97,32;1557,12;EUR
+.1~92;92;B9;Company;01;1;Ice Cream;16;West;44;ST;50,79;2234,76;EUR
+.1~98;98;B9;Company;01;1;Milk;16;West;75;ST;27,02;2026,5;EUR
+.1~104;104;B9;Company;01;1;Yoghurt;16;West;61;ST;30,42;1855,62;EUR
+.1~116;116;B9;Company;01;2;Cheese;16;West;60;ST;97,32;5839,2;EUR
+.1~122;122;B9;Company;01;2;Cream;16;West;19;ST;85,36;1621,84;EUR
+.1~134;134;B9;Company;01;2;Milk;16;West;255;ST;27,02;6890,1;EUR
+.1~140;140;B9;Company;01;2;Yoghurt;16;West;130;ST;30,42;3954,6;EUR
+.1~152;152;C9;Company;01;1;Cheese;16;West;22;ST;109,14;2401,08;EUR
+.1~168;168;C9;Company;01;1;Milk;16;West;170;ST;30,3;5151;EUR
+.1~180;180;C9;Company;01;2;Butter;16;West;27;ST;60,47;1632,69;EUR
+.1~186;186;C9;Company;01;2;Cheese;16;West;40;ST;92,77;3710,8;EUR
+.1~192;192;C9;Company;01;2;Cream;16;West;23;ST;73,24;1684,52;EUR
+.1~198;198;C9;Company;01;2;Ice Cream;16;West;32;ST;56,96;1822,72;EUR
+.1~204;204;C9;Company;01;2;Milk;16;West;275;ST;30,3;8332,5;EUR
+.1~210;210;C9;Company;01;2;Yoghurt;16;West;113;ST;29;3277;EUR
+.1~238;238;D9;Company;01;1;Milk;16;West;119;ST;29,04;3455,76;EUR
+.1~274;274;D9;Company;01;2;Milk;16;West;107;ST;29,76;3185,58;EUR
+.1~308;308;E9;Company;01;1;Milk;16;West;30;ST;31,56;946,8;EUR
+.1~344;344;E9;Company;01;2;Milk;16;West;53;ST;31,56;1672,68;EUR
+.1~5;5;A9;Market;01;1;Butter;16;West;24;ST;72,46;1739,04;EUR
+.1~11;11;A9;Market;01;1;Cheese;16;West;38;ST;103,23;3958,2;EUR
+.1~21;21;A9;Market;01;1;Ice Cream;16;West;78;ST;51,5;4010,24;EUR
+.1~27;27;A9;Market;01;1;Milk;16;West;394;ST;29,65;11580,06;EUR
+.1~33;33;A9;Market;01;1;Yoghurt;16;West;61;ST;30,42;1855,62;EUR
+.1~39;39;A9;Market;01;2;Butter;16;West;27;ST;60,47;1632,69;EUR
+.1~45;45;A9;Market;01;2;Cheese;16;West;100;ST;95,5;9550;EUR
+.1~51;51;A9;Market;01;2;Cream;16;West;42;ST;79,3;3306,36;EUR
+.1~57;57;A9;Market;01;2;Ice Cream;16;West;32;ST;56,96;1822,72;EUR
+.1~63;63;A9;Market;01;2;Milk;16;West;690;ST;29,32;20080,86;EUR
+.1~69;69;A9;Market;01;2;Yoghurt;16;West;243;ST;29,71;7231,6;EUR
+.1~75;75;B9;Market;01;1;Butter;16;West;24;ST;72,46;1739,04;EUR
+.1~81;81;B9;Market;01;1;Cheese;16;West;38;ST;103,23;3958,2;EUR
+.1~91;91;B9;Market;01;1;Ice Cream;16;West;78;ST;51,5;4010,24;EUR
+.1~97;97;B9;Market;01;1;Milk;16;West;394;ST;29,65;11580,06;EUR
+.1~103;103;B9;Market;01;1;Yoghurt;16;West;61;ST;30,42;1855,62;EUR
+.1~109;109;B9;Market;01;2;Butter;16;West;27;ST;60,47;1632,69;EUR
+.1~115;115;B9;Market;01;2;Cheese;16;West;100;ST;95,5;9550;EUR
+.1~121;121;B9;Market;01;2;Cream;16;West;42;ST;79,3;3306,36;EUR
+.1~127;127;B9;Market;01;2;Ice Cream;16;West;32;ST;56,96;1822,72;EUR
+.1~133;133;B9;Market;01;2;Milk;16;West;690;ST;29,32;20080,86;EUR
+.1~139;139;B9;Market;01;2;Yoghurt;16;West;243;ST;29,71;7231,6;EUR
+.1~145;145;C9;Market;01;1;Butter;16;West;24;ST;72,46;1739,04;EUR
+.1~151;151;C9;Market;01;1;Cheese;16;West;38;ST;103,23;3958,2;EUR
+.1~161;161;C9;Market;01;1;Ice Cream;16;West;78;ST;51,5;4010,24;EUR
+.1~167;167;C9;Market;01;1;Milk;16;West;394;ST;29,65;11580,06;EUR
+.1~173;173;C9;Market;01;1;Yoghurt;16;West;61;ST;30,42;1855,62;EUR
+.1~179;179;C9;Market;01;2;Butter;16;West;27;ST;60,47;1632,69;EUR
+.1~185;185;C9;Market;01;2;Cheese;16;West;100;ST;95,5;9550;EUR
+.1~191;191;C9;Market;01;2;Cream;16;West;42;ST;79,3;3306,36;EUR
+.1~197;197;C9;Market;01;2;Ice Cream;16;West;32;ST;56,96;1822,72;EUR
+.1~203;203;C9;Market;01;2;Milk;16;West;690;ST;29,32;20080,86;EUR
+.1~209;209;C9;Market;01;2;Yoghurt;16;West;243;ST;29,71;7231,6;EUR
+.1~215;215;D9;Market;01;1;Butter;16;West;24;ST;72,46;1739,04;EUR
+.1~221;221;D9;Market;01;1;Cheese;16;West;38;ST;103,23;3958,2;EUR
+.1~231;231;D9;Market;01;1;Ice Cream;16;West;78;ST;51,5;4010,24;EUR
+.1~237;237;D9;Market;01;1;Milk;16;West;394;ST;29,65;11580,06;EUR
+.1~243;243;D9;Market;01;1;Yoghurt;16;West;61;ST;30,42;1855,62;EUR
+.1~249;249;D9;Market;01;2;Butter;16;West;27;ST;60,47;1632,69;EUR
+.1~255;255;D9;Market;01;2;Cheese;16;West;100;ST;95,5;9550;EUR
+.1~261;261;D9;Market;01;2;Cream;16;West;42;ST;79,3;3306,36;EUR
+.1~267;267;D9;Market;01;2;Ice Cream;16;West;32;ST;56,96;1822,72;EUR
+.1~273;273;D9;Market;01;2;Milk;16;West;690;ST;29,32;20080,86;EUR
+.1~279;279;D9;Market;01;2;Yoghurt;16;West;243;ST;29,71;7231,6;EUR
+.1~285;285;E9;Market;01;1;Butter;16;West;24;ST;72,46;1739,04;EUR
+.1~291;291;E9;Market;01;1;Cheese;16;West;38;ST;103,23;3958,2;EUR
+.1~301;301;E9;Market;01;1;Ice Cream;16;West;78;ST;51,5;4010,24;EUR
+.1~307;307;E9;Market;01;1;Milk;16;West;394;ST;29,65;11580,06;EUR
+.1~313;313;E9;Market;01;1;Yoghurt;16;West;61;ST;30,42;1855,62;EUR
+.1~319;319;E9;Market;01;2;Butter;16;West;27;ST;60,47;1632,69;EUR
+.1~325;325;E9;Market;01;2;Cheese;16;West;100;ST;95,5;9550;EUR
+.1~331;331;E9;Market;01;2;Cream;16;West;42;ST;79,3;3306,36;EUR
+.1~337;337;E9;Market;01;2;Ice Cream;16;West;32;ST;56,96;1822,72;EUR
+.1~343;343;E9;Market;01;2;Milk;16;West;690;ST;29,32;20080,86;EUR
+.1~349;349;E9;Market;01;2;Yoghurt;16;West;243;ST;29,71;7231,6;EUR
+.1~2;2;A9;Company;01;1;Butter;16;North;32;ST;72,46;2318,72;EUR
+.1~18;18;A9;Company;01;1;Ice Cream;16;North;93;ST;52,22;4856,46;EUR
+.1~24;24;A9;Company;01;1;Milk;16;North;240;ST;28,47;6850,68;EUR
+.1~30;30;A9;Company;01;1;Yoghurt;16;North;231;ST;32,05;7370,48;EUR
+.1~36;36;A9;Company;01;2;Butter;16;North;32;ST;77,12;2467,84;EUR
+.1~54;54;A9;Company;01;2;Ice Cream;16;North;7;ST;60,31;422,17;EUR
+.1~60;60;A9;Company;01;2;Milk;16;North;155;ST;30,72;4730,17;EUR
+.1~66;66;A9;Company;01;2;Yoghurt;16;North;3;ST;36,12;108,36;EUR
+.1~72;72;B9;Company;01;1;Butter;16;North;52;ST;70,48;3664,96;EUR
+.1~78;78;B9;Company;01;1;Cheese;16;North;34;ST;97,32;3308,88;EUR
+.1~84;84;B9;Company;01;1;Cream;16;North;22;ST;85,36;1877,92;EUR
+.1~88;88;B9;Company;01;1;Ice Cream;16;North;100;ST;50,79;5079;EUR
+.1~94;94;B9;Company;01;1;Milk;16;North;398;ST;27,02;10753,96;EUR
+.1~100;100;B9;Company;01;1;Yoghurt;16;North;188;ST;30,42;5718,96;EUR
+.1~106;106;B9;Company;01;2;Butter;16;North;34;ST;70,48;2396,32;EUR
+.1~130;130;B9;Company;01;2;Milk;16;North;81;ST;27,02;2188,62;EUR
+.1~136;136;B9;Company;01;2;Yoghurt;16;North;152;ST;30,42;4623,84;EUR
+.1~158;158;C9;Company;01;1;Ice Cream;16;North;67;ST;56,96;3816,32;EUR
+.1~164;164;C9;Company;01;1;Milk;16;North;82;ST;30,3;2484,6;EUR
+.1~176;176;C9;Company;01;2;Butter;16;North;168;ST;63,51;10671,12;EUR
+.1~182;182;C9;Company;01;2;Cheese;16;North;26;ST;92,77;2412,02;EUR
+.1~188;188;C9;Company;01;2;Cream;16;North;100;ST;73,24;7324;EUR
+.1~194;194;C9;Company;01;2;Ice Cream;16;North;6;ST;56,96;341,76;EUR
+.1~200;200;C9;Company;01;2;Milk;16;North;441;ST;30,3;13362,3;EUR
+.1~206;206;C9;Company;01;2;Yoghurt;16;North;234;ST;29;6786;EUR
+.1~212;212;D9;Company;01;1;Butter;16;North;44;ST;75,75;3333;EUR
+.1~228;228;D9;Company;01;1;Ice Cream;16;North;100;ST;54,59;5459;EUR
+.1~234;234;D9;Company;01;1;Milk;16;North;299;ST;29,04;8682,96;EUR
+.1~240;240;D9;Company;01;1;Yoghurt;16;North;230;ST;32,69;7518,7;EUR
+.1~270;270;D9;Company;01;2;Milk;16;North;27;ST;29,04;784,08;EUR
+.1~276;276;D9;Company;01;2;Yoghurt;16;North;5;ST;30,89;154,45;EUR
+.1~304;304;E9;Company;01;1;Milk;16;North;64;ST;31,56;2019,84;EUR
+.1~340;340;E9;Company;01;2;Milk;16;North;65;ST;31,56;2051,4;EUR
+.1~1;1;A9;Market;01;1;Butter;16;North;128;ST;72,98;9316,68;EUR
+.1~7;7;A9;Market;01;1;Cheese;16;North;34;ST;97,32;3308,88;EUR
+.1~13;13;A9;Market;01;1;Cream;16;North;22;ST;85,36;1877,92;EUR
+.1~17;17;A9;Market;01;1;Ice Cream;16;North;360;ST;53,33;19210,78;EUR
+.1~23;23;A9;Market;01;1;Milk;16;North;1083;ST;28,37;30792,04;EUR
+.1~29;29;A9;Market;01;1;Yoghurt;16;North;649;ST;31,91;20608,14;EUR
+.1~35;35;A9;Market;01;2;Butter;16;North;234;ST;65,8;15535,28;EUR
+.1~41;41;A9;Market;01;2;Cheese;16;North;26;ST;92,77;2412,02;EUR
+.1~47;47;A9;Market;01;2;Cream;16;North;100;ST;73,24;7324;EUR
+.1~53;53;A9;Market;01;2;Ice Cream;16;North;13;ST;58,63;763,93;EUR
+.1~59;59;A9;Market;01;2;Milk;16;North;769;ST;29,89;23116,57;EUR
+.1~65;65;A9;Market;01;2;Yoghurt;16;North;394;ST;30,47;11672,65;EUR
+.1~71;71;B9;Market;01;1;Butter;16;North;128;ST;72,98;9316,68;EUR
+.1~77;77;B9;Market;01;1;Cheese;16;North;34;ST;97,32;3308,88;EUR
+.1~83;83;B9;Market;01;1;Cream;16;North;22;ST;85,36;1877,92;EUR
+.1~87;87;B9;Market;01;1;Ice Cream;16;North;360;ST;53,33;19210,78;EUR
+.1~93;93;B9;Market;01;1;Milk;16;North;1083;ST;28,37;30792,04;EUR
+.1~99;99;B9;Market;01;1;Yoghurt;16;North;649;ST;31,91;20608,14;EUR
+.1~105;105;B9;Market;01;2;Butter;16;North;234;ST;65,8;15535,28;EUR
+.1~111;111;B9;Market;01;2;Cheese;16;North;26;ST;92,77;2412,02;EUR
+.1~117;117;B9;Market;01;2;Cream;16;North;100;ST;73,24;7324;EUR
+.1~123;123;B9;Market;01;2;Ice Cream;16;North;13;ST;58,63;763,93;EUR
+.1~129;129;B9;Market;01;2;Milk;16;North;769;ST;29,89;23116,57;EUR
+.1~135;135;B9;Market;01;2;Yoghurt;16;North;394;ST;30,47;11672,65;EUR
+.1~141;141;C9;Market;01;1;Butter;16;North;128;ST;72,98;9316,68;EUR
+.1~147;147;C9;Market;01;1;Cheese;16;North;34;ST;97,32;3308,88;EUR
+.1~153;153;C9;Market;01;1;Cream;16;North;22;ST;85,36;1877,92;EUR
+.1~157;157;C9;Market;01;1;Ice Cream;16;North;360;ST;53,33;19210,78;EUR
+.1~163;163;C9;Market;01;1;Milk;16;North;1083;ST;28,37;30792,04;EUR
+.1~169;169;C9;Market;01;1;Yoghurt;16;North;649;ST;31,91;20608,14;EUR
+.1~175;175;C9;Market;01;2;Butter;16;North;234;ST;65,8;15535,28;EUR
+.1~181;181;C9;Market;01;2;Cheese;16;North;26;ST;92,77;2412,02;EUR
+.1~187;187;C9;Market;01;2;Cream;16;North;100;ST;73,24;7324;EUR
+.1~193;193;C9;Market;01;2;Ice Cream;16;North;13;ST;58,63;763,93;EUR
+.1~199;199;C9;Market;01;2;Milk;16;North;769;ST;29,89;23116,57;EUR
+.1~205;205;C9;Market;01;2;Yoghurt;16;North;394;ST;30,47;11672,65;EUR
+.1~211;211;D9;Market;01;1;Butter;16;North;128;ST;72,98;9316,68;EUR
+.1~217;217;D9;Market;01;1;Cheese;16;North;34;ST;97,32;3308,88;EUR
+.1~223;223;D9;Market;01;1;Cream;16;North;22;ST;85,36;1877,92;EUR
+.1~227;227;D9;Market;01;1;Ice Cream;16;North;360;ST;53,33;19210,78;EUR
+.1~233;233;D9;Market;01;1;Milk;16;North;1083;ST;28,37;30792,04;EUR
+.1~239;239;D9;Market;01;1;Yoghurt;16;North;649;ST;31,91;20608,14;EUR
+.1~245;245;D9;Market;01;2;Butter;16;North;234;ST;65,8;15535,28;EUR
+.1~251;251;D9;Market;01;2;Cheese;16;North;26;ST;92,77;2412,02;EUR
+.1~257;257;D9;Market;01;2;Cream;16;North;100;ST;73,24;7324;EUR
+.1~263;263;D9;Market;01;2;Ice Cream;16;North;13;ST;58,63;763,93;EUR
+.1~269;269;D9;Market;01;2;Milk;16;North;769;ST;29,89;23116,57;EUR
+.1~275;275;D9;Market;01;2;Yoghurt;16;North;394;ST;30,47;11672,65;EUR
+.1~281;281;E9;Market;01;1;Butter;16;North;128;ST;72,98;9316,68;EUR
+.1~287;287;E9;Market;01;1;Cheese;16;North;34;ST;97,32;3308,88;EUR
+.1~293;293;E9;Market;01;1;Cream;16;North;22;ST;85,36;1877,92;EUR
+.1~297;297;E9;Market;01;1;Ice Cream;16;North;360;ST;53,33;19210,78;EUR
+.1~303;303;E9;Market;01;1;Milk;16;North;1083;ST;28,37;30792,04;EUR
+.1~309;309;E9;Market;01;1;Yoghurt;16;North;649;ST;31,91;20608,14;EUR
+.1~315;315;E9;Market;01;2;Butter;16;North;234;ST;65,8;15535,28;EUR
+.1~321;321;E9;Market;01;2;Cheese;16;North;26;ST;92,77;2412,02;EUR
+.1~327;327;E9;Market;01;2;Cream;16;North;100;ST;73,24;7324;EUR
+.1~333;333;E9;Market;01;2;Ice Cream;16;North;13;ST;58,63;763,93;EUR
+.1~339;339;E9;Market;01;2;Milk;16;North;769;ST;29,89;23116,57;EUR
+.1~345;345;E9;Market;01;2;Yoghurt;16;North;394;ST;30,47;11672,65;EUR
+.1~4;4;A9;Company;01;1;Butter;16;South;25;ST;79,71;1992,75;EUR
+.1~10;10;A9;Company;01;1;Cheese;16;South;18;ST;100,05;1800,9;EUR
+.1~16;16;A9;Company;01;1;Cream;16;South;20;ST;87,76;1755,2;EUR
+.1~20;20;A9;Company;01;1;Ice Cream;16;South;48;ST;52,22;2506,56;EUR
+.1~26;26;A9;Company;01;1;Milk;16;South;58;ST;27,78;1611,24;EUR
+.1~32;32;A9;Company;01;1;Yoghurt;16;South;194;ST;32,83;6420,07;EUR
+.1~50;50;A9;Company;01;2;Cream;16;South;20;ST;93,41;1868,2;EUR
+.1~56;56;A9;Company;01;2;Ice Cream;16;South;31;ST;60,31;1869,61;EUR
+.1~62;62;A9;Company;01;2;Milk;16;South;115;ST;30,83;3539,75;EUR
+.1~68;68;A9;Company;01;2;Yoghurt;16;South;91;ST;33,28;3028,48;EUR
+.1~74;74;B9;Company;01;1;Butter;16;South;97;ST;70,48;6836,56;EUR
+.1~80;80;B9;Company;01;1;Cheese;16;South;23;ST;97,32;2238,36;EUR
+.1~86;86;B9;Company;01;1;Cream;16;South;19;ST;85,36;1621,84;EUR
+.1~90;90;B9;Company;01;1;Ice Cream;16;South;32;ST;50,79;1625,28;EUR
+.1~96;96;B9;Company;01;1;Milk;16;South;62;ST;27,02;1675,24;EUR
+.1~102;102;B9;Company;01;1;Yoghurt;16;South;171;ST;30,42;5201,82;EUR
+.1~108;108;B9;Company;01;2;Butter;16;South;131;ST;70,48;9232,88;EUR
+.1~120;120;B9;Company;01;2;Cream;16;South;53;ST;85,36;4524,08;EUR
+.1~126;126;B9;Company;01;2;Ice Cream;16;South;34;ST;50,79;1726,86;EUR
+.1~132;132;B9;Company;01;2;Milk;16;South;195;ST;27,02;5268,9;EUR
+.1~138;138;B9;Company;01;2;Yoghurt;16;South;58;ST;30,42;1764,36;EUR
+.1~160;160;C9;Company;01;1;Ice Cream;16;South;58;ST;56,96;3303,68;EUR
+.1~172;172;C9;Company;01;1;Yoghurt;16;South;182;ST;34,12;6209,84;EUR
+.1~178;178;C9;Company;01;2;Butter;16;South;144;ST;62,24;8963,76;EUR
+.1~184;184;C9;Company;01;2;Cheese;16;South;25;ST;92,77;2319,25;EUR
+.1~190;190;C9;Company;01;2;Cream;16;South;100;ST;73,24;7324;EUR
+.1~208;208;C9;Company;01;2;Yoghurt;16;South;266;ST;30,7;7975,12;EUR
+.1~214;214;D9;Company;01;1;Butter;16;South;21;ST;75,75;1590,75;EUR
+.1~230;230;D9;Company;01;1;Ice Cream;16;South;100;ST;54,59;5459;EUR
+.1~236;236;D9;Company;01;1;Milk;16;South;136;ST;29,04;3949,44;EUR
+.1~242;242;D9;Company;01;1;Yoghurt;16;South;230;ST;32,69;7518,7;EUR
+.1~260;260;D9;Company;01;2;Cream;16;South;18;ST;82,57;1486,26;EUR
+.1~278;278;D9;Company;01;2;Yoghurt;16;South;5;ST;29,42;147,1;EUR
+.1~312;312;E9;Company;01;1;Yoghurt;16;South;11;ST;35,54;390,94;EUR
+.1~318;318;E9;Company;01;2;Butter;16;South;19;ST;82,34;1564,46;EUR
+.1~330;330;E9;Company;01;2;Cream;16;South;22;ST;99,73;2194,06;EUR
+.1~342;342;E9;Company;01;2;Milk;16;South;70;ST;31,56;2209,2;EUR
+.1~348;348;E9;Company;01;2;Yoghurt;16;South;178;ST;35,54;6326,12;EUR
+.1~3;3;A9;Market;01;1;Butter;16;South;143;ST;72,89;10420,06;EUR
+.1~9;9;A9;Market;01;1;Cheese;16;South;41;ST;98,68;4039,26;EUR
+.1~15;15;A9;Market;01;1;Cream;16;South;39;ST;86,56;3377,04;EUR
+.1~19;19;A9;Market;01;1;Ice Cream;16;South;238;ST;54,11;12894,52;EUR
+.1~25;25;A9;Market;01;1;Milk;16;South;256;ST;28,22;7235,92;EUR
+.1~31;31;A9;Market;01;1;Yoghurt;16;South;788;ST;32,75;25741,37;EUR
+.1~37;37;A9;Market;01;2;Butter;16;South;294;ST;67,35;19761,1;EUR
+.1~43;43;A9;Market;01;2;Cheese;16;South;25;ST;92,77;2319,25;EUR
+.1~49;49;A9;Market;01;2;Cream;16;South;213;ST;82,15;17396,6;EUR
+.1~55;55;A9;Market;01;2;Ice Cream;16;South;65;ST;55,55;3596,47;EUR
+.1~61;61;A9;Market;01;2;Milk;16;South;380;ST;29,04;11017,85;EUR
+.1~67;67;A9;Market;01;2;Yoghurt;16;South;598;ST;32,42;19241,18;EUR
+.1~73;73;B9;Market;01;1;Butter;16;South;143;ST;72,89;10420,06;EUR
+.1~79;79;B9;Market;01;1;Cheese;16;South;41;ST;98,68;4039,26;EUR
+.1~85;85;B9;Market;01;1;Cream;16;South;39;ST;86,56;3377,04;EUR
+.1~89;89;B9;Market;01;1;Ice Cream;16;South;238;ST;54,11;12894,52;EUR
+.1~95;95;B9;Market;01;1;Milk;16;South;256;ST;28,22;7235,92;EUR
+.1~101;101;B9;Market;01;1;Yoghurt;16;South;788;ST;32,75;25741,37;EUR
+.1~107;107;B9;Market;01;2;Butter;16;South;294;ST;67,35;19761,1;EUR
+.1~113;113;B9;Market;01;2;Cheese;16;South;25;ST;92,77;2319,25;EUR
+.1~119;119;B9;Market;01;2;Cream;16;South;213;ST;82,15;17396,6;EUR
+.1~125;125;B9;Market;01;2;Ice Cream;16;South;65;ST;55,55;3596,47;EUR
+.1~131;131;B9;Market;01;2;Milk;16;South;380;ST;29,04;11017,85;EUR
+.1~137;137;B9;Market;01;2;Yoghurt;16;South;598;ST;32,42;19241,18;EUR
+.1~143;143;C9;Market;01;1;Butter;16;South;143;ST;72,89;10420,06;EUR
+.1~149;149;C9;Market;01;1;Cheese;16;South;41;ST;98,68;4039,26;EUR
+.1~155;155;C9;Market;01;1;Cream;16;South;39;ST;86,56;3377,04;EUR
+.1~159;159;C9;Market;01;1;Ice Cream;16;South;238;ST;54,11;12894,52;EUR
+.1~165;165;C9;Market;01;1;Milk;16;South;256;ST;28,22;7235,92;EUR
+.1~171;171;C9;Market;01;1;Yoghurt;16;South;788;ST;32,75;25741,37;EUR
+.1~177;177;C9;Market;01;2;Butter;16;South;294;ST;67,35;19761,1;EUR
+.1~183;183;C9;Market;01;2;Cheese;16;South;25;ST;92,77;2319,25;EUR
+.1~189;189;C9;Market;01;2;Cream;16;South;213;ST;82,15;17396,6;EUR
+.1~195;195;C9;Market;01;2;Ice Cream;16;South;65;ST;55,55;3596,47;EUR
+.1~201;201;C9;Market;01;2;Milk;16;South;380;ST;29,04;11017,85;EUR
+.1~207;207;C9;Market;01;2;Yoghurt;16;South;598;ST;32,42;19241,18;EUR
+.1~213;213;D9;Market;01;1;Butter;16;South;143;ST;72,89;10420,06;EUR
+.1~219;219;D9;Market;01;1;Cheese;16;South;41;ST;98,68;4039,26;EUR
+.1~225;225;D9;Market;01;1;Cream;16;South;39;ST;86,56;3377,04;EUR
+.1~229;229;D9;Market;01;1;Ice Cream;16;South;238;ST;54,11;12894,52;EUR
+.1~235;235;D9;Market;01;1;Milk;16;South;256;ST;28,22;7235,92;EUR
+.1~241;241;D9;Market;01;1;Yoghurt;16;South;788;ST;32,75;25741,37;EUR
+.1~247;247;D9;Market;01;2;Butter;16;South;294;ST;67,35;19761,1;EUR
+.1~253;253;D9;Market;01;2;Cheese;16;South;25;ST;92,77;2319,25;EUR
+.1~259;259;D9;Market;01;2;Cream;16;South;213;ST;82,15;17396,6;EUR
+.1~265;265;D9;Market;01;2;Ice Cream;16;South;65;ST;55,55;3596,47;EUR
+.1~271;271;D9;Market;01;2;Milk;16;South;380;ST;29,04;11017,85;EUR
+.1~277;277;D9;Market;01;2;Yoghurt;16;South;598;ST;32,42;19241,18;EUR
+.1~283;283;E9;Market;01;1;Butter;16;South;143;ST;72,89;10420,06;EUR
+.1~289;289;E9;Market;01;1;Cheese;16;South;41;ST;98,68;4039,26;EUR
+.1~295;295;E9;Market;01;1;Cream;16;South;39;ST;86,56;3377,04;EUR
+.1~299;299;E9;Market;01;1;Ice Cream;16;South;238;ST;54,11;12894,52;EUR
+.1~305;305;E9;Market;01;1;Milk;16;South;256;ST;28,22;7235,92;EUR
+.1~311;311;E9;Market;01;1;Yoghurt;16;South;788;ST;32,75;25741,37;EUR
+.1~317;317;E9;Market;01;2;Butter;16;South;294;ST;67,35;19761,1;EUR
+.1~323;323;E9;Market;01;2;Cheese;16;South;25;ST;92,77;2319,25;EUR
+.1~329;329;E9;Market;01;2;Cream;16;South;213;ST;82,15;17396,6;EUR
+.1~335;335;E9;Market;01;2;Ice Cream;16;South;65;ST;55,55;3596,47;EUR
+.1~341;341;E9;Market;01;2;Milk;16;South;380;ST;29,04;11017,85;EUR
+.1~347;347;E9;Market;01;2;Yoghurt;16;South;598;ST;32,42;19241,18;EUR

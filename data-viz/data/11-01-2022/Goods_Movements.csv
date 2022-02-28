@@ -1,0 +1,601 @@
+ID;ROW_NUMBER;PLANT;SIM_ROUND;SIM_STEP;SIM_DATE;SIM_CALENDAR_DATE;SIM_PERIOD;SIM_ELAPSED_STEPS;EVENT_TYPE;DOCUMENT_TYPE;MOVEMENT_TYPE;STORAGE_LOCATION;MATERIAL_NUMBER;MATERIAL_DESCRIPTION;MATERIAL_TYPE;MATERIAL_CODE;MATERIAL_SIZE;MATERIAL_LABEL;DEBIT_CREDIT_INDICATOR;UNIT;QUANTITY_ABS;QUANTITY
+.1~426;426;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;DD-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;100;100
+.1~286;286;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;95;95
+.1~11;11;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;60;60
+.1~296;296;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;105;105
+.1~171;171;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;75;75
+.1~176;176;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;50;50
+.1~438;438;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;DD-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;130;130
+.1~435;435;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;DD-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;130;130
+.1~18;18;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;120;120
+.1~419;419;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;DD-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;310;310
+.1~423;423;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;DD-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;100;100
+.1~162;162;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;80;80
+.1~161;161;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;80;80
+.1~22;22;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~298;298;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;120;120
+.1~168;168;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;200;200
+.1~421;421;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;DD-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;310;310
+.1~283;283;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;285;285
+.1~304;304;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;95;95
+.1~179;179;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;100;100
+.1~30;30;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~14;14;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;60;60
+.1~172;172;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;200;200
+.1~434;434;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;DD-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;110;110
+.1~174;174;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;180;180
+.1~25;25;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;70;70
+.1~436;436;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;DD-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;130;130
+.1~428;428;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;230;230
+.1~16;16;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;120;120
+.1~159;159;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;250;250
+.1~10;10;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~281;281;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;285;285
+.1~301;301;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;95;95
+.1~28;28;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~27;27;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~288;288;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;95;95
+.1~20;20;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~432;432;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;DD-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;110;110
+.1~431;431;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;DD-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;110;110
+.1~297;297;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;120;120
+.1~166;166;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;200;200
+.1~8;8;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~7;7;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~303;303;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;95;95
+.1~178;178;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;100;100
+.1~177;177;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;100;100
+.1~285;285;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;95;95
+.1~295;295;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;105;105
+.1~170;170;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;75;75
+.1~24;24;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;70;70
+.1~23;23;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;70;70
+.1~429;429;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;230;230
+.1~292;292;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;215;215
+.1~158;158;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;250;250
+.1~157;157;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;250;250
+.1~282;282;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;285;285
+.1~424;424;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;DD-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;100;100
+.1~12;12;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;60;60
+.1~289;289;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;215;215
+.1~441;441;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;100;100
+.1~293;293;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;105;105
+.1~175;175;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;100;100
+.1~427;427;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;230;230
+.1~291;291;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;215;215
+.1~17;17;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;120;120
+.1~163;163;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;80;80
+.1~21;21;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~300;300;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;120;120
+.1~167;167;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;200;200
+.1~422;422;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;DD-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;310;310
+.1~440;440;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;100;100
+.1~439;439;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;100;100
+.1~19;19;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;150;-150
+.1~299;299;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;360;-360
+.1~290;290;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;645;-645
+.1~165;165;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;600;-600
+.1~284;284;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;855;-855
+.1~180;180;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;300;-300
+.1~425;425;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;DD-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;300;-300
+.1~294;294;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;315;-315
+.1~169;169;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;350;-350
+.1~26;26;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;210;-210
+.1~160;160;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;750;-750
+.1~420;420;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;930;-930
+.1~287;287;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;285;-285
+.1~13;13;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;180;-180
+.1~442;442;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;300;-300
+.1~437;437;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;DD-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;390;-390
+.1~302;302;C9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;285;-285
+.1~164;164;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;240;-240
+.1~29;29;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;150;-150
+.1~433;433;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;DD-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;330;-330
+.1~173;173;B9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;330;-330
+.1~430;430;D9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;690;-690
+.1~15;15;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;360;-360
+.1~9;9;A9;01;01;01/01;01/01/2021 00:00;1;1;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;450;-450
+.1~367;367;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;11;-11
+.1~319;319;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;35;-35
+.1~368;368;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;34;34
+.1~398;398;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;161;161
+.1~364;364;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;215;-215
+.1~256;256;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;540;-540
+.1~310;310;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;95;-95
+.1~312;312;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;5;5
+.1~252;252;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;19;19
+.1~468;468;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;DD-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;7;7
+.1~408;408;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;118;118
+.1~406;406;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;355;-355
+.1~208;208;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;45;45
+.1~317;317;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;55;-55
+.1~255;255;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;149;149
+.1~464;464;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;DD-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;3;3
+.1~461;461;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;DD-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;16;16
+.1~362;362;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;285;285
+.1~361;361;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;207;207
+.1~309;309;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;32;32
+.1~372;372;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;121;-121
+.1~410;410;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;60;60
+.1~394;394;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;100;100
+.1~251;251;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;19;-19
+.1~203;203;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;22;-22
+.1~259;259;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;23;23
+.1~404;404;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;105;105
+.1~403;403;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;105;105
+.1~401;401;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;315;-315
+.1~405;405;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;118;118
+.1~392;392;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;458;-458
+.1~267;267;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;9;9
+.1~326;326;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;13;13
+.1~263;263;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;27;27
+.1~365;365;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;215;215
+.1~254;254;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;200;200
+.1~253;253;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;191;191
+.1~206;206;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;71;71
+.1~200;200;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;163;163
+.1~391;391;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;153;153
+.1~308;308;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;32;32
+.1~307;307;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;31;31
+.1~329;329;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;5;5
+.1~266;266;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;210;-210
+.1~395;395;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;100;100
+.1~227;227;B9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;19;-19
+.1~369;369;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;45;-45
+.1~230;230;B9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;1;1
+.1~400;400;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;485;-485
+.1~318;318;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;18;18
+.1~204;204;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;100;-100
+.1~467;467;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;10;-10
+.1~198;198;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;200;-200
+.1~463;463;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;DD-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;1;1
+.1~249;249;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;400;400
+.1~373;373;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;53;53
+.1~327;327;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;15;-15
+.1~265;265;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;41;41
+.1~314;314;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;15;-15
+.1~366;366;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;11;11
+.1~322;322;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;12;12
+.1~258;258;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;76;76
+.1~402;402;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;105;105
+.1~325;325;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;14;14
+.1~324;324;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;13;13
+.1~262;262;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;164;-164
+.1~209;209;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;24;24
+.1~399;399;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;162;162
+.1~316;316;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;19;19
+.1~315;315;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;18;18
+.1~466;466;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;5;5
+.1~201;201;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;20;20
+.1~462;462;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;20;-20
+.1~390;390;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;153;153
+.1~389;389;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;152;152
+.1~363;363;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;492;-492
+.1~371;371;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;68;68
+.1~330;330;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;5;5
+.1~411;411;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;60;60
+.1~393;393;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;100;100
+.1~313;313;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;5;5
+.1~202;202;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;22;22
+.1~260;260;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;34;34
+.1~257;257;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;133;-133
+.1~470;470;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;DD-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;10;-10
+.1~323;323;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;40;-40
+.1~261;261;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;137;137
+.1~229;229;B9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;1;-1
+.1~207;207;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;69;-69
+.1~397;397;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;162;162
+.1~250;250;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;220;220
+.1~248;248;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;660;-660
+.1~409;409;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;179;-179
+.1~264;264;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;160;160
+.1~396;396;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;CC-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;300;-300
+.1~311;311;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;5;5
+.1~228;228;B9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;19;19
+.1~321;321;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;12;12
+.1~320;320;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;11;11
+.1~469;469;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;DD-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;3;3
+.1~407;407;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;119;119
+.1~370;370;C9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;11;11
+.1~465;465;D9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;5;5
+.1~205;205;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;29;29
+.1~199;199;B9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;17;17
+.1~247;247;B9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;40;40
+.1~328;328;C9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;5;5
+.1~412;412;C9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;59;59
+.1~134;134;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;40;40
+.1~133;133;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;40;40
+.1~139;139;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~82;82;A9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;17;17
+.1~113;113;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;70;70
+.1~108;108;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;120;120
+.1~106;106;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;360;-360
+.1~100;100;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;450;-450
+.1~78;78;A9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;50;-50
+.1~148;148;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~65;65;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;150;-150
+.1~132;132;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;120;-120
+.1~102;102;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;60;60
+.1~142;142;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;150;-150
+.1~112;112;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~116;116;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;210;-210
+.1~63;63;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;64;64
+.1~137;137;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;113;113
+.1~54;54;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;114;114
+.1~128;128;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~68;68;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~131;131;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;40;40
+.1~104;104;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;60;60
+.1~111;111;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;150;-150
+.1~109;109;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~144;144;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;64;64
+.1~61;61;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;190;-190
+.1~48;48;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~149;149;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~52;52;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;40;40
+.1~84;84;A9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;16;16
+.1~64;64;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;63;63
+.1~136;136;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;114;114
+.1~107;107;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;120;120
+.1~129;129;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~98;98;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~47;47;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;450;-450
+.1~45;45;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~119;119;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~66;66;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~103;103;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;180;-180
+.1~101;101;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;60;60
+.1~49;49;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;40;40
+.1~140;140;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~83;83;A9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;50;-50
+.1~81;81;A9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;17;17
+.1~60;60;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~59;59;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~57;57;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;150;-150
+.1~114;114;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;70;70
+.1~105;105;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;120;120
+.1~56;56;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;113;113
+.1~80;80;A9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;17;17
+.1~77;77;A9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;17;17
+.1~147;147;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~51;51;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;40;40
+.1~146;146;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;63;63
+.1~62;62;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;63;63
+.1~135;135;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;340;-340
+.1~55;55;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;340;-340
+.1~53;53;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;113;113
+.1~127;127;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~99;99;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~150;150;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;150;-150
+.1~120;120;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~118;118;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;150;-150
+.1~141;141;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~110;110;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~145;145;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;190;-190
+.1~143;143;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;63;63
+.1~115;115;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;70;70
+.1~138;138;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;113;113
+.1~130;130;A9;01;10;01/10;10/01/2021 00:00;2;10;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;450;-450
+.1~117;117;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~50;50;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;AA-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;120;-120
+.1~58;58;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;50;50
+.1~97;97;A9;01;08;01/08;08/01/2021 00:00;2;8;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~79;79;A9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;16;16
+.1~46;46;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;150;150
+.1~67;67;A9;01;03;01/03;03/01/2021 00:00;1;3;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;50;50
+.1~574;574;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;88;-88
+.1~549;549;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;44;-44
+.1~582;582;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;124;-124
+.1~510;510;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;62;-62
+.1~564;564;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;62;-62
+.1~536;536;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;62;-62
+.1~497;497;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;88;-88
+.1~569;569;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;244;-244
+.1~544;544;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;117;-117
+.1~560;560;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;92;-92
+.1~532;532;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;92;-92
+.1~492;492;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;117;-117
+.1~502;502;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;141;-141
+.1~508;508;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;92;-92
+.1~552;552;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;88;-88
+.1~524;524;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;88;-88
+.1~584;584;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;114;-114
+.1~493;493;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;44;-44
+.1~556;556;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;68;-68
+.1~578;578;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;176;-176
+.1~519;519;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;117;-117
+.1~529;529;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;141;-141
+.1~597;597;E9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;9;-9
+.1~520;520;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03;EE-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;44;-44
+.1~572;572;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;42;42
+.1~523;523;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;9;9
+.1~504;504;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;16;16
+.1~580;580;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;73;73
+.1~551;551;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;17;17
+.1~550;550;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;11;11
+.1~570;570;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;156;156
+.1~565;565;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;12;12
+.1~538;538;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;28;28
+.1~512;512;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;12;12
+.1~548;548;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;21;21
+.1~495;495;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;21;21
+.1~555;555;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;12;12
+.1~501;501;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;102;102
+.1~598;598;E9;01;09;01/09;09/01/2021 00:00;2;9;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;9;9
+.1~577;577;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;34;34
+.1~499;499;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;17;17
+.1~545;545;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;30;30
+.1~517;517;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;30;30
+.1~587;587;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;40;40
+.1~562;562;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;22;22
+.1~509;509;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;22;22
+.1~521;521;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;21;21
+.1~531;531;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;16;16
+.1~503;503;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;23;23
+.1~561;561;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;8;8
+.1~534;534;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;30;30
+.1~542;542;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;14;14
+.1~585;585;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;52;52
+.1~539;539;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;12;12
+.1~547;547;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;14;14
+.1~546;546;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;9;9
+.1~528;528;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;102;102
+.1~558;558;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;54;54
+.1~526;526;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;17;17
+.1~500;500;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;11;11
+.1~490;490;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;14;14
+.1~573;573;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;28;28
+.1~494;494;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;9;9
+.1~557;557;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;49;49
+.1~530;530;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;23;23
+.1~581;581;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;41;41
+.1~535;535;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;8;8
+.1~579;579;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;22;22
+.1~586;586;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;22;22
+.1~537;537;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;22;22
+.1~496;496;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;14;14
+.1~554;554;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;7;7
+.1~507;507;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;54;54
+.1~576;576;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;120;120
+.1~527;527;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;11;11
+.1~498;498;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;60;60
+.1~563;563;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;28;28
+.1~522;522;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;14;14
+.1~533;533;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;54;54
+.1~571;571;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;28;28
+.1~543;543;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;73;73
+.1~518;518;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;14;14
+.1~489;489;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;30;30
+.1~511;511;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;28;28
+.1~575;575;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;18;18
+.1~583;583;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;10;10
+.1~559;559;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;30;30
+.1~506;506;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;30;30
+.1~505;505;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;8;8
+.1~553;553;E9;01;06;01/06;06/01/2021 00:00;2;6;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;60;60
+.1~525;525;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;60;60
+.1~568;568;E9;01;07;01/07;07/01/2021 00:00;2;7;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03W;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;60;60
+.1~516;516;E9;01;05;01/05;05/01/2021 00:00;1;5;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;73;73
+.1~491;491;E9;01;04;01/04;04/01/2021 00:00;1;4;GI, Trsfr Posting, Other Goods Movement;Goods Issue;TF trfr plnt to plnt;03N;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;73;73
+.1~190;190;B9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;22;-22
+.1~356;356;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;40;-40
+.1~333;333;C9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;22;-22
+.1~192;192;B9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;18;-18
+.1~122;122;A9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;32;-32
+.1~41;41;A9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;32;-32
+.1~387;387;C9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;16;-16
+.1~386;386;C9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;27;-27
+.1~380;380;C9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;32;-32
+.1~385;385;C9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;60;-60
+.1~86;86;A9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;3;-3
+.1~74;74;A9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;47;-47
+.1~480;480;D9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;5;-5
+.1~338;338;C9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;138;-138
+.1~334;334;C9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;82;-82
+.1~270;270;B9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;60;-60
+.1~72;72;A9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;43;-43
+.1~358;358;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;26;-26
+.1~355;355;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;58;-58
+.1~354;354;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;53;-53
+.1~32;32;A9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;63;-63
+.1~210;210;B9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;148;-148
+.1~481;481;D9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;54;-54
+.1~451;451;D9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;159;-159
+.1~374;374;C9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;206;-206
+.1~222;222;B9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;142;-142
+.1~187;187;B9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;44;-44
+.1~239;239;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;19;-19
+.1~33;33;A9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;AA-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;24;-24
+.1~449;449;D9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;110;-110
+.1~191;191;B9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;123;-123
+.1~182;182;B9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;65;-65
+.1~124;124;A9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;78;-78
+.1~69;69;A9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;29;-29
+.1~566;566;E9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;4;-4
+.1~514;514;E9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;64;-64
+.1~513;513;E9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;30;-30
+.1~335;335;C9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;62;-62
+.1~216;216;B9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;57;-57
+.1~225;225;B9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;17;-17
+.1~213;213;B9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;16;-16
+.1~184;184;B9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;24;-24
+.1~272;272;B9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;69;-69
+.1~443;443;D9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;69;-69
+.1~375;375;C9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;207;-207
+.1~342;342;C9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;97;-97
+.1~341;341;C9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;68;-68
+.1~89;89;A9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;7;-7
+.1~459;459;D9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;23;-23
+.1~383;383;C9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;33;-33
+.1~359;359;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;72;-72
+.1~274;274;B9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;34;-34
+.1~452;452;D9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;120;-120
+.1~241;241;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;27;-27
+.1~240;240;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;63;-63
+.1~224;224;B9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;56;-56
+.1~223;223;B9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;67;-67
+.1~217;217;B9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;15;-15
+.1~454;454;D9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;119;-119
+.1~388;388;C9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;32;-32
+.1~42;42;A9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;34;-34
+.1~34;34;A9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;41;-41
+.1~377;377;C9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;67;-67
+.1~214;214;B9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;16;-16
+.1~211;211;B9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;61;-61
+.1~70;70;A9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;64;-64
+.1~73;73;A9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;66;-66
+.1~596;596;E9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;65;-65
+.1~594;594;E9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;49;-49
+.1~460;460;D9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;11;-11
+.1~456;456;D9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;71;-71
+.1~340;340;C9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;6;-6
+.1~44;44;A9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;9;-9
+.1~352;352;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;23;-23
+.1~197;197;B9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;28;-28
+.1~384;384;C9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;54;-54
+.1~96;96;A9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;30;-30
+.1~31;31;A9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;145;-145
+.1~269;269;B9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;66;-66
+.1~337;337;C9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;67;-67
+.1~453;453;D9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;77;-77
+.1~220;220;B9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;43;-43
+.1~446;446;D9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;44;-44
+.1~345;345;C9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;48;-48
+.1~378;378;C9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;122;-122
+.1~39;39;A9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;57;-57
+.1~189;189;B9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;75;-75
+.1~181;181;B9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;250;-250
+.1~88;88;A9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;47;-47
+.1~479;479;D9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;53;-53
+.1~471;471;D9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;16;-16
+.1~331;331;C9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;53;-53
+.1~306;306;C9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;CC-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;55;-55
+.1~237;237;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03W;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;53;-53
+.1~186;186;B9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03N;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;43;-43
+.1~600;600;E9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;EE-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;22;-22
+.1~382;382;C9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;13;-13
+.1~194;194;B9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;19;-19
+.1~196;196;B9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;23;-23
+.1~273;273;B9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;23;-23
+.1~450;450;D9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;114;-114
+.1~339;339;C9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;6;-6
+.1~183;183;B9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;77;-77
+.1~376;376;C9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;32;-32
+.1~125;125;A9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;20;-20
+.1~37;37;A9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;20;-20
+.1~185;185;B9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;45;-45
+.1~242;242;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;25;-25
+.1~336;336;C9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;111;-111
+.1~567;567;E9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;12;-12
+.1~455;455;D9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;80;-80
+.1~43;43;A9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;39;-39
+.1~244;244;B9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;27;-27
+.1~40;40;A9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;18;-18
+.1~360;360;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;109;-109
+.1~226;226;B9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;35;-35
+.1~212;212;B9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;28;-28
+.1~195;195;B9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;66;-66
+.1~515;515;E9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;11;-11
+.1~218;218;B9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;65;-65
+.1~188;188;B9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;62;-62
+.1~85;85;A9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;55;-55
+.1~268;268;B9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;65;-65
+.1~193;193;B9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;32;-32
+.1~35;35;A9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;9;-9
+.1~353;353;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;55;-55
+.1~445;445;D9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;21;-21
+.1~344;344;C9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;24;-24
+.1~444;444;D9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;59;-59
+.1~343;343;C9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;45;-45
+.1~126;126;A9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;52;-52
+.1~71;71;A9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;15;-15
+.1~38;38;A9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;66;-66
+.1~246;246;B9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;23;-23
+.1~215;215;B9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;52;-52
+.1~245;245;B9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;51;-51
+.1~595;595;E9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;58;-58
+.1~448;448;D9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;56;-56
+.1~238;238;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;65;-65
+.1~243;243;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;34;-34
+.1~357;357;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T04;Cheese;Trading Goods;T04;;Cheese;Credit;ST;25;-25
+.1~457;457;D9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;57;-57
+.1~379;379;C9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;215;-215
+.1~219;219;B9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;7;-7
+.1~121;121;A9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;39;-39
+.1~271;271;B9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;26;-26
+.1~76;76;A9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;25;-25
+.1~381;381;C9;01;09;01/09;09/01/2021 00:00;2;9;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;11;-11
+.1~221;221;B9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;BB-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;25;-25
+.1~332;332;C9;01;04;01/04;04/01/2021 00:00;1;4;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;71;-71
+.1~75;75;A9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;113;-113
+.1~123;123;A9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;60;-60
+.1~599;599;E9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;EE-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;70;-70
+.1~305;305;C9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;58;-58
+.1~482;482;D9;01;10;01/10;10/01/2021 00:00;2;10;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T02;Cream;Trading Goods;T02;;Cream;Credit;ST;18;-18
+.1~541;541;E9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;EE-T05;Butter;Trading Goods;T05;;Butter;Credit;ST;19;-19
+.1~540;540;E9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;108;-108
+.1~472;472;D9;01;07;01/07;07/01/2021 00:00;2;7;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Credit;ST;5;-5
+.1~36;36;A9;01;03;01/03;03/01/2021 00:00;1;3;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T01;Milk;Trading Goods;T01;;Milk;Credit;ST;58;-58
+.1~87;87;A9;01;06;01/06;06/01/2021 00:00;2;6;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;31;-31
+.1~458;458;D9;01;05;01/05;05/01/2021 00:00;1;5;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;38;-38
+.1~447;447;D9;01;02;01/02;02/01/2021 00:00;1;2;Goods Issue for Delivery;Goods Issue/Delivery;GD goods issue:delvy;03S;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Credit;ST;62;-62
+.1~5;5;A9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~279;279;C9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~153;153;B9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700
+.1~588;588;E9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~413;413;D9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~346;346;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~351;351;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~593;593;E9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~418;418;D9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~155;155;B9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~483;483;E9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~488;488;E9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~589;589;E9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~414;414;D9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~347;347;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~349;349;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~591;591;E9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~416;416;D9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~90;90;A9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~473;473;D9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~231;231;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~236;236;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~95;95;A9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~478;478;D9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~484;484;E9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~486;486;E9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~1;1;A9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~275;275;C9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~280;280;C9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~6;6;A9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~474;474;D9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~232;232;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~91;91;A9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~234;234;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~93;93;A9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~476;476;D9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~415;415;D9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700
+.1~348;348;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700
+.1~590;590;E9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700
+.1~151;151;B9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T01;Milk;Trading Goods;T01;;Milk;Debit;ST;950;950
+.1~156;156;B9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T06;Ice Cream;Trading Goods;T06;;Ice Cream;Debit;ST;300;300
+.1~2;2;A9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~276;276;C9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~278;278;C9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~4;4;A9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~592;592;E9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~417;417;D9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~350;350;C9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~485;485;E9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700
+.1~152;152;B9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T02;Cream;Trading Goods;T02;;Cream;Debit;ST;300;300
+.1~154;154;B9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T04;Cheese;Trading Goods;T04;;Cheese;Debit;ST;350;350
+.1~487;487;E9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;EE-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~233;233;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700
+.1~92;92;A9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700
+.1~475;475;D9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700
+.1~94;94;A9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~477;477;D9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;DD-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~235;235;B9;01;08;01/08;08/01/2021 00:00;2;8;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;BB-T05;Butter;Trading Goods;T05;;Butter;Debit;ST;400;400
+.1~277;277;C9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;CC-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700
+.1~3;3;A9;01;01;01/01;01/01/2021 00:00;1;1;Goods Receipt for Purchase Order;Goods Receipt;GR goods receipt;03;AA-T03;Yoghurt;Trading Goods;T03;;Yoghurt;Debit;ST;700;700

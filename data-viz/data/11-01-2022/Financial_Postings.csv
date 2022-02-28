@@ -1,0 +1,342 @@
+ID;ROW_NUMBER;COMPANY_CODE;SIM_ROUND;SIM_STEP;SIM_DATE;SIM_CALENDAR_DATE;SIM_PERIOD;SIM_ELAPSED_STEPS;GL_ACCOUNT_NUMBER;GL_ACCOUNT_NAME;FS_LEVEL_1;FS_LEVEL_2;FS_LEVEL_3;FS_LEVEL_4;DEBIT_CREDIT_INDICATOR;AMOUNT_ABS;AMOUNT;AMOUNT_INV;AMOUNT_BS;AMOUNT_IS;CURRENCY
+.1~13;13;A9;01;02;01/02;02/01/2021 00:00;1;2;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;10348,15;10348,15;-10348,15;10348.15;0.00;EUR
+.1~18;18;A9;01;03;01/03;03/01/2021 00:00;1;3;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;15614,31;15614,31;-15614,31;15614.31;0.00;EUR
+.1~23;23;A9;01;04;01/04;04/01/2021 00:00;1;4;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;5521,41;5521,41;-5521,41;5521.41;0.00;EUR
+.1~28;28;A9;01;05;01/05;05/01/2021 00:00;1;5;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;9513,71;9513,71;-9513,71;9513.71;0.00;EUR
+.1~34;34;A9;01;06;01/06;06/01/2021 00:00;2;6;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;10348,15;-10348,15;10348,15;-10348.15;0.00;EUR
+.1~35;35;A9;01;06;01/06;06/01/2021 00:00;2;6;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;3742,92;3742,92;-3742,92;3742.92;0.00;EUR
+.1~40;40;A9;01;07;01/07;07/01/2021 00:00;2;7;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;15614,31;-15614,31;15614,31;-15614.31;0.00;EUR
+.1~41;41;A9;01;07;01/07;07/01/2021 00:00;2;7;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;1930,4;1930,4;-1930,4;1930.40;0.00;EUR
+.1~47;47;A9;01;08;01/08;08/01/2021 00:00;2;8;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;5521,41;-5521,41;5521,41;-5521.41;0.00;EUR
+.1~48;48;A9;01;08;01/08;08/01/2021 00:00;2;8;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;914,7;914,7;-914,7;914.70;0.00;EUR
+.1~60;60;A9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;9513,71;-9513,71;9513,71;-9513.71;0.00;EUR
+.1~61;61;A9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;3765,76;3765,76;-3765,76;3765.76;0.00;EUR
+.1~67;67;A9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;3742,92;-3742,92;3742,92;-3742.92;0.00;EUR
+.1~68;68;A9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;7680,8;7680,8;-7680,8;7680.80;0.00;EUR
+.1~86;86;B9;01;02;01/02;02/01/2021 00:00;1;2;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;20356,49;20356,49;-20356,49;20356.49;0.00;EUR
+.1~90;90;B9;01;03;01/03;03/01/2021 00:00;1;3;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;12698,36;12698,36;-12698,36;12698.36;0.00;EUR
+.1~95;95;B9;01;04;01/04;04/01/2021 00:00;1;4;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;7841,36;7841,36;-7841,36;7841.36;0.00;EUR
+.1~100;100;B9;01;05;01/05;05/01/2021 00:00;1;5;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;16380,57;16380,57;-16380,57;16380.57;0.00;EUR
+.1~105;105;B9;01;06;01/06;06/01/2021 00:00;2;6;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;20356,49;-20356,49;20356,49;-20356.49;0.00;EUR
+.1~106;106;B9;01;06;01/06;06/01/2021 00:00;2;6;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;8321,3;8321,3;-8321,3;8321.30;0.00;EUR
+.1~112;112;B9;01;07;01/07;07/01/2021 00:00;2;7;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;12698,36;-12698,36;12698,36;-12698.36;0.00;EUR
+.1~113;113;B9;01;07;01/07;07/01/2021 00:00;2;7;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;11699,74;11699,74;-11699,74;11699.74;0.00;EUR
+.1~119;119;B9;01;08;01/08;08/01/2021 00:00;2;8;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;7841,36;-7841,36;7841,36;-7841.36;0.00;EUR
+.1~120;120;B9;01;08;01/08;08/01/2021 00:00;2;8;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;11036,86;11036,86;-11036,86;11036.86;0.00;EUR
+.1~132;132;B9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;16380,57;-16380,57;16380,57;-16380.57;0.00;EUR
+.1~133;133;B9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;5477,18;5477,18;-5477,18;5477.18;0.00;EUR
+.1~140;140;B9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;8321,3;-8321,3;8321,3;-8321.30;0.00;EUR
+.1~141;141;B9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;13496,52;13496,52;-13496,52;13496.52;0.00;EUR
+.1~158;158;C9;01;02;01/02;02/01/2021 00:00;1;2;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;3303,68;3303,68;-3303,68;3303.68;0.00;EUR
+.1~163;163;C9;01;03;01/03;03/01/2021 00:00;1;3;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;1666,5;1666,5;-1666,5;1666.50;0.00;EUR
+.1~168;168;C9;01;04;01/04;04/01/2021 00:00;1;4;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;6429,5;6429,5;-6429,5;6429.50;0.00;EUR
+.1~172;172;C9;01;05;01/05;05/01/2021 00:00;1;5;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;11966,84;11966,84;-11966,84;11966.84;0.00;EUR
+.1~177;177;C9;01;06;01/06;06/01/2021 00:00;2;6;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;3303,68;-3303,68;3303,68;-3303.68;0.00;EUR
+.1~178;178;C9;01;06;01/06;06/01/2021 00:00;2;6;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;4727,88;4727,88;-4727,88;4727.88;0.00;EUR
+.1~183;183;C9;01;07;01/07;07/01/2021 00:00;2;7;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;1666,5;-1666,5;1666,5;-1666.50;0.00;EUR
+.1~184;184;C9;01;07;01/07;07/01/2021 00:00;2;7;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;11656,98;11656,98;-11656,98;11656.98;0.00;EUR
+.1~190;190;C9;01;08;01/08;08/01/2021 00:00;2;8;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;6429,5;-6429,5;6429,5;-6429.50;0.00;EUR
+.1~191;191;C9;01;08;01/08;08/01/2021 00:00;2;8;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;28318,86;28318,86;-28318,86;28318.86;0.00;EUR
+.1~203;203;C9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;11966,84;-11966,84;11966,84;-11966.84;0.00;EUR
+.1~204;204;C9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;32137,87;32137,87;-32137,87;32137.87;0.00;EUR
+.1~210;210;C9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;4727,88;-4727,88;4727,88;-4727.88;0.00;EUR
+.1~211;211;C9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;11097,97;11097,97;-11097,97;11097.97;0.00;EUR
+.1~229;229;D9;01;02;01/02;02/01/2021 00:00;1;2;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;12240,8;12240,8;-12240,8;12240.80;0.00;EUR
+.1~233;233;D9;01;03;01/03;03/01/2021 00:00;1;3;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;8948,8;8948,8;-8948,8;8948.80;0.00;EUR
+.1~237;237;D9;01;04;01/04;04/01/2021 00:00;1;4;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;12743,59;12743,59;-12743,59;12743.59;0.00;EUR
+.1~241;241;D9;01;05;01/05;05/01/2021 00:00;1;5;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;13034,12;13034,12;-13034,12;13034.12;0.00;EUR
+.1~247;247;D9;01;06;01/06;06/01/2021 00:00;2;6;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;12240,8;-12240,8;12240,8;-12240.80;0.00;EUR
+.1~248;248;D9;01;06;01/06;06/01/2021 00:00;2;6;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;319,44;319,44;-319,44;319.44;0.00;EUR
+.1~254;254;D9;01;07;01/07;07/01/2021 00:00;2;7;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;8948,8;-8948,8;8948,8;-8948.80;0.00;EUR
+.1~255;255;D9;01;07;01/07;07/01/2021 00:00;2;7;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;611,74;611,74;-611,74;611.74;0.00;EUR
+.1~260;260;D9;01;08;01/08;08/01/2021 00:00;2;8;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;12743,59;-12743,59;12743,59;-12743.59;0.00;EUR
+.1~261;261;D9;01;08;01/08;08/01/2021 00:00;2;8;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;1539,12;1539,12;-1539,12;1539.12;0.00;EUR
+.1~272;272;D9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;13034,12;-13034,12;13034,12;-13034.12;0.00;EUR
+.1~273;273;D9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;154,45;154,45;-154,45;154.45;0.00;EUR
+.1~279;279;D9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;319,44;-319,44;319,44;-319.44;0.00;EUR
+.1~280;280;D9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;3132,72;3132,72;-3132,72;3132.72;0.00;EUR
+.1~299;299;E9;01;05;01/05;05/01/2021 00:00;1;5;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;3357,58;3357,58;-3357,58;3357.58;0.00;EUR
+.1~305;305;E9;01;06;01/06;06/01/2021 00:00;2;6;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;5402,78;5402,78;-5402,78;5402.78;0.00;EUR
+.1~311;311;E9;01;07;01/07;07/01/2021 00:00;2;7;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;552,72;552,72;-552,72;552.72;0.00;EUR
+.1~316;316;E9;01;08;01/08;08/01/2021 00:00;2;8;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;3607,76;3607,76;-3607,76;3607.76;0.00;EUR
+.1~328;328;E9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;3357,58;-3357,58;3357,58;-3357.58;0.00;EUR
+.1~329;329;E9;01;09;01/09;09/01/2021 00:00;2;9;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;2051,4;2051,4;-2051,4;2051.40;0.00;EUR
+.1~336;336;E9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Credit;5402,78;-5402,78;5402,78;-5402.78;0.00;EUR
+.1~337;337;E9;01;10;01/10;10/01/2021 00:00;2;10;140000;Customers - Domestic Receivables;Balance Sheet;Assets;Current assets;;Debit;4403,26;4403,26;-4403,26;4403.26;0.00;EUR
+.1~3;3;A9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;378653,5;-378653,5;378653,5;-378653.50;0.00;EUR
+.1~4;4;A9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;500000;500000;-500000;500000.00;0.00;EUR
+.1~12;12;A9;01;01;01/01;01/01/2021 00:00;1;1;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~15;15;A9;01;02;01/02;02/01/2021 00:00;1;2;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;8618,06;-8618,06;8618,06;-8618.06;0.00;EUR
+.1~17;17;A9;01;03;01/03;03/01/2021 00:00;1;3;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~21;21;A9;01;03;01/03;03/01/2021 00:00;1;3;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;12996,01;-12996,01;12996,01;-12996.01;0.00;EUR
+.1~25;25;A9;01;04;01/04;04/01/2021 00:00;1;4;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;4598,98;-4598,98;4598,98;-4598.98;0.00;EUR
+.1~27;27;A9;01;05;01/05;05/01/2021 00:00;1;5;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~31;31;A9;01;05;01/05;05/01/2021 00:00;1;5;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;7203,81;-7203,81;7203,81;-7203.81;0.00;EUR
+.1~33;33;A9;01;06;01/06;06/01/2021 00:00;2;6;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;10348,15;10348,15;-10348,15;10348.15;0.00;EUR
+.1~37;37;A9;01;06;01/06;06/01/2021 00:00;2;6;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;2698,48;-2698,48;2698,48;-2698.48;0.00;EUR
+.1~39;39;A9;01;07;01/07;07/01/2021 00:00;2;7;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;15614,31;15614,31;-15614,31;15614.31;0.00;EUR
+.1~43;43;A9;01;07;01/07;07/01/2021 00:00;2;7;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;1391,54;-1391,54;1391,54;-1391.54;0.00;EUR
+.1~45;45;A9;01;08;01/08;08/01/2021 00:00;2;8;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~46;46;A9;01;08;01/08;08/01/2021 00:00;2;8;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;5521,41;5521,41;-5521,41;5521.41;0.00;EUR
+.1~56;56;A9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;693,91;-693,91;693,91;-693.91;0.00;EUR
+.1~57;57;A9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~59;59;A9;01;09;01/09;09/01/2021 00:00;2;9;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;9513,71;9513,71;-9513,71;9513.71;0.00;EUR
+.1~63;63;A9;01;09;01/09;09/01/2021 00:00;2;9;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;2947,28;-2947,28;2947,28;-2947.28;0.00;EUR
+.1~65;65;A9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;350;-350;350;-350.00;0.00;EUR
+.1~66;66;A9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;3742,92;3742,92;-3742,92;3742.92;0.00;EUR
+.1~72;72;A9;01;10;01/10;10/01/2021 00:00;2;10;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;5999,44;-5999,44;5999,44;-5999.44;0.00;EUR
+.1~76;76;B9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;378653,5;-378653,5;378653,5;-378653.50;0.00;EUR
+.1~77;77;B9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;500000;500000;-500000;500000.00;0.00;EUR
+.1~85;85;B9;01;01;01/01;01/01/2021 00:00;1;1;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~88;88;B9;01;02;01/02;02/01/2021 00:00;1;2;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;17429,75;-17429,75;17429,75;-17429.75;0.00;EUR
+.1~92;92;B9;01;03;01/03;03/01/2021 00:00;1;3;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;10862,92;-10862,92;10862,92;-10862.92;0.00;EUR
+.1~94;94;B9;01;04;01/04;04/01/2021 00:00;1;4;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~98;98;B9;01;04;01/04;04/01/2021 00:00;1;4;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;6705,96;-6705,96;6705,96;-6705.96;0.00;EUR
+.1~102;102;B9;01;05;01/05;05/01/2021 00:00;1;5;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;14025,6;-14025,6;14025,6;-14025.60;0.00;EUR
+.1~104;104;B9;01;06;01/06;06/01/2021 00:00;2;6;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;20356,49;20356,49;-20356,49;20356.49;0.00;EUR
+.1~108;108;B9;01;06;01/06;06/01/2021 00:00;2;6;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;7124,68;-7124,68;7124,68;-7124.68;0.00;EUR
+.1~110;110;B9;01;07;01/07;07/01/2021 00:00;2;7;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;200;-200;200;-200.00;0.00;EUR
+.1~111;111;B9;01;07;01/07;07/01/2021 00:00;2;7;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;12698,36;12698,36;-12698,36;12698.36;0.00;EUR
+.1~116;116;B9;01;07;01/07;07/01/2021 00:00;2;7;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;10017,87;-10017,87;10017,87;-10017.87;0.00;EUR
+.1~118;118;B9;01;08;01/08;08/01/2021 00:00;2;8;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;7841,36;7841,36;-7841,36;7841.36;0.00;EUR
+.1~127;127;B9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;9441,58;-9441,58;9441,58;-9441.58;0.00;EUR
+.1~128;128;B9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~130;130;B9;01;09;01/09;09/01/2021 00:00;2;9;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~131;131;B9;01;09;01/09;09/01/2021 00:00;2;9;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;16380,57;16380,57;-16380,57;16380.57;0.00;EUR
+.1~136;136;B9;01;09;01/09;09/01/2021 00:00;2;9;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;4677,92;-4677,92;4677,92;-4677.92;0.00;EUR
+.1~138;138;B9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;50;-50;50;-50.00;0.00;EUR
+.1~139;139;B9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;8321,3;8321,3;-8321,3;8321.30;0.00;EUR
+.1~144;144;B9;01;10;01/10;10/01/2021 00:00;2;10;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;11544;-11544;11544;-11544.00;0.00;EUR
+.1~148;148;C9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;378653,5;-378653,5;378653,5;-378653.50;0.00;EUR
+.1~149;149;C9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;500000;500000;-500000;500000.00;0.00;EUR
+.1~157;157;C9;01;01;01/01;01/01/2021 00:00;1;1;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~160;160;C9;01;02;01/02;02/01/2021 00:00;1;2;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;2522,35;-2522,35;2522,35;-2522.35;0.00;EUR
+.1~162;162;C9;01;03;01/03;03/01/2021 00:00;1;3;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~166;166;C9;01;03;01/03;03/01/2021 00:00;1;3;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;1272,16;-1272,16;1272,16;-1272.16;0.00;EUR
+.1~170;170;C9;01;04;01/04;04/01/2021 00:00;1;4;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;4908,9;-4908,9;4908,9;-4908.90;0.00;EUR
+.1~174;174;C9;01;05;01/05;05/01/2021 00:00;1;5;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;9136,38;-9136,38;9136,38;-9136.38;0.00;EUR
+.1~176;176;C9;01;06;01/06;06/01/2021 00:00;2;6;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;3303,68;3303,68;-3303,68;3303.68;0.00;EUR
+.1~180;180;C9;01;06;01/06;06/01/2021 00:00;2;6;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;3609,22;-3609,22;3609,22;-3609.22;0.00;EUR
+.1~182;182;C9;01;07;01/07;07/01/2021 00:00;2;7;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;1666,5;1666,5;-1666,5;1666.50;0.00;EUR
+.1~186;186;C9;01;07;01/07;07/01/2021 00:00;2;7;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;9334,06;-9334,06;9334,06;-9334.06;0.00;EUR
+.1~188;188;C9;01;08;01/08;08/01/2021 00:00;2;8;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~189;189;C9;01;08;01/08;08/01/2021 00:00;2;8;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;6429,5;6429,5;-6429,5;6429.50;0.00;EUR
+.1~199;199;C9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;27063,84;-27063,84;27063,84;-27063.84;0.00;EUR
+.1~200;200;C9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~202;202;C9;01;09;01/09;09/01/2021 00:00;2;9;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;11966,84;11966,84;-11966,84;11966.84;0.00;EUR
+.1~206;206;C9;01;09;01/09;09/01/2021 00:00;2;9;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;28118,64;-28118,64;28118,64;-28118.64;0.00;EUR
+.1~208;208;C9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;400;-400;400;-400.00;0.00;EUR
+.1~209;209;C9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;4727,88;4727,88;-4727,88;4727.88;0.00;EUR
+.1~215;215;C9;01;10;01/10;10/01/2021 00:00;2;10;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;10297,99;-10297,99;10297,99;-10297.99;0.00;EUR
+.1~219;219;D9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;378653,5;-378653,5;378653,5;-378653.50;0.00;EUR
+.1~220;220;D9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;500000;500000;-500000;500000.00;0.00;EUR
+.1~228;228;D9;01;01;01/01;01/01/2021 00:00;1;1;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~231;231;D9;01;02;01/02;02/01/2021 00:00;1;2;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;9752,16;-9752,16;9752,16;-9752.16;0.00;EUR
+.1~235;235;D9;01;03;01/03;03/01/2021 00:00;1;3;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;7131,16;-7131,16;7131,16;-7131.16;0.00;EUR
+.1~239;239;D9;01;04;01/04;04/01/2021 00:00;1;4;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;10152,7;-10152,7;10152,7;-10152.70;0.00;EUR
+.1~243;243;D9;01;05;01/05;05/01/2021 00:00;1;5;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;10383;-10383;10383;-10383.00;0.00;EUR
+.1~245;245;D9;01;06;01/06;06/01/2021 00:00;2;6;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~246;246;D9;01;06;01/06;06/01/2021 00:00;2;6;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;12240,8;12240,8;-12240,8;12240.80;0.00;EUR
+.1~251;251;D9;01;06;01/06;06/01/2021 00:00;2;6;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;254,43;-254,43;254,43;-254.43;0.00;EUR
+.1~253;253;D9;01;07;01/07;07/01/2021 00:00;2;7;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;8948,8;8948,8;-8948,8;8948.80;0.00;EUR
+.1~257;257;D9;01;07;01/07;07/01/2021 00:00;2;7;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;500,34;-500,34;500,34;-500.34;0.00;EUR
+.1~259;259;D9;01;08;01/08;08/01/2021 00:00;2;8;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;12743,59;12743,59;-12743,59;12743.59;0.00;EUR
+.1~268;268;D9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;1225,9;-1225,9;1225,9;-1225.90;0.00;EUR
+.1~269;269;D9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~271;271;D9;01;09;01/09;09/01/2021 00:00;2;9;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;13034,12;13034,12;-13034,12;13034.12;0.00;EUR
+.1~275;275;D9;01;09;01/09;09/01/2021 00:00;2;9;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;130,26;-130,26;130,26;-130.26;0.00;EUR
+.1~277;277;D9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;150;-150;150;-150.00;0.00;EUR
+.1~278;278;D9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;319,44;319,44;-319,44;319.44;0.00;EUR
+.1~283;283;D9;01;10;01/10;10/01/2021 00:00;2;10;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;2556,48;-2556,48;2556,48;-2556.48;0.00;EUR
+.1~287;287;E9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;378353,5;-378353,5;378353,5;-378353.50;0.00;EUR
+.1~288;288;E9;01;01;01/01;01/01/2021 00:00;1;1;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;500000;500000;-500000;500000.00;0.00;EUR
+.1~295;295;E9;01;01;01/01;01/01/2021 00:00;1;1;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~296;296;E9;01;04;01/04;04/01/2021 00:00;1;4;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~298;298;E9;01;05;01/05;05/01/2021 00:00;1;5;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~302;302;E9;01;05;01/05;05/01/2021 00:00;1;5;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;2460,82;-2460,82;2460,82;-2460.82;0.00;EUR
+.1~304;304;E9;01;06;01/06;06/01/2021 00:00;2;6;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~308;308;E9;01;06;01/06;06/01/2021 00:00;2;6;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;3960,37;-3960,37;3960,37;-3960.37;0.00;EUR
+.1~310;310;E9;01;07;01/07;07/01/2021 00:00;2;7;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~314;314;E9;01;07;01/07;07/01/2021 00:00;2;7;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;405,16;-405,16;405,16;-405.16;0.00;EUR
+.1~323;323;E9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;2644,45;-2644,45;2644,45;-2644.45;0.00;EUR
+.1~324;324;E9;01;08;01/08;08/01/2021 00:00;2;8;792000;Finished goods;Balance Sheet;Assets;Current assets;;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~326;326;E9;01;09;01/09;09/01/2021 00:00;2;9;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;100;-100;100;-100.00;0.00;EUR
+.1~327;327;E9;01;09;01/09;09/01/2021 00:00;2;9;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;3357,58;3357,58;-3357,58;3357.58;0.00;EUR
+.1~332;332;E9;01;09;01/09;09/01/2021 00:00;2;9;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;1503,46;-1503,46;1503,46;-1503.46;0.00;EUR
+.1~334;334;E9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Credit;300;-300;300;-300.00;0.00;EUR
+.1~335;335;E9;01;10;01/10;10/01/2021 00:00;2;10;113300;Bank Cash Account;Balance Sheet;Assets;Current assets;;Debit;5402,78;5402,78;-5402,78;5402.78;0.00;EUR
+.1~340;340;E9;01;10;01/10;10/01/2021 00:00;2;10;792000;Finished goods;Balance Sheet;Assets;Current assets;;Credit;3217,1;-3217,1;3217,1;-3217.10;0.00;EUR
+.1~1;1;A9;01;01;01/01;01/01/2021 00:00;1;1;11000;Machinery and equipment;Balance Sheet;Assets;Long-term assets;;Debit;250000;250000;-250000;250000.00;0.00;EUR
+.1~74;74;B9;01;01;01/01;01/01/2021 00:00;1;1;11000;Machinery and equipment;Balance Sheet;Assets;Long-term assets;;Debit;250000;250000;-250000;250000.00;0.00;EUR
+.1~146;146;C9;01;01;01/01;01/01/2021 00:00;1;1;11000;Machinery and equipment;Balance Sheet;Assets;Long-term assets;;Debit;250000;250000;-250000;250000.00;0.00;EUR
+.1~217;217;D9;01;01;01/01;01/01/2021 00:00;1;1;11000;Machinery and equipment;Balance Sheet;Assets;Long-term assets;;Debit;250000;250000;-250000;250000.00;0.00;EUR
+.1~285;285;E9;01;01;01/01;01/01/2021 00:00;1;1;11000;Machinery and equipment;Balance Sheet;Assets;Long-term assets;;Debit;250000;250000;-250000;250000.00;0.00;EUR
+.1~2;2;A9;01;01;01/01;01/01/2021 00:00;1;1;70000;Common stock;Balance Sheet;Liabilities and Owners' Equity;Equity;Shareholders Equity;Credit;500000;-500000;500000;-500000.00;0.00;EUR
+.1~5;5;A9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~6;6;A9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~7;7;A9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~8;8;A9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~9;9;A9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~10;10;A9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~49;49;A9;01;08;01/08;08/01/2021 00:00;2;8;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~50;50;A9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~51;51;A9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~52;52;A9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~53;53;A9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~75;75;B9;01;01;01/01;01/01/2021 00:00;1;1;70000;Common stock;Balance Sheet;Liabilities and Owners' Equity;Equity;Shareholders Equity;Credit;500000;-500000;500000;-500000.00;0.00;EUR
+.1~78;78;B9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~79;79;B9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~80;80;B9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~81;81;B9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~82;82;B9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~83;83;B9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~121;121;B9;01;08;01/08;08/01/2021 00:00;2;8;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~122;122;B9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~123;123;B9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~124;124;B9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~125;125;B9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~147;147;C9;01;01;01/01;01/01/2021 00:00;1;1;70000;Common stock;Balance Sheet;Liabilities and Owners' Equity;Equity;Shareholders Equity;Credit;500000;-500000;500000;-500000.00;0.00;EUR
+.1~150;150;C9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~151;151;C9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~152;152;C9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~153;153;C9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~154;154;C9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~155;155;C9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~192;192;C9;01;08;01/08;08/01/2021 00:00;2;8;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~193;193;C9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~194;194;C9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~195;195;C9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~196;196;C9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~218;218;D9;01;01;01/01;01/01/2021 00:00;1;1;70000;Common stock;Balance Sheet;Liabilities and Owners' Equity;Equity;Shareholders Equity;Credit;500000;-500000;500000;-500000.00;0.00;EUR
+.1~221;221;D9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~222;222;D9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~223;223;D9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~224;224;D9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~225;225;D9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~226;226;D9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~262;262;D9;01;08;01/08;08/01/2021 00:00;2;8;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~263;263;D9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~264;264;D9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~265;265;D9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~266;266;D9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~286;286;E9;01;01;01/01;01/01/2021 00:00;1;1;70000;Common stock;Balance Sheet;Liabilities and Owners' Equity;Equity;Shareholders Equity;Credit;500000;-500000;500000;-500000.00;0.00;EUR
+.1~289;289;E9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~290;290;E9;01;01;01/01;01/01/2021 00:00;1;1;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;128353,5;128353,5;-128353,5;128353.50;0.00;EUR
+.1~291;291;E9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~292;292;E9;01;01;01/01;01/01/2021 00:00;1;1;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~293;293;E9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~294;294;E9;01;01;01/01;01/01/2021 00:00;1;1;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~317;317;E9;01;08;01/08;08/01/2021 00:00;2;8;160000;Accounts payable-domestic;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;128353,5;-128353,5;128353,5;-128353.50;0.00;EUR
+.1~318;318;E9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;127353,5;-127353,5;127353,5;-127353.50;0.00;EUR
+.1~319;319;E9;01;08;01/08;08/01/2021 00:00;2;8;191100;GR/IR Clearing - External procurement;Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;127353,5;127353,5;-127353,5;127353.50;0.00;EUR
+.1~320;320;E9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Credit;1000;-1000;1000;-1000.00;0.00;EUR
+.1~321;321;E9;01;08;01/08;08/01/2021 00:00;2;8;192100;Freight clearing (MM);Balance Sheet;Liabilities and Owners' Equity;Liabilities;Current liabilities;Debit;1000;1000;-1000;1000.00;0.00;EUR
+.1~16;16;A9;01;02;01/02;02/01/2021 00:00;1;2;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;10348,15;-10348,15;10348,15;0.00;10348.15;EUR
+.1~22;22;A9;01;03;01/03;03/01/2021 00:00;1;3;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;15614,31;-15614,31;15614,31;0.00;15614.31;EUR
+.1~26;26;A9;01;04;01/04;04/01/2021 00:00;1;4;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;5521,41;-5521,41;5521,41;0.00;5521.41;EUR
+.1~32;32;A9;01;05;01/05;05/01/2021 00:00;1;5;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;9513,71;-9513,71;9513,71;0.00;9513.71;EUR
+.1~38;38;A9;01;06;01/06;06/01/2021 00:00;2;6;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;3742,92;-3742,92;3742,92;0.00;3742.92;EUR
+.1~44;44;A9;01;07;01/07;07/01/2021 00:00;2;7;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;1930,4;-1930,4;1930,4;0.00;1930.40;EUR
+.1~58;58;A9;01;08;01/08;08/01/2021 00:00;2;8;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;914,7;-914,7;914,7;0.00;914.70;EUR
+.1~64;64;A9;01;09;01/09;09/01/2021 00:00;2;9;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;3765,76;-3765,76;3765,76;0.00;3765.76;EUR
+.1~73;73;A9;01;10;01/10;10/01/2021 00:00;2;10;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;7680,8;-7680,8;7680,8;0.00;7680.80;EUR
+.1~89;89;B9;01;02;01/02;02/01/2021 00:00;1;2;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;20356,49;-20356,49;20356,49;0.00;20356.49;EUR
+.1~93;93;B9;01;03;01/03;03/01/2021 00:00;1;3;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;12698,36;-12698,36;12698,36;0.00;12698.36;EUR
+.1~99;99;B9;01;04;01/04;04/01/2021 00:00;1;4;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;7841,36;-7841,36;7841,36;0.00;7841.36;EUR
+.1~103;103;B9;01;05;01/05;05/01/2021 00:00;1;5;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;16380,57;-16380,57;16380,57;0.00;16380.57;EUR
+.1~109;109;B9;01;06;01/06;06/01/2021 00:00;2;6;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;8321,3;-8321,3;8321,3;0.00;8321.30;EUR
+.1~117;117;B9;01;07;01/07;07/01/2021 00:00;2;7;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;11699,74;-11699,74;11699,74;0.00;11699.74;EUR
+.1~129;129;B9;01;08;01/08;08/01/2021 00:00;2;8;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;11036,86;-11036,86;11036,86;0.00;11036.86;EUR
+.1~137;137;B9;01;09;01/09;09/01/2021 00:00;2;9;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;5477,18;-5477,18;5477,18;0.00;5477.18;EUR
+.1~145;145;B9;01;10;01/10;10/01/2021 00:00;2;10;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;13496,52;-13496,52;13496,52;0.00;13496.52;EUR
+.1~161;161;C9;01;02;01/02;02/01/2021 00:00;1;2;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;3303,68;-3303,68;3303,68;0.00;3303.68;EUR
+.1~167;167;C9;01;03;01/03;03/01/2021 00:00;1;3;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;1666,5;-1666,5;1666,5;0.00;1666.50;EUR
+.1~171;171;C9;01;04;01/04;04/01/2021 00:00;1;4;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;6429,5;-6429,5;6429,5;0.00;6429.50;EUR
+.1~175;175;C9;01;05;01/05;05/01/2021 00:00;1;5;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;11966,84;-11966,84;11966,84;0.00;11966.84;EUR
+.1~181;181;C9;01;06;01/06;06/01/2021 00:00;2;6;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;4727,88;-4727,88;4727,88;0.00;4727.88;EUR
+.1~187;187;C9;01;07;01/07;07/01/2021 00:00;2;7;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;11656,98;-11656,98;11656,98;0.00;11656.98;EUR
+.1~201;201;C9;01;08;01/08;08/01/2021 00:00;2;8;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;28318,86;-28318,86;28318,86;0.00;28318.86;EUR
+.1~207;207;C9;01;09;01/09;09/01/2021 00:00;2;9;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;32137,87;-32137,87;32137,87;0.00;32137.87;EUR
+.1~216;216;C9;01;10;01/10;10/01/2021 00:00;2;10;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;11097,97;-11097,97;11097,97;0.00;11097.97;EUR
+.1~232;232;D9;01;02;01/02;02/01/2021 00:00;1;2;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;12240,8;-12240,8;12240,8;0.00;12240.80;EUR
+.1~236;236;D9;01;03;01/03;03/01/2021 00:00;1;3;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;8948,8;-8948,8;8948,8;0.00;8948.80;EUR
+.1~240;240;D9;01;04;01/04;04/01/2021 00:00;1;4;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;12743,59;-12743,59;12743,59;0.00;12743.59;EUR
+.1~244;244;D9;01;05;01/05;05/01/2021 00:00;1;5;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;13034,12;-13034,12;13034,12;0.00;13034.12;EUR
+.1~252;252;D9;01;06;01/06;06/01/2021 00:00;2;6;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;319,44;-319,44;319,44;0.00;319.44;EUR
+.1~258;258;D9;01;07;01/07;07/01/2021 00:00;2;7;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;611,74;-611,74;611,74;0.00;611.74;EUR
+.1~270;270;D9;01;08;01/08;08/01/2021 00:00;2;8;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;1539,12;-1539,12;1539,12;0.00;1539.12;EUR
+.1~276;276;D9;01;09;01/09;09/01/2021 00:00;2;9;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;154,45;-154,45;154,45;0.00;154.45;EUR
+.1~284;284;D9;01;10;01/10;10/01/2021 00:00;2;10;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;3132,72;-3132,72;3132,72;0.00;3132.72;EUR
+.1~303;303;E9;01;05;01/05;05/01/2021 00:00;1;5;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;3357,58;-3357,58;3357,58;0.00;3357.58;EUR
+.1~309;309;E9;01;06;01/06;06/01/2021 00:00;2;6;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;5402,78;-5402,78;5402,78;0.00;5402.78;EUR
+.1~315;315;E9;01;07;01/07;07/01/2021 00:00;2;7;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;552,72;-552,72;552,72;0.00;552.72;EUR
+.1~325;325;E9;01;08;01/08;08/01/2021 00:00;2;8;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;3607,76;-3607,76;3607,76;0.00;3607.76;EUR
+.1~333;333;E9;01;09;01/09;09/01/2021 00:00;2;9;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;2051,4;-2051,4;2051,4;0.00;2051.40;EUR
+.1~341;341;E9;01;10;01/10;10/01/2021 00:00;2;10;800000;Sales revenues - domestic;Income Statement;Revenues;;;Credit;4403,26;-4403,26;4403,26;0.00;4403.26;EUR
+.1~11;11;A9;01;01;01/01;01/01/2021 00:00;1;1;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~14;14;A9;01;02;01/02;02/01/2021 00:00;1;2;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;8618,06;8618,06;-8618,06;0.00;-8618.06;EUR
+.1~19;19;A9;01;03;01/03;03/01/2021 00:00;1;3;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;12996,01;12996,01;-12996,01;0.00;-12996.01;EUR
+.1~20;20;A9;01;03;01/03;03/01/2021 00:00;1;3;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~24;24;A9;01;04;01/04;04/01/2021 00:00;1;4;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;4598,98;4598,98;-4598,98;0.00;-4598.98;EUR
+.1~29;29;A9;01;05;01/05;05/01/2021 00:00;1;5;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;7203,81;7203,81;-7203,81;0.00;-7203.81;EUR
+.1~30;30;A9;01;05;01/05;05/01/2021 00:00;1;5;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~36;36;A9;01;06;01/06;06/01/2021 00:00;2;6;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;2698,48;2698,48;-2698,48;0.00;-2698.48;EUR
+.1~42;42;A9;01;07;01/07;07/01/2021 00:00;2;7;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;1391,54;1391,54;-1391,54;0.00;-1391.54;EUR
+.1~54;54;A9;01;08;01/08;08/01/2021 00:00;2;8;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;693,91;693,91;-693,91;0.00;-693.91;EUR
+.1~55;55;A9;01;08;01/08;08/01/2021 00:00;2;8;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~62;62;A9;01;09;01/09;09/01/2021 00:00;2;9;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;2947,28;2947,28;-2947,28;0.00;-2947.28;EUR
+.1~69;69;A9;01;10;01/10;10/01/2021 00:00;2;10;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;5999,44;5999,44;-5999,44;0.00;-5999.44;EUR
+.1~70;70;A9;01;10;01/10;10/01/2021 00:00;2;10;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~71;71;A9;01;10;01/10;10/01/2021 00:00;2;10;478100;Warehousing Costs;Income Statement;Operating Expenses;;;Debit;50;50;-50;0.00;-50.00;EUR
+.1~84;84;B9;01;01;01/01;01/01/2021 00:00;1;1;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~87;87;B9;01;02;01/02;02/01/2021 00:00;1;2;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;17429,75;17429,75;-17429,75;0.00;-17429.75;EUR
+.1~91;91;B9;01;03;01/03;03/01/2021 00:00;1;3;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;10862,92;10862,92;-10862,92;0.00;-10862.92;EUR
+.1~96;96;B9;01;04;01/04;04/01/2021 00:00;1;4;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;6705,96;6705,96;-6705,96;0.00;-6705.96;EUR
+.1~97;97;B9;01;04;01/04;04/01/2021 00:00;1;4;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~101;101;B9;01;05;01/05;05/01/2021 00:00;1;5;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;14025,6;14025,6;-14025,6;0.00;-14025.60;EUR
+.1~107;107;B9;01;06;01/06;06/01/2021 00:00;2;6;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;7124,68;7124,68;-7124,68;0.00;-7124.68;EUR
+.1~114;114;B9;01;07;01/07;07/01/2021 00:00;2;7;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;10017,87;10017,87;-10017,87;0.00;-10017.87;EUR
+.1~115;115;B9;01;07;01/07;07/01/2021 00:00;2;7;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;200;200;-200;0.00;-200.00;EUR
+.1~126;126;B9;01;08;01/08;08/01/2021 00:00;2;8;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;9441,58;9441,58;-9441,58;0.00;-9441.58;EUR
+.1~134;134;B9;01;09;01/09;09/01/2021 00:00;2;9;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;4677,92;4677,92;-4677,92;0.00;-4677.92;EUR
+.1~135;135;B9;01;09;01/09;09/01/2021 00:00;2;9;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~142;142;B9;01;10;01/10;10/01/2021 00:00;2;10;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;11544;11544;-11544;0.00;-11544.00;EUR
+.1~143;143;B9;01;10;01/10;10/01/2021 00:00;2;10;478100;Warehousing Costs;Income Statement;Operating Expenses;;;Debit;50;50;-50;0.00;-50.00;EUR
+.1~156;156;C9;01;01;01/01;01/01/2021 00:00;1;1;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~159;159;C9;01;02;01/02;02/01/2021 00:00;1;2;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;2522,35;2522,35;-2522,35;0.00;-2522.35;EUR
+.1~164;164;C9;01;03;01/03;03/01/2021 00:00;1;3;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;1272,16;1272,16;-1272,16;0.00;-1272.16;EUR
+.1~165;165;C9;01;03;01/03;03/01/2021 00:00;1;3;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~169;169;C9;01;04;01/04;04/01/2021 00:00;1;4;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;4908,9;4908,9;-4908,9;0.00;-4908.90;EUR
+.1~173;173;C9;01;05;01/05;05/01/2021 00:00;1;5;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;9136,38;9136,38;-9136,38;0.00;-9136.38;EUR
+.1~179;179;C9;01;06;01/06;06/01/2021 00:00;2;6;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;3609,22;3609,22;-3609,22;0.00;-3609.22;EUR
+.1~185;185;C9;01;07;01/07;07/01/2021 00:00;2;7;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;9334,06;9334,06;-9334,06;0.00;-9334.06;EUR
+.1~197;197;C9;01;08;01/08;08/01/2021 00:00;2;8;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;27063,84;27063,84;-27063,84;0.00;-27063.84;EUR
+.1~198;198;C9;01;08;01/08;08/01/2021 00:00;2;8;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~205;205;C9;01;09;01/09;09/01/2021 00:00;2;9;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;28118,64;28118,64;-28118,64;0.00;-28118.64;EUR
+.1~212;212;C9;01;10;01/10;10/01/2021 00:00;2;10;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;10297,99;10297,99;-10297,99;0.00;-10297.99;EUR
+.1~213;213;C9;01;10;01/10;10/01/2021 00:00;2;10;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~214;214;C9;01;10;01/10;10/01/2021 00:00;2;10;478100;Warehousing Costs;Income Statement;Operating Expenses;;;Debit;100;100;-100;0.00;-100.00;EUR
+.1~227;227;D9;01;01;01/01;01/01/2021 00:00;1;1;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~230;230;D9;01;02;01/02;02/01/2021 00:00;1;2;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;9752,16;9752,16;-9752,16;0.00;-9752.16;EUR
+.1~234;234;D9;01;03;01/03;03/01/2021 00:00;1;3;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;7131,16;7131,16;-7131,16;0.00;-7131.16;EUR
+.1~238;238;D9;01;04;01/04;04/01/2021 00:00;1;4;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;10152,7;10152,7;-10152,7;0.00;-10152.70;EUR
+.1~242;242;D9;01;05;01/05;05/01/2021 00:00;1;5;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;10383;10383;-10383;0.00;-10383.00;EUR
+.1~249;249;D9;01;06;01/06;06/01/2021 00:00;2;6;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;254,43;254,43;-254,43;0.00;-254.43;EUR
+.1~250;250;D9;01;06;01/06;06/01/2021 00:00;2;6;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~256;256;D9;01;07;01/07;07/01/2021 00:00;2;7;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;500,34;500,34;-500,34;0.00;-500.34;EUR
+.1~267;267;D9;01;08;01/08;08/01/2021 00:00;2;8;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;1225,9;1225,9;-1225,9;0.00;-1225.90;EUR
+.1~274;274;D9;01;09;01/09;09/01/2021 00:00;2;9;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;130,26;130,26;-130,26;0.00;-130.26;EUR
+.1~281;281;D9;01;10;01/10;10/01/2021 00:00;2;10;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;2556,48;2556,48;-2556,48;0.00;-2556.48;EUR
+.1~282;282;D9;01;10;01/10;10/01/2021 00:00;2;10;478100;Warehousing Costs;Income Statement;Operating Expenses;;;Debit;150;150;-150;0.00;-150.00;EUR
+.1~297;297;E9;01;04;01/04;04/01/2021 00:00;1;4;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~300;300;E9;01;05;01/05;05/01/2021 00:00;1;5;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;2460,82;2460,82;-2460,82;0.00;-2460.82;EUR
+.1~301;301;E9;01;05;01/05;05/01/2021 00:00;1;5;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~306;306;E9;01;06;01/06;06/01/2021 00:00;2;6;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;3960,37;3960,37;-3960,37;0.00;-3960.37;EUR
+.1~307;307;E9;01;06;01/06;06/01/2021 00:00;2;6;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~312;312;E9;01;07;01/07;07/01/2021 00:00;2;7;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;405,16;405,16;-405,16;0.00;-405.16;EUR
+.1~313;313;E9;01;07;01/07;07/01/2021 00:00;2;7;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
+.1~322;322;E9;01;08;01/08;08/01/2021 00:00;2;8;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;2644,45;2644,45;-2644,45;0.00;-2644.45;EUR
+.1~330;330;E9;01;09;01/09;09/01/2021 00:00;2;9;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;1503,46;1503,46;-1503,46;0.00;-1503.46;EUR
+.1~331;331;E9;01;09;01/09;09/01/2021 00:00;2;9;472000;Shipping costs;Income Statement;Operating Expenses;;;Debit;100;100;-100;0.00;-100.00;EUR
+.1~338;338;E9;01;10;01/10;10/01/2021 00:00;2;10;400020;Raw mat.consumed/trading goods without cost center;Income Statement;Cost of Goods Sold;;;Debit;3217,1;3217,1;-3217,1;0.00;-3217.10;EUR
+.1~339;339;E9;01;10;01/10;10/01/2021 00:00;2;10;478100;Warehousing Costs;Income Statement;Operating Expenses;;;Debit;300;300;-300;0.00;-300.00;EUR
