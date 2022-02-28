@@ -1,0 +1,15 @@
+body {
+  padding-top: 0;
+  margin: 0;
+  color: #1a1f36;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+  text-align: center;
+}
+
+img {
+  margin: 20px;
+}
+
+
