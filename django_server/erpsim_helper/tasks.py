@@ -1,5 +1,4 @@
-from huey import crontab
-from huey.contrib.djhuey import task
+from huey.contrib.djhuey import task, enqueue
 
 import pyodata
 from pyodata.v2.service import GetEntitySetFilter as esf
@@ -9,6 +8,7 @@ import mysql.connector
 import os
 import time
 import logging
+import datetime
 
 # MAPPING TABLE - SOCIETE
 TABLE_SOCIETE = {   "company_valuation"         : "company_code", 
@@ -59,8 +59,16 @@ def get_game_latest_data(game_id, odata_flow, game_set, team):
 
     # launch store_table tasks
     d1 = time.time()
-    task_group = store_table.map([(table, game_id, game_set, team) for table in TABLES_SQL])
-    task_group.get(blocking=True)
+    tasks_group = []
+    for table in TABLES_SQL:
+        # schedule tasks to fetch data every minute (every round day in ERPSim)
+        for i in range(100): # 8 rounds of 10 virtual days (+ 20 if round duration = 1'30)
+            eta = datetime.datetime.now() + datetime.timedelta(seconds=60 * i)
+            tasks_group.append(store_table.schedule((table, game_id, game_set, team), eta=eta))   
+    #result_group = [enqueue(t) for t in tasks_group]
+    #result_group = [result.get(True) for result in tasks_group]
+    #task_group = store_table.map([(table, game_id, game_set, team) for table in TABLES_SQL])
+    #task_group.get(blocking=True)
     logger.info(f"Execution time of all tasks : {time.time() - d1}")    
 
 @task()

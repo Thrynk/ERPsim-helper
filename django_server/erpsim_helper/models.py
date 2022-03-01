@@ -11,4 +11,4 @@ class Game(models.Model):
 
     def save(self, *args, **kwargs):
         super(Game, self).save(*args, **kwargs)
-        get_game_latest_data(self.id, self.odata_flow, self.game_set, self.team)
+        #get_game_latest_data(self.id, self.odata_flow, self.game_set, self.team)
