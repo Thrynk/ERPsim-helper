@@ -1,6 +1,8 @@
 from django.urls import path
+
 from . import views
 
 urlpatterns = [
     path('', views.contact, name='contact'),
+    path('detail/<int:cid>', views.detail, name='detail'),
 ]
