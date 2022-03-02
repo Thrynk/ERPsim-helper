@@ -42,18 +42,18 @@ except :
     print("Error during the connexion to mySQL")
 
 @task()
-def get_game_latest_data(game_id, odata_flow, game_set, team, is_running):
+def get_game_latest_data(game_id, odata_flow, game_set, team, is_running, odata_user, odata_password):
     logger.info('-- game_id : {} flow : {} set : {} team : {} is_running : {} --'.format(game_id, odata_flow, game_set, team, is_running))
 
     global odata_service
 
     # CONNEXIONS 
-    try :
-        session = requests.Session()
-        session.auth = (os.environ.get("ODATA_USER"), os.environ.get("ODATA_PASSWORD"))
-        odata_service = pyodata.Client(odata_flow, session)
-    except : 
-        logger.error("Error during the connexion to the odata flux")
+    #try :
+    session = requests.Session()
+    # session.auth = (os.environ.get("ODATA_USER"), os.environ.get("ODATA_PASSWORD"))
+    session.auth = (odata_user, odata_password)
+    odata_service = pyodata.Client(odata_flow, session)
+    #or("Error during the connexion to the odata flux")
 
     TABLES_SQL = TABLE_SOCIETE.keys()  
 

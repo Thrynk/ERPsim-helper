@@ -1,3 +1,4 @@
+Django==3.2.11
 python-dotenv==0.19.2
 python-dotenv[cli]==0.19.2
 huey==2.4.3
