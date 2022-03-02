@@ -150,4 +150,11 @@ def modificationPrix(ventes, quantiteReapro, frequenceReapro):
   return(matriceModificationPrix)
 
 
-print(modificationPrix(matriceVentes,matriceReapro,freqReapro))
+matriceModif=modificationPrix(matriceVentes,matriceReapro,freqReapro)
+print("Voici les coefficients à appliquer à chacun des prix :")
+print("Milk : " , matriceModif[0])
+print("Cream : " , matriceModif[1])
+print("Yoghurt : " , matriceModif[2])
+print("Cheese : " , matriceModif[3])
+print("Butter : " , matriceModif[4])
+print("Ice cream : " , matriceModif[5])
