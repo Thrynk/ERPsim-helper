@@ -42,8 +42,8 @@ except :
     print("Error during the connexion to mySQL")
 
 @task()
-def get_game_latest_data(game_id, odata_flow, game_set, team):
-    logger.info('-- game_id : {} flow : {} set : {} team : {}--'.format(game_id, odata_flow, game_set, team))
+def get_game_latest_data(game_id, odata_flow, game_set, team, is_running):
+    logger.info('-- game_id : {} flow : {} set : {} team : {} is_running : {} --'.format(game_id, odata_flow, game_set, team, is_running))
 
     global odata_service
 

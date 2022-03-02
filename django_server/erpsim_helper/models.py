@@ -8,6 +8,8 @@ class Game(models.Model):
     game_set = models.IntegerField(null=False)
     team = models.CharField(max_length=26)
     creation_date = models.DateTimeField('creation date')
+    is_running = models.BooleanField(default=True, verbose_name='Running')
+    is_stopped = models.BooleanField(default=False, editable=False)
 
     def save(self, *args, **kwargs):
         super(Game, self).save(*args, **kwargs)
