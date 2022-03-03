@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 from .tasks import get_game_latest_data
 
 # Create your models here.
@@ -14,3 +15,7 @@ class Game(models.Model):
     def save(self, *args, **kwargs):
         super(Game, self).save(*args, **kwargs)
         #get_game_latest_data(self.id, self.odata_flow, self.game_set, self.team)
+
+class Player(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    game_id = models.IntegerField()
