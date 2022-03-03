@@ -158,3 +158,38 @@ print("Yoghurt : " , matriceModif[2])
 print("Cheese : " , matriceModif[3])
 print("Butter : " , matriceModif[4])
 print("Ice cream : " , matriceModif[5])
+
+dfPrices = createDf(mydb,"pricing_conditions")
+
+def getCurrentPrices(df, sales_organization):
+
+  df=df[df["sales_organization"]==sales_organization]
+  matriceCurrentPrices=[]
+
+  for materials in Materials:
+    dfPricingConditionMaterial = df[df['material_description']==materials]
+    matriceCurrentPrices.append(dfPricingConditionMaterial['price'].iloc[-1])
+
+  return(matriceCurrentPrices)
+
+curentPrices=getCurrentPrices(dfPrices,company)
+
+def giveNewPrices(coefficients,currentPrices):
+  matriceNewPrices=[]
+
+  for i in range (0,6):
+    matriceNewPrices.append(round(currentPrices[i]*coefficients[i],2))
+
+  return matriceNewPrices
+
+newPrices=giveNewPrices(matriceModif, curentPrices)
+
+print(curentPrices)  
+
+print("Voici les nouveaux prix :")  
+print("Milk : " , newPrices[0])
+print("Cream : " , newPrices[1])
+print("Yoghurt : " , newPrices[2])
+print("Cheese : " , newPrices[3])
+print("Butter : " , newPrices[4])
+print("Ice cream : " , newPrices[5])
