@@ -20,8 +20,6 @@ def game(request, game_id):
     return HttpResponse(f"Game page : {game.id} \n Flux odata : {game.odata_flow}.")
 
 def login(request):
-    # on instancie un formulaire
-    form = ContactForm()
     # on teste si on est bien en validation de formulaire (POST)
     if request.method == "POST":
         # Si oui on récupère les données postées

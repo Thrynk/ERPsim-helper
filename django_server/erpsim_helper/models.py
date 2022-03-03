@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 from .tasks import get_game_latest_data
 
 import datetime
@@ -16,9 +17,13 @@ class Game(models.Model):
     def save(self, *args, **kwargs):
         super(Game, self).save(*args, **kwargs)
         #get_game_latest_data(self.id, self.odata_flow, self.game_set, self.team)
-
+        
     def __str__(self):
         return f"Game : {str(self.id).rjust(3, '0')} - {datetime.datetime.strptime(str(self.creation_date), '%Y-%m-%d %H:%M:%S+00:00').strftime('%d/%m/%Y %H:%M')}"
+
+class Player(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    game_id = models.IntegerField()
 
 class CompanyValuation(models.Model):
     id_company_valuation = models.BigAutoField(primary_key=True)
