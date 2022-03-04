@@ -6,6 +6,7 @@ body {
   word-wrap: break-word;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
   text-align: center;
+  background-color: #f7f7f7;
 }
 
 img {
@@ -32,4 +33,21 @@ input[type=submit] {
     border-radius: 5px;
 }
 
+.img-fluid {
+    max-width: 90%
+}
+
+.border {
+	display: grid;
+	place-items: center;
+	min-height: 200px;
+	border: 8px solid;
+	padding: 5px;
+}
+
+.full-withradius {
+	position: relative;
+	border-radius: 0.8rem;
+    background: linear-gradient(to left, #4c4ba6, #328c96);
+}
 
