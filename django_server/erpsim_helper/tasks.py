@@ -82,7 +82,13 @@ def store_table(table, game_id, game_set, team):
     logger.info(f"Chargement de la table {table}")
     table_odata_name = [table_odata for table_odata in entity_set_names if table_odata.lower() == table.lower()][0]
 
-    list = [lettre + str(game_set) for lettre in team]
+    # Si on joue sur les sets 2 à 9 les équipes sont A2, B2, ..., A9, B9
+    if game_set != 1 :
+        list = [lettre + str(game_set) for lettre in team]
+    # Si on joue sur le set 1, les équipes sont AA, BB, CC, ....
+    else : 
+        list = [lettre + lettre for lettre in team]
+        
     filter = " or ".join([TABLE_SOCIETE[table].upper() + " eq '" + society + "'" for society in list])
 
     try : 
