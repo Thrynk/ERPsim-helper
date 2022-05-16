@@ -12,4 +12,6 @@ urlpatterns = [
         authentication_form=LoginForm
     )),
     path('game/<int:game_id>', views.game, name="game"),
+
+
 ]

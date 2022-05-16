@@ -5,6 +5,7 @@ from django.contrib import messages
 
 from .models import Game
 from .tasks import get_game_latest_data
+from .pythonAlgorithms.functionprediction import *
 
 # Create your views here.
 class ContactForm(Form):
@@ -40,3 +41,25 @@ def login(request):
     # Si méthode GET, on présente le formulaire
     context = {'form': form}
     return render(request, 'forms/login.html', context)
+
+
+
+
+def contact(request):
+    # on instancie un formulaire
+    form = ContactForm()
+    # on teste si on est bien en validation de formulaire (POST)
+    if request.method == "POST":
+        # Si oui on récupère les données postées
+        form = ContactForm(request.POST)
+        # on vérifie la validité du formulaire
+        if form.is_valid():
+            new_contact = form.save()
+            messages.success(request, 'Game Number ' + new_contact.gameNumber + ' & player : ' + new_contact.login)
+            # return redirect(reverse('detail', args=[new_contact.pk] ))
+
+            context = {'pers': new_contact,'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
+            return render(request, 'detail.html', context)
+    # Si méthode GET, on présente le formulaire
+    context = {'form': form}
+    return render(request, 'contact.html', context)
