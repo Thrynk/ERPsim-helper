@@ -1,13 +1,11 @@
 USE erpsim_games_flux;
-DROP TABLE inventory;
-CREATE TABLE IF NOT EXISTS inventory (
-    id_inventory BIGINT NOT NULL AUTO_INCREMENT,
-    inventory_opening_balance INT NOT NULL,
+DROP TABLE stock_transfers;
+CREATE TABLE IF NOT EXISTS stock_transfers (
+    id_stock_transfers BIGINT NOT NULL AUTO_INCREMENT,
     row_number INT NOT NULL,
-    plant CHAR(2) NOT NULL,
+    plant VARCHAR(2) NOT NULL,
     sim_round INT NOT NULL,
     sim_step INT NOT NULL,
-    #sim_date TEXT,
     sim_calendar_date DATETIME NOT NULL,
     sim_period INT NOT NULL,
     sim_elapsed_steps INT NOT NULL,
@@ -16,13 +14,13 @@ CREATE TABLE IF NOT EXISTS inventory (
     material_description TEXT NOT NULL,
     material_type TEXT NOT NULL,
     material_code VARCHAR(3) NOT NULL,
-    #material_size TEXT NOT NULL,
-    material_label TEXT NOT NULL,
+    material_label VARCHAR(50) NOT NULL,
     unit VARCHAR(2) NOT NULL,
+    quantity INT NOT NULL,    
     id_game BIGINT NOT NULL,
-    CONSTRAINT fk_game_inventory
+    CONSTRAINT fk_game_stock_transfers
     FOREIGN KEY (id_game)
     REFERENCES erpsim_helper_game(id)
     ON DELETE CASCADE,
-    PRIMARY KEY(id_inventory)
+    PRIMARY KEY(id_stock_transfers)
 )

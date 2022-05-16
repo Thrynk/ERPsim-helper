@@ -1,3 +1,5 @@
+USE erpsim_games_flux;
+DROP TABLE pricing_conditions;
 CREATE TABLE IF NOT EXISTS pricing_conditions (
     id_pricing_conditions BIGINT NOT NULL AUTO_INCREMENT,
     price FLOAT NOT NULL,
@@ -14,5 +16,10 @@ CREATE TABLE IF NOT EXISTS pricing_conditions (
     distribution_channel INT NOT NULL,
     dc_name  TEXT NOT NULL,
     currency VARCHAR(3) NOT NULL,
-    PRIMARY KEY(id_inventory)
+    id_game BIGINT NOT NULL,
+    CONSTRAINT fk_game_pricing_conditions
+    FOREIGN KEY (id_game)
+    REFERENCES erpsim_helper_game(id)
+    ON DELETE CASCADE,
+    PRIMARY KEY(id_pricing_conditions)
 )

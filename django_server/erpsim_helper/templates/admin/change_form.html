@@ -1,0 +1,14 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block submit_buttons_bottom %}
+    {% if not add %}
+        {% if not is_stopped %}
+            <div class="submit-row">
+                {% if is_game_running %}<input type="submit" value="{% trans 'Pause' %}" name="_pause" />{% else %}<input type="submit" value="{% trans 'Play' %}" name="_play" />{% endif %}
+                <input type="submit" value="{% trans 'Stop' %}" name="_stop" />
+            </div>
+        {% endif %}
+    {% endif %}
+    {{ block.super }}
+{% endblock %}

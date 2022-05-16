@@ -1,0 +1,17 @@
+USE erpsim_games_flux;
+SET SQL_SAFE_UPDATES = 0; 
+delete from company_valuation;
+delete from current_inventory_kpi;
+delete from current_inventory;
+delete from current_suppliers_prices;
+delete from financial_postings;
+delete from goods_movements;
+delete from independent_requirements;
+delete from inventory;
+delete from market;
+delete from nps_surveys;
+delete from pricing_conditions;
+delete from purchase_orders;
+delete from sales;
+delete from stock_transfers;
+delete from suppliers_prices;
