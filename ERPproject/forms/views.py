@@ -41,20 +41,22 @@ def form(request):
 
 
 def detail(request):
-    mydb = utils.dbConnexion()
-    df_sales = utils.createDf(mydb, "sales")
 
-    # Suppression des colonnes inutiles
-    df_sales.drop(["sales_order_number", "line_item", "region", "city", "country", "postal_code",
-                   "distribution_channel", "material_number", "material_description", "material_type",
-                   "quantity_delivered", "unit", "currency"], axis=1, inplace=True)
+    import time
+    now = time.time()
+
+    mydb = utils.dbConnexion()
+
+    now2 = time.time()
+    print(f"Connexion : {now2-now} secondes")
+
+    df_sales = utils.getSalesData(mydb)
+
+    now3 = time.time()
+    print(f"get sales df : {now3-now2} secondes")
 
     # Conversion des types
-    columns_type = {'id_sales': 'string', 'sales_organization': 'string', 'storage_location': 'string',
-                    'material_code': 'string', 'material_label': 'string', 'net_price': 'float64',
-                    'net_value': 'float64', 'cost': 'float64', 'contribution_margin': 'float64',
-                    'contribution_margin_pct': 'float64', 'area': 'category'}
-
+    columns_type = {'sales_organization': 'string', 'storage_location': 'string', 'material_label': 'string'}
     df_sales = df_sales.astype(columns_type)
 
     # Conversion de la colonne SIM_CALENDAR_DATE au format datetime
@@ -63,6 +65,9 @@ def detail(request):
     # Tri du tableau par ROW_NUMBER
     df_sales.sort_values(by=["row_number"], axis=0, inplace=True, ignore_index=True)
 
+    now4 = time.time()
+    print(f"Preprocessing sales : {now4 - now3} secondes")
+
     df_group_sales_evo, graph_sales_evo = drawFigures.drawSalesEvolution(df_sales, "C9", ["Cream", "Ice Cream",
                                                                                           "Butter", "Milk", "Cheese",
                                                                                           "Yoghurt"])
@@ -70,16 +75,15 @@ def detail(request):
                                                                                            "Butter", "Milk", "Cheese",
                                                                                            "Yoghurt"])
 
-    df_inventory = utils.createDf(mydb, "inventory")
+    now5 = time.time()
+    print(f"Generate graph sales : {now5-now4} secondes")
 
-    # Suppression des colonnes inutiles
-    df_inventory.drop(["material_number", "material_description", "material_type", "material_code", "unit"], axis=1,
-                      inplace=True)
+    df_inventory = utils.getInventoryData(mydb)
+    now6 = time.time()
+    print(f"get inventory df : {now6-now5} secondes")
 
     # Conversion des types
-    columns_type = {'id_inventory': 'string', 'plant': 'string', 'storage_location': 'string',
-                    'material_label': 'string'}
-
+    columns_type = {'plant': 'string', 'storage_location': 'string', 'material_label': 'string'}
     df_inventory = df_inventory.astype(columns_type)
 
     # Conversion de la colonne SIM_CALENDAR_DATE au format datetime
@@ -87,6 +91,9 @@ def detail(request):
 
     # Tri du tableau par ROW_NUMBER
     df_inventory.sort_values(by=["row_number"], axis=0, inplace=True, ignore_index=True)
+
+    now7 = time.time()
+    print(f"Preprocessing inventory : {now7-now6} secondes")
 
     general, nord, sud, ouest, graph_inventory = drawFigures.drawStocks(df_inventory, "C9", ["Cream", "Ice Cream",
                                                                                              "Butter", "Milk",

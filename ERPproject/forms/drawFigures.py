@@ -39,7 +39,7 @@ def addNoSalesData(dataframe, products, dateRange=None, storage=False):
 
 def drawSalesDistribution(dataframe, company, products, startDate=None, endDate=None):
     """
-    Description : Gives dataframe of sales group by storage location and display the graph
+    Gives dataframe of sales group by storage location and display the graph
     :param dataframe: Sales dataframe
     :param company: Company name
     :param products: String or list of products to display

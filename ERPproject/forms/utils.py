@@ -1,6 +1,21 @@
 import pandas as pd
 import mysql.connector
 
+
+def getSalesData(mydb):
+    cmd = str("SELECT row_number, sim_calendar_date, sales_organization, material_label, quantity, storage_location"
+              " FROM sales")
+    df = pd.read_sql(cmd, mydb)
+    return df
+
+
+def getInventoryData(mydb):
+    cmd = str("SELECT row_number, sim_calendar_date, plant, storage_location, material_label, inventory_opening_balance"
+              " FROM inventory")
+    df = pd.read_sql(cmd, mydb)
+    return df
+
+
 def createDf(mydb, table):
     # Creation du cursor qui va pointer vers la collection
     Cursor = mydb.cursor(buffered=True)
@@ -36,10 +51,14 @@ def dbConnexion():
         host="localhost",
         user="odata",
         password="xGf#57PsB?td",
-        port="3306"
+        port="3306",
+        database="erpsim_games_flux"
     )
     return mydb
 
 
 if __name__ == "__main__":
     print("Utils.py script for useful functions.")
+    mydb = dbConnexion()
+    results = getSalesData(mydb)
+    print(results)
