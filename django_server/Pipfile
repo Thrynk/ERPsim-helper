@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-dotenv = {version = "==0.19.2", extras = ["cli"]}
+huey = "==2.4.3"
+redis = "==4.1.0"
+mysql-connector-python = "==8.0.26"
+pyodata = "==1.7.1"
+requests = "==2.23.0"
+Django = "==3.2.11"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
