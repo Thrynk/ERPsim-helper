@@ -23,6 +23,7 @@ class ODataAuthenticationBackend(BaseBackend):
                 user = User.objects.create_user(username, '', password)
             
             # create player to know which game is associated with the player
+            # no need to check if player exists because on second login, default django backend will be used
             player = Player(user=user, game_id=game_id)
             player.save()
             return user

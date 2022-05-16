@@ -1,0 +1,29 @@
+version: "3.9"
+   
+services:
+  db:
+    image: mysql:5.7.36
+    volumes:
+      - ./data/db:/var/lib/mysql
+    environment:
+      - MYSQL_USER=${DATABASE_USER}
+      - MYSQL_PASSWORD=${DATABASE_PASSWORD}
+      
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./django_server/:/app/django_server/
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE=${DATABASE}
+      - ODATA_URL=${ODATA_URL}
+      - ODATA_USER=${ODATA_USER}
+      - ODATA_PASSWORD=${ODATA_PASSWORD}
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - DJANGO_DATABASE=${DJANGO_DATABASE}
+    depends_on:
+      - db
