@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e83229bb-6752-4fe1-b89f-d4349bfab8a7" name="Changes" comment=".idea directory for pycharm">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/Pipfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/django_server/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/django_server/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/django_server/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/django_server/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/django_server/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/auth/backend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/forms/LoginForm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/migrations/0002_game_is_running.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/migrations/0003_game_is_stopped_alter_game_is_running.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/migrations/0004_player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/static/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/static/sap-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/tasks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/templates/admin/change_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/templates/forms/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/templates/forms/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/erpsim_helper/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_server/requierement.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/manage-server-connections.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/mysql-vscode-extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/mysql-workbench-requirements-info.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/mysql-workbench-wizard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/redistribuable-download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_data/odata-sample.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_data/push_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_data/query_insert_data_tables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/delete_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/get_database_size/get_database_size.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/company_valuation.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/current_inventory.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/current_inventory_kpi.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/current_suppliers_prices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/financial_postings.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/games.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/goods_movements.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/independent_requirements.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/inventory.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/list of tables.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/market.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/nps_surveys.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/pricing_conditions.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/purchase_orders.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/sales.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/stock_transfers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/tables_creation/suppliers_prices.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="django_UI" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29FQx9JdBCWSOLWyZ9bpZI3OEH7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/jeanc/PycharmProjects/ERPsim-helper",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings sdk-home="D:\Fichierprogrammes2\Anaconda\envs\django-plotly-dash\python.exe" working-directory="$PROJECT_DIR$">
+        <option name="mySdkHome" value="D:\Fichierprogrammes2\Anaconda\envs\django-plotly-dash\python.exe" />
+        <option name="myWorkingDirectory" value="$PROJECT_DIR$" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e83229bb-6752-4fe1-b89f-d4349bfab8a7" name="Changes" comment="" />
+      <created>1652706598118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652706598118</updated>
+    </task>
+    <task id="LOCAL-00001" summary=".idea directory for pycharm">
+      <created>1652707301874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652707301874</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=".idea directory for pycharm" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea directory for pycharm" />
+  </component>
+</project>
