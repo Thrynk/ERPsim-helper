@@ -1,17 +1,22 @@
 from django.shortcuts import render
-from django.forms import Form, CharField, PasswordInput
 from django.http import HttpResponse
 from django.contrib import messages
+from django.forms import ModelForm
 
-from .models import Game
+
+from .models import Game,Contact
 from .tasks import get_game_latest_data
 from .pythonAlgorithms.functionprediction import *
 
-# Create your views here.
-class ContactForm(Form):
-    gameNumber = CharField(max_length=200)
-    login = CharField(max_length=200)
-    password = CharField(widget=PasswordInput, max_length=200)
+
+class ContactForm(ModelForm):
+    class Meta:
+        model = Contact
+        fields = ('gameNumber', 'login', 'password')
+        widgets = {
+            # telling Django your password field in the mode is a password input on the template
+            'password': forms.PasswordInput()
+        }
 
 def index(request):
     return HttpResponse("Hello, world. You're at the helper index.")
@@ -51,15 +56,17 @@ def contact(request):
     # on teste si on est bien en validation de formulaire (POST)
     if request.method == "POST":
         # Si oui on récupère les données postées
-        form = ContactForm(request.POST)
-        # on vérifie la validité du formulaire
-        if form.is_valid():
-            new_contact = form.save()
-            messages.success(request, 'Game Number ' + new_contact.gameNumber + ' & player : ' + new_contact.login)
-            # return redirect(reverse('detail', args=[new_contact.pk] ))
+        #form = ContactForm(request.POST)
+        # on vérifie la validité du formulair
 
-            context = {'pers': new_contact,'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
-            return render(request, 'detail.html', context)
+        #if form.is_valid():
+
+        #new_contact = form.save()
+        #messages.success(request, 'Game Number ' + new_contact.gameNumber + ' & player : ' + new_contact.login)
+        # return redirect(reverse('detail', args=[new_contact.pk] ))
+
+        context = {'pers': "tst",'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
+        return render(request, 'forms/detail.html', context)
     # Si méthode GET, on présente le formulaire
     context = {'form': form}
-    return render(request, 'contact.html', context)
+    return render(request, 'forms/detail.html', context)

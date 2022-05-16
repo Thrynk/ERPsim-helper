@@ -5,7 +5,8 @@ from .forms.LoginForm import LoginForm
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.contact, name='contact'),
+    path('contact/', views.contact, name='contact'),
     #path('login/', views.login, name='login'),
     path('login/', auth_views.LoginView.as_view(
         template_name='forms/login.html',

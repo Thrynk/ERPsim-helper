@@ -9,7 +9,7 @@
 </head>
 <body>
     <img src="{% static 'sap-logo.png' %}" alt="SAP Logo" width="10%">
-    <form action="/login/" method="post">
+    <form action="/contact/" method="post">
         {% csrf_token %}
         {{ form }}
     <input type="submit" value="Submit">
