@@ -5,7 +5,14 @@ import sys
 
 
 def main():
-    """Run administrative tasks."""
+    """
+        Entry point of the code. 
+
+        Launch `execute_from_command_line` function.
+
+        :return: Execute `execute_from_command_line(sys.argv)`.
+        :rtype: function
+    """
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_server.settings')
     try:
         from django.core.management import execute_from_command_line
