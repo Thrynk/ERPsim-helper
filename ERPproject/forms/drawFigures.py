@@ -16,7 +16,7 @@ def addNoSalesData(dataframe, products, dateRange=None, storage=False):
     if isinstance(products, str): products = [products]
 
     if storage:
-        storages = storages = ["03N", "03S", "03W"]
+        storages = ["03N", "03S", "03W"]
         for storage in storages:
             for product in products:
                 if not dataframe.index.isin([(storage, product)]).any():
