@@ -3,6 +3,7 @@ version: "3.9"
 services:
   db:
     image: mysql:5.7.36
+    restart: always
     volumes:
       - ./data/db:/var/lib/mysql
     command: --default-authentication-plugin=mysql_native_password
@@ -58,3 +59,19 @@ services:
       - db
       - cache
       - task_consumer
+
+  docs_dev:
+    build: 
+      context: ./
+      dockerfile: ./Sphinx/docs/Dockerfile-dev
+    command: /bin/sh -c "sphinx-autobuild -b html Sphinx/docs/source Sphinx/docs/build --host 0.0.0.0 --port 9000 --watch django_server"
+    volumes:
+      - ./Sphinx/docs:/ERPsim-helper/Sphinx/docs
+      - ./django_server:/ERPsim-helper/django_server
+    ports:
+      - "9000:9000"
+
+  docs:
+    build: 
+      context: ./
+      dockerfile: ./Sphinx/docs/Dockerfile
