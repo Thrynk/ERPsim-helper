@@ -89,6 +89,7 @@ DATABASES = {
         'NAME': os.environ.get("DJANGO_DATABASE"),
         'HOST': os.environ.get("DATABASE_HOST"),
         'USER': os.environ.get("DATABASE_USER"),
+        'PORT': '3306',
         'PASSWORD': os.environ.get("DATABASE_PASSWORD"),
         'OPTIONS': {
           'autocommit': True,
@@ -106,7 +107,7 @@ HUEY = {
     'utc': True,  # Use UTC for all times internally.
     'blocking': True,  # Perform blocking pop rather than poll Redis.
     'connection': {
-        'host': 'localhost',
+        'host': os.environ.get("REDIS_HOST"),
         'port': 6379,
         'db': 0,
         'connection_pool': None,  # Definitely you should use pooling!

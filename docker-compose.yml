@@ -5,18 +5,47 @@ services:
     image: mysql:5.7.36
     volumes:
       - ./data/db:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
     environment:
       - MYSQL_USER=${DATABASE_USER}
       - MYSQL_PASSWORD=${DATABASE_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DATABASE_PASSWORD}
+      - MYSQL_DATABASE=${DATABASE}
+    ports:
+      - '3306:3306'
+
+  cache:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --save 20 1 --loglevel warning
+    volumes: 
+      - ./data/redis:/data
+
+  task_consumer:
+    build: .
+    command: /bin/sh -c "python /app/django_server/manage.py run_huey"
+    volumes:
+      - ./django_server/:/app/django_server/
+    environment:
+      - DJANGO_DATABASE=${DJANGO_DATABASE}
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - REDIS_HOST=cache
+      - DATABASE_HOST=db
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE=${DATABASE}
       
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: /bin/sh -c "python /app/django_server/manage.py migrate && python /app/django_server/manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./django_server/:/app/django_server/
     ports:
       - "8000:8000"
     environment:
+      - DATABASE_HOST=db
       - DATABASE_USER=${DATABASE_USER}
       - DATABASE_PASSWORD=${DATABASE_PASSWORD}
       - DATABASE=${DATABASE}
@@ -27,3 +56,5 @@ services:
       - DJANGO_DATABASE=${DJANGO_DATABASE}
     depends_on:
       - db
+      - cache
+      - task_consumer
