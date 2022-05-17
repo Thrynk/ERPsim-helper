@@ -185,3 +185,6 @@ def modificationPrix():
     ListeReaproJoueur[Materials[i]]=valeur
 
   return ListeReaproJoueur
+
+def insertDB (insertion, table):
+  print("fonction pour insérer des choses à certains endroits")

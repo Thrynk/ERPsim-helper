@@ -1,3 +1,4 @@
+from lib2to3.pygram import python_grammar_no_print_statement
 from django.db import models
 from django.contrib.auth.models import User
 from .tasks import get_game_latest_data
@@ -31,6 +32,12 @@ class Game(models.Model):
 class Player(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     game_id = models.IntegerField()
+
+class Instructions(models.Model):
+    company_code = models.CharField(max_length=2)
+    date_time = models.DateTimeField()
+    sentence = models.CharField(max_length=300)
+    is_active = models.BooleanField()
 
 class CompanyValuation(models.Model):
     id_company_valuation = models.BigAutoField(primary_key=True)
