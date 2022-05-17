@@ -1,0 +1,77 @@
+version: "3.9"
+   
+services:
+  db:
+    image: mysql:5.7.36
+    restart: always
+    volumes:
+      - ./data/db:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_USER=${DATABASE_USER}
+      - MYSQL_PASSWORD=${DATABASE_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DATABASE_PASSWORD}
+      - MYSQL_DATABASE=${DATABASE}
+    ports:
+      - '3306:3306'
+
+  cache:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --save 20 1 --loglevel warning
+    volumes: 
+      - ./data/redis:/data
+
+  task_consumer:
+    build: .
+    command: /bin/sh -c "python /app/django_server/manage.py run_huey"
+    volumes:
+      - ./django_server/:/app/django_server/
+    environment:
+      - DJANGO_DATABASE=${DJANGO_DATABASE}
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - REDIS_HOST=cache
+      - DATABASE_HOST=db
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE=${DATABASE}
+      
+  web:
+    build: .
+    command: /bin/sh -c "python /app/django_server/manage.py migrate && python /app/django_server/manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./django_server/:/app/django_server/
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE=${DATABASE}
+      - ODATA_URL=${ODATA_URL}
+      - ODATA_USER=${ODATA_USER}
+      - ODATA_PASSWORD=${ODATA_PASSWORD}
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - DJANGO_DATABASE=${DJANGO_DATABASE}
+    depends_on:
+      - db
+      - cache
+      - task_consumer
+
+  docs_dev:
+    build: 
+      context: ./
+      dockerfile: ./Sphinx/docs/Dockerfile-dev
+    command: /bin/sh -c "sphinx-autobuild -b html Sphinx/docs/source Sphinx/docs/build --host 0.0.0.0 --port 9000 --watch django_server"
+    volumes:
+      - ./Sphinx/docs:/ERPsim-helper/Sphinx/docs
+      - ./django_server:/ERPsim-helper/django_server
+    ports:
+      - "9000:9000"
+
+  docs:
+    build: 
+      context: ./
+      dockerfile: ./Sphinx/docs/Dockerfile
