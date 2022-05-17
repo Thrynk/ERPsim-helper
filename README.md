@@ -28,7 +28,7 @@ gcloud projects add-iam-policy-binding m2-project-329512 --member="user:test-use
 
 1. Launch port forwarding with the Google Cloud :
 ```bash
-gcloud compute ssh odata-db --project m2-project-329512 --zone us-east1-b -- -L 3306:localhost:3306
+gcloud compute ssh odata --project m2-project-329512 --zone us-east1-b -- -L 3306:localhost:3306
 ```
 2. You can either :
     1. Connect via the mysql client on the Compute Engine instance

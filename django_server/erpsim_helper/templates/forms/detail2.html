@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '../static/style.css' %}">
+    <title>Player form</title>
+</head>
+
+{% load static %}
+{% block title %}
+<h1 class = "start">Predictions of prices and stock</h1>
+{% endblock %}
+
+
+<div id ="conseil">
+    <div id = "elements">
+        <h2>List to do</h2>
+        <ul>
+            <li><a href="#">Augment cream price to 70.90$</a></li>
+            <li><a href="#">Reavaluate stock transfer for north Cheese to 300</a></li>
+            <li><a href="#">Reavaluate stock transfer for south Cream to 120</a></li>
+
+        </ul>
+    </div>
+
+</div>
+
+
+
+<div id="tableaux">
+    <div class="tableau1">
+        <table id="tableau1table">
+            <caption>Repartition matrice</caption>
+            <thead id="tableau1thead">
+            <tr class="tableau1tr">
+                <th class="tableau1th" scope="col">Products</th>
+                <th class="tableau1th" scope="col">North</th>
+                <th class="tableau1th" scope="col">South</th>
+                <th class="tableau1th" scope="col">West</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for key, value in predictions.items %}
+                <tr class="tableau1tr">
+                    <th class="tableau1th" scope="row">{{key}}</th>
+                    {% for j in value %}
+                        <td id="tableau1td">{{j}}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="tableau2">
+        <table id="tableau2table">
+            <caption>Changement prix</caption>
+            <thead id="tableau2thead">
+            <tr class="tableau2tr">
+                <th class="tableau2th" scope="col">Products</th>
+                <th class="tableau2th" scope="col">Tendances</th>
+                <th class="tableau2th" scope="col">Previsions</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for key, value in modifPrix.items %}
+            <tr class="tableau2tr">
+                <th class="tableau2th" scope="row">{{key}}</th>
+                {% for j in value %}
+                    {% if forloop.counter == 1 %}
+                        {% if j > 1 %}
+                            <td class="tableau2td" ><img src="../../static/greenarrowup.png" alt="" height=12 width=12>  {{j}}</img></td>
+                        {% endif %}
+                        {% if j < 1 %}
+                            <td class="tableau2td" ><img src="../../static/redarrowdown.png" alt="" height=12 width=12>  {{j}}</img></td>
+                        {% endif %}
+                        {% if j == 1 %}
+                            <td class="tableau2td" >{{j}}</img></td>
+                        {% endif %}
+                    {% endif %}
+
+                    {% if forloop.counter == 2 %}
+                    <td id="tableau2td" >{{j}}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -65,8 +65,16 @@ def contact(request):
         #messages.success(request, 'Game Number ' + new_contact.gameNumber + ' & player : ' + new_contact.login)
         # return redirect(reverse('detail', args=[new_contact.pk] ))
 
-        context = {'pers': "tst",'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
+        context = {}
         return render(request, 'forms/detail.html', context)
+
+
+        #context = {'pers': "tst",'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
+        #return render(request, 'forms/detail.html', context)
+
+
+
+
     # Si méthode GET, on présente le formulaire
     context = {'form': form}
     return render(request, 'forms/detail.html', context)
