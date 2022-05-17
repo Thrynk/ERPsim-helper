@@ -4,4 +4,6 @@ WORKDIR /ERPsim-helper
 
 COPY ./django_server django_server/
 
+COPY requirements.txt /ERPsim-helper/requirements.txt
+
 RUN pip3 install sphinx-autobuild rst2pdf furo
