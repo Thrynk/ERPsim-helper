@@ -77,6 +77,10 @@ AUTHENTICATION_BACKENDS = [
     'erpsim_helper.auth.backend.ODataAuthenticationBackend'
 ]
 
+LOGIN_URL="/login/"
+
+LOGIN_REDIRECT_URL="/"
+
 WSGI_APPLICATION = 'django_server.wsgi.application'
 
 
