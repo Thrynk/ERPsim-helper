@@ -11,15 +11,44 @@ from .models import CompanyValuation, Game
 from .tasks import store_table
 
 class GameAdmin(admin.ModelAdmin):
+    """
+        The GameAdmin objects implements the admin view of our project. 
+        
+        When the teacher wants to start a game, he has to go on this interface in order to 
+        * Create the game 
+        * Give to the students the ID of the game
+        He can pause, restart the game when he wants. Additionnaly, he can stop the game manually.  
+    """
     # A template for a very customized change view:
     change_form_template = 'admin/change_form.html'
 
     def get_readonly_fields(self, request, obj=None):
+        """
+            Return the readonly fields of the view 
+
+            This function, when a game is started, add to the readonly fields, others fields in order to forbide their modification.
+
+            :param obj: The object, the current game.
+            :type obj: Game (None by default)
+            :return: readonly_field
+            :rtype: tuple(str)
+        """
         if obj:
             return self.readonly_fields + ("odata_flow", "game_set", "team", "creation_date", "is_running")
         return self.readonly_fields
 
     def get_exclude(self, request, obj=None):
+        """
+            Return the exclude fields of the object
+
+            If the game is already created, the function returns exclude field, otherwise, it returns
+            is_running field in order to hide the is_running indicator on the view.
+
+            :param obj: The object, the current game.
+            :type obj: Game (None by default)
+            :return: exclude field
+            :rtype: tuple(str)
+        """
         if obj is None :
             return ("is_running",)
         return self.exclude
@@ -27,7 +56,23 @@ class GameAdmin(admin.ModelAdmin):
     #def response_add(self, request, game, post_url_continue=None):
         #return redirect(f'/helper/game/{game.id}')
 
-    def add_view(self, request, form_url='', extra_context=None):
+    def add_view(self, request, form_url='', extra_context=None):   # TO DO
+        """
+            Hide buttons. 
+
+            This function hides show_save_and_add_another and show_save_and_continue buttons in order to 
+            show save button only. 
+
+            :param request: 
+            :type request: 
+            :param form_url: 
+            :type form_url: str (empty by default)
+            :param extra_context: Context of the object 
+            :type extra_context: ... (None by default)
+
+            :return: 
+            :rtype: 
+        """
         # Change the context in order to show or not specifics buttons
         extra_context = extra_context or {}
         extra_context["show_save_and_add_another"] = False
@@ -35,7 +80,25 @@ class GameAdmin(admin.ModelAdmin):
 
         return super().add_view(request, form_url, extra_context)
 
-    def change_view(self, request, object_id, form_url='', extra_context=None):
+    def change_view(self, request, object_id, form_url='', extra_context=None): # TO DO
+        """
+            Stop, pause, play a game
+
+            With this function we are able to stop the game or pause, replay the game. When the game's state changes,
+            the value is updated in the BDD.
+
+            :param request: 
+            :type request: 
+            :param object_id: Game id
+            :type object_id: int 
+            :param form_url: 
+            :type form_url: str (empty by default)
+            :param extra_context: Context of the object 
+            :type obj: ... (None by default)
+
+            :return: 
+            :rtype: 
+        """
         game = Game.objects.get(pk=object_id)
 
         # Check if the game is finished 
