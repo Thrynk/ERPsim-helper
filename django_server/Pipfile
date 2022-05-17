@@ -11,6 +11,8 @@ mysql-connector-python = "==8.0.26"
 pyodata = "==1.7.1"
 requests = "==2.23.0"
 Django = "==3.2.11"
+python-dateutil= "==2.8.2"
+
 
 [dev-packages]
 
