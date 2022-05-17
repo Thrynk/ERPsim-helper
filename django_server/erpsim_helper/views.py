@@ -8,18 +8,54 @@ from .tasks import get_game_latest_data
 
 # Create your views here.
 class ContactForm(Form):
+    """
+        The ContactForm object is usefull for login. 
+
+        To be connected with the odata flow, we have to fill : 
+        * The number of the game (Game ID)
+        * The login 
+        * The password
+    """
     gameNumber = CharField(max_length=200)
     login = CharField(max_length=200)
     password = CharField(widget=PasswordInput, max_length=200)
 
-def index(request):
+def index(request):     # TO DO
+    """
+        Redirect and print a message. 
+
+        :param request:
+        :type request: 
+
+        :return: Http response
+        :rtype: Http response
+    """
     return HttpResponse("Hello, world. You're at the helper index.")
 
-def game(request, game_id):
+def game(request, game_id):     # TO DO
+    """
+        Get the current game. 
+
+        :param request:
+        :type request:
+        :param game_id: ID of the game that we want to reach the data 
+        :type game_id: int 
+    """
     game = Game.objects.get(pk=game_id)
     return HttpResponse(f"Game page : {game.id} \n Flux odata : {game.odata_flow}.")
 
-def login(request):
+def login(request):         # TO DO
+    """
+        Log the user. 
+
+        Check the credentials and create a game if it's ok.
+
+        :param request:
+        :type reuest:
+
+        :return: Http reponse
+        :rtype: Http response
+    """
     # on teste si on est bien en validation de formulaire (POST)
     if request.method == "POST":
         # Si oui on récupère les données postées

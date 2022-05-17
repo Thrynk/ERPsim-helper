@@ -1,0 +1,8 @@
+Django==3.2.11
+python-dotenv==0.19.2
+python-dotenv[cli]==0.19.2
+huey==2.4.3
+redis==4.1.0
+mysql-connector-python==8.0.26
+pyodata==1.7.1
+requests==2.23.0

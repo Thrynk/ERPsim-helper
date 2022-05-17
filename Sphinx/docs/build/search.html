@@ -2,12 +2,9 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Usage" href="Usage.html" /><link rel="prev" title="Welcome to ERPsim’s documentation!" href="index.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="#" />
 
-    <meta name="generator" content="sphinx-4.5.0, furo 2022.04.07"/>
-        <title>Installation - ERPsim 0.1 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.04.07"/><title>Search - ERPsim 0.1 documentation</title><link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -134,7 +131,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -148,14 +145,14 @@
   
   <span class="sidebar-brand-text">ERPsim 0.1 documentation</span>
   
-</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+</a><form class="sidebar-search-container" method="get" action="#" role="search">
   <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Installation</a></li>
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Fonctionnement.html">Fonctionnement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CodeSource.html">Documentation du Code</a></li>
@@ -185,78 +182,31 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Requierements – qu’est-ce qu’il faut installer ? Comment l’installer ? Comment lancer le projet ?</p>
+          
+<noscript>
+<div class="admonition error">
+  <p class="admonition-title">Error</p>
+  <p>
+    Please activate JavaScript to enable the search functionality.
+  </p>
 </div>
-<section id="language">
-<span id="id1"></span><h2>Language<a class="headerlink" href="#language" title="Permalink to this headline">#</a></h2>
-<p>This project is developped with Python Language, because it offers …</p>
-<p>Pour installer Python, rendez-vous sur le <a class="reference external" href="https://www.python.org/downloads/">site officiel</a> de Python. Pour information, ce projet a été développé avec Python 3.9.</p>
-<p>Vous pouvez retrouver les différents <a class="reference internal" href="#packages"><span class="std std-ref">packages</span></a> utilisés ci-dessous.</p>
-</section>
-<section id="packages">
-<span id="id2"></span><h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">#</a></h2>
-<p>To use ERPsim, first install it using pip:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip install ...
-</pre></div>
-</div>
-<p>Les différents packages sont :</p>
-<ul class="simple">
-<li><p>Django (3.2.11)</p></li>
-<li><p>python-dotenv (0.19.2)</p></li>
-<li><p>python-dotenv[cli] (0.19.2)</p></li>
-<li><p>huey (2.4.3)</p></li>
-<li><p>redis (4.1.0)</p></li>
-<li><p>mysql-connector-python (8.0.26)</p></li>
-<li><p>pyodata (1.7.1)</p></li>
-<li><p>requests (2.23.0)</p></li>
-</ul>
-<p>Tous ces packages sont dand le fichier <a class="reference download internal" download="" href="_downloads/9759e87f7c8f266c50e4dad62f241897/requirements.txt"><code class="xref download docutils literal notranslate"><span class="pre">requirements.txt</span></code></a>
-Pour tout installer en une fois, vous pouvez effectuer la commande suivante</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip install -r requirements.txt
-</pre></div>
-</div>
-<p>ou</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip3 install -r requirements.txt
-</pre></div>
-</div>
-</section>
-</section>
+</noscript>
+
+<div id="search-results"></div>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="Usage.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Usage</div>
-              </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="index.html">
-              <svg><use href="#svg-arrow-right"></use></svg>
-              <div class="page-info">
-                <div class="context">
-                  <span>Previous</span>
-                </div>
-                
-                <div class="title">Home</div>
-                
-              </div>
-            </a>
+          
+          
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -277,28 +227,8 @@ Pour tout installer en une fois, vous pouvez effectuer la commande suivante</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            Contents
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Installation</a><ul>
-<li><a class="reference internal" href="#language">Language</a></li>
-<li><a class="reference internal" href="#packages">Packages</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
@@ -308,5 +238,8 @@ Pour tout installer en une fois, vous pouvez effectuer la commande suivante</p>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/scripts/furo.js"></script>
-    </body>
+    
+<script src="_static/searchtools.js"></script>
+<script src="_static/language_data.js"></script>
+<script src="searchindex.js"></script></body>
 </html>

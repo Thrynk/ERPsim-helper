@@ -38,7 +38,7 @@ Les différents packages sont :
 * pyodata (1.7.1)
 * requests (2.23.0)
 
-Tous ces packages sont dand le fichier *requierements.txt*
+Tous ces packages sont dand le fichier :download:`requirements.txt <../../../requirements.txt>`
 Pour tout installer en une fois, vous pouvez effectuer la commande suivante
 
 .. code-block:: console

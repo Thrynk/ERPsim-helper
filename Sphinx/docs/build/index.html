@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Usage" href="Usage.html" /><link rel="prev" title="Welcome to ERPsim’s documentation!" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Installation" href="Installation.html" />
 
     <meta name="generator" content="sphinx-4.5.0, furo 2022.04.07"/>
-        <title>Installation - ERPsim 0.1 documentation</title>
+        <title>ERPsim 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -123,7 +123,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">ERPsim 0.1 documentation</div></a>
+      <a href="#"><div class="brand">ERPsim 0.1 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -143,7 +143,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
   
   
   <span class="sidebar-brand-text">ERPsim 0.1 documentation</span>
@@ -154,8 +154,8 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Installation</a></li>
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Fonctionnement.html">Fonctionnement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CodeSource.html">Documentation du Code</a></li>
@@ -191,44 +191,51 @@
           </label>
         </div>
         <article role="main">
-          <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h1>
+          <section id="welcome-to-erpsim-s-documentation">
+<h1>Welcome to ERPsim’s documentation!<a class="headerlink" href="#welcome-to-erpsim-s-documentation" title="Permalink to this headline">#</a></h1>
+<p><strong>ERPsim</strong> est une aide pour le jeu <em>ERPsim</em> développé par HEC Montréal.
+Ce projet se place dans le cadre d’une observation lors de la Coupe du monde d’ERP. Lors de cette dernière,
+plusieurs équipes se sont affrontées sur ERPsim, un jeu sur la gestion d’entreprise. L’une de ces équipes n’était ni plus ni moins qu’un BOT <a class="footnote-reference brackets" href="#f1" id="id1">1</a>.</p>
+<p>Contre toute attente, c’est le BOT qui a gagné la compétition devant l’ISA et les autres participants. C’est de là qu’est venue l’idée de développer
+une Intelligence artificielle capable d’apprendre à jouer mais aussi capable de gagner cette compétition en réagissant aux différents évènements du jeu.</p>
+<p>Ce jeu repose sur SAP, un outil indispensable aux entreprises de nos jours. SAP est un ERP</p>
+<dl class="simple">
+<dt>ERP (Enterprise Ressource Planning ou Progiciel de Gestion Intégré en français)</dt><dd><p>Dans le principe, un ERP est un logiciel permettant de gérer l’ensemble des processus opérationnels d’une entreprise, que ce soit la gestion des ressources humaines,
+la gestion comptable et financière, mais aussi la vente, la distribution, l’approvisionnement ou encore les nouveaux besoins comme le commerce électronique.</p>
+</dd>
+</dl>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Requierements – qu’est-ce qu’il faut installer ? Comment l’installer ? Comment lancer le projet ?</p>
+<p>This project is under active development.</p>
 </div>
-<section id="language">
-<span id="id1"></span><h2>Language<a class="headerlink" href="#language" title="Permalink to this headline">#</a></h2>
-<p>This project is developped with Python Language, because it offers …</p>
-<p>Pour installer Python, rendez-vous sur le <a class="reference external" href="https://www.python.org/downloads/">site officiel</a> de Python. Pour information, ce projet a été développé avec Python 3.9.</p>
-<p>Vous pouvez retrouver les différents <a class="reference internal" href="#packages"><span class="std std-ref">packages</span></a> utilisés ci-dessous.</p>
-</section>
-<section id="packages">
-<span id="id2"></span><h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">#</a></h2>
-<p>To use ERPsim, first install it using pip:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip install ...
-</pre></div>
-</div>
-<p>Les différents packages sont :</p>
-<ul class="simple">
-<li><p>Django (3.2.11)</p></li>
-<li><p>python-dotenv (0.19.2)</p></li>
-<li><p>python-dotenv[cli] (0.19.2)</p></li>
-<li><p>huey (2.4.3)</p></li>
-<li><p>redis (4.1.0)</p></li>
-<li><p>mysql-connector-python (8.0.26)</p></li>
-<li><p>pyodata (1.7.1)</p></li>
-<li><p>requests (2.23.0)</p></li>
+<p>Check out the <a class="reference internal" href="Usage.html"><span class="doc">Usage</span></a> section for further information, including how to
+<a class="reference internal" href="Installation.html#id1"><span class="std std-ref">install</span></a> the project.</p>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Installation.html#language">Language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Installation.html#packages">Packages</a></li>
 </ul>
-<p>Tous ces packages sont dand le fichier <a class="reference download internal" download="" href="_downloads/9759e87f7c8f266c50e4dad62f241897/requirements.txt"><code class="xref download docutils literal notranslate"><span class="pre">requirements.txt</span></code></a>
-Pour tout installer en une fois, vous pouvez effectuer la commande suivante</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip install -r requirements.txt
-</pre></div>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Fonctionnement.html">Fonctionnement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CodeSource.html">Documentation du Code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CodeSource.html#getting-data">Getting data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeSource.html#using-data">Using data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeSource.html#what-s-used-for-visualization">What’s used for visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CodeSource.html#what-s-used-for-helping-prediction">What’s used for helping, prediction</a></li>
+</ul>
+</li>
+</ul>
 </div>
-<p>ou</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip3 install -r requirements.txt
-</pre></div>
-</div>
+<p class="rubric">Notes</p>
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>BOT : Agent informatique capable de jouer en autonomie</p>
+</dd>
+</dl>
 </section>
 </section>
 
@@ -237,26 +244,16 @@ Pour tout installer en une fois, vous pouvez effectuer la commande suivante</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="Usage.html">
+          <a class="next-page" href="Installation.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Usage</div>
+                <div class="title">Installation</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="index.html">
-              <svg><use href="#svg-arrow-right"></use></svg>
-              <div class="page-info">
-                <div class="context">
-                  <span>Previous</span>
-                </div>
-                
-                <div class="title">Home</div>
-                
-              </div>
-            </a>
+          
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -289,9 +286,8 @@ Pour tout installer en une fois, vous pouvez effectuer la commande suivante</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Installation</a><ul>
-<li><a class="reference internal" href="#language">Language</a></li>
-<li><a class="reference internal" href="#packages">Packages</a></li>
+<li><a class="reference internal" href="#">Welcome to ERPsim’s documentation!</a><ul>
+<li><a class="reference internal" href="#contents">Contents</a></li>
 </ul>
 </li>
 </ul>

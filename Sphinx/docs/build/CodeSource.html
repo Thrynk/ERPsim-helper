@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Usage" href="Usage.html" /><link rel="prev" title="Welcome to ERPsim’s documentation!" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="Fonctionnement" href="Fonctionnement.html" />
 
     <meta name="generator" content="sphinx-4.5.0, furo 2022.04.07"/>
-        <title>Installation - ERPsim 0.1 documentation</title>
+        <title>Documentation du Code - ERPsim 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -155,10 +155,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Fonctionnement.html">Fonctionnement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CodeSource.html">Documentation du Code</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Documentation du Code</a></li>
 </ul>
 
 </div>
@@ -191,44 +191,41 @@
           </label>
         </div>
         <article role="main">
-          <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h1>
+          <section id="documentation-du-code">
+<h1>Documentation du Code<a class="headerlink" href="#documentation-du-code" title="Permalink to this headline">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Requierements – qu’est-ce qu’il faut installer ? Comment l’installer ? Comment lancer le projet ?</p>
+<p>Expliquer tout le code dans le détail, comment ça fonctionne ?</p>
 </div>
-<section id="language">
-<span id="id1"></span><h2>Language<a class="headerlink" href="#language" title="Permalink to this headline">#</a></h2>
-<p>This project is developped with Python Language, because it offers …</p>
-<p>Pour installer Python, rendez-vous sur le <a class="reference external" href="https://www.python.org/downloads/">site officiel</a> de Python. Pour information, ce projet a été développé avec Python 3.9.</p>
-<p>Vous pouvez retrouver les différents <a class="reference internal" href="#packages"><span class="std std-ref">packages</span></a> utilisés ci-dessous.</p>
+<section id="getting-data">
+<span id="codesource"></span><h2>Getting data<a class="headerlink" href="#getting-data" title="Permalink to this headline">#</a></h2>
+<p>To get all the data about the current game
+you can use the <code class="docutils literal notranslate"><span class="pre">tasks.get_game_latest_data()</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="manage.main">
+<span class="sig-prename descclassname"><span class="pre">manage.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manage.main" title="Permalink to this definition">#</a></dt>
+<dd><p>Entry point of the code.</p>
+<p>Launch <cite>execute_from_command_line</cite> function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Execute <cite>execute_from_command_line(sys.argv)</cite>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>function</p>
+</dd>
+</dl>
+</dd></dl>
 </section>
-<section id="packages">
-<span id="id2"></span><h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">#</a></h2>
-<p>To use ERPsim, first install it using pip:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip install ...
-</pre></div>
-</div>
-<p>Les différents packages sont :</p>
-<ul class="simple">
-<li><p>Django (3.2.11)</p></li>
-<li><p>python-dotenv (0.19.2)</p></li>
-<li><p>python-dotenv[cli] (0.19.2)</p></li>
-<li><p>huey (2.4.3)</p></li>
-<li><p>redis (4.1.0)</p></li>
-<li><p>mysql-connector-python (8.0.26)</p></li>
-<li><p>pyodata (1.7.1)</p></li>
-<li><p>requests (2.23.0)</p></li>
-</ul>
-<p>Tous ces packages sont dand le fichier <a class="reference download internal" download="" href="_downloads/9759e87f7c8f266c50e4dad62f241897/requirements.txt"><code class="xref download docutils literal notranslate"><span class="pre">requirements.txt</span></code></a>
-Pour tout installer en une fois, vous pouvez effectuer la commande suivante</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip install -r requirements.txt
-</pre></div>
-</div>
-<p>ou</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip3 install -r requirements.txt
-</pre></div>
-</div>
+<section id="using-data">
+<h2>Using data<a class="headerlink" href="#using-data" title="Permalink to this headline">#</a></h2>
+<p>There are x tables, which contains …
+This one is for that, and so on …</p>
+</section>
+<section id="what-s-used-for-visualization">
+<h2>What’s used for visualization<a class="headerlink" href="#what-s-used-for-visualization" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="what-s-used-for-helping-prediction">
+<h2>What’s used for helping, prediction<a class="headerlink" href="#what-s-used-for-helping-prediction" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
@@ -237,23 +234,15 @@ Pour tout installer en une fois, vous pouvez effectuer la commande suivante</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="Usage.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Usage</div>
-              </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="index.html">
+          
+          <a class="prev-page" href="Fonctionnement.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Home</div>
+                <div class="title">Fonctionnement</div>
                 
               </div>
             </a>
@@ -289,9 +278,11 @@ Pour tout installer en une fois, vous pouvez effectuer la commande suivante</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Installation</a><ul>
-<li><a class="reference internal" href="#language">Language</a></li>
-<li><a class="reference internal" href="#packages">Packages</a></li>
+<li><a class="reference internal" href="#">Documentation du Code</a><ul>
+<li><a class="reference internal" href="#getting-data">Getting data</a></li>
+<li><a class="reference internal" href="#using-data">Using data</a></li>
+<li><a class="reference internal" href="#what-s-used-for-visualization">What’s used for visualization</a></li>
+<li><a class="reference internal" href="#what-s-used-for-helping-prediction">What’s used for helping, prediction</a></li>
 </ul>
 </li>
 </ul>
