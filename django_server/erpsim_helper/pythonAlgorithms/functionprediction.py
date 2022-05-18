@@ -17,7 +17,7 @@ sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_se
 
 import variables as var
 
-from ..models import Tips
+#from ..models import Tips
 
  
 
@@ -139,6 +139,21 @@ def prediction(request):
 
     return findParameters
 
+def insertDB (ListeReaproJoueur, db):
+
+  for i in ListeReaproJoueur.items():
+
+    if (i[1][0]!=1):
+
+      ListOfPreviousTips = Tips.objects.filter(element=i[0])
+      ListOfPreviousTips.update(is_active=False)
+
+      sentenceToAdd = str( "Augmentez la prix du produit " + str(i[0].upper()) + " à " + str(i[1][1]))
+      I = Tips(company_code="A4",date_time=datetime.now(),element = i[0],sentence=sentenceToAdd ,is_active=True )
+      I.save()
+      
+  return
+
 def materialDef():
     return ["Milk","Cream","Yoghurt","Cheese","Butter","Ice Cream"]
 
@@ -226,20 +241,7 @@ def modificationPrix():
 
   return ListeReaproJoueur
 
-def insertDB (ListeReaproJoueur, db):
 
-  for i in ListeReaproJoueur.items():
-
-    if (i[1][0]!=1):
-
-      ListOfPreviousTips = Tips.objects.filter(element=i[0])
-      ListOfPreviousTips.update(is_active=False)
-
-      sentenceToAdd = str( "Augmentez la prix du produit " + str(i[0].upper()) + " à " + str(i[1][1]))
-      I = Tips(company_code="A4",date_time=datetime.now(),element = i[0],sentence=sentenceToAdd ,is_active=True )
-      I.save()
-      
-  return
 
 def getTheTipsBack():
 
