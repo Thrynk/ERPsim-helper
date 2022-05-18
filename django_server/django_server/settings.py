@@ -73,9 +73,11 @@ TEMPLATES = [
 ]
 
 AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
+    # 'django.contrib.auth.backends.ModelBackend',
     'erpsim_helper.auth.backend.ODataAuthenticationBackend'
 ]
+
+AUTH_USER_MODEL="erpsim_helper.User"
 
 LOGIN_URL="/login/"
 

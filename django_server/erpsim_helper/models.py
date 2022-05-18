@@ -1,10 +1,20 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
 from .tasks import get_game_latest_data
+
+from django.conf import settings
 
 import datetime
 
 # Create your models here.
+
+class User(AbstractUser):
+    username = models.CharField(max_length=150, unique=False)
+
+    USERNAME_FIELD="username"
+    
+    class Meta:
+        db_table = 'auth_user'
 
 class Game(models.Model):
     """
@@ -52,7 +62,7 @@ class Player(models.Model):
         A player is playing in one game, so it is composed of `game_id`, and 
         naturally with his identity with `user.`
     """
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     game_id = models.IntegerField()
 
 class CompanyValuation(models.Model):

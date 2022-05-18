@@ -1,5 +1,6 @@
 from django.contrib.auth.backends import BaseBackend
-from django.contrib.auth.models import User
+
+from erpsim_helper.models import User
 from requests import Session
 from pyodata import Client
 from pyodata.exceptions import HttpError
@@ -14,7 +15,11 @@ class ODataAuthenticationBackend(BaseBackend):
             game_id = int(request.POST["gameNumber"])
             game = Game.objects.get(pk=game_id)
         except MultiValueDictKeyError:
-            return None
+            # Admin is trying to log in
+            admin = User.objects.get(username=username)
+            if not admin.check_password(password):
+                return None
+            return admin
 
         # check if player is already associated with a game
         try:
@@ -24,6 +29,9 @@ class ODataAuthenticationBackend(BaseBackend):
 
             user = User.objects.get(pk=player_associated_with_game.user_id)
             # TODO: authenticate user with password
+
+            if not user.check_password(password):
+                return None
 
             return user
         except Player.DoesNotExist:
