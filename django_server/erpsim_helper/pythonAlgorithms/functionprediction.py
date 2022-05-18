@@ -1,3 +1,5 @@
+from datetime import datetime
+from dis import Instruction
 import mysql.connector
 import pandas as pd
 import os
@@ -9,10 +11,13 @@ from django.http import HttpResponse
 from django.contrib import messages
 from collections import defaultdict
 import sys 
-
 sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_server/erpsim_helper/pythonAlgorithms')
 
+#sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_server/erpsim_helper/')
+
 import variables as var
+
+from ..models import Instructions
 
  
 
@@ -105,6 +110,9 @@ def trouverParametres(df,sales_organization,Materials,Localisations,precision=80
 
 
 def prediction(request):
+
+
+
     #Connection a la BDD SQL
     mydb = var.mydb
 
@@ -114,20 +122,22 @@ def prediction(request):
 
     Materials = var.Materials
     Localisations = var.Localisations
-    LocalisationsInventaire = var.LocalisationsInventaire
+    #LocalisationsInventaire = var.LocalisationsInventaire
 
     #Donner une approximation des parametres
-    dfSales = createDf(var.mydb,"sales")
+    dfSales = createDf(mydb,"sales")
     """dfInventory = createDf(mydb,"inventory")"""
-    os.system('clear')
+    #os.system('clear')
 
     company = str(joueur+set)
 
     rounds, jours = test(var.mydb,company)
-    print("Round : ",rounds,"   Jour : ",jours)
-    print("")
+    #print("Round : ",rounds,"   Jour : ",jours)
+    #print("")
 
-    return trouverParametres(dfSales,company,Materials,Localisations)
+    findParameters = trouverParametres(dfSales,company,Materials,Localisations)
+
+    return findParameters
 
 def materialDef():
     return ["Milk","Cream","Yoghurt","Cheese","Butter","Ice Cream"]
@@ -184,7 +194,25 @@ def modificationPrix():
     valeur = [coefficients[i], round(matriceCurrentPrices[i]*coefficients[i],2)]
     ListeReaproJoueur[Materials[i]]=valeur
 
+
+  insertDB(ListeReaproJoueur, var.mydb)
+
   return ListeReaproJoueur
 
-def insertDB (insertion, table):
+def insertDB (ListeReaproJoueur, db):
+
+  for i in ListeReaproJoueur.items():
+
+    if (i[1][0]!=1):
+
+      ListOfPreviousTips = Instructions.objects.filter(id=1)
+
+      sentenceToAdd = str( "Augmentez la prix du produit " + str(i[0].upper()) + " à " + str(i[1][1]))
+      I = Instructions(company_code="A4",date_time=datetime.now(),sentence=sentenceToAdd ,is_active=True )
+      I.save()
+
   print("fonction pour insérer des choses à certains endroits")
+
+
+def getTheTipsBack():
+  return

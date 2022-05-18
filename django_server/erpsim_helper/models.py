@@ -1,4 +1,3 @@
-from lib2to3.pygram import python_grammar_no_print_statement
 from django.db import models
 from django.contrib.auth.models import User
 from .tasks import get_game_latest_data
@@ -36,8 +35,12 @@ class Player(models.Model):
 class Instructions(models.Model):
     company_code = models.CharField(max_length=2)
     date_time = models.DateTimeField()
+    element = models.CharField(max_length=300)
     sentence = models.CharField(max_length=300)
     is_active = models.BooleanField()
+
+    def __str__(self):
+        return self.sentence
 
 class CompanyValuation(models.Model):
     id_company_valuation = models.BigAutoField(primary_key=True)

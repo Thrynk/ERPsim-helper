@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.forms import ModelForm
 
 
-from .models import Game,Contact
+from .models import Game,Contact,Instructions
 from .tasks import get_game_latest_data
 from .pythonAlgorithms.functionprediction import *
 
@@ -69,7 +69,11 @@ def contact(request):
         #return render(request, 'forms/detail.html', context)
 
 
+        
+        #ListInstructions=get_Instructions()
+
         context = {'pers': "tst",'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
+
         return render(request, 'forms/detail.html', context)
 
 
