@@ -17,7 +17,7 @@ sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_se
 
 import variables as var
 
-from ..models import Instructions
+from ..models import Tips
 
  
 
@@ -205,14 +205,17 @@ def insertDB (ListeReaproJoueur, db):
 
     if (i[1][0]!=1):
 
-      ListOfPreviousTips = Instructions.objects.filter(id=1)
+      ListOfPreviousTips = Tips.objects.filter(element=i[0])
+      ListOfPreviousTips.update(is_active=False)
 
       sentenceToAdd = str( "Augmentez la prix du produit " + str(i[0].upper()) + " à " + str(i[1][1]))
-      I = Instructions(company_code="A4",date_time=datetime.now(),sentence=sentenceToAdd ,is_active=True )
+      I = Tips(company_code="A4",date_time=datetime.now(),element = i[0],sentence=sentenceToAdd ,is_active=True )
       I.save()
-
-  print("fonction pour insérer des choses à certains endroits")
-
+      
+  return
 
 def getTheTipsBack():
-  return
+
+  ListOfTips = Tips.objects.filter(is_active=True)
+
+  return(ListOfTips)
