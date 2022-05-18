@@ -2,9 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib import messages
 from django.forms import ModelForm
+from django.views.generic import DetailView
 
+from .models import Game,Contact,Tips
 
-from .models import Game,Contact,Instructions
 from .tasks import get_game_latest_data
 from .pythonAlgorithms.functionprediction import *
 
@@ -72,7 +73,7 @@ def contact(request):
         
         #ListInstructions=get_Instructions()
 
-        context = {'pers': "tst",'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
+        context = {'pers': "tst",'tips':getTheTipsBack(),'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
 
         return render(request, 'forms/detail.html', context)
 
@@ -82,3 +83,28 @@ def contact(request):
     # Si méthode GET, on présente le formulaire
     context = {'form': form}
     return render(request, 'forms/detail.html', context)
+
+
+
+
+
+
+class PublisherDetail(DetailView):
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super(PublisherDetail, self).get_context_data(**kwargs)
+        # Add in a QuerySet of all the books
+        context['book_list'] = "yo"
+        return context
+
+
+def tip (request, question_id):
+
+    tip = Tips.objects.filter(id=question_id)
+    tip.update(is_active=False)
+
+    context = {'pers': "tst",'tips':getTheTipsBack(),'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
+
+    return render(request, 'forms/detail.html', context)
+

@@ -32,7 +32,7 @@ class Player(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     game_id = models.IntegerField()
 
-class Instructions(models.Model):
+class Tips(models.Model):
     company_code = models.CharField(max_length=2)
     date_time = models.DateTimeField()
     element = models.CharField(max_length=300)

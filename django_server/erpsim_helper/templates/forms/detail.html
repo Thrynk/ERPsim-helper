@@ -18,6 +18,15 @@
     <h1 class= "start">Predictions of prices and stock</h1>
 </div>
 
+<div id = "blockListTips">
+
+    <h2 class = "start">Stratégie de départ</h2>
+
+    <p class = "tip"> Augmentez vos prix d'un facteur de 1.2</p>
+    <p class = "tip"> Dispatchez 2/3 de l'entrepots principal de vos ressources dans les entrepots de manières égales </p>
+
+</div>
+
 
 
 <div id = "blockListTips">
@@ -25,9 +34,17 @@
     <h2 class = "start">List Of Tips</h2>
 
 
-    <p class = "tip">#tip1</p>
-    <p class = "tip">#tip2</p>
-    <p class = "tip">#tip3</p>
+    {% for tip in tips %}
+
+        <div>
+
+            <form method="POST" action="tipactualisation/{{ tip.id }}/" >
+                {% csrf_token %}
+                <button type="submit">Continue</button>
+            </form>
+            <p class = "tip"> {{ tip.sentence}}</p>
+        </div>
+    {% endfor %}
 
 </div>
 
