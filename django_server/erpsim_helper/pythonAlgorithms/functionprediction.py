@@ -13,7 +13,7 @@ from collections import defaultdict
 import sys 
 sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_server/erpsim_helper/pythonAlgorithms')
 
-#sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_server/erpsim_helper/')
+sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_server/erpsim_helper/')
 
 import variables as var
 
@@ -141,6 +141,33 @@ def prediction(request):
 
 def materialDef():
     return ["Milk","Cream","Yoghurt","Cheese","Butter","Ice Cream"]
+
+ventes_veille={"Milk":[5,5,4],"Cream":[5,5,4],"Yoghurt":[5,5,4],"Cheese":[5,5,4],"Butter":[5,5,4],"Ice Cream":[5,5,4]}
+prix = {"Milk":45,"Cream":56,"Yoghurt":40,"Cheese":40,"Butter":40,"Ice Cream":40}
+stock_actuel = {"Milk":[300,50,65],"Cream":[300,50,65],"Yoghurt":[300,50,65],"Cheese":[300,50,65],"Butter":[300,50,65],"Ice Cream":[300,50,65]}
+frequence=5
+jour_cycle=2
+equipe="L9"
+
+def matricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, stock_actuel, equipe):
+  materials = ["Milk","Cream","Yoghurt","Cheese","Butter","Ice Cream"]
+  jours_cycle_restants = frequence_reapro + 1 - jour_du_cycle
+
+  dictionnaire_prix = {}
+
+  for element in materials:
+    if (ventes_veille[element][0] >= stock_actuel[element][0]/jours_cycle_restants or ventes_veille[element][1] >= stock_actuel[element][1]/jours_cycle_restants or ventes_veille[element][2] >= stock_actuel[element][2]/jours_cycle_restants):
+      dictionnaire_prix[element]=[1.1, 1.1*prix_actuels[element]]
+    elif (ventes_veille[element][0] < 0.8*stock_actuel[element][0]/jours_cycle_restants and ventes_veille[element][1] < 0.8*stock_actuel[element][1]/jours_cycle_restants and ventes_veille[element][2] < 0.8*stock_actuel[element][2]/jours_cycle_restants):
+      dictionnaire_prix[element]=[0.9, 0.9*prix_actuels[element]]
+    else:
+      dictionnaire_prix[element]=[1, prix_actuels[element]]
+
+  insertDB(dictionnaire_prix, var.mydb)
+
+  return dictionnaire_prix
+
+print(matricePrix(ventes_veille, prix, frequence, jour_cycle, stock_actuel, equipe))
 
 def modificationPrix():
 
