@@ -15,26 +15,40 @@ class ODataAuthenticationBackend(BaseBackend):
             game = Game.objects.get(pk=game_id)
         except MultiValueDictKeyError:
             return None
-        
-        session = Session()
-        session.auth = (username, password)
-        try:
-            odata_service = Client(game.odata_flow, session)
 
-            # login success, return User
-            try :
-                user = User.objects.get(username=username)
-            except User.DoesNotExist:
-                user = User.objects.create_user(username, '', password)
-            
-            # create player to know which game is associated with the player
-            # no need to check if player exists because on second login, default django backend will be used
-            player = Player(user=user, game_id=game_id)
-            player.save()
+        # check if player is already associated with a game
+        try:
+            # if player exists, then retrieve appropriate user id
+            player_associated_with_game = Player.objects.get(game_id=game.id)
+            print(player_associated_with_game)
+
+            user = User.objects.get(pk=player_associated_with_game.user_id)
+            # TODO: authenticate user with password
+
             return user
-        except HttpError:
-            # login failed, incorrect odata credentials
-            return None
+        except Player.DoesNotExist:
+            session = Session()
+            session.auth = (username, password)
+            try:
+                odata_service = Client(game.odata_flow, session)
+
+                # login odata success, create user
+                user = User.objects.create_user(username, '', password)
+                # try :
+                #     user = User.objects.get(username=username)
+                #     #player_associated_with_game = Player.objects.get(game_id=game.id)
+                # except User.DoesNotExist:
+                #     user = User.objects.create_user(username, '', password)
+                
+                # create player to know which game is associated with the player
+                # no need to check if player exists because on second login, default django backend will be used
+                print(f"user {user.id}")
+                player = Player(user=user, game_id=game_id)
+                player.save()
+                return user
+            except HttpError:
+                # login failed, incorrect odata credentials
+                return None
 
     def get_user(self, user_id):
         try:
