@@ -13,11 +13,11 @@ from collections import defaultdict
 import sys 
 sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_server/erpsim_helper/pythonAlgorithms')
 
-sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_server/erpsim_helper/')
+#sys.path.append('/Users/alexissoltysiak/Documents/GitHub/ERPsim-helper/django_server/erpsim_helper/')
 
 import variables as var
 
-#from ..models import Tips
+from ..models import Tips
 
  
 
@@ -182,7 +182,6 @@ def matricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, st
 
   return dictionnaire_prix
 
-print(matricePrix(ventes_veille, prix, frequence, jour_cycle, stock_actuel, equipe))
 
 def modificationPrix():
 

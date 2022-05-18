@@ -36,14 +36,8 @@
 
     {% for tip in tips %}
 
-        <div>
-
-            <form method="POST" action="tipactualisation/{{ tip.id }}/" >
-                {% csrf_token %}
-                <button type="submit">Continue</button>
-            </form>
             <p class = "tip"> {{ tip.sentence}}</p>
-        </div>
+            
     {% endfor %}
 
 </div>
