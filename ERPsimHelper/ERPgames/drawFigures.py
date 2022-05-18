@@ -252,6 +252,6 @@ def drawStocks(dataframe, company, products, startDate=None, endDate=None):
         if ax[:11] == "annotations":
             for index, annotation in enumerate(fig['layout'][ax]):
                 if fig['layout'][ax][index]['text'] == "Date":
-                    fig['layout'][ax][index]['y'] = -0.116
+                    fig['layout'][ax][index]['y'] = -0.07
 
     return fig, dataframe_company_general, dataframe_company_north, dataframe_company_south, dataframe_company_west
