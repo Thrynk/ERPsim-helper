@@ -178,15 +178,17 @@ def insertDB (ListeReaproJoueur, db):
   return
 
 def getMatriceStock(prediction, stock_actuel, equipe, jour_du_cycle):
+
   materials = materialDef()
   reapro=getReapro()
 
-  if jour_du_cycle != 1:
-    return 0
+  #if jour_du_cycle != 1:
+  #  return 0
 
   matrice_stock={}
 
   for element in materials:
+
     somme_coef = prediction[element][0] + prediction[element][1] + prediction[element][2]
     #Dispatch du produit "element" dans les 3 entrepots
     dispatch_element=[]
@@ -202,6 +204,8 @@ def getMatriceStock(prediction, stock_actuel, equipe, jour_du_cycle):
 
     matrice_stock[element]=[dispatch_element[0]+floor(reste/3),dispatch_element[1]+floor(reste/3),dispatch_element[2]+floor(reste/3)]
 
+    print("matrice_stock ",matrice_stock)
+  
   return(matrice_stock)
 
 
@@ -215,7 +219,7 @@ frequence=5
 jour_cycle=1
 equipe="L9"
 
-print(getMatriceStock(prediction("a"),stock_actuel, equipe, jour_cycle))
+
 
 def getMatricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, stock_actuel, equipe):
   materials = materialDef()
