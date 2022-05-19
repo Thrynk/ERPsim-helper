@@ -214,8 +214,10 @@ ventes_veille={"Milk":[5,5,4],"Cream":[5,5,4],"Yoghurt":[5,5,4],"Cheese":[5,5,4]
 prix = {"Milk":45,"Cream":56,"Yoghurt":40,"Cheese":40,"Butter":40,"Ice Cream":40}
 stock_actuel = {"Milk":[300,50,65],"Cream":[300,50,65],"Yoghurt":[300,50,65],"Cheese":[300,50,65],"Butter":[300,50,65],"Ice Cream":[300,50,65]}
 frequence=5
-jour_cycle=2
+jour_cycle=1
 equipe="L9"
+
+print(getMatriceStock(prediction("a"),stock_actuel, equipe, jour_cycle))
 
 def getMatricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, stock_actuel, equipe):
   materials = materialDef()
