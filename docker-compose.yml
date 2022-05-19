@@ -55,6 +55,7 @@ services:
       - ODATA_PASSWORD=${ODATA_PASSWORD}
       - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
       - DJANGO_DATABASE=${DJANGO_DATABASE}
+      - REDIS_HOST=cache
     depends_on:
       - db
       - cache

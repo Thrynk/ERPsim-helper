@@ -8,7 +8,7 @@ from django.shortcuts import redirect
 from .models import CompanyValuation, Game
 
 # Import tasks to pause
-from .tasks import store_table
+from .tasks import store_table, reschedule_fetching_tasks
 
 class GameAdmin(admin.ModelAdmin):
     """
@@ -124,7 +124,9 @@ class GameAdmin(admin.ModelAdmin):
 
         # Check if a button has been pressed, stop or pause or play after a pause.
         if "_pause" in request.POST:
-            # store_table.revoke()
+            #TODO: get scheduled tasks, store parameters in redis, revoke all store_table tasks
+
+            #store_table.revoke()
             # print(store_table.is_revoked())
 
             # To change is_running field of object_id in bdd
@@ -132,7 +134,9 @@ class GameAdmin(admin.ModelAdmin):
             game.save()
 
         elif "_stop" in request.POST:
-            # store_table.revoke()
+            # TODO: revoke all store_table tasks
+
+            #store_table.revoke()
             # print(store_table.is_revoked())
 
             # To change is_stopped field of object_id in bdd
@@ -142,6 +146,9 @@ class GameAdmin(admin.ModelAdmin):
 
         elif "_play" in request.POST:
             # Launching the tasks
+            #reschedule_fetching_tasks()
+
+            #TODO: fetch tasks associated with game in redis, and schedule them
 
             # To change is_running field of object_id in bdd
             game.is_running=True 

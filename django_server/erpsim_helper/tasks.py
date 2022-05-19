@@ -1,4 +1,4 @@
-from huey.contrib.djhuey import task, enqueue
+from huey.contrib.djhuey import task, enqueue, scheduled
 
 import pyodata
 from pyodata.v2.service import GetEntitySetFilter as esf
@@ -94,6 +94,29 @@ def get_game_latest_data(game_id, odata_flow, game_set, team, is_running, odata_
     logger.info(f"Execution time of all tasks : {time.time() - d1}")    
 
 @task()
+def launch_fetching_tasks(game, team, user, password):
+    logger.info('-- game_id : {} flow : {} set : {} team : {} is_running : {} --'.format(game.id, game.odata_flow, game.game_set, team, game.is_running))
+    # CONNEXION ODATA
+    global odata_service
+
+    session = requests.Session()
+    session.auth = (user, password)
+    odata_service = pyodata.Client(game.odata_flow, session)
+
+    TABLES_SQL = TABLE_SOCIETE.keys()  
+
+    # launch store_table tasks
+    d1 = time.time()
+    tasks_group = []
+    for table in TABLES_SQL:
+        # schedule tasks to fetch data every minute (every round day in ERPSim)
+        for i in range(100): # 8 rounds of 10 virtual days (+ 20 if round duration = 1'30)
+            eta = datetime.datetime.now() + datetime.timedelta(seconds=60 * i)
+            tasks_group.append(store_table.schedule((table, game.id, game.game_set, team), eta=eta))   
+
+    logger.info(f"Execution time to create all tasks : {time.time() - d1}")    
+
+@task()
 def store_table(table, game_id, game_set, team):
     """
         Store the data into sql database. 
@@ -153,6 +176,14 @@ def store_table(table, game_id, game_set, team):
 
     logger.info(f"\n--- Execution time for table {table} : {time.time()-d1}")
     return True
+
+def reschedule_fetching_tasks():
+    tasks = scheduled()
+    print(tasks)
+
+    for task in tasks:
+        if task.name == "store_table":
+            print(task.eta)
 
 
 def get_max_sim_date(sql_conn, table, id_game):

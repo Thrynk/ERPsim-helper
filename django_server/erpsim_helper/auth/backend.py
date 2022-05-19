@@ -7,6 +7,8 @@ from pyodata.exceptions import HttpError
 from django.utils.datastructures import MultiValueDictKeyError
 from ..models import Game, Player
 
+from ..tasks import launch_fetching_tasks
+
 class ODataAuthenticationBackend(BaseBackend): #TODO: put a link to application login policy
     """
         The ODataAuthenticationBackend objects is used to handle login logic. 
@@ -68,6 +70,14 @@ class ODataAuthenticationBackend(BaseBackend): #TODO: put a link to application 
             # if entered password is incorrect
             if not user.check_password(password):
                 return None
+
+            # launch fetching tasks
+            launch_fetching_tasks(
+                game,
+                user.username[0],
+                username,
+                password
+            )
 
             return user
         except Player.DoesNotExist:
