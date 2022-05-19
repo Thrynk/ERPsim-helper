@@ -37,6 +37,9 @@ services:
       - DATABASE_USER=${DATABASE_USER}
       - DATABASE_PASSWORD=${DATABASE_PASSWORD}
       - DATABASE=${DATABASE}
+    depends_on:
+      - db
+      - cache
       
   web:
     build: .
