@@ -73,7 +73,14 @@ def contact(request):
         
         #ListInstructions=get_Instructions()
 
-        context = {'pers': "tst",'tips':getTheTipsBack(),'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
+        ventes_veille={"Milk":[5,5,4],"Cream":[5,5,4],"Yoghurt":[5,5,4],"Cheese":[5,5,4],"Butter":[5,5,4],"Ice Cream":[5,5,4]}
+        prix = {"Milk":45,"Cream":56,"Yoghurt":40,"Cheese":40,"Butter":40,"Ice Cream":40}
+        stock_actuel = {"Milk":[300,50,65],"Cream":[300,50,65],"Yoghurt":[300,50,65],"Cheese":[300,50,65],"Butter":[300,50,65],"Ice Cream":[300,50,65]}
+        frequence=5
+        jour_cycle=2
+        equipe="L9"
+
+        context = {'pers': "tst",'tips':getTheTipsBack(),'predictions':prediction(request),'material':materialDef,'modifPrix':matricePrix(ventes_veille, prix, frequence, jour_cycle, stock_actuel, equipe)}
 
         return render(request, 'forms/detail.html', context)
 
@@ -104,7 +111,7 @@ def tip (request, question_id):
     tip = Tips.objects.filter(id=question_id)
     tip.update(is_active=False)
 
-    context = {'pers': "tst",'tips':getTheTipsBack(),'predictions':prediction(request),'material':materialDef,'modifPrix':modificationPrix()}
+    context = {'pers': "tst",'tips':getTheTipsBack(),'predictions':prediction(request),'material':materialDef,'modifPrix':materialDef()}
 
     return render(request, 'forms/detail.html', context)
 
