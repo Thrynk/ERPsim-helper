@@ -3,6 +3,7 @@ from dis import Instruction
 import mysql.connector
 import pandas as pd
 import os
+from math import *
 from django.shortcuts import render, redirect
 from django.forms import ModelForm, Textarea
 from django import forms
@@ -107,8 +108,6 @@ def trouverParametres(df,sales_organization,Materials,Localisations,precision=80
 
 
 
-
-
 def prediction(request):
 
 
@@ -139,6 +138,30 @@ def prediction(request):
 
     return findParameters
 
+def materialDef():
+  return ["Milk","Cream","Yoghurt","Cheese","Butter","Ice Cream"]
+
+def getReapro():
+  material = materialDef()
+
+  reapro = {}
+
+  reaproMilk = 900
+  reaproCream = 300
+  reaproYoghurt = 700
+  reaproCheese = 350
+  reaproButter = 400
+  reaproIceCream = 300
+  
+  reapro[material[0]]=reaproMilk
+  reapro[material[1]]=reaproCream
+  reapro[material[2]]=reaproYoghurt
+  reapro[material[3]]=reaproCheese
+  reapro[material[4]]=reaproButter
+  reapro[material[5]]=reaproIceCream
+
+  return reapro
+
 def insertDB (ListeReaproJoueur, db):
 
   for i in ListeReaproJoueur.items():
@@ -148,14 +171,44 @@ def insertDB (ListeReaproJoueur, db):
       ListOfPreviousTips = Tips.objects.filter(element=i[0])
       ListOfPreviousTips.update(is_active=False)
 
-      sentenceToAdd = str( "Augmentez la prix du produit " + str(i[0].upper()) + " à " + str(i[1][1]))
+      sentenceToAdd = str( "Augmentez le prix du produit " + str(i[0].upper()) + " à " + str(i[1][1]))
       I = Tips(company_code="A4",date_time=datetime.now(),element = i[0],sentence=sentenceToAdd ,is_active=True )
       I.save()
       
   return
 
-def materialDef():
-    return ["Milk","Cream","Yoghurt","Cheese","Butter","Ice Cream"]
+def getMatriceStock(prediction, stock_actuel, equipe, jour_du_cycle):
+  materials = materialDef()
+  reapro=getReapro()
+
+  if jour_du_cycle != 1:
+    return 0
+
+  matrice_stock={}
+
+  for element in materials:
+    somme_coef = prediction[element][0] + prediction[element][1] + prediction[element][2]
+    #Dispatch du produit "element" dans les 3 entrepots
+    dispatch_element=[]
+    for i in range (0,3):
+      dispatch_theorique = prediction[element][i] / somme_coef
+      if (dispatch_theorique * reapro[element] > stock_actuel[element]):
+        dispatch_element.append(floor(dispatch_theorique * reapro[element] - stock_actuel[element]))
+      else:
+        dispatch_element.append(0)
+
+    #Unites non reparties dans les entrepots secondaires
+    reste = reapro[element] - dispatch_element[0] - dispatch_element[1] - dispatch_element[2]
+
+    matrice_stock[element]=[dispatch_element[0]+floor(reste/3)]
+
+  return(matrice_stock)
+
+
+
+
+
+
 
 ventes_veille={"Milk":[5,5,4],"Cream":[5,5,4],"Yoghurt":[5,5,4],"Cheese":[5,5,4],"Butter":[5,5,4],"Ice Cream":[5,5,4]}
 prix = {"Milk":45,"Cream":56,"Yoghurt":40,"Cheese":40,"Butter":40,"Ice Cream":40}
@@ -164,8 +217,8 @@ frequence=5
 jour_cycle=2
 equipe="L9"
 
-def matricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, stock_actuel, equipe):
-  materials = ["Milk","Cream","Yoghurt","Cheese","Butter","Ice Cream"]
+def getMatricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, stock_actuel, equipe):
+  materials = materialDef()
   jours_cycle_restants = frequence_reapro + 1 - jour_du_cycle
 
   dictionnaire_prix = {}
@@ -182,7 +235,7 @@ def matricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, st
 
   return dictionnaire_prix
 
-print(matricePrix(ventes_veille, prix, frequence, jour_cycle, stock_actuel, equipe))
+print(getMatricePrix(ventes_veille, prix, frequence, jour_cycle, stock_actuel, equipe))
 
 def modificationPrix():
 
