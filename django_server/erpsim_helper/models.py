@@ -99,3 +99,74 @@ class CompanyValuation(models.Model):
     class Meta:
         managed = False
         db_table = 'company_valuation'
+
+class Sales(models.Model):
+    """
+    """
+    id_sales = models.BigAutoField(primary_key=True)
+    row_number = models.IntegerField()
+    sales_organization = models.CharField(max_length=2)
+    sim_round = models.IntegerField()
+    sim_step = models.IntegerField()
+    sim_calendar_date = models.DateTimeField()
+    sim_period = models.IntegerField()
+    sim_elapsed_steps = models.IntegerField()
+    sales_order_number = models.IntegerField()
+    line_item = models.IntegerField()
+    storage_location = models.CharField(max_length=3)
+    region = models.CharField(max_length=50)
+    area = models.CharField(
+        max_length=10,
+        choices=(
+            ('North', 'North'),
+            ('West', 'West'),
+            ('South', 'South')
+        )
+    )
+    city = models.CharField(max_length=50)
+    country = models.CharField(max_length=20)
+    postal_code = models.IntegerField()
+    customer_number = models.IntegerField()
+    distribution_channel = models.IntegerField()
+    material_number = models.CharField(max_length=6)
+    material_description = models.TextField()
+    material_type = models.TextField()
+    material_code = models.CharField(max_length=3)
+    material_label = models.CharField(max_length=50)
+    quantity = models.IntegerField()
+    quantity_delivered = models.IntegerField()
+    unit = models.CharField(max_length=2)
+    net_price = models.FloatField()
+    net_value = models.FloatField()
+    cost = models.FloatField()
+    currency = models.CharField(max_length=5)
+    contribution_margin = models.FloatField()
+    contribution_margin_pct = models.FloatField()
+    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game')
+
+    class Meta:
+        managed = False
+        db_table = 'sales'
+
+class Inventory(models.Model):
+    id_inventory = models.BigAutoField(primary_key=True)
+    inventory_opening_balance = models.IntegerField()
+    row_number = models.IntegerField()
+    plant = models.CharField(max_length=2)
+    sim_round = models.IntegerField()
+    sim_step = models.IntegerField()
+    sim_calendar_date = models.DateTimeField()
+    sim_period = models.IntegerField()
+    sim_elapsed_steps =  models.IntegerField()
+    storage_location = models.CharField(max_length=3)
+    material_number = models.CharField(max_length=6)
+    material_description = models.TextField()
+    material_type = models.TextField()
+    material_code = models.CharField(max_length=3)
+    material_label = models.TextField()
+    unit = models.CharField(max_length=2)
+    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game')
+
+    class Meta:
+        managed = False
+        db_table = 'inventory'

@@ -5,8 +5,9 @@ from django.contrib import messages
 
 from django.contrib.auth.decorators import login_required
 
-from .models import Game, Player
+from .models import Game, Player, Sales, Inventory
 from .tasks import get_game_latest_data
+from .plots.plotly_plot import plotly_plot_sales, plotly_plot_stocks
 
 # Create your views here.
 class ContactForm(Form):
@@ -35,7 +36,29 @@ def index(request):     # TO DO
     """
     player_associated_with_user = Player.objects.get(user=request.user.id)
 
-    return HttpResponse(f"Hello, Player : {request.user.username}. \n Your associated game is {player_associated_with_user.game_id}.")
+    game = Game.objects.get(pk=player_associated_with_user.game_id)
+
+    if game.game_set == 1:
+        company_name = request.user.username[0] + request.user.username[0]
+    else:
+        company_name = request.user.username[0] + str(game.game_set)
+
+    sales = Sales.objects.filter(id_game=game.id, sales_organization=company_name)
+
+    inventory = Inventory.objects.filter(id_game=game.id, plant=company_name)
+
+    products = ["Cream", "Ice Cream", "Butter", "Milk", "Cheese", "Yoghurt"]
+
+    # pass sales to plotly_plot
+    sales_evolution_plot, sales_distribution_plot = plotly_plot_sales(sales, products)
+    stock_evolution_plot = plotly_plot_stocks(inventory, products)
+
+    context = {'sales_evolution_plot': sales_evolution_plot, 'sales_distribution_plot': sales_distribution_plot, 'stock_evolution_plot': stock_evolution_plot}
+
+    # Render the HTML template index.html with the data in the context variable.
+    return render(request, 'index.html', context=context)
+
+    #return HttpResponse(f"Hello, Player : {request.user.username} from company {company_name}. \n Your associated game is {player_associated_with_user.game_id}.")
 
 def game(request, game_id):     # TO DO
     """
