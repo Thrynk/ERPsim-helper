@@ -256,6 +256,6 @@ def drawStocks(dataframe, company, products, startDate=None, endDate=None):
                 if fig['layout'][ax][index]['text'] == "Date":
                     fig['layout'][ax][index]['y'] = -0.07
                 if fig['layout'][ax][index]['text'] == "Quantité en stock":
-                    fig['layout'][ax][index]['x'] = -0.01
+                    fig['layout'][ax][index]['x'] = -0.03
 
     return fig, dataframe_company_general, dataframe_company_north, dataframe_company_south, dataframe_company_west
