@@ -2,6 +2,7 @@ import pandas as pd
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 
+
 def addNoSalesData(dataframe, products, dateRange=None, storage=False):
     """
     Add data in the dataframe on day where there is no sales. Use to plot curve of sales
@@ -85,8 +86,7 @@ def drawSalesDistribution(dataframe, company, products, startDate=None, endDate=
         title_xanchor="center",
         title_x=0.5,
         showlegend=False,
-        height=800,
-        width=800,
+        height=700,
         font=dict(
             family="Courier New, monospace",
             size=16,
@@ -148,6 +148,7 @@ def drawSalesEvolution(dataframe, company, products, startDate=None, endDate=Non
         xaxis_title="Date",
         xaxis_tickformat="%e %b %Y",
         xaxis_tickangle=-30,
+        width=800,
         yaxis_title="Nombre de ventes",
         font=dict(
             family="Courier New, monospace",
@@ -235,7 +236,8 @@ def drawStocks(dataframe, company, products, startDate=None, endDate=None):
         title="Évolution des stocks",
         title_xanchor="center",
         title_x=0.47,
-        height=700,
+        height=690,
+        width=800,
         font=dict(
             family="Courier New, monospace",
             size=16,
@@ -253,5 +255,7 @@ def drawStocks(dataframe, company, products, startDate=None, endDate=None):
             for index, annotation in enumerate(fig['layout'][ax]):
                 if fig['layout'][ax][index]['text'] == "Date":
                     fig['layout'][ax][index]['y'] = -0.07
+                if fig['layout'][ax][index]['text'] == "Quantité en stock":
+                    fig['layout'][ax][index]['x'] = -0.01
 
     return fig, dataframe_company_general, dataframe_company_north, dataframe_company_south, dataframe_company_west

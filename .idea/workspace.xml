@@ -7,6 +7,10 @@
     <list default="true" id="e83229bb-6752-4fe1-b89f-d4349bfab8a7" name="Changes" comment="Add the 3 graph with plotly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ERPsimHelper/ERPgames/drawFigures.py" beforeDir="false" afterPath="$PROJECT_DIR$/ERPsimHelper/ERPgames/drawFigures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ERPsimHelper/ERPgames/static/ERPgames/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ERPsimHelper/ERPgames/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ERPsimHelper/ERPgames/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ERPsimHelper/ERPgames/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ERPsimHelper/ERPgames/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ERPsimHelper/db.sqlite3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652886113586</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add the 3 graph with plotly">
+      <created>1652887985343</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652887985343</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
