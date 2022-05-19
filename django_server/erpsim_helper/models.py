@@ -170,3 +170,24 @@ class Inventory(models.Model):
     class Meta:
         managed = False
         db_table = 'inventory'
+
+class PricingConditions(models.Model):
+    id_pricing_conditions = models.BigAutoField(primary_key=True)
+    price = models.FloatField()
+    sales_organization = models.CharField(max_length=2)
+    row_number = models.IntegerField()
+    sim_round = models.IntegerField()
+    sim_step = models.IntegerField()
+    sim_calendar_date = models.DateTimeField()
+    sim_period = models.IntegerField()
+    sim_elapsed_steps = models.IntegerField()
+    material_number = models.CharField(max_length=6)
+    material_description = models.TextField()
+    distribution_channel = models.IntegerField()
+    dc_name = models.TextField()
+    currency = models.CharField(max_length=3)
+    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game')
+
+    class Meta:
+        managed = False
+        db_table = 'pricing_conditions'

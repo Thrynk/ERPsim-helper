@@ -1,0 +1,25 @@
+#blockListTips {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+
+    padding-bottom: 20px;
+
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.start {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+  
+.tip {
+    margin-top: 10px;
+}
