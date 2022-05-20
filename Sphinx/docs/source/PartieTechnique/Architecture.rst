@@ -23,7 +23,7 @@ L'authentification est une étape importante dans le projet puisque la récupér
 dépend de cette authentification. En effet, pour vous connecter à notre projet, vous utilisez vos identifiants du jeu 
 ERPsim.
 
-.. figure:: _static/img/Authentification.png
+.. figure:: ./_static/img/Authentification.png
    :align: center
    :target: _images/Authentification.png
 
@@ -73,7 +73,7 @@ L'extraction des données brutes
 
 La connexion de l'étudiant à son espace d'aide, lance le programme de rechargements de données. 
 
-.. figure:: _static/img/FluxDonnees.png
+.. figure:: ./_static/img/FluxDonnees.png
    :align: center
    :target: _images/FluxDonnees.png
 
@@ -99,7 +99,7 @@ Traitements et affichages
 Une fois que les données sont stockées en base, elles sont utilisées pour être traitées puis afficher sur l'interface d'aide du
 joueur. 
 
-.. figure:: _static/img/TraitementsAffichages.png
+.. figure:: ./_static/img/TraitementsAffichages.png
    :align: center
    :target: _images/TraitementsAffichages.png
 

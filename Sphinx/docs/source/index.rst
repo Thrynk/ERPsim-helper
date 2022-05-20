@@ -30,7 +30,7 @@ Welcome to ERPsim's documentation!
    *Logo HEC Montréal*
 
 
-**ERPsim** est une aide pour le jeu *ERPsim* développé par `HEC Montréal <https://www.hec.ca/>`_. 
+**ERPsim helper** est une aide pour le jeu *ERPsim* développé par `HEC Montréal <https://www.hec.ca/>`_. 
 Ce projet se place dans le cadre d’une observation lors de la Coupe du monde d’ERP. Lors de cette dernière, 
 plusieurs équipes se sont affrontées sur ERPsim, un jeu sur la gestion d’entreprise. L’une de ces équipes n’était ni plus ni moins qu’un BOT [#f1]_. 
 
@@ -53,13 +53,11 @@ Check out the :doc:`Usage` section for further information, including how to
 .. _contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Table des matières
 
-   Installation
-   Usage
-   Architecture
-   CodeSource
+   PartieTechnique/index
+   PartieUtilisateur/index
    CadreProjet
 
 
@@ -69,6 +67,8 @@ Indices and tables
 * :ref:`genindex`
 
 .. rubric:: Notes
+
+Toto
 
 .. [#f1] BOT : Agent informatique capable de jouer en autonomie
 

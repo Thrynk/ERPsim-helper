@@ -1,7 +1,7 @@
 .. _usage:
 
-Usage
-=====
+Tutoriel
+========
 
 .. note::
    Comment utiliser le projet ? Se connecter, utiliser l’application  
