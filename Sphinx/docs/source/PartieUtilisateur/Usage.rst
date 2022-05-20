@@ -145,7 +145,7 @@ votre mot de passe utilisé sur le jeu ERPsim et le :ref:`numéro de la partie <
 par l'enseignant. 
 
 .. warning:: 
-   Le mot de passe par défaut sur ERPsim est *ERPsim*, il vous a été demandé de le 
+   Le mot de passe par défaut sur ERPsim est *ERPSIM*, il vous a été demandé de le 
    changer lors de votre première connexion au jeu. Pour accéder à l'aide, il faut bien entrer
    le NOUVEAU mot de passe que vous avez saisi. 
 
@@ -161,6 +161,9 @@ sur les :ref:`évolutions de l'entreprise <interface_evolution>`.
 
 .. note::   
    Ces pages sont mises à jour chaque minute, après chaque jour joué dans la simulation.
+
+.. warning::
+   Pour mettre à jour cette page, vous devez rafraîchir la page manuellement *(F5)*
 
 .. _interface_joueur:
 
@@ -209,8 +212,8 @@ la répartition des ventes par produit et par zone, mais aussi la répartition d
 Vous aurez ainsi, une vue d'ensemble sur l'état de l'entreprise, et pourrez prendre les meilleurs choix pour faire augmenter votre 
 company valuation. 
 
-=============
-What's Next ?
-=============
+================
+Lecture suivante
+================
 
 Dans la :ref:`section suivante <fonctionnement>`, vous retrouverez le fonctionnement général du projet. 
