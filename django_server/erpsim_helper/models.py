@@ -53,7 +53,7 @@ class Game(models.Model):
         """
             Override the `__str__(self)` method for logs
         """
-        return f"Game : {str(self.id).rjust(3, '0')} - {datetime.datetime.strptime(str(self.creation_date), '%Y-%m-%d %H:%M:%S+00:00').strftime('%d/%m/%Y %H:%M')}"
+        return f"Game : {str(self.id)} - {datetime.datetime.strptime(str(self.creation_date), '%Y-%m-%d %H:%M:%S+00:00').strftime('%d/%m/%Y %H:%M')}"
 
 class Player(models.Model):
     """
