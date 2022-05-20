@@ -47,7 +47,7 @@ ERP (Enterprise Ressource Planning ou Progiciel de Gestion Intégré en françai
 
    Ce projet est encore en développement.
 
-Check out the :doc:`Usage` section for further information, including how to
+Check out the :doc:`PartieUtilisateur/Usage` section for further information, including how to
 :ref:`install <installation>` the project.
 
 .. _contents:

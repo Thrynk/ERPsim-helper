@@ -32,7 +32,7 @@ Packages
 
 Les différents packages utilisés sont :
 
-.. literalinclude:: ../../../requirements.txt
+.. literalinclude:: ../../../../requirements.txt
 
 ======================      =======     ======================================================
 Packages                    Version     Utilité
@@ -62,7 +62,7 @@ Si, lorsque vous lancez Docker Desktop, une erreur s'affiche concernant le WSL, 
 dans le message d'erreur.
 
 Erreur WSL [#f1]_ 
-----------
+-----------------
 
 .. note::
 
@@ -123,11 +123,12 @@ Documentation       docs_dev           Générer la documentation à chaque modi
 Documentation       docs               Build la documentation au lancement                                     
 ===============     ==============     =======================================================================
 
-.. figure:: _static/img/DockerContainers.png
+.. figure:: ../_static/img/DockerContainers.png
     :align: center
-    :target: _images/DockerContainers.png
+    :target: ../../_images/DockerContainers.png
 
     *Ensemble des containers éxécutés par Docker Compose*
+
 
 Docker installe lui-même toutes les librairies nécessaires grâce au fichier `requirements.txt`. 
 

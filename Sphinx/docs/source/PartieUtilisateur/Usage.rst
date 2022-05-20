@@ -35,9 +35,9 @@ Connexion
 Une fois que le compte administrateur est créé, il peut se rendre sur la `page de connexion <http://127.0.0.1:8000/admin/>`_
 admin.
 
-.. figure:: _static/img/InterfaceConnexionAdmin.png
+.. figure:: ../_static/img/InterfaceConnexionAdmin.png
    :align: center
-   :target: _images/InterfaceConnexionAdmin.png
+   :target: ../../_images/InterfaceConnexionAdmin.png
 
    *Page de connexion administrateur*
 
@@ -47,9 +47,9 @@ Une fois fait, il arrive sur la page d'accueil de l'interface admin.
 Interface des parties jouées
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: _static/img/InterfaceAccueilAdmin.png
+.. figure:: ../_static/img/InterfaceAccueilAdmin.png
    :align: center
-   :target: _images/InterfaceAccueilAdmin.png
+   :target: ../../_images/InterfaceAccueilAdmin.png
 
    *Page d'accueil de l'administrateur*
 
@@ -75,9 +75,9 @@ Pour créer une partie il faut renseigner 5 informations :
 
 Voici un exemple : 
 
-.. figure:: _static/img/InterfaceCreationGameAdmin.png
+.. figure:: ../_static/img/InterfaceCreationGameAdmin.png
    :align: center
-   :target: _images/InterfaceCreationGameAdmin.png
+   :target: ../../_images/InterfaceCreationGameAdmin.png
 
    *Interface de création d'une partie*
 
@@ -96,9 +96,9 @@ toutes les minutes.
 
 (Voir :ref:`ici <fin_de_partie>` les conditions d'arrêts)
 
-.. figure:: _static/img/InterfaceGamesAdmin.png
+.. figure:: ../_static/img/InterfaceGamesAdmin.png
    :align: center
-   :target: _images/InterfaceGamesAdmin.png
+   :target: ../../_images/InterfaceGamesAdmin.png
 
    *Interface Games - Historique des parties jouées et en cours*
 
@@ -171,9 +171,9 @@ Interface Recommandations
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. figure:: _static/img/TemplateVisuJoueur.png
+.. figure:: ../_static/img/TemplateVisuJoueur.png
    :align: center
-   :target: _images/TemplateVisuJoueur.png
+   :target: ../../_images/TemplateVisuJoueur.png
 
    *Partie Recommandations et Conseils*
 
@@ -197,9 +197,9 @@ indiqué dans la colonne à droite, "Prévisions". *(Prix de base 87.76 €, aug
 Interface Evolution
 ^^^^^^^^^^^^^^^^^^^
 
-.. figure:: _static/img/TemplateEvolution.png
+.. figure:: ../_static/img/TemplateEvolution.png
    :align: center
-   :target: _images/TemplateEvolution.png
+   :target: ../../_images/TemplateEvolution.png
 
    *Partie Evolution*
 
