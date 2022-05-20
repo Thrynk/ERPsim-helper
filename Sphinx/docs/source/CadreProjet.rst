@@ -1,7 +1,8 @@
 .. _cadre_projet:
 
+***************
 Cadre du Projet
-===============
+***************
 
 ============
 Lieu et Date
@@ -13,6 +14,7 @@ Ce projet a été réalisé dans le cadre d'un projet Master 2
 au sein de `Junia ISEN Lille <https://www.isen-lille.fr/>`_  : Institut Supérieur de l'Electronique et du Numérique. 
 
 .. _date:
+
 Année scolaire 2021-2022.
 
 .. _organisateurs:
