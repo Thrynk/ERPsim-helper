@@ -210,7 +210,7 @@ def getMatriceStock(prediction, stock_actuel, equipe, jour_du_cycle):
 
 
 
-
+  
 
 ventes_veille={"Milk":[5,5,4],"Cream":[5,5,4],"Yoghurt":[5,5,4],"Cheese":[5,5,4],"Butter":[5,5,4],"Ice Cream":[5,5,4]}
 prix = {"Milk":45,"Cream":56,"Yoghurt":40,"Cheese":40,"Butter":40,"Ice Cream":40}
