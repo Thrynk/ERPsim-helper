@@ -81,17 +81,29 @@ Dans une invite de commande (cmd) allez dans le répertoire ERPsim-helper
 
 .. code-block:: console
     
-    $ cd C:/*votre chemin*/ERPsim-helper
+    cd C:/*votre chemin*/ERPsim-helper
 
 Une fois dans le dossier, tapez la ligne de commande suivante 
 
 .. code-block:: console 
 
-    $ docker-compose build
+    docker-compose build
 
 Cette commande éxécute le fichier `requirements.txt` pour installer toutes les dépendances
 nécessaires au bon fonctionnement du projet. 
 Il construit aussi les `containers` correspondant aux différents services et les lance.
+
+Pour lancer uniquement la partie documentation, il faut taper la commande suivante 
+
+.. code-block:: console 
+
+    docker-compose run --rm --service-ports docs_dev
+
+Pour lancer tous les `containers` en une fois, il suffit de taper la commande suivante 
+
+.. code-block:: console 
+
+    docker-compose up
 
 Services éxécutés
 -----------------

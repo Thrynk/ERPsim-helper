@@ -45,7 +45,7 @@ ERP (Enterprise Ressource Planning ou Progiciel de Gestion Intégré en françai
 
 .. note::
 
-   This project is under active development.
+   Ce projet est encore en développement.
 
 Check out the :doc:`Usage` section for further information, including how to
 :ref:`install <installation>` the project.
@@ -54,7 +54,7 @@ Check out the :doc:`Usage` section for further information, including how to
 
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Contents
+   :caption: Table des matières
 
    Installation
    Usage
@@ -62,12 +62,11 @@ Check out the :doc:`Usage` section for further information, including how to
    CodeSource
    CadreProjet
 
-.. Indices and tables
-.. ==================
 
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
+Indices and tables
+==================
+
+* :ref:`genindex`
 
 .. rubric:: Notes
 
