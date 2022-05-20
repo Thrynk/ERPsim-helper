@@ -229,7 +229,7 @@ def getMatricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle,
 
   for element in materials:
     if (ventes_veille[element][0] >= stock_actuel[element][0]/jours_cycle_restants or ventes_veille[element][1] >= stock_actuel[element][1]/jours_cycle_restants or ventes_veille[element][2] >= stock_actuel[element][2]/jours_cycle_restants):
-      dictionnaire_prix[element]=[1.1, 1.1*prix_actuels[element]]
+      dictionnaire_prix[element]=[1.1, round(1.1*prix_actuels[element],2)]
     elif (ventes_veille[element][0] < 0.8*stock_actuel[element][0]/jours_cycle_restants and ventes_veille[element][1] < 0.8*stock_actuel[element][1]/jours_cycle_restants and ventes_veille[element][2] < 0.8*stock_actuel[element][2]/jours_cycle_restants):
       dictionnaire_prix[element]=[0.9, 0.9*prix_actuels[element]]
     else:

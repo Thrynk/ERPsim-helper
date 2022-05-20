@@ -56,32 +56,14 @@ def contact(request):
     form = ContactForm()
     # on teste si on est bien en validation de formulaire (POST)
     if request.method == "POST":
-        # Si oui on récupère les données postées
-        #form = ContactForm(request.POST)
-        # on vérifie la validité du formulair
 
-        #if form.is_valid():
-
-        #new_contact = form.save()
-        #messages.success(request, 'Game Number ' + new_contact.gameNumber + ' & player : ' + new_contact.login)
-        # return redirect(reverse('detail', args=[new_contact.pk] ))
-
-        #context = {}
-        #return render(request, 'forms/detail.html', context)
-
-
-        
-        #ListInstructions=get_Instructions()
 
         ventes_veille={"Milk":[5,5,4],"Cream":[5,5,4],"Yoghurt":[5,5,4],"Cheese":[5,5,4],"Butter":[5,5,4],"Ice Cream":[5,5,4]}
         prix = {"Milk":45,"Cream":56,"Yoghurt":40,"Cheese":40,"Butter":40,"Ice Cream":40}
         stock_actuel = {"Milk":[300,50,65],"Cream":[300,50,65],"Yoghurt":[300,50,65],"Cheese":[300,50,65],"Butter":[300,50,65],"Ice Cream":[300,50,65]}
         frequence=5
-        jour_cycle=1
-        equipe="L9"
-
-
-    
+        jour_cycle=2
+        equipe="L9"    
 
         context = {'pers': "tst",'tips':getTheTipsBack(),'predictions':getMatriceStock(prediction("test"),stock_actuel, equipe, jour_cycle),'material':materialDef,'modifPrix':getMatricePrix(ventes_veille, prix, frequence, jour_cycle, stock_actuel, equipe)}
 
