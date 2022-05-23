@@ -94,10 +94,9 @@ class CompanyValuation(models.Model):
     company_risk_rate_pct = models.FloatField()
     company_valuation = models.FloatField()
     currency = models.CharField(max_length=3)
-    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game')
+    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game', null=True)
 
     class Meta:
-        managed = False
         db_table = 'company_valuation'
 
 class Sales(models.Model):
@@ -142,10 +141,9 @@ class Sales(models.Model):
     currency = models.CharField(max_length=5)
     contribution_margin = models.FloatField()
     contribution_margin_pct = models.FloatField()
-    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game')
+    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game', null=True)
 
     class Meta:
-        managed = False
         db_table = 'sales'
 
 class Inventory(models.Model):
@@ -165,10 +163,9 @@ class Inventory(models.Model):
     material_code = models.CharField(max_length=3)
     material_label = models.TextField()
     unit = models.CharField(max_length=2)
-    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game')
+    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game', null=True)
 
     class Meta:
-        managed = False
         db_table = 'inventory'
 
 class PricingConditions(models.Model):
@@ -186,8 +183,7 @@ class PricingConditions(models.Model):
     distribution_channel = models.IntegerField()
     dc_name = models.TextField()
     currency = models.CharField(max_length=3)
-    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game')
+    id_game = models.ForeignKey(Game, models.CASCADE, db_column='id_game', null=True)
 
     class Meta:
-        managed = False
         db_table = 'pricing_conditions'

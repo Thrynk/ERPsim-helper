@@ -39,8 +39,7 @@ class Migration(migrations.Migration):
                 ('currency', models.CharField(max_length=3)),
             ],
             options={
-                'db_table': 'company_valuation',
-                'managed': False,
+                'db_table': 'company_valuation'
             },
         ),
         migrations.CreateModel(
@@ -64,8 +63,7 @@ class Migration(migrations.Migration):
                 ('unit', models.CharField(max_length=2)),
             ],
             options={
-                'db_table': 'inventory',
-                'managed': False,
+                'db_table': 'inventory'
             },
         ),
         migrations.CreateModel(
@@ -87,8 +85,7 @@ class Migration(migrations.Migration):
                 ('currency', models.CharField(max_length=3)),
             ],
             options={
-                'db_table': 'pricing_conditions',
-                'managed': False,
+                'db_table': 'pricing_conditions'
             },
         ),
         migrations.CreateModel(
@@ -128,8 +125,7 @@ class Migration(migrations.Migration):
                 ('contribution_margin_pct', models.FloatField()),
             ],
             options={
-                'db_table': 'sales',
-                'managed': False,
+                'db_table': 'sales'
             },
         ),
         migrations.CreateModel(
