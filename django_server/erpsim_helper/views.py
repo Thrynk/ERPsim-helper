@@ -127,6 +127,7 @@ def index(request):     # TO DO
     print(prices_matrix)
 
     context = {
+        'username': request.user.username,
         'sales_evolution_plot': sales_evolution_plot, 
         'sales_distribution_plot': sales_distribution_plot, 
         'stock_evolution_plot': stock_evolution_plot,

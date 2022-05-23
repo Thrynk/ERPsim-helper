@@ -62,10 +62,19 @@ class ODataAuthenticationBackend(BaseBackend): #TODO: put a link to application 
         
         try:
             # check if player is already associated with a game
-            player_associated_with_game = Player.objects.get(game_id=game.id)
+            players_associated_with_game = Player.objects.filter(game_id=game.id)
 
             # if player exists, then retrieve appropriate user
-            user = User.objects.get(pk=player_associated_with_game.user_id)
+            user_retrieved = False
+            for player in players_associated_with_game:
+                user = User.objects.get(pk=player.user_id)
+                if user.username == username:
+                    user_retrieved = True
+                    break
+            
+            # if none of the players in database are the player trying to connect, then player does not exist yet
+            if not user_retrieved:
+                raise Player.DoesNotExist
 
             # if entered password is incorrect
             if not user.check_password(password):
@@ -94,6 +103,14 @@ class ODataAuthenticationBackend(BaseBackend): #TODO: put a link to application 
 
                 player = Player(user=user, game_id=game_id)
                 player.save()
+
+                # launch fetching tasks
+                launch_fetching_tasks(
+                    game,
+                    user.username[0],
+                    username,
+                    password
+                )
 
                 return user
             except HttpError:
