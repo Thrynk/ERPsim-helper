@@ -56,9 +56,14 @@ Check out the :doc:`PartieUtilisateur/Usage` section for further information, in
    :maxdepth: 3
    :caption: Table des matières
 
+   BilanProjet
    PartieUtilisateur/index
    PartieTechnique/index
    CadreProjet
+
+Resultats du Projet
+===================
+
 
 
 Indices and tables

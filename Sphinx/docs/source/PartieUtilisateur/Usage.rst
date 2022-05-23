@@ -20,8 +20,48 @@ L'administrateur, contrairement à l'étudiant, doit avoir un compte créé au p
 Création du compte Admin 
 ------------------------
 
-Pour créer le compte administrateur, veuillez contacter un des développeurs. Les adresses
-mails des développeurs sont disponibles sur :ref:`ce lien <developpeurs>`. 
+Pour créer le compte administrateur, il vous faut entrer quelques lignes de commandes. 
+
+La première, vous permettra de voir tous les `containers` Docker du projet 
+
+.. code-block:: console 
+
+   docker ps 
+
+Vous devez obtenir une lite comme celle-ci à l'exception près des id des `containers`. 
+
+.. figure:: ../_static/img/ContainersId.png
+   :align: center
+   :target: ../../_images/ContainersId.png
+
+   *Liste des containers Docker*
+
+.. _id_container:
+
+Veuillez maintenant copier l'id du `container` nommé `web`. Le nom du container correspond à la deuxième colonne 
+appelée `IMAGE` dans les logs, l'id se trouve, quant à lui, dans la première colonne. Ici son id est le *2e1e86347b5a*
+
+Il vous faut maintenant aller dans le dossier du `container` en éxécutant la commande suivante et en remplaçant 
+`CONTAINER_ID` par l'id que vous avez :ref:`relevé ci-dessus <id_container>`. 
+
+.. code-block:: console 
+
+   docker exec -it CONTAINER_ID /bin/sh
+
+Ensuite, éxécutez la commande suivante et suivez les instructions. 
+
+.. code-block:: console 
+
+   python django_server/manage.py createsuperuser
+
+
+Si vous avez bien effectué la procédure, vous devez avoir le message suivant. 
+
+.. figure:: ../_static/img/CreateSuperUserSuccess.png
+   :align: center 
+   :target: ../../_images/CreateSuperUserSuccess.png
+
+   *Si la procédure s'est bien déroulée*
 
 Utilisation de l'interface administrateur
 -----------------------------------------
