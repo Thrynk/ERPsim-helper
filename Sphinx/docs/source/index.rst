@@ -5,7 +5,7 @@
 
 .. _Accueil:
 
-Welcome to ERPsim's documentation!
+ERPsim Helper Documentation
 ==================================
 
 .. figure:: _static/img/SAP.png
@@ -56,9 +56,14 @@ Check out the :doc:`PartieUtilisateur/Usage` section for further information, in
    :maxdepth: 3
    :caption: Table des matières
 
-   PartieTechnique/index
+   DeroulementProjet
    PartieUtilisateur/index
+   PartieTechnique/index
    CadreProjet
+
+Resultats du Projet
+===================
+
 
 
 Indices and tables
@@ -72,8 +77,9 @@ Toto
 
 .. [#f1] BOT : Agent informatique capable de jouer en autonomie
 
-What's Next ?
-=============
+================
+Lecture suivante
+================
 
 Dans la :ref:`section suivante <installation>`, vous trouverez comment installer les modules et langages pour faire fonctionner 
 le projet. 

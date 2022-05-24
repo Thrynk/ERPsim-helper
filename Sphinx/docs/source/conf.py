@@ -20,7 +20,7 @@ print(src_p.resolve().as_posix())
 
 # -- Project information -----------------------------------------------------
 
-project = 'ERPsim Documentation'
+project = 'ERPsim Helper Documentation'
 copyright = '2022, M2-G2'
 author = 'M2-G2'
 
@@ -62,4 +62,4 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 # To make pdf files
-pdf_stylesheets = ['twocolumn']
+# pdf_stylesheets = ['twocolumn']

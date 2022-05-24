@@ -34,9 +34,9 @@ Les différents packages utilisés sont :
 
 .. literalinclude:: ../../../../requirements.txt
 
-======================      =======     ======================================================
+======================      =======     ============================================================================
 Packages                    Version     Utilité
-======================      =======     ======================================================
+======================      =======     ============================================================================
 Django                      3.2.11      Pour les interfaces admin et player
 python-dotenv               0.19.2      Package système pour les identifiants et mots de passe
 python-dotenv[cli]          0.19.2      Package système pour les identifiants et mots de passe
@@ -44,8 +44,8 @@ huey                        2.4.3       Pour gérer les tâches pour les recharg
 redis                       4.1.0       Pour stocker les tâches de rechargements
 mysql-connector-python      8.0.26      Pour stocker les données dans la base de données MySQL
 pyodata                     1.7.1       Pour extraire les données du flux oData
-requests                    2.23.0      ???
-======================      =======     ======================================================
+requests                    2.23.0      Utilisé avec les sessions dans le cadre de la recupération des données oData
+======================      =======     ============================================================================
 
 ======
 Docker 
@@ -132,35 +132,10 @@ Documentation       docs               Build la documentation au lancement
 
 Docker installe lui-même toutes les librairies nécessaires grâce au fichier `requirements.txt`. 
 
-=====================
-Installation manuelle 
-=====================
-
-Vous pouvez toutefois, installer ces packages manuellement : 
-
-* Pour tout installer en une fois, vous pouvez effectuer la commande suivante
-
-.. code-block:: console
-
-    (.venv) $ pip install -r requirements.txt
-
-ou 
-
-.. code-block:: console
-
-    (.venv) $ pip3 install -r requirements.txt
-
-
-* Pour installer les packages un par un, utilisez la commande suivante en remplaçant les "..."" par le nom du package en question.
-
-.. code-block:: console
-
-   (.venv) $ pip install ...
-
 .. [#f1] `Documentation Microsoft <https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package>`_
 
-=============
-What's Next ?
-=============
+================
+Lecture suivante
+================
 
 Dans la :ref:`section suivante <usage>`, vous trouverez un tutoriel pour utiliser notre aide pour ERPsim. 

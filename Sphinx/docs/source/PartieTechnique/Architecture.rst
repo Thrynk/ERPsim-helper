@@ -30,7 +30,7 @@ ERPsim.
    *Schéma du fonctionnement de l'authentification* 
 
 Comme c'est montré ci-dessus, il faut gérer l'authentification de l'administrateur mais aussi celle de l'étudiant. Dans un premier
-temps, pour vérifier l'identiant de l'administrateur.
+temps, pour vérifier l'identifiant de l'administrateur.
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Authentification de l'administrateur
@@ -43,7 +43,9 @@ est renvoyé, sinon c'est l'objet `user` qui est renvoyé. Dans ce dernier cas, 
 Authentification du joueur
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ensuite, c'est à l'étudiant de se connecter. A ce moment là, deux situations peuvent survenir. 
+Ensuite, c'est à l'étudiant de se connecter. Dans un premier temps, le programme va chercher dans la base de données 
+les identifiants renseignés. Si les identifiants ne sont pas en stocké, c'est que l'utilisateur se connecte pour la 
+première fois. Sinon, il s'est déja connecté auparavant. 
 
 .. _premiere_connexion:
 
@@ -51,19 +53,17 @@ Ensuite, c'est à l'étudiant de se connecter. A ce moment là, deux situations 
 Première connexion
 """"""""""""""""""
 
-Soit l'étudiant se connecte pour la première
-fois, le compte n'existe donc pas en base. Alors, le programme récupère les informations rentrés dans le :ref:`formulaire d'authentification<connexion_joueur>`.
-pour les tester sur le flux oData. Si la connexion fonctionne, alors l'utilisateur est sauvegardé en base de données, sinon, le programme
-renvoie `None`.
+Dans cette situation, le programme récupère les informations rentrés dans le :ref:`formulaire d'authentification<connexion_joueur>`.
+pour les tester sur le flux oData. Si la connexion fonctionne, alors l'utilisateur est sauvegardé en base de données, il est authentifié, sinon 
+l'authentification échoue. 
 
 """""""""""""""
 Nième connexion
 """""""""""""""
 
-Soit l'étudiant ne se connecte pas pour la première fois, à ce moment là, son compte existe en base. Le programme compare donc 
-alors les informations rentrés dans le :ref:`formulaire d'authentification<connexion_joueur>` avec les informations qui ont été 
+Dans ce cas, le programme compare donc alors les informations rentrés dans le :ref:`formulaire d'authentification<connexion_joueur>` avec les informations qui ont été 
 sauvegardés lors de sa première connexion. Si les informations correspondent, alors il est connecté, le programme renvoie son `user`, sinon, le programme renvoie
-`None`
+`None`, l'authentification échoue.
 
 .. _extractiondata:
 
@@ -73,9 +73,9 @@ L'extraction des données brutes
 
 La connexion de l'étudiant à son espace d'aide, lance le programme de rechargements de données. 
 
-.. figure:: ../_static/img/FluxDonnees.png
+.. figure:: ../_static/img/FluxDonnees-2.png
    :align: center
-   :target: ../../_images/FluxDonnees.png
+   :target: ../../_images/FluxDonnees-2.png
 
    *Schéma du fonctionnement de l'extraction des données brutes*
 
@@ -108,8 +108,8 @@ joueur.
 
 .. [#f1] Redis : Redis est un système de gestion de base de données *(Wikipédia)*
 
-=============
-What's Next ?
-=============
+================
+Lecture suivante
+================
 
 Dans la :ref:`section suivante<code_source>`, vous retrouverez le code source du projet. 

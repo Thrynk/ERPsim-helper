@@ -30,8 +30,8 @@ What's used for visualization
 What's used for helping, prediction
 ===================================
 
-=============
-What's Next ?
-=============
+================
+Lecture suivante
+================
 
 Dans la :ref:`section suivante <cadre_projet>`, vous retrouverez le cadre du projet. 
