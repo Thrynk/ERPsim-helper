@@ -130,6 +130,8 @@ def index(request):     # TO DO
         'sales_evolution_plot': sales_evolution_plot,
         'sales_distribution_plot': sales_distribution_plot,
         'stock_evolution_plot': stock_evolution_plot,
+        'username': request.user.username,
+        'day': day,
         'material': products,
         'predictions': stock_matrix,
         'modifPrix': prices_matrix
