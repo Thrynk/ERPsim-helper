@@ -128,6 +128,7 @@ def index(request):     # TO DO
 
     context = {
         'username': request.user.username,
+        'day': day,
         'sales_evolution_plot': sales_evolution_plot, 
         'sales_distribution_plot': sales_distribution_plot, 
         'stock_evolution_plot': stock_evolution_plot,

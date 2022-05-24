@@ -211,9 +211,7 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
     fig = make_subplots(rows=2, cols=2, x_title="Date", y_title="Quantité en stock",
                         subplot_titles=[f"Entrepôt {warehouse_name}" for warehouse_name in warehouse_names],
                         vertical_spacing=0.2)
-
-    colors = ["deepskyblue", "red", "orange", "green"]
-
+    colors = ["deepskyblue", "red", "orange", "green", "purple", "black"]
     for product, color in zip(products, colors):
         dataframe_company_general_product = dataframe_company_general[
             dataframe_company_general["material_label"] == product]
