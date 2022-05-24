@@ -212,9 +212,10 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
                         subplot_titles=[f"Entrepôt {warehouse_name}" for warehouse_name in warehouse_names],
                         vertical_spacing=0.2)
 
-    colors = ["deepskyblue", "red", "orange", "green"]
+    colors = ["#1f77b4", "#d62728", "#2ca02c", "#9467bd", "#ff7f0e", "#17becf"]
+    legendgroup_list = ["group1", "group2", "group3", "group4", "group5", "group6"]
 
-    for product, color in zip(products, colors):
+    for product, color, legendgroup in zip(products, colors, legendgroup_list):
         dataframe_company_general_product = dataframe_company_general[
             dataframe_company_general["material_label"] == product]
         dataframe_company_north_product = dataframe_company_north[dataframe_company_north["material_label"] == product]
@@ -222,13 +223,13 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
         dataframe_company_west_product = dataframe_company_west[dataframe_company_west["material_label"] == product]
 
         fig.add_trace(go.Scatter(x=dateRange, y=dataframe_company_general_product["inventory_opening_balance"],
-                                 name=product, line_color=color, legendgroup='group1'), row=1, col=1)
+                                 name=product, line_color=color, legendgroup=legendgroup), row=1, col=1)
         fig.add_trace(go.Scatter(x=dateRange, y=dataframe_company_north_product["inventory_opening_balance"],
-                                 name=product, line_color=color, legendgroup='group1', showlegend=False), row=1, col=2)
+                                 name=product, line_color=color, legendgroup=legendgroup, showlegend=False), row=1, col=2)
         fig.add_trace(go.Scatter(x=dateRange, y=dataframe_company_south_product["inventory_opening_balance"],
-                                 name=product, line_color=color, legendgroup='group1', showlegend=False), row=2, col=1)
+                                 name=product, line_color=color, legendgroup=legendgroup, showlegend=False), row=2, col=1)
         fig.add_trace(go.Scatter(x=dateRange, y=dataframe_company_west_product["inventory_opening_balance"],
-                                 name=product, line_color=color, legendgroup='group1', showlegend=False), row=2, col=2)
+                                 name=product, line_color=color, legendgroup=legendgroup, showlegend=False), row=2, col=2)
 
     fig.update_layout(
         title="Évolution des stocks",
@@ -257,3 +258,69 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
                     fig['layout'][ax][index]['x'] = -0.05
 
     return fig, dataframe_company_general, dataframe_company_north, dataframe_company_south, dataframe_company_west
+
+
+def drawEmptySales():
+    """
+    Generate empty figures for sales evolution and distribution with text "Pas de données à afficher" displayed.
+    """
+    empty_sales_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
+    empty_sales_evolution.add_annotation(x=0, y=0, text="Pas de données à afficher", font=dict(family="sans serif", size=25,
+                                                                              color="crimson"), showarrow=False, yshift=10)
+    empty_sales_evolution.update_layout(
+        title="Évolution des ventes",
+        title_xanchor="center",
+        title_x=0.5,
+        xaxis_visible=False,
+        yaxis_visible=False,
+        width=800,
+        font=dict(
+            family="Courier New, monospace",
+            size=16,
+            color="RebeccaPurple"
+        )
+    )
+    empty_sales_distribution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
+    empty_sales_distribution.add_annotation(x=0, y=0, text="Pas de données à afficher", font=dict(family="sans serif", size=25,
+                                                                              color="crimson"), showarrow=False, yshift=10)
+    empty_sales_distribution.update_layout(
+        title="Répartition des ventes dans les régions",
+        title_xanchor="center",
+        title_x=0.5,
+        xaxis_visible=False,
+        yaxis_visible=False,
+        height=700,
+        font=dict(
+            family="Courier New, monospace",
+            size=16,
+            color="RebeccaPurple"
+        )
+    )
+
+    return empty_sales_evolution, empty_sales_distribution
+
+
+def drawEmptyStocks():
+    """
+    Generate empty figures for stocks distribution graph with text "Pas de données à afficher" displayed.
+    """
+    empty_stock_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
+    empty_stock_evolution.add_annotation(x=0, y=0, text="Pas de données à afficher",
+                                         font=dict(family="sans serif", size=25,
+                                                   color="crimson"), showarrow=False, yshift=10)
+    empty_stock_evolution.update_layout(
+        title="Évolution des stocks",
+        title_xanchor="center",
+        title_x=0.47,
+        height=700,
+        width=800,
+        xaxis_visible=False,
+        yaxis_visible=False,
+        font=dict(
+            family="Courier New, monospace",
+            size=16,
+            color="RebeccaPurple"
+        )
+    )
+
+    return empty_stock_evolution

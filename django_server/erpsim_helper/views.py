@@ -56,7 +56,7 @@ def index(request):     # TO DO
     sales_evolution_plot, sales_distribution_plot = plotly_plot_sales(sales, products)
     stock_evolution_plot = plotly_plot_stocks(inventory, products)
 
-    ## Generate tips
+    # Generate tips
 
     # Generate expected format for sales data to send to prediciton function
     max_sim_elapsed_steps = sales.aggregate(sim_elapsed_steps=Max('sim_elapsed_steps'))
@@ -84,8 +84,8 @@ def index(request):     # TO DO
     for price in prices:
         prices_dict[price.material_description] = price.price
 
-    print("Prices :")
-    print(prices_dict)
+    # print("Prices :")
+    # print(prices_dict)
 
     # Generate inventory data in expected format
     last_stock_update_step = inventory.aggregate(sim_elapsed_steps=Max('sim_elapsed_steps'))
@@ -101,7 +101,7 @@ def index(request):     # TO DO
             stocks_per_storage_per_material[stock.material_label][1] = stock.inventory_opening_balance
         elif stock.storage_location == "03W":
             stocks_per_storage_per_material[stock.material_label][2] = stock.inventory_opening_balance
-    
+
     print("stocks :")
     print(stocks_per_storage_per_material)
 
@@ -117,18 +117,18 @@ def index(request):     # TO DO
     print(stock_matrix)
 
     prices_matrix = getMatricePrix(
-        sales_per_storage_per_material, 
-        prices_dict, 
-        procurement_frequency, 
-        day % procurement_frequency, 
+        sales_per_storage_per_material,
+        prices_dict,
+        procurement_frequency,
+        day % procurement_frequency,
         stocks_per_storage_per_material,
         products
     )
     print(prices_matrix)
 
     context = {
-        'sales_evolution_plot': sales_evolution_plot, 
-        'sales_distribution_plot': sales_distribution_plot, 
+        'sales_evolution_plot': sales_evolution_plot,
+        'sales_distribution_plot': sales_distribution_plot,
         'stock_evolution_plot': stock_evolution_plot,
         'material': products,
         'predictions': stock_matrix,
@@ -139,6 +139,7 @@ def index(request):     # TO DO
     return render(request, 'index.html', context=context)
 
     #return HttpResponse(f"Hello, Player : {request.user.username} from company {company_name}. \n Your associated game is {player_associated_with_user.game_id}.")
+
 
 def game(request, game_id):     # TO DO
     """
