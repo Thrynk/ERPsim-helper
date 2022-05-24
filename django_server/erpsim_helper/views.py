@@ -92,7 +92,7 @@ def index(request):     # TO DO
 
     stocks = [stock for stock in inventory if stock.sim_elapsed_steps == last_stock_update_step["sim_elapsed_steps"]]
     stocks_per_storage_per_material = {
-        "Cream": [0,0,0], "Ice Cream":[0,0,0], "Butter":[0,0,0], "Milk":[0,0,0], "Cheese":[0,0,0], "Yoghurt":[0,0,0]
+        "Cream": [0,0,0,0], "Ice Cream":[0,0,0,0], "Butter":[0,0,0,0], "Milk":[0,0,0,0], "Cheese":[0,0,0,0], "Yoghurt":[0,0,0,0]
     }
     for stock in stocks:
         if stock.storage_location == "03N":
@@ -101,6 +101,8 @@ def index(request):     # TO DO
             stocks_per_storage_per_material[stock.material_label][1] = stock.inventory_opening_balance
         elif stock.storage_location == "03W":
             stocks_per_storage_per_material[stock.material_label][2] = stock.inventory_opening_balance
+        elif stock.storage_location == "03":
+            stocks_per_storage_per_material[stock.material_label][3] = stock.inventory_opening_balance
 
     print("stocks :")
     print(stocks_per_storage_per_material)
@@ -126,6 +128,14 @@ def index(request):     # TO DO
     )
     print(prices_matrix)
 
+    # init a dict to match material_description (eg. Milk) with material_number (eg.OO-T01)
+    name_conversion_for_material = {material["material_description"]: material["material_number"] for material in list(inventory.order_by('material_number', 'material_description').values('material_number', 'material_description').distinct())}
+    
+    # generate dict with key: OO-T01, because this is the format in ERPsim to change prices
+    prices_matrix_name_converted = {}
+    for material_description, material_number in name_conversion_for_material.items():
+        prices_matrix_name_converted[material_number] = prices_matrix[material_description]
+
     context = {
         'sales_evolution_plot': sales_evolution_plot,
         'sales_distribution_plot': sales_distribution_plot,
@@ -134,7 +144,7 @@ def index(request):     # TO DO
         'day': day,
         'material': products,
         'predictions': stock_matrix,
-        'modifPrix': prices_matrix
+        'modifPrix': prices_matrix_name_converted
     }
 
     # Render the HTML template index.html with the data in the context variable.
