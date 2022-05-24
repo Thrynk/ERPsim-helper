@@ -85,6 +85,9 @@ def prediction(sales, company, products, locations=["North","South","West"]):
 
     dfSales = pd.DataFrame(list(sales.values()))
 
+    if dfSales.empty:
+        return None
+
     findParameters = trouverParametres(dfSales,company,products,locations)
 
     return findParameters

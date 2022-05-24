@@ -110,38 +110,46 @@ def index(request):     # TO DO
     procurement_frequency = 5
 
     day = CompanyValuation.objects.filter(id_game=game.id, company_code=company_name).aggregate(sim_elapsed_steps=Max('sim_elapsed_steps'))["sim_elapsed_steps"]
+    print(f"day: {day}")
 
     #print({'tips':getTheTipsBack(),'predictions':getMatriceStock(prediction("test"),stocks_per_storage_per_material, company_name, day % procurement_frequency),'material':materialDef,'modifPrix':getMatricePrix(sales_per_storage_per_material, prices_dict, procurement_frequency, day % procurement_frequency, stocks_per_storage_per_material, company_name)})
 
-    parameters = prediction(sales, company_name, products)
+    if day is None:
+        stock_matrix = None
+        prices_matrix_name_converted = None
+        day = 1
+    else:
+        parameters = prediction(sales, company_name, products)
 
-    stock_matrix = getMatriceStock(parameters, products, stocks_per_storage_per_material, company_name, day % procurement_frequency)
-    print(stock_matrix)
+        stock_matrix = getMatriceStock(parameters, products, stocks_per_storage_per_material, company_name, day % procurement_frequency)
+        print(stock_matrix)
 
-    prices_matrix = getMatricePrix(
-        sales_per_storage_per_material,
-        prices_dict,
-        procurement_frequency,
-        day % procurement_frequency,
-        stocks_per_storage_per_material,
-        products
-    )
-    print(prices_matrix)
+        prices_matrix = getMatricePrix(
+            sales_per_storage_per_material,
+            prices_dict,
+            procurement_frequency,
+            day % procurement_frequency,
+            stocks_per_storage_per_material,
+            products
+        )
+        print(prices_matrix)
 
-    # init a dict to match material_description (eg. Milk) with material_number (eg.OO-T01)
-    name_conversion_for_material = {material["material_description"]: material["material_number"] for material in list(inventory.order_by('material_number', 'material_description').values('material_number', 'material_description').distinct())}
-    
-    # generate dict with key: OO-T01, because this is the format in ERPsim to change prices
-    prices_matrix_name_converted = {}
-    for material_description, material_number in name_conversion_for_material.items():
-        prices_matrix_name_converted[material_number] = prices_matrix[material_description]
+        # init a dict to match material_description (eg. Milk) with material_number (eg.OO-T01)
+        name_conversion_for_material = {material["material_description"]: material["material_number"] for material in list(inventory.order_by('material_number', 'material_description').values('material_number', 'material_description').distinct())}
+        
+        # generate dict with key: OO-T01, because this is the format in ERPsim to change prices
+        prices_matrix_name_converted = {}
+        for material_description, material_number in name_conversion_for_material.items():
+            prices_matrix_name_converted[material_number] = prices_matrix[material_description]
 
     context = {
         'sales_evolution_plot': sales_evolution_plot,
         'sales_distribution_plot': sales_distribution_plot,
         'stock_evolution_plot': stock_evolution_plot,
         'username': request.user.username,
-        'day': day,
+        'round': int(day / 8) + 1 if int(day / 8) == 0 else int(day / 8),
+        'step': day % 10,
+        'sim_elapsed_steps': day,
         'material': products,
         'predictions': stock_matrix,
         'modifPrix': prices_matrix_name_converted

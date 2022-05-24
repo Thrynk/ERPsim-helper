@@ -13,7 +13,10 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row" id="username">{{username}} - {{day}}</div>
+        <div class="row" id="username">{{username}}</div>
+        <div class="row" id="round">Round : {{round}}</div>
+        <div class="row" id="step">Step : {{step}}</div>
+        <div class="row" id="sim_elapsed_steps">Simulation elapsed steps : {{sim_elapsed_steps}}</div>
         <div class="row">
             <div class="col-sm-5">
                 {{ sales_distribution_plot|safe }}
