@@ -51,13 +51,10 @@ def trouverParametres(df,sales_organization,Materials,Localisations,precision=80
         dfSalesJoueurMaterial = df[df['material_label']==material]
         for localisation in Localisations:
             if len(dfSalesJoueurMaterial[dfSalesJoueurMaterial["area"]==localisation]["quantity"])==0:
-                tmp.append(0)
+                tmp.append(1)
             else:
                 tmp.append(round(dfSalesJoueurMaterial[dfSalesJoueurMaterial["area"]==localisation]["quantity"].sum()/precision,0))
-        if(tmp==0):
-            ListeSalesJoueur[material]=1
-        else:    
-            ListeSalesJoueur[material]=tmp
+        ListeSalesJoueur[material]=tmp
     print(ListeSalesJoueur)
 
     return ListeSalesJoueur
@@ -174,7 +171,6 @@ def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
         :return: matrice_stock
         :rtype: dict
     """
-
     reapro=getReapro(materials)
 
     #if jour_du_cycle != 1:
@@ -183,7 +179,6 @@ def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
     matrice_stock={}
 
     for element in materials:
-
         somme_coef = prediction[element][0] + prediction[element][1] + prediction[element][2]
         #Dispatch du produit "element" dans les 3 entrepots
         dispatch_element=[]
