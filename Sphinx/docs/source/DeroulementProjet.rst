@@ -1,11 +1,11 @@
 .. _bilan_projet:
 
-Déroulement du Projet
-=====================
+Histoire du Projet
+==================
 
-========================
-Initialisation du projet 
-========================
+===================
+Démarrage du projet 
+===================
 
 Le but du projet était de créer une Intelligence Artificielle capable de jouer et de gagner à *ERPSIM*. 
 
@@ -13,6 +13,9 @@ Pour ce faire, nous avons lu et mis de côté les informations importantes des g
 afin de faire un condensé des informations à retenir. Nous avons aussi joués plusieurs parties, pour se familiariser au 
 fonctionnement du jeu, pour voir quelles données étaient présentes sur l'interface du jeu, mais aussi pour voir de quoi était 
 composé le flux oData. En effet, le flux oData est le flux sur lequel nous extrayons les données. 
+
+Etat de l'Art
+-------------
 
 .. _paramètres_jeu:
 
@@ -28,15 +31,15 @@ nous influons les ventes et les stocks :
 
     *Liste des paramètres d'entrées et de sortie du jeu ERPSIM*
 
-=====================
-Déroulement du projet 
-=====================
+============================
+Construction de la stratégie
+============================
 
 Nous avons alors commencé à élaborer des stratégies, dans le but de comprendre le fonctionnement du jeu, les paramètres essentiels pour 
 avoir une bonne *company valuation* et donc un bon score. 
 
-La stratégie du produit unique
-------------------------------
+Stratégie de découverte : La stratégie du produit unique
+--------------------------------------------------------
 
 L'une d'elles consistait à se contenter d'un seul produit. Nous sommes 7 dans le groupe, nous avons donc joué à 6, et une personne
 centralisait tout. Nous étions chacun affecté à un seul et unique produit, nous ne devions toucher à aucun autre produit, que ce soit
@@ -84,18 +87,12 @@ Mode opératoire
 * Round 5 : 
     * Chacun va adapter ses prix avec les prix d'équilibre trouvés par les autres équipes, cela permettra, en observant les données oData, de savoir si le marché est bien indépendant des autres. 
 
-Réalisation du programme
+^^^^^^^^^^
+Conclusion
+^^^^^^^^^^
+
+Stratégie d'ERPSIM Helper
 ------------------------
-
-Pour réaliser le programme du projet, nous nous sommes répartis en 3 groupes : 
-
-* Une partie pour l'extraction des données brutes 
-* Une partie création d'une stratégie et réalisation des dashboard de visualisation 
-* Une partie création des formulaires administrateur et player. 
-
-===================
-Stratégie de l'aide
-===================
 
 Dans un premier temps le flux d'entrée de donnée est basé sur le flux odata. les données sont transformées en dataframe afin de pouvoir les 
 exploiter.
@@ -112,22 +109,39 @@ produit se vend bien dans un autre entrepot.
 
 .. _resultats:
 
-===================
-Résultats du Projet 
-===================
+====================================
+Résultats et Analyse de la stratégie
+====================================
 
 D'un point de vue visuel, nous pouvons trouver, sur :ref:`l'interface utilisateur <joueur>`, des conseils sur les prix, les transferts de stocks, et une vue plus générale 
 de l'état de l'entreprise au premier coup d'oeil. Cette vue permet de prendre des décisions plus rapidement puisque toutes les informations sont centralisées.
 
 D'un point de vue contenu, les différents conseils mènent à .............
 
-.. _analyse:
-
-=====================
-Analyse des résultats
-=====================
-
 TO DO
+
+
+==========================================
+Développement de la solution ERPSIM Helper
+==========================================
+
+Répartition des tâches
+----------------------
+
+Pour réaliser le programme du projet, nous nous sommes répartis en 3 groupes : 
+
+* Une partie pour l'extraction des données brutes 
+* Une partie création d'une stratégie et réalisation des dashboard de visualisation 
+* Une partie création des formulaires administrateur et player. 
+
+Critères de récupération du flux oData 
+--------------------------------------
+
+Critères pour l'affichage des graphiques
+----------------------------------------
+
+Critères pour la stratégie conseillées
+--------------------------------------
 
 .. _difficultees:
 
@@ -161,11 +175,11 @@ développons avec le mode Introduction car ce dernier est bien plus simple à ut
 ce mode était donc un bon compromis. 
 
 Nous devions donc jouer des parties Introduction pour générer de la donnée mais nous avons été confronté à un autre problème : nous ne pouvons pas lancer de parties 
-nous-mêmes et encore moins autant que nous voulions. Nous devons, pour chaque partie, contacter un enseignant pour qu'il crée la partie avec ses identifiants administrateur 
+nous-mêmes et encore moins autant que nous le voulions. Nous devons, pour chaque partie, contacter un enseignant pour qu'il crée la partie avec ses identifiants administrateur 
 sur *ERPSIM*. Il fallait donc que l'enseignant soit disponible au moment où nous voulions créer des parties, et qu'aucun cours de Serious Game ne soit en cours. 
 
 Avec ces difficultées, nous avons pensé à reproduire le jeu pour faire des simulations nous-mêmes. Mais, entre le temps de développement de cette simulation, son utilisation, 
-l'apprentissage de l'IA, ce procédé était tout bonnement impossible. 
+l'apprentissage de l'IA, ce procédé était tout bonnement impossible au vu du temps disponible pour le projet. 
 
 C'est donc à ce moment que le projet d'IA, s'est transformé en programme d'aide pour le joueur. 
 
