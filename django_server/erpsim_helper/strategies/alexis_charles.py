@@ -17,7 +17,7 @@ import sys
 # Find the matrice
 #######################################
 
-def trouverParametres(df,sales_organization,Materials,Localisations,precision=80):
+def trouverParametres(df,Materials,Localisations,precision=80):
     """
         Find the parameters for the repartition matrice
 
@@ -38,30 +38,27 @@ def trouverParametres(df,sales_organization,Materials,Localisations,precision=80
         :rtype: dict
     """
 
+    if df.empty:
+        return {material: [1,1,1] for material in Materials}
+
     #Affichage
     print("Les parametres tendent vers : ")
     print(" ")
 
-    ListeSalesJoueur = {}
-    df=df[df["sales_organization"]==sales_organization]
+    df_sales_repartition = df.groupby(["material_label", "area"])["quantity"].sum() / df.groupby(["material_label"])["quantity"].sum()
 
-    #Iteration Matériaux et Localisation
-    for material in Materials:
-        tmp=[]
-        dfSalesJoueurMaterial = df[df['material_label']==material]
-        for localisation in Localisations:
-            if len(dfSalesJoueurMaterial[dfSalesJoueurMaterial["area"]==localisation]["quantity"])==0:
-                tmp.append(1)
-            else:
-                tmp.append(round(dfSalesJoueurMaterial[dfSalesJoueurMaterial["area"]==localisation]["quantity"].sum()/precision,0))
-        ListeSalesJoueur[material]=tmp
-    print(ListeSalesJoueur)
+    sales_repartition_dict = {material: [0,0,0] for material in Materials}
 
-    return ListeSalesJoueur
+    print(df_sales_repartition.reset_index())
+    for index, row in df_sales_repartition.reset_index().iterrows():
+        sales_repartition_dict[row.material_label][Localisations.index(row.area)] = round(row.quantity, 2)
+
+    print(sales_repartition_dict)
+    return sales_repartition_dict
 
 
 
-def prediction(sales, company, products, locations=["North","South","West"]):
+def prediction(sales, products, locations=["North","South","West"]):
     """
         Get the repartition matrice, by product and by zone
 
@@ -82,10 +79,7 @@ def prediction(sales, company, products, locations=["North","South","West"]):
 
     dfSales = pd.DataFrame(list(sales.values()))
 
-    if dfSales.empty:
-        return None
-
-    findParameters = trouverParametres(dfSales,company,products,locations)
+    findParameters = trouverParametres(dfSales,products,locations)
 
     return findParameters
 
@@ -171,7 +165,7 @@ def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
         :return: matrice_stock
         :rtype: dict
     """
-    reapro=getReapro(materials)
+    #reapro=getReapro(materials)
 
     #if jour_du_cycle != 1:
     #  return 0
@@ -179,26 +173,31 @@ def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
     matrice_stock={}
 
     for element in materials:
-        somme_coef = prediction[element][0] + prediction[element][1] + prediction[element][2]
+        #somme_coef = prediction[element][0] + prediction[element][1] + prediction[element][2]
         #Dispatch du produit "element" dans les 3 entrepots
         dispatch_element=[]
         for i in range (0,3):
-            dispatch_theorique = prediction[element][i] / somme_coef
-            if (dispatch_theorique * reapro[element] > stock_actuel[element][i]):
-                dispatch_element.append(floor(dispatch_theorique * reapro[element] - stock_actuel[element][i]))
+            dispatch_theorique = prediction[element][i]
+            if (dispatch_theorique * stock_actuel[element][3] > stock_actuel[element][i]):
+                dispatch_element.append(floor(dispatch_theorique * stock_actuel[element][3] - stock_actuel[element][i]))
             else:
                 dispatch_element.append(0)
 
         #Unites non reparties dans les entrepots secondaires
-        reste = reapro[element] - dispatch_element[0] - dispatch_element[1] - dispatch_element[2]
+        reste = stock_actuel[element][3] - dispatch_element[0] - dispatch_element[1] - dispatch_element[2]
 
-        matrice_stock[element]=[dispatch_element[0]+floor(reste/3),dispatch_element[1]+floor(reste/3),dispatch_element[2]+floor(reste/3)]
+        reste_a_envoyer = []
+        for i in range (0,3):
+            dispatch_theorique = prediction[element][i]
+            reste_a_envoyer.append(reste * dispatch_theorique)
+
+        matrice_stock[element] = [floor(dispatch_element[i] + reste) for i,reste in enumerate(reste_a_envoyer)]
 
     print("matrice_stock ",matrice_stock)
   
     return(matrice_stock)
 
-def getMatricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, stock_actuel, materials):
+def getMatricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, stock_actuel, materials, current_sim_elapsed_steps):
     """
         Give the prices modifications advices that must be applied in ERP Sim
 
@@ -226,9 +225,9 @@ def getMatricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle,
     dictionnaire_prix = {}
 
     for element in materials:
-        if (ventes_veille[element][0] >= stock_actuel[element][0]/jours_cycle_restants or ventes_veille[element][1] >= stock_actuel[element][1]/jours_cycle_restants or ventes_veille[element][2] >= stock_actuel[element][2]/jours_cycle_restants):
+        if (ventes_veille[element][0] / current_sim_elapsed_steps >= stock_actuel[element][0]/jours_cycle_restants or ventes_veille[element][1] / current_sim_elapsed_steps >= stock_actuel[element][1]/jours_cycle_restants or ventes_veille[element][2] / current_sim_elapsed_steps >= stock_actuel[element][2]/jours_cycle_restants):
             dictionnaire_prix[element]=[1.1, str(round(1.1*prix_actuels[element], 2))+"€"]
-        elif (ventes_veille[element][0] < 0.8*stock_actuel[element][0]/jours_cycle_restants and ventes_veille[element][1] < 0.8*stock_actuel[element][1]/jours_cycle_restants and ventes_veille[element][2] < 0.8*stock_actuel[element][2]/jours_cycle_restants):
+        elif (ventes_veille[element][0] / current_sim_elapsed_steps < 0.8*stock_actuel[element][0]/jours_cycle_restants and ventes_veille[element][1] / current_sim_elapsed_steps < 0.8*stock_actuel[element][1]/jours_cycle_restants and ventes_veille[element][2] / current_sim_elapsed_steps < 0.8*stock_actuel[element][2]/jours_cycle_restants):
             if(costPrices[element]<round(0.9*prix_actuels[element])):
                 dictionnaire_prix[element]=[0.9, str(round(0.9*prix_actuels[element], 2))+"€"]
             else:
