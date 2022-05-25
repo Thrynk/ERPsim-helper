@@ -189,13 +189,13 @@ def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
         dispatch_element=[]
         for i in range (0,3):
             dispatch_theorique = prediction[element][i] / somme_coef
-            if (dispatch_theorique * reapro[element] > stock_actuel[element][i]):
-                dispatch_element.append(floor(dispatch_theorique * reapro[element] - stock_actuel[element][i]))
+            if (dispatch_theorique * stock_actuel[element][3] > stock_actuel[element][i]):
+                dispatch_element.append(floor(dispatch_theorique * stock_actuel[element][3] - stock_actuel[element][i]))
             else:
                 dispatch_element.append(0)
 
         #Unites non reparties dans les entrepots secondaires
-        reste = reapro[element] - dispatch_element[0] - dispatch_element[1] - dispatch_element[2]
+        reste = stock_actuel[element][3] - dispatch_element[0] - dispatch_element[1] - dispatch_element[2]
 
         matrice_stock[element]=[dispatch_element[0]+floor(reste/3),dispatch_element[1]+floor(reste/3),dispatch_element[2]+floor(reste/3)]
 
