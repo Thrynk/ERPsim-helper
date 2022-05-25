@@ -51,13 +51,10 @@ def trouverParametres(df,sales_organization,Materials,Localisations,precision=80
         dfSalesJoueurMaterial = df[df['material_label']==material]
         for localisation in Localisations:
             if len(dfSalesJoueurMaterial[dfSalesJoueurMaterial["area"]==localisation]["quantity"])==0:
-                tmp.append(0)
+                tmp.append(1)
             else:
                 tmp.append(round(dfSalesJoueurMaterial[dfSalesJoueurMaterial["area"]==localisation]["quantity"].sum()/precision,0))
-        if(tmp==0):
-            ListeSalesJoueur[material]=1
-        else:    
-            ListeSalesJoueur[material]=tmp
+        ListeSalesJoueur[material]=tmp
     print(ListeSalesJoueur)
 
     return ListeSalesJoueur
