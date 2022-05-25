@@ -108,6 +108,9 @@ def index(request):     # TO DO
     print(stocks_per_storage_per_material)
 
     day = CompanyValuation.objects.filter(id_game=game.id, company_code=company_name).aggregate(sim_elapsed_steps=Max('sim_elapsed_steps'))["sim_elapsed_steps"]
+    simulation_date = CompanyValuation.objects.filter(id_game=game.id, company_code=company_name).aggregate(sim_calendar_date=Max('sim_calendar_date'))["sim_calendar_date"]
+    simulation_date = simulation_date.strftime("%e %b %Y")
+
     print(f"day: {day}")
 
     procurement_frequency = 5
@@ -149,6 +152,7 @@ def index(request):     # TO DO
         'round': int(day / 8) + 1 if int(day / 8) == 0 else int(day / 8),
         'step': day % 10,
         'sim_elapsed_steps': day,
+        'simulation_date': simulation_date,
         'material': products,
         'predictions': stock_matrix,
         'modifPrix': prices_matrix_name_converted

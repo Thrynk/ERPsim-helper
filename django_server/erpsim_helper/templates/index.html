@@ -29,18 +29,28 @@
     </div>
 
        <div id="header2" >
-        <div class="headerdiv">
-            <p>Joueur : {{username}}</p>
-        </div>
-        <div class="headerdiv">
-            <p>Round : {{round}}</p>
-        </div>
-        <div class="headerdiv">
-            <p>Step : {{step}}</p>
-        </div>
-        <div class="headerdiv">
-            <p>Simulation elapsed steps : {{sim_elapsed_steps}}</p>
-        </div>
+
+           <div id="informations">
+
+                <div class="headerdiv">
+                    <p>Joueur : {{username}}</p>
+                </div>
+                   <div class="headerdiv">
+                    <p>Date : {{simulation_date}}</p>
+                </div>
+                <div class="headerdiv">
+                    <p>Round : {{round}}</p>
+                </div>
+                <div class="headerdiv">
+                    <p>Step : {{step}}</p>
+                </div>
+                <div class="headerdiv">
+                    <p>Simulation elapsed steps : {{sim_elapsed_steps}}</p>
+                </div>
+
+           </div>
+
+
     </div>
 
 
@@ -64,7 +74,7 @@
         <div id="tableaux">
             <div class="tableau1">
                 <table id="tableau1table">
-                    <caption class="caption">Prévision Inventaire</caption>
+                    <caption class="caption">Prévisions Inventaire</caption>
                     <thead id="tableau1thead">
                         <tr class="tableau1tr">
                             <th class="tableau1th" scope="col">Products</th>
