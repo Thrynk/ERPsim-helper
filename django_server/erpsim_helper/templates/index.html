@@ -9,24 +9,52 @@
     <link rel="stylesheet" type="text/css" href="{% static '../static/css/header.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '../static/css/tips.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '../static/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '../static/css/main.css' %}">
     <!-- Add additional CSS in static file -->
 </head>
 <body>
+    <div id="header" >
+        <div class="headerdiv">
+            <p>Joueur : {{username}}</p>
+        </div>
+        <div class="headerdiv">
+            <p>Round : {{round}}</p>
+        </div>
+        <div class="headerdiv">
+            <p>Step : {{step}}</p>
+        </div>
+        <div class="headerdiv">
+            <p>Simulation elapsed steps : {{sim_elapsed_steps}}</p>
+        </div>
+    </div>
+
+       <div id="header2" >
+        <div class="headerdiv">
+            <p>Joueur : {{username}}</p>
+        </div>
+        <div class="headerdiv">
+            <p>Round : {{round}}</p>
+        </div>
+        <div class="headerdiv">
+            <p>Step : {{step}}</p>
+        </div>
+        <div class="headerdiv">
+            <p>Simulation elapsed steps : {{sim_elapsed_steps}}</p>
+        </div>
+    </div>
+
+
     <div class="container-fluid">
-        <div class="row" id="username">{{username}}</div>
-        <div class="row" id="round">Round : {{round}}</div>
-        <div class="row" id="step">Step : {{step}}</div>
-        <div class="row" id="sim_elapsed_steps">Simulation elapsed steps : {{sim_elapsed_steps}}</div>
-        <div class="row">
-            <div class="col-sm-5">
+        <div class="firstrow">
+            <div class="graph">
                 {{ sales_distribution_plot|safe }}
             </div>
-            <div class="col-sm-7">
+            <div class="graph">
                 {{ stock_evolution_plot|safe }}
             </div>
         </div>
         <div class="row allwidth">
-            <div>
+            <div class="graph">
                 {{ sales_evolution_plot|safe }}
             </div>
         </div>
@@ -36,7 +64,7 @@
         <div id="tableaux">
             <div class="tableau1">
                 <table id="tableau1table">
-                    <caption>Inventaire matrice</caption>
+                    <caption class="caption">Prévision Inventaire</caption>
                     <thead id="tableau1thead">
                         <tr class="tableau1tr">
                             <th class="tableau1th" scope="col">Products</th>
@@ -62,7 +90,7 @@
 
             <div class="tableau2">
                 <table id="tableau2table">
-                    <caption>Changement prix</caption>
+                    <caption class="caption">Prévisions Prix</caption>
                     <thead id="tableau2thead">
                     <tr class="tableau2tr">
                         <th class="tableau2th" scope="col">Products</th>

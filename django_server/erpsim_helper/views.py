@@ -50,7 +50,7 @@ def index(request):     # TO DO
 
     inventory = Inventory.objects.filter(id_game=game.id, plant=company_name)
 
-    products = ["Cream", "Ice Cream", "Butter", "Milk", "Cheese", "Yoghurt"]
+    products = ["Milk", "Cream", "Yoghurt", "Cheese", "Butter", "Ice Cream"]
 
     # pass sales to plotly_plot
     sales_evolution_plot, sales_distribution_plot = plotly_plot_sales(sales, products)
@@ -63,7 +63,7 @@ def index(request):     # TO DO
     sales_previous_day = [sale for sale in sales if sale.sim_elapsed_steps == max_sim_elapsed_steps["sim_elapsed_steps"]]
 
     sales_per_storage_per_material = {
-        "Cream": [0,0,0], "Ice Cream":[0,0,0], "Butter":[0,0,0], "Milk":[0,0,0], "Cheese":[0,0,0], "Yoghurt":[0,0,0]
+        "Milk": [0,0,0], "Cream":[0,0,0], "Yoghurt":[0,0,0], "Cheese":[0,0,0], "Butter":[0,0,0], "Ice Cream":[0,0,0]
     }
     for sale in sales_previous_day:
         if sale.storage_location == "03N":
@@ -92,7 +92,7 @@ def index(request):     # TO DO
 
     stocks = [stock for stock in inventory if stock.sim_elapsed_steps == last_stock_update_step["sim_elapsed_steps"]]
     stocks_per_storage_per_material = {
-        "Cream": [0,0,0,0], "Ice Cream":[0,0,0,0], "Butter":[0,0,0,0], "Milk":[0,0,0,0], "Cheese":[0,0,0,0], "Yoghurt":[0,0,0,0]
+        "Milk": [0,0,0,0], "Cream":[0,0,0,0], "Yoghurt":[0,0,0,0], "Cheese":[0,0,0,0], "Butter":[0,0,0,0], "Ice Cream":[0,0,0,0]
     }
     for stock in stocks:
         if stock.storage_location == "03N":
@@ -107,11 +107,10 @@ def index(request):     # TO DO
     print("stocks :")
     print(stocks_per_storage_per_material)
 
-    procurement_frequency = 5
-
     day = CompanyValuation.objects.filter(id_game=game.id, company_code=company_name).aggregate(sim_elapsed_steps=Max('sim_elapsed_steps'))["sim_elapsed_steps"]
     print(f"day: {day}")
 
+    procurement_frequency = 5
     #print({'tips':getTheTipsBack(),'predictions':getMatriceStock(prediction("test"),stocks_per_storage_per_material, company_name, day % procurement_frequency),'material':materialDef,'modifPrix':getMatricePrix(sales_per_storage_per_material, prices_dict, procurement_frequency, day % procurement_frequency, stocks_per_storage_per_material, company_name)})
 
     if day is None:
@@ -127,10 +126,10 @@ def index(request):     # TO DO
         prices_matrix = getMatricePrix(
             sales_per_storage_per_material,
             prices_dict,
-            procurement_frequency,
             day % procurement_frequency,
             stocks_per_storage_per_material,
-            products
+            products,
+            procurement_frequency
         )
         print(prices_matrix)
 

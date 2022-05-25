@@ -86,6 +86,7 @@ def drawSalesDistribution(dataframe_company, products, startDate=None, endDate=N
         title_x=0.5,
         showlegend=False,
         height=700,
+        width=600,
         font=dict(
             family="Courier New, monospace",
             size=16,
@@ -235,8 +236,8 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
         title="Évolution des stocks",
         title_xanchor="center",
         title_x=0.47,
-        height=690,
-        width=800,
+        height=700,
+        width=850,
         font=dict(
             family="Courier New, monospace",
             size=16,
@@ -255,7 +256,7 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
                 if fig['layout'][ax][index]['text'] == "Date":
                     fig['layout'][ax][index]['y'] = -0.07
                 if fig['layout'][ax][index]['text'] == "Quantité en stock":
-                    fig['layout'][ax][index]['x'] = -0.05
+                    fig['layout'][ax][index]['x'] = -0.04
 
     return fig, dataframe_company_general, dataframe_company_north, dataframe_company_south, dataframe_company_west
 
@@ -290,6 +291,7 @@ def drawEmptySales():
         xaxis_visible=False,
         yaxis_visible=False,
         height=700,
+        width=650,
         font=dict(
             family="Courier New, monospace",
             size=16,
