@@ -219,10 +219,17 @@ Pour la partie affichage des graphiques,
 
 * FC 1 : La page ne doit pas s'alourdir au fil des Jours
 * FC 2 : La page doit se rafraîchir en moins de 10 secondes
-* FC 3 : La page ne doit pas s'arrêter pendant l'actualisation des données
+* FC 3 : La page ne doit pas "ne pas répondre" pendant l'actualisation des données
 
-Critères pour la stratégie conseillées
---------------------------------------
+Critères pour la stratégie conseillée
+-------------------------------------
+
+* FP 1 : La stratégie doit permettre au joueur d'avoir une meilleure Company Valuation
+
+* FC 1 : La stratégie ne doit pas faire vendre à perte
+* FC 2 : La stratégie doit limiter au maximum les ruptures de stocks 
+* FC 3 : La stratégie doit adapter le stock dans les entrepôts régionaux en fonction des ventes de chaque région 
+* FC 4 : Le calcul de la stratégie doit prendre moins de 30 secondes
 
 .. _difficultees:
 
