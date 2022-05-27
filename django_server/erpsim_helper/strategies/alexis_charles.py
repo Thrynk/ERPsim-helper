@@ -17,7 +17,8 @@ import sys
 # Find the matrice
 #######################################
 
-def trouverParametres(df,Materials,Localisations,precision=80):
+
+def trouverParametres(df, Materials,Localisations, precision=80):
     """
         Find the parameters for the repartition matrice
 
@@ -39,7 +40,7 @@ def trouverParametres(df,Materials,Localisations,precision=80):
     """
 
     if df.empty:
-        return {material: [1,1,1] for material in Materials}
+        return {material: [1, 1, 1] for material in Materials}
 
     #Affichage
     print("Les parametres tendent vers : ")
@@ -57,7 +58,7 @@ def trouverParametres(df,Materials,Localisations,precision=80):
     return sales_repartition_dict
 
 
-def prediction(sales, company, products, locations=("North","South","West")):
+def prediction(sales, products, locations=("North", "South", "West")):
     """
         Get the repartition matrice, by product and by zone
 
@@ -77,8 +78,7 @@ def prediction(sales, company, products, locations=("North","South","West")):
     """
 
     dfSales = pd.DataFrame(list(sales.values()))
-
-    findParameters = trouverParametres(dfSales,products,locations)
+    findParameters = trouverParametres(dfSales, products, locations)
 
     return findParameters
 
@@ -137,12 +137,12 @@ def getCostPrices(materials):
     costButter = 59.88
     costIceCream = 43.15
 
-    cost_prices[materials[0]]=costMilk
-    cost_prices[materials[1]]=costCream
-    cost_prices[materials[2]]=costYoghurt
-    cost_prices[materials[3]]=costCheese
-    cost_prices[materials[4]]=costButter
-    cost_prices[materials[5]]=costIceCream
+    cost_prices[materials[0]] = costMilk
+    cost_prices[materials[1]] = costCream
+    cost_prices[materials[2]] = costYoghurt
+    cost_prices[materials[3]] = costCheese
+    cost_prices[materials[4]] = costButter
+    cost_prices[materials[5]] = costIceCream
 
     return cost_prices
 
@@ -169,14 +169,11 @@ def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
     """
     #reapro=getReapro(materials)
 
-    #if jour_du_cycle != 1:
-    #  return 0
-
-    matrice_stock={}
+    matrice_stock = {}
 
     for element in materials:
-        #somme_coef = prediction[element][0] + prediction[element][1] + prediction[element][2]
-        #Dispatch du produit "element" dans les 3 entrepots
+        # somme_coef = prediction[element][0] + prediction[element][1] + prediction[element][2]
+        # Dispatch du produit "element" dans les 3 entrepots
         dispatch_element=[]
         for i in range (0,3):
             dispatch_theorique = prediction[element][i]
@@ -185,7 +182,7 @@ def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
             else:
                 dispatch_element.append(0)
 
-        #Unites non reparties dans les entrepots secondaires
+        # Unites non reparties dans les entrepots secondaires
         reste = stock_actuel[element][3] - dispatch_element[0] - dispatch_element[1] - dispatch_element[2]
 
         reste_a_envoyer = []

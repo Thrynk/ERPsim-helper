@@ -126,10 +126,10 @@ def index(request):     # TO DO
         prices_matrix = getMatricePrix(
             sales_per_storage_per_material,
             prices_dict,
+            procurement_frequency,
             day % procurement_frequency,
             stocks_per_storage_per_material,
             products,
-            procurement_frequency,
             day
         )
         print(prices_matrix)

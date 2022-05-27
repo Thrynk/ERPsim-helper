@@ -264,6 +264,7 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
 def drawEmptySales():
     """
     Generate empty figures for sales evolution and distribution with text "Pas de données à afficher" displayed.
+    :return: Two empty figures for sales evolution and sales distribution.
     """
     empty_sales_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
     empty_sales_evolution.add_annotation(x=0, y=0, text="Pas de données à afficher", font=dict(family="sans serif", size=25,
@@ -305,6 +306,7 @@ def drawEmptySales():
 def drawEmptyStocks():
     """
     Generate empty figures for stocks distribution graph with text "Pas de données à afficher" displayed.
+    :return: One empty figure for stock evolution in warehouses.
     """
     empty_stock_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
     empty_stock_evolution.add_annotation(x=0, y=0, text="Pas de données à afficher",

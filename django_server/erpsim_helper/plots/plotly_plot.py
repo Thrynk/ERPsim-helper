@@ -1,13 +1,15 @@
 import pandas as pd
 from plotly.offline import plot
 from .drawFigures import drawSalesEvolution, drawSalesDistribution, drawStocks, drawEmptySales, drawEmptyStocks
-from ..models import Inventory
 
 
 def plotly_plot_sales(sales, products):
     """
     This function display plotly plots related to sales.
-    :param:
+    :param sales: Sales from sales model.
+    :param products: List of products we want on the plot. Tips : Give all products, you will be able to filter it
+    directly in the graph by clicking on the legend.
+    :return: Two plotly objects for sales evolution and distribution, to give in the django template.
     """
     columns = ['row_number', 'sales_organization', 'sim_calendar_date', 'storage_location', 'material_label',
                'quantity']
@@ -39,6 +41,10 @@ def plotly_plot_sales(sales, products):
 def plotly_plot_stocks(inventory, products):
     """
     This function display plotly plots related to stocks
+    :param inventory: Inventory from inventory model.
+    :param products: List of products we want on the plot. Tips : Give all products, you will be able to filter it
+    directly in the graph by clicking on the legend.
+    :return: One plotly object for stock evolution, to give in the django template.
     """
     columns = ['inventory_opening_balance', 'row_number', 'plant', 'sim_calendar_date', 'storage_location',
                'material_label']
