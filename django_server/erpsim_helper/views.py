@@ -104,11 +104,13 @@ def index(request):     # TO DO
     print("stocks :")
     print(stocks_per_storage_per_material)
 
-    procurement_frequency = 5
-
     day = CompanyValuation.objects.filter(id_game=game.id, company_code=company_name).aggregate(sim_elapsed_steps=Max('sim_elapsed_steps'))["sim_elapsed_steps"]
+    simulation_date = CompanyValuation.objects.filter(id_game=game.id, company_code=company_name).aggregate(sim_calendar_date=Max('sim_calendar_date'))["sim_calendar_date"]
+    simulation_date = simulation_date.strftime("%e %b %Y")
+
     print(f"day: {day}")
 
+    procurement_frequency = 5
     #print({'tips':getTheTipsBack(),'predictions':getMatriceStock(prediction("test"),stocks_per_storage_per_material, company_name, day % procurement_frequency),'material':materialDef,'modifPrix':getMatricePrix(sales_per_storage_per_material, prices_dict, procurement_frequency, day % procurement_frequency, stocks_per_storage_per_material, company_name)})
 
     if day is None:
@@ -124,10 +126,10 @@ def index(request):     # TO DO
         prices_matrix = getMatricePrix(
             sales_per_storage_per_material,
             prices_dict,
-            procurement_frequency,
             day % procurement_frequency,
             stocks_per_storage_per_material,
             products,
+            procurement_frequency,
             day
         )
         print(prices_matrix)
@@ -148,6 +150,7 @@ def index(request):     # TO DO
         'round': int(day / 8) + 1 if int(day / 8) == 0 else int(day / 8),
         'step': day % 10,
         'sim_elapsed_steps': day,
+        'simulation_date': simulation_date,
         'material': products,
         'predictions': stock_matrix,
         'modifPrix': prices_matrix_name_converted

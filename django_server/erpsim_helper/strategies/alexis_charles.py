@@ -57,8 +57,7 @@ def trouverParametres(df,Materials,Localisations,precision=80):
     return sales_repartition_dict
 
 
-
-def prediction(sales, products, locations=["North","South","West"]):
+def prediction(sales, company, products, locations=("North","South","West")):
     """
         Get the repartition matrice, by product and by zone
 
@@ -82,6 +81,7 @@ def prediction(sales, products, locations=["North","South","West"]):
     findParameters = trouverParametres(dfSales,products,locations)
 
     return findParameters
+
 
 def getReapro(materials):
     """
@@ -114,6 +114,7 @@ def getReapro(materials):
 
     return reapro
 
+
 def getCostPrices(materials):
     """
         Give the unit buy prices by the company for each product
@@ -144,6 +145,7 @@ def getCostPrices(materials):
     cost_prices[materials[5]]=costIceCream
 
     return cost_prices
+
 
 def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
     """
@@ -196,6 +198,7 @@ def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
     print("matrice_stock ",matrice_stock)
   
     return(matrice_stock)
+
 
 def getMatricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, stock_actuel, materials, current_sim_elapsed_steps):
     """
