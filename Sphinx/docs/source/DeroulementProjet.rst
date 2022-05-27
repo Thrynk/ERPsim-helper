@@ -1,7 +1,8 @@
 .. _bilan_projet:
 
+******************
 Histoire du Projet
-==================
+******************
 
 ===================
 Démarrage du projet 
@@ -61,8 +62,7 @@ Objectifs
 1. 12 000 € de Chiffre d'affaire / Jour 
 2. Maximiser les ventes par produit 
 
-=> Trouver le prix d'équilibre entre garantir des ventes et maximiser le CA 
-
+=> Trouver le prix d'équilibre entre garantir des ventes et maximiser le CA |br|
 => Optimiser :math:`y(p) = x(p) * q(p)` 
 
 avec 
@@ -284,7 +284,7 @@ via un formulaire personnalisable. Cet outil nous permettait donc de gérer pres
 En plus de Django, nous avons utilisé `Huey <https://huey.readthedocs.io/en/latest/>`_. Cette bibliothèque, permet de créer des `tasks`, utiles 
 pour les tâches de rechargements. Nous pouvions grâce à cela, créer les tâches de rechargements pour chaque table du flux, et les lancer en 
 parralèle, avec du multi-threading, de manière à augmenter la rapidité de l'extraction. Huey nous permet aussi de `scheduler` les tâches, pour 
-les exécuter tous les :math:`x` minutes. Huey, pour stocker les tâches utilise `Redis <https://redis.io/>_`.
+les exécuter tous les :math:`x` minutes. Huey, pour stocker les tâches utilise `Redis <https://redis.io/>`_.
 
 Pour stocker les données, nous avons choisi d'utiliser une base MySQL, qui est utilisable avec Python grâce à la 
 libraie `mysql-connector-python <https://dev.mysql.com/doc/connector-python/en/>`_.
@@ -300,7 +300,6 @@ Pour la partie affichage des graphiques,
 * FP 2 : Afficher les ventes de chaque produit pour chaque région
 * FP 3 : Afficher un tableau décrivant comment répartir les stocks de l'entrepôt principal
 * FP 4 : Afficher un tableau décrivant comment modifier les prix des produits 
-* FP 5 : Afficher des *tips*, sous forme de phrase pour condenser les actions que le joueur doit faire
 
 * FC 1 : La page ne doit pas s'alourdir au fil des Jours
 * FC 2 : La page doit se rafraîchir en moins de 10 secondes
@@ -355,6 +354,21 @@ Avec ces difficultées, nous avons pensé à reproduire le jeu pour faire des si
 l'apprentissage de l'IA, ce procédé était tout bonnement impossible au vu du temps disponible pour le projet. 
 
 C'est donc à ce moment que le projet d'IA, s'est transformé en programme d'aide pour le joueur. 
+
+Difficultés techniques
+----------------------
+
+^^^^^^^^^^^^^^^^^^^^^^^^
+Récupération des données
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^
+Affichage
+^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^
+Stratégie conseillée
+^^^^^^^^^^^^^^^^^^^^
 
 .. _evolution:
 

@@ -62,6 +62,7 @@ def getReapro(materials):
 
     return reapro
 
+
 def getCostPrices(materials):
     """
         Give the unit buy prices by the company for each product
@@ -84,12 +85,12 @@ def getCostPrices(materials):
     costButter = 59.88
     costIceCream = 43.15
 
-    cost_prices[materials[0]]=costMilk
-    cost_prices[materials[1]]=costCream
-    cost_prices[materials[2]]=costYoghurt
-    cost_prices[materials[3]]=costCheese
-    cost_prices[materials[4]]=costButter
-    cost_prices[materials[5]]=costIceCream
+    cost_prices[materials[0]] = costMilk
+    cost_prices[materials[1]] = costCream
+    cost_prices[materials[2]] = costYoghurt
+    cost_prices[materials[3]] = costCheese
+    cost_prices[materials[4]] = costButter
+    cost_prices[materials[5]] = costIceCream
 
     return cost_prices
 
@@ -122,7 +123,7 @@ def getMatriceStock(prediction, materials, stock_actuel):
             else:
                 dispatch_element.append(0)
 
-        #Unites non reparties dans les entrepots secondaires
+        # Unites non reparties dans les entrepots secondaires
         reste = stock_actuel[element][3] - dispatch_element[0] - dispatch_element[1] - dispatch_element[2]
 
         reste_a_envoyer = []
@@ -135,6 +136,7 @@ def getMatriceStock(prediction, materials, stock_actuel):
     print("matrice_stock ",matrice_stock)
   
     return(matrice_stock)
+
 
 def getMatricePrix(ventes_veille, prix_actuels, frequence_reapro, jour_du_cycle, stock_actuel, materials, current_sim_elapsed_steps):
     """

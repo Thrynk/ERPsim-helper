@@ -86,6 +86,7 @@ def drawSalesDistribution(dataframe_company, products, startDate=None, endDate=N
         title_x=0.5,
         showlegend=False,
         height=700,
+        width=600,
         font=dict(
             family="Courier New, monospace",
             size=16,
@@ -235,8 +236,8 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
         title="Évolution des stocks",
         title_xanchor="center",
         title_x=0.47,
-        height=690,
-        width=800,
+        height=700,
+        width=850,
         font=dict(
             family="Courier New, monospace",
             size=16,
@@ -255,7 +256,7 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
                 if fig['layout'][ax][index]['text'] == "Date":
                     fig['layout'][ax][index]['y'] = -0.07
                 if fig['layout'][ax][index]['text'] == "Quantité en stock":
-                    fig['layout'][ax][index]['x'] = -0.05
+                    fig['layout'][ax][index]['x'] = -0.04
 
     return fig, dataframe_company_general, dataframe_company_north, dataframe_company_south, dataframe_company_west
 
@@ -263,6 +264,7 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
 def drawEmptySales():
     """
     Generate empty figures for sales evolution and distribution with text "Pas de données à afficher" displayed.
+    :return: Two empty figures for sales evolution and sales distribution.
     """
     empty_sales_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
     empty_sales_evolution.add_annotation(x=0, y=0, text="Pas de données à afficher", font=dict(family="sans serif", size=25,
@@ -290,6 +292,7 @@ def drawEmptySales():
         xaxis_visible=False,
         yaxis_visible=False,
         height=700,
+        width=650,
         font=dict(
             family="Courier New, monospace",
             size=16,
@@ -303,6 +306,7 @@ def drawEmptySales():
 def drawEmptyStocks():
     """
     Generate empty figures for stocks distribution graph with text "Pas de données à afficher" displayed.
+    :return: One empty figure for stock evolution in warehouses.
     """
     empty_stock_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
     empty_stock_evolution.add_annotation(x=0, y=0, text="Pas de données à afficher",

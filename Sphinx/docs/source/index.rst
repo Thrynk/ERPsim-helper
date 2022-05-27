@@ -57,7 +57,7 @@ Check out the :doc:`PartieUtilisateur/Usage` section for further information, in
    :caption: Table des matières
 
    DeroulementProjet
-   PartieUtilisateur/index
+   PartieUtilisateur/Usage
    PartieTechnique/index
    CadreProjet
 
