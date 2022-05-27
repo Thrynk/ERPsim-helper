@@ -1,11 +1,11 @@
 .. _bilan_projet:
 
-Déroulement du Projet
-=====================
+Histoire du Projet
+==================
 
-========================
-Initialisation du projet 
-========================
+===================
+Démarrage du projet 
+===================
 
 Le but du projet était de créer une Intelligence Artificielle capable de jouer et de gagner à *ERPSIM*. 
 
@@ -13,6 +13,9 @@ Pour ce faire, nous avons lu et mis de côté les informations importantes des g
 afin de faire un condensé des informations à retenir. Nous avons aussi joués plusieurs parties, pour se familiariser au 
 fonctionnement du jeu, pour voir quelles données étaient présentes sur l'interface du jeu, mais aussi pour voir de quoi était 
 composé le flux oData. En effet, le flux oData est le flux sur lequel nous extrayons les données. 
+
+Etat de l'Art
+-------------
 
 .. _paramètres_jeu:
 
@@ -28,15 +31,15 @@ nous influons les ventes et les stocks :
 
     *Liste des paramètres d'entrées et de sortie du jeu ERPSIM*
 
-=====================
-Déroulement du projet 
-=====================
+============================
+Construction de la stratégie
+============================
 
 Nous avons alors commencé à élaborer des stratégies, dans le but de comprendre le fonctionnement du jeu, les paramètres essentiels pour 
 avoir une bonne *company valuation* et donc un bon score. 
 
-La stratégie du produit unique
-------------------------------
+Stratégie de découverte : La stratégie du produit unique
+--------------------------------------------------------
 
 L'une d'elles consistait à se contenter d'un seul produit. Nous sommes 7 dans le groupe, nous avons donc joué à 6, et une personne
 centralisait tout. Nous étions chacun affecté à un seul et unique produit, nous ne devions toucher à aucun autre produit, que ce soit
@@ -84,18 +87,24 @@ Mode opératoire
 * Round 5 : 
     * Chacun va adapter ses prix avec les prix d'équilibre trouvés par les autres équipes, cela permettra, en observant les données oData, de savoir si le marché est bien indépendant des autres. 
 
-Réalisation du programme
-------------------------
+^^^^^^^^^^
+Conclusion
+^^^^^^^^^^
 
-Pour réaliser le programme du projet, nous nous sommes répartis en 3 groupes : 
+Cette stratégie nous a permis de conclure 2 choses. La première confirme le fait que les marchés sont bien indépendants entre les équipes. En effet,
+le jeu en mode Logistic Introduction, possède une option pour avoir un marché unique pour toutes les équipes ou un marché par équipe. Pour cette dernière
+option, il faut noter que les marchés de chaque équipe sont identiques, seulement si l'équipe A vend beaucoup, l'équipe B peut aussi vendre beaucoup. Les ventes ne sont pas
+réparties entre les équipes, contrairement à la première option. 
 
-* Une partie pour l'extraction des données brutes 
-* Une partie création d'une stratégie et réalisation des dashboard de visualisation 
-* Une partie création des formulaires administrateur et player. 
+Ce choix avait été fait pour faciliter la compréhension du jeu dans un premier temps. 
 
-===================
-Stratégie de l'aide
-===================
+La deuxième conclusion à tirer de cette expérience, est qu'un produit, à un prix donné, ne se vend pas du tout de la même manière en fonction des jours 
+même si aucun paramètre ne change (prix ou stock). Cette fluctuation est donc à prendre en compte pour notre stratégie finale afin de conseiller le joueur 
+non pas sur ses ventes de la veille, mais sur les ventes des jours précédents. Le nombre de jours de ventes à prendre en compte dans la stratégie reste à
+définir. 
+
+Stratégie d'ERPSIM Helper
+-------------------------
 
 Dans un premier temps le flux d'entrée de donnée est basé sur le flux odata. les données sont transformées en dataframe afin de pouvoir les 
 exploiter.
@@ -112,22 +121,115 @@ produit se vend bien dans un autre entrepot.
 
 .. _resultats:
 
-===================
-Résultats du Projet 
-===================
+====================================
+Résultats et Analyse de la stratégie
+====================================
 
 D'un point de vue visuel, nous pouvons trouver, sur :ref:`l'interface utilisateur <joueur>`, des conseils sur les prix, les transferts de stocks, et une vue plus générale 
 de l'état de l'entreprise au premier coup d'oeil. Cette vue permet de prendre des décisions plus rapidement puisque toutes les informations sont centralisées.
 
-D'un point de vue contenu, les différents conseils mènent à .............
+D'un point de vue contenu, nous pouvons changer très rapidement les transferts de Stocks grâce au tableau présent en bas à gauche de la page 
+car les lignes des produits sont dans le même ordre que dans le jeu, ainsi que les colonnes pour les régions. De ce fait, le joueur n'a plus 
+qu'à recopier les valeurs présentes dans ce tableau. 
 
-.. _analyse:
+De la même manière, le tableau des prix, en bas à droite de la page, permet d'adapter les prix au plus vite. Attention toutefois à la latence 
+qu'il peut y avoir entre ERPSIM et ERPSIM Helper. En effet, le temps que les données soient récupérées et affichées sur l'interface, il se peut 
+qu'un jour soit passé sur ERPSIM. Il faut donc bien vérifier sur ERPSIM Helper, le Round et le Jour en cours, de manière à pas changer le prix 
+deux fois. 
 
-=====================
-Analyse des résultats
-=====================
+En termes de Company Valuation, nous pouvons voir ci-dessous, que cette dernière monte très vite au départ puis se stabilise à une bonne valeur. 
 
-TO DO
+.. figure:: _static/img/Game48-CompanyValuation.png
+    :align: center
+    :target: ../_images/Game48-CompanyValuation.png
+
+    *Company Valuation d'une partie jouée avec ERPSIM Helper*
+
+On y voit donc que nous atteignons 1 million de Company Valuation au Jour 4 du Round 2, et nous ne repassons plus jamais en dessous dans le reste de 
+la partie. Au terme de la partie, nous réussissons à avoir 1.47 millions de Company Valuation avec un pic à 1.49 millions au jour 8 du Round 8. 
+
+Par rapport aux autres parties que nous avons pu jouer au cours de ce projet, c'est largement cette partie qui a été la mieux jouée avec la 
+meilleure Company Valuation. Notre aide paraît donc fiable. 
+
+Qui plus est, nous avons comparé notre score aux parties des étudiants de `Junia ISA <https://www.isa-lille.fr/isa-lille/>`_. Nous sommes bien conscients
+que nous jouons à ERPSIM avec le scénario Logistics Introduction et que les autres étudiants jouent au scénario Extended et que la difficulté n'est pas 
+la même, mais nous arrivons, avec ce score, à nous placer 3ème du classement. 
+
+Ce dernier résultat est vraiment à prendre avec précaution, le calcul de la Company Valuation n'est pas le même dans ces deux scénarios. De plus, 
+nous ne savons pas si la Company Valuation est "plafonnée" par un jeu parfait, qui pourrait différer en fonction des variables initiales de la partie. 
+Cette remarque est donc là pour information, plus que pour montrer l'intérêt de notre solution.
+
+==========================================
+Développement de la solution ERPSIM Helper
+==========================================
+
+Répartition des tâches
+----------------------
+
+Pour réaliser le programme du projet, nous nous sommes répartis en 3 groupes : 
+
+* Une partie pour l'extraction des données brutes 
+* Une partie création d'une stratégie et réalisation des dashboard de visualisation 
+* Une partie création des formulaires administrateur et player. 
+
+Les différentes parties de ce projet ont été crées sur un `GitHub <https://github.com/Thrynk/ERPsim-helper>`_. 
+
+Critères de récupération du flux oData 
+--------------------------------------
+
+La récupération des données est une étape indispensable pour réaliser notre aide. Nous avons donc réaliser un découpage en fonctions 
+principales et fonctions contraintes afin de développer cette extraction de la meilleure des manières. 
+
+* FP 1 : Extraire les données du flux oData 
+* FP 2 : Stocker les données dans une base de données 
+
+* FC 1 : L'authentification du joueur doit se faire avec ses identifiants ERPSIM pour se connecter au flux oData
+* FC 2 : Le rechargement doit s'opérer de manière automatique 
+    * FC 2.1 : Les rechargements doivent se faire jusqu'à la fin de la partie, quelque soit la durée de la partie 
+    * FC 2.2 : Les rechargements doivent se mettre en pause si l'enseignant met en pause la partie
+    * FC 2.3 : Les rechargements doivent se remettre en marche quand l'enseignant relance la partie après une pause 
+    * FC 2.3 : Les rechargements doivent s'arrêter si on atteint le Jour 10 du Round 8
+* FC 3 : Le processus d'extraction et de stockage des données doit prendre moins d'une minute. 
+* FC 4 : La base de données doit être disponible le plus longtemps possible
+
+Connaissant l'objectif et les contraintes de cette partie, nous avons décidé d'utiliser Django Server. En effet, les modèles Django 
+permettent de créer des tables dans une base de données, et de les alimenter. Django permet aussi, de gérer l'authentification des utilisateurs 
+via un formulaire personnalisable. Cet outil nous permettait donc de gérer presque l'ensemble de cette partie extraction. 
+
+En plus de Django, nous avons utilisé `Huey <https://huey.readthedocs.io/en/latest/>`_. Cette bibliothèque, permet de créer des `tasks`, utiles 
+pour les tâches de rechargements. Nous pouvions grâce à cela, créer les tâches de rechargements pour chaque table du flux, et les lancer en 
+parralèle, avec du multi-threading, de manière à augmenter la rapidité de l'extraction. Huey nous permet aussi de `scheduler` les tâches, pour 
+les exécuter tous les :math:`x` minutes. Huey, pour stocker les tâches utilise `Redis <https://redis.io/>_`.
+
+Pour stocker les données, nous avons choisi d'utiliser une base MySQL, qui est utilisable avec Python grâce à la 
+libraie `mysql-connector-python <https://dev.mysql.com/doc/connector-python/en/>`_.
+
+Enfin, pour extraire les données du flux oData, nous avons utilisé la librairie `pyodata <https://github.com/SAP/python-pyodata>`_. 
+
+Critères pour l'affichage des graphiques
+----------------------------------------
+
+Pour la partie affichage des graphiques, 
+
+* FP 1 : Afficher l'évolution des stocks de l'entrepôt général ainsi que des entrepôts régionaux
+* FP 2 : Afficher les ventes de chaque produit pour chaque région
+* FP 3 : Afficher un tableau décrivant comment répartir les stocks de l'entrepôt principal
+* FP 4 : Afficher un tableau décrivant comment modifier les prix des produits 
+* FP 5 : Afficher des *tips*, sous forme de phrase pour condenser les actions que le joueur doit faire
+
+* FC 1 : La page ne doit pas s'alourdir au fil des Jours
+* FC 2 : La page doit se rafraîchir en moins de 10 secondes
+* FC 3 : La page ne doit pas "ne pas répondre" pendant l'actualisation des données
+
+Critères pour la stratégie conseillée
+-------------------------------------
+
+* FP 1 : La stratégie doit permettre au joueur d'avoir une meilleure Company Valuation
+
+* FC 1 : La stratégie ne doit pas faire vendre à perte
+* FC 2 : La stratégie doit limiter au maximum les ruptures de stocks 
+* FC 3 : La stratégie doit adapter le stock dans les entrepôts régionaux en fonction des ventes de chaque région 
+* FC 4 : Le calcul de la stratégie doit prendre moins de 30 secondes
 
 .. _difficultees:
 
@@ -161,11 +263,11 @@ développons avec le mode Introduction car ce dernier est bien plus simple à ut
 ce mode était donc un bon compromis. 
 
 Nous devions donc jouer des parties Introduction pour générer de la donnée mais nous avons été confronté à un autre problème : nous ne pouvons pas lancer de parties 
-nous-mêmes et encore moins autant que nous voulions. Nous devons, pour chaque partie, contacter un enseignant pour qu'il crée la partie avec ses identifiants administrateur 
+nous-mêmes et encore moins autant que nous le voulions. Nous devons, pour chaque partie, contacter un enseignant pour qu'il crée la partie avec ses identifiants administrateur 
 sur *ERPSIM*. Il fallait donc que l'enseignant soit disponible au moment où nous voulions créer des parties, et qu'aucun cours de Serious Game ne soit en cours. 
 
 Avec ces difficultées, nous avons pensé à reproduire le jeu pour faire des simulations nous-mêmes. Mais, entre le temps de développement de cette simulation, son utilisation, 
-l'apprentissage de l'IA, ce procédé était tout bonnement impossible. 
+l'apprentissage de l'IA, ce procédé était tout bonnement impossible au vu du temps disponible pour le projet. 
 
 C'est donc à ce moment que le projet d'IA, s'est transformé en programme d'aide pour le joueur. 
 
