@@ -6,29 +6,64 @@ Documentation du Code
 .. note::
     Expliquer tout le code dans le détail, comment ça fonctionne ?  
 
-============
-Getting data 
-============
+====
+Auth
+====
 
-To get all the data about the current game
-you can use the ``tasks.get_game_latest_data()`` function:
+.. automodule:: erpsim_helper.auth.backend
+    :members:
 
-.. autofunction:: manage.main
+=====
+Forms
+=====
+
+.. automodule:: erpsim_helper.forms.LoginForm
+    :members:
+
+=====
+Plots
+=====
+
+.. automodule:: erpsim_helper.plots.drawFigures
+    :members:
+
+.. automodule:: erpsim_helper.plots.plotly_plot
+    :members:
 
 ==========
-Using data 
+Strategies
 ==========
 
-There are x tables, which contains ... 
-This one is for that, and so on ... 
+.. automodule:: erpsim_helper.strategies.alexis_charles
+    :members:
 
-=============================
-What's used for visualization 
-=============================
+=====
+Admin
+=====
 
-===================================
-What's used for helping, prediction
-===================================
+.. automodule:: erpsim_helper.admin
+    :members:
+
+======
+Models
+======
+
+.. automodule:: erpsim_helper.models
+    :members:
+
+=====
+Tasks
+=====
+
+.. automodule:: erpsim_helper.tasks
+    :members:
+
+=====
+Views
+=====
+
+.. automodule:: erpsim_helper.views
+    :members:
 
 ================
 Lecture suivante

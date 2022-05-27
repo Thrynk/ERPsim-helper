@@ -127,7 +127,7 @@ Nous calculons alors la quantité de ventes du produit dans la région puis le d
 la quantité de ventes de ce produit dans toutes les régions, 
 ce qui nous donne une proportion de ventes pour chaque région Nord, Sud et Ouest.
 
-:math:`proportion \, des \, ventes \, de \, p \, dans \, la \, région \, r = \frac{ventes_{p,r}}{ventes_{p}}`
+:math:`proportion \, des \, ventes \, de \, p \, dans \, la \, région \, r = \frac{ventes_{p,r}}{ventes_{p}} = \% \, ventes_{p,r}`
 
 Avec :
 
@@ -144,7 +144,10 @@ Nous calculons ensuite, combien envoyer de l'entrepôt principal aux entrepôts 
 :math:`\forall p \in produits\quad \forall r \in régions`
 
 Si
-    :math:`ventes_{p,r} * stock_{p,entrepôt \, principal} > stock_{p,r}`
+    :math:`\% \, ventes_{p,r} * stock_{p,entrepôt \, principal} > stock_{p,r}`
+
+Alors
+    On envoie :math:`\% \, ventes_{p,r} * stock_{p,entrepôt \, principal} - stock_{p,r}`
 
 Sinon
     :math:`0` : Nous n'envoyons rien car nous avons assez de stock dans l'entrepôt régional.
@@ -152,7 +155,7 @@ Sinon
 
 :math:`\forall p \in produits`
 
-    Nous envoyons le reste du stock de l'entrepôt principal en le dispatchant proportionnellement à :math:`ventes_{p,r}`
+    Nous envoyons le reste du stock de l'entrepôt principal en le dispatchant proportionnellement à :math:`\% \, ventes_{p,r}`
 
 Cette stratégie permet d'envoyer le nombre de produits dans chaque région proportionnellement à la demande dans chacune de celles-ci.
 
@@ -169,23 +172,23 @@ Nous utilisons pour calculer cela :
 
 :math:`\forall p \in produits\quad \forall r \in régions`
 
-**Si** le nombre moyen de ventes par jour > au stock restant par jour restant avant le prochain réapprovisionnement
-
+**Si** le nombre moyen de ventes par jour > au stock restant par jour jusqu'au prochain réapprovisionnement
+    
     On augmente le prix de 10%.
 
 **Sinon si** le nombre moyen de ventes par jour < 80% du stock restant par jour restant avant le prochain réapprovisionnement, nous ne vendons pas assez
 
     **Alors si** 0.9 * le prix actuel du produit > prix de revient
 
-        Nous ne baissons pas le prix pour ne pas vendre à perte.
+        Nous baissons le prix de 10% pour vendre plus.
 
     **Sinon**
 
-        Nous baissons le prix de 10% pour vendre plus.
+        Nous ne baissons pas le prix pour ne pas vendre à perte.
 
 **Sinon**
 
-    Nous ne laissons les prix actuels.
+    Nous laissons les prix actuels.
 
 Nous avons fixé à 10% dans un premier temps pour simplifier la complexité du problème, et pour simplifier les manipulations du joueur. |br|
 Une amélioration possible de la stratégie serait de trouver une méthode pour estimer ce pourcentage, avec par exemple les NPS Surveys.
