@@ -214,7 +214,25 @@ deux fois.
 Méthode d'évaluation
 --------------------
 
+Afin d'évaluer notre solution, nous voulions tester de faire une partie avec :
 
+* Un joueur débutant
+* Un joueur disposant des graphiques
+* Un joueur disposant des graphiques et de l'aide
+
+Cependant, à notre retour pour effectuer la période de 2 semaines en mai, le professeur nous a informé que l'on ne pouvait plus lancer des parties avec plusieurs joueurs (car diminution de la licence lorsqu'il n'y a plus de cours).
+
+Nous avons donc décidé de mesurer l'efficacité de notre solution de la manière suivante :
+
+1. Nous jouons une partie le plus parfaitement possible en suivant l'aide, puis mettons à disposition nos résultats, afin qu'une future partie du scénario Logistics Introduction puisse être jouée avec les mêmes paramètres de marché pour voir l'efficacité de notre solution comparé à un joueur novice.
+
+.. figure:: _static/img/2022_05_25_market_distribution.png
+    :align: center 
+    :target: ../_images/2022_05_25_market_distribution.png
+
+    *Ditribution du marché de la partie jouée*
+
+2. Pour avoir une intuition de l'efficacité de notre solution, nous comparons nos résultats avec ceux d'un groupe d'étudiants de `Junia ISA <https://www.isa-lille.fr/isa-lille/>`_ dont nous avons pu récupérer les flux odata. |br| Ils jouaient sur un autre scénario avec celui sur lequel nous avons joué. Nous savons donc que ces conclusions sont à prendre avec parcimonie. Ils nous permettent, cependant, d'avoir une indication sur le comportement de notre programme, sans pour autant valider les résultats.
 
 Résultats finaux
 ----------------
@@ -230,19 +248,26 @@ En termes de Company Valuation, nous pouvons voir ci-dessous, que cette dernièr
 On y voit donc que nous atteignons 1 million de Company Valuation au Jour 4 du Round 2, et nous ne repassons plus jamais en dessous dans le reste de 
 la partie. Au terme de la partie, nous réussissons à avoir 1.47 millions de Company Valuation avec un pic à 1.49 millions au jour 8 du Round 8. 
 
-Par rapport aux autres parties que nous avons pu jouer au cours de ce projet, c'est largement cette partie qui a été la mieux jouée avec la 
-meilleure Company Valuation. Notre aide paraît donc fiable. 
+1. Par rapport aux autres parties que nous avons pu jouer au cours de ce projet, c'est largement cette partie qui a été la mieux jouée avec la meilleure Company Valuation. Notre aide paraît donc fiable. 
 
-Qui plus est, nous avons comparé notre score aux parties des étudiants de `Junia ISA <https://www.isa-lille.fr/isa-lille/>`_. Nous sommes bien conscients
-que nous jouons à ERPSIM avec le scénario Logistics Introduction et que les autres étudiants jouent au scénario Extended et que la difficulté n'est pas 
-la même, mais nous arrivons, avec ce score, à nous placer 3ème du classement. 
-
-Ce dernier résultat est vraiment à prendre avec précaution, le calcul de la Company Valuation n'est pas le même dans ces deux scénarios. De plus, 
-nous ne savons pas si la Company Valuation est "plafonnée" par un jeu parfait, qui pourrait différer en fonction des variables initiales de la partie. 
-Cette remarque est donc là pour information, plus que pour montrer l'intérêt de notre solution.
+2. Qui plus est, nous avons comparé notre score aux parties des étudiants de `Junia ISA <https://www.isa-lille.fr/isa-lille/>`_. Nous sommes bien conscients que nous jouons à ERPSIM avec le scénario Logistics Introduction et que les autres étudiants jouent au scénario Extended et que la difficulté n'est pas la même, mais nous arrivons, avec ce score, à nous placer 3ème du classement. |br| Ce dernier résultat est vraiment à prendre avec précaution, le calcul de la Company Valuation n'est pas le même dans ces deux scénarios. De plus, nous ne savons pas si la Company Valuation est "plafonnée" par un jeu parfait, qui pourrait différer en fonction des variables initiales de la partie. |br| Cette remarque est donc là pour information, plus que pour montrer l'intérêt de notre solution.
 
 Analyse de la stratégie
 -----------------------
+
+.. figure:: _static/img/entrepot_general.png
+    :align: center
+    :target: ../_images/entrepot_general.png
+
+    *Etat des entrepôts lors de la partie jouée avec ERPSIM Helper*
+
+Notre stratégie nous permet de ne pas accumuler de stock dans l'entrepôt général. 
+
+Concernant les entrepôts régionaux, nous pouvons voir que la majorité des stocks sont bien gérés. |br|
+Cependant, nous constatons que certains produits semblent saisonniers (i.e Milk), nos calculs permettant de savoir quelle quantité envoyer dans chaque région est basé sur les ventes depuis le début de la partie. |br| 
+La stratégie ne prend donc pas en compte les effets saisonniers, on voit alors qu'après une période de forte vente dans l'Ouest, le Milk est réapprovisionné à tort dans l'Ouest.
+
+Sur la Company Valuation, la stratégie semble bonne, même si elle peut sûrement être perfectionnée, en anticipant de manière plus intelligente, les variations de la demande Client. Une des pistes possible est d'exploiter les NPS Surveys.
 
 ==========================================
 Développement de la solution ERPSIM Helper
