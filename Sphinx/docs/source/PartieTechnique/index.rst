@@ -1,6 +1,6 @@
-****************
-Partie Technique 
-****************
+***********************
+Documentation Technique 
+***********************
 
 
 .. toctree::

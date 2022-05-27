@@ -1,7 +1,8 @@
 .. _usage:
 
-Tutoriel
-========
+********************
+Tutoriel Utilisateur
+********************
 
 .. note::
    Comment utiliser le projet ? Se connecter, utiliser l’application  
@@ -68,7 +69,6 @@ Utilisation de l'interface administrateur
 
 .. _connexion_admin:
 
-^^^^^^^^^
 Connexion
 ^^^^^^^^^
 
@@ -83,7 +83,6 @@ admin.
 
 Une fois fait, il arrive sur la page d'accueil de l'interface admin. 
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Interface des parties jouées
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -101,7 +100,6 @@ On y trouve en
 4. Un résumé de vos dernières actions. 
 5. Un bouton permettant d'accéder à tous les utilisateurs qui se sont déjà connectés au moins une fois. 
 
-^^^^^^^^^^^^^^^^^^^^^
 Création d'une partie
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -123,7 +121,6 @@ Voici un exemple :
 
 .. _id_partie:
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^
 L'ID de la partie en cours
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -144,7 +141,6 @@ toutes les minutes.
 
 .. _Au_cours_d_une_partie:
 
-^^^^^^^^^^^^^^^^^^^^^
 Au cours d'une partie 
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -155,7 +151,6 @@ Il pourra, bien entendu, la relancer via le bouton "Play" lorsque la partie repr
 
 .. _fin_de_partie:
 
-^^^^^^^^^^^^^^^^^^^
 La fin d'une partie 
 ^^^^^^^^^^^^^^^^^^^
 
@@ -176,7 +171,6 @@ Utilisation de l'interface joueur
 
 .. _connexion_joueur:
 
-^^^^^^^^^
 Connexion
 ^^^^^^^^^
 
@@ -207,50 +201,147 @@ sur les :ref:`évolutions de l'entreprise <interface_evolution>`.
 
 .. _interface_joueur:
 
-.. _interface_recommandations:
+Interface de l'aide
+^^^^^^^^^^^^^^^^^^^
 
-^^^^^^^^^^^^^^^^^^^^^^^^^
-Interface Recommandations
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Dans cette partie, nous pouvons voir tout en haut de l'écran, votre nom de joueur, le Round en cours, le Jour en cours 
+ainsi que la date dans la simulation.
 
-
-.. figure:: ../_static/img/TemplateVisuJoueur.png
+.. figure:: ../_static/img/EnteteInterfaceJoueur.png
    :align: center
-   :target: ../../_images/TemplateVisuJoueur.png
+   :target: ../../_images/EnteteInterfaceJoueur.png
 
-   *Partie Recommandations et Conseils*
+   *Entete de l'interface du joueur*
 
-On voit, en haut de page, les conseils donnés aux joueurs. 
+.. note:: 
+      Par défaut, le jeu commence au 1er Janvier. 
 
-Le tableau en bas à gauche montre la répartition du marché. Ces valeurs sont des valeurs proportionnelles.
+Vous y trouverez aussi 2 boutons pour vous renvoyer, soit sur les graphiques d'évolution de l'entreprise, soit sur les tableaux de bas de page. 
 
-Par exemple, pour le lait, nous avons 33 au Nord, 7 pour le Sud et 9 pour l'Est. C'est a dire que pour 9 laits vendus à l'Est, 
-nous en vendrons 33 dans le Nord. Cette matrice donne une idée du volume de ventes par région. 
+.. _tips:
 
-Pour le tableau de droite, le tableau des prix, les valeurs sont les valeurs de ventes conseillées. La colonne tendance et la colonne
-prévision indique la même chose. 
+Tips
+""""
 
-Par exemple, pour le produit "Cream", nous avons une tendance de 1.05, cela indique qu'il faut augmenter le prix d'un facteur de 1.05, ce qui donne le prix 
-indiqué dans la colonne à droite, "Prévisions". *(Prix de base 87.76 €, augmentation de 1,05 => 87.76 * 1.05 = 92.15)*
+.. figure:: ../_static/img/TipsInterfaceJoueur.png
+   :align: center
+   :target: ../../_images/TipsInterfaceJoueur.png
 
+   *Conseils donnés au joueur sous forme de texte*
+
+La partie *Tips* consiste juste à regrouper les conseils de la page sous forme de texte et non de graphique. Le but est toujours 
+de faciliter la compréhension de l'interface pour le joueur. 
+
+Cette partie est l'objet d'amélioration que vous pouvez trouver dans la partie :ref:`perspective d'évolutions <evolution>`.
 
 .. _interface_evolution:
 
-^^^^^^^^^^^^^^^^^^^
 Interface Evolution
-^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""
 
-.. figure:: ../_static/img/TemplateEvolution.png
+.. figure:: ../_static/img/EvolutionInterfaceJoueur.png
    :align: center
-   :target: ../../_images/TemplateEvolution.png
+   :target: ../../_images/EvolutionInterfaceJoueur.png
 
-   *Partie Evolution*
+   *Graphiques de l'évolution des stocks et des ventes*
 
-Dans cette partie, on retrouve des graphiques quant aux stocks dans les différents entrepôts au fil des jours. On y trouve aussi 
-la répartition des ventes par produit et par zone, mais aussi la répartition des ventes par produit au fil des jours simulés. 
+La partie évolution se décompose en deux parties : 
 
-Vous aurez ainsi, une vue d'ensemble sur l'état de l'entreprise, et pourrez prendre les meilleurs choix pour faire augmenter votre 
-company valuation. 
+* Le graphique des ventes 
+
+Le graphique des ventes est un graphique en barre. Un graphique représente une région (Nord, Sud, Ouest), et une barre représente un produit. |br|
+Ainsi, vous pouvez voir très vite, dans quelle région le produit se vend le mieux. 
+
+.. warning::
+
+   Attention à l'axe des ordonnées, qui représente le nombre de ventes, qui n'est pas le même sur chacun des graphiques. 
+
+Grâce à cela, vous avez une répartition des ventes, pour savoir si un produit se vend plus dans le Nord ou dans l'Ouest par exemple. Vous 
+pouvez ainsi, mieux gérer vos stocks et envoyer plus de produits dans la région où le produit se vend le mieux. |br|
+Plus la partie avance, plus cette répartition des ventes est fiable. 
+
+* Le graphique des stocks
+
+Les 4 graphiques à droite correspondent à chacun des entrepôts : l'entrepôt général, du Nord, du Sud, de l'Ouest. 
+
+Vous pourrez ainsi voir très vite où sont vos produits, si vous avez été réapprovisionné dans l'entrepôt principal, si le dispatche a bien 
+été effectué et voir le niveau des stocks baisser avec les ventes. |br|
+Cette vue très synthétique vous permettra de prendre des décisions très rapidement. 
+
+.. note::
+   
+   Vous pouvez sélectionner un produit en double cliquant dessus dans la légende. 
+
+.. _interface_recommandations:
+
+Interface Recommandations
+"""""""""""""""""""""""""
+Dans la partie recommandation, en bas de page, on retrouve 2 tableaux. 
+
+.. figure:: ../_static/img/TableauxInterfaceJoueur.png
+   :align: center
+   :target: ../../_images/TableauxInterfaceJoueur.png
+
+   *Tableaux des Recommandations*
+
+.. note:: 
+
+   Chaque ligne des deux tableaux correspond au même produit. Exemple : Première ligne - Milk = $$-T01
+
+* Tableau des transferts de Stock
+
+Dans la tableau de gauche, on retrouve les informations quant aux transferts de stocks, de l'entrepôt principal vers les 
+entrpôts régionaux. Il vous suffit alors, après chaque réapprovisionnement dans l'entrepôt principal, de recopier ces valeurs 
+dans la transaction *Stock Transfert* d'*ERPSIM* avec un *Push* sur 1 jour. 
+
+.. warning:: 
+
+   N'oubliez pas de *Save* vos changements pour qu'ils soient effectifs. 
+
+Une fois que vous avez sauvegardé vos changements, retournez dans la tuile *Inventory* à droite de la précédente 
+afin de voir quand le dispatche est réalisé. Une fois que les entrepôts régionaux ont été fournit, il ne doit plus rester 
+que quelques de unités de quelques produits dans l'entrepôt principal. |br|
+A ce moment là, deux choix s'offrent à vous, soit vous laissez les paramètres de *Stock Transfert* un jour de plus pour 
+que le reste des produits soit transféré vers les entrepôts régionaux et vous effacez les paramètres de transfert de stock, 
+soit vous effacez tout de suite toutes les données de *Stock Transfert* et attendez le prochain réaopprovisionnement. 
+
+.. warning:: 
+
+   Quand vous faites un *Clear* des données dans *Stock Transfert*, il faut aussi faire un *Save* pour que vos changements 
+   soient pris en compte ! 
+
+Ainsi, répétez ces opérations à chaque réapprovisionnement soit tous les 5 jours. |br| 
+Si vous avez bien fait les changements dans *ERPSIM*, au jour suivant dans ERPSIM Helper, le tableau de répartition des stocks 
+ne doit contenir que des 0 à l'exception de quelques valeurs si vous avez préféré *Clear* les transferts de stock avant de vider complètement 
+l'entrepôt principal. 
+
+.. warning::
+
+   Faites attention au Jour et au Round affiché sur ERPSIM Helper ! Il se peut qu'il y ait un décalage et que le tableau des stocks 
+   ne s'actualise pas immédiatement. 
+
+* Tableau des prix de ventes 
+
+Dans le tableau de droite, on retrouve les prix des produits. Les prix sont les mêmes quelques soient les régions. 
+Dans la colonne *de droite* on retouve le prix que nous conseillons d'appliquer au produit. La colonne à côté, *A NOTER* 
+correspond à l'augmentation ou à la diminution à appliquer au prix pour arriver au prix affiché dans la colonne de droite. 
+
+Par exemple : Si le produit est actuellement à 50€, nous conseillons de le mettre à 55€, alors son prix est augmenté de 10%, c'est ce qui 
+est affiché dans la colonne *A METTRE*. 
+
+.. note:: 
+
+   Dans notre aide, les prix sont aumgentés ou baissés de 10%. De cette manière, le prix ne fluctue pas à outrance. Ce facteur permet aussi de changer 
+   le prix très vite dans *ERPSIM* en cochant les produits à augmenter et en appliquant 10% d'augmentation sur ceux-ci, ou en cochant les 
+   produits à baisser et en appliquant 10% de diminution sur ceux-ci. 
+
+   On pourrait tout de même prévoir, dans la partie :ref:`perspective d'évolution <evolution>`, optimiser cette partie pour augmenter 
+   ou diminuer le prix d'un certain coefficient pour chaque produit. 
+
+.. warning:: 
+
+   Attention à la latence qu'il peut y avoir entre *ERPSIM* et ERPSIM Helper. Il ne faut pas faire diminuer le prix d'un produit 2 fois 
+   dans la même journée. N'oubliez donc pas de vérifier le Jour et le Round en cours, notés en haut de page.
 
 ================
 Lecture suivante

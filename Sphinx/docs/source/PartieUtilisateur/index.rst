@@ -1,6 +1,0 @@
-******************
-Partie Utilisateur
-******************
-
-.. toctree::
-    Usage
