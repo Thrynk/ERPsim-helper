@@ -6,6 +6,7 @@ from plotly.subplots import make_subplots
 def addNoSalesData(dataframe, products, dateRange=None, storage=False):
     """
     Add data in the dataframe on day where there is no sales. Use to plot curve of sales
+
     :param dataframe: Sales dataframe
     :param dateRange: dateRange object
     :param products: string or list of products to display
@@ -39,6 +40,7 @@ def addNoSalesData(dataframe, products, dateRange=None, storage=False):
 def drawSalesDistribution(dataframe_company, products, startDate=None, endDate=None):
     """
     Display one graph of the distribution of the sales in the storage
+
     :param dataframe: Sales dataframe
     :param company: Company name
     :param products: String or list of products to display
@@ -100,6 +102,7 @@ def drawSalesDistribution(dataframe_company, products, startDate=None, endDate=N
 def drawSalesEvolution(dataframe_company, products, startDate=None, endDate=None):
     """
     Display one graph of the evolution of the sales
+
     :param dataframe: Sales dataframe
     :param company: Company name
     :param products: String or list of products to display
@@ -163,6 +166,7 @@ def drawSalesEvolution(dataframe_company, products, startDate=None, endDate=None
 def drawStocks(dataframe_company, products, startDate=None, endDate=None):
     """
     Gives 4 dataframes of stock evolution by storage location and display the graph
+
     :param dataframe: Stock dataframe
     :param company: Company name
     :param products: String or list of products to display
@@ -264,6 +268,7 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
 def drawEmptySales():
     """
     Generate empty figures for sales evolution and distribution with text "Pas de données à afficher" displayed.
+
     :return: Two empty figures for sales evolution and sales distribution.
     """
     empty_sales_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
@@ -306,6 +311,7 @@ def drawEmptySales():
 def drawEmptyStocks():
     """
     Generate empty figures for stocks distribution graph with text "Pas de données à afficher" displayed.
+    
     :return: One empty figure for stock evolution in warehouses.
     """
     empty_stock_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))

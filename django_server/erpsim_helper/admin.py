@@ -15,8 +15,10 @@ class GameAdmin(admin.ModelAdmin):
         The GameAdmin objects implements the admin view of our project. 
         
         When the teacher wants to start a game, he has to go on this interface in order to 
+        
         * Create the game 
         * Give to the students the ID of the game
+        
         He can pause, restart the game when he wants. Additionnaly, he can stop the game manually.  
     """
     # A template for a very customized change view:
@@ -42,7 +44,7 @@ class GameAdmin(admin.ModelAdmin):
             Return the exclude fields of the object
 
             If the game is already created, the function returns exclude field, otherwise, it returns
-            is_running field in order to hide the is_running indicator on the view.
+            `is_running` field in order to hide the `is_running` indicator on the view.
 
             :param obj: The object, the current game.
             :type obj: Game (None by default)
@@ -60,7 +62,7 @@ class GameAdmin(admin.ModelAdmin):
         """
             Hide buttons. 
 
-            This function hides show_save_and_add_another and show_save_and_continue buttons in order to 
+            This function hides `show_save_and_add_another` and `show_save_and_continue` buttons in order to 
             show save button only. 
 
             :param request: 

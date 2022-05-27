@@ -22,11 +22,14 @@ class Game(models.Model):
         
         This class has all the useful fields to define a game.
         The game is composed of 
+
         * An odata flow - To catch the data 
         * A game set - By default in the simulator. It corresponds to different space of game
         * A team - By default in the simulator. 
         * A creation date. 
+
         and two indicators about the game.
+
         * is_running - An indictor to know if the game is running or not.
         * is_stopped - An indicator to know if the game is stopped or not.
     """
@@ -41,10 +44,10 @@ class Game(models.Model):
         """
             Save a game. 
 
-            :param *args:
-            :type *args: str
-            :param **kwargs: 
-            :type **kwargs: list['str']
+            :param args:
+            :type args: str
+            :param kwargs: 
+            :type kwargs: list['str']
         """
         super(Game, self).save(*args, **kwargs)
         #get_game_latest_data(self.id, self.odata_flow, self.game_set, self.team)

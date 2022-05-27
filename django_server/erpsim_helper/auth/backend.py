@@ -13,16 +13,6 @@ class ODataAuthenticationBackend(BaseBackend): #TODO: put a link to application 
     """
         The ODataAuthenticationBackend objects is used to handle login logic. 
         This class inherits from BaseBackend.
-
-        ...
-
-        Methods
-        -------
-        authenticate(request, username=None, password=None):
-            Authenticates user according to application policy.
-
-        get_user(user_id):
-            Get user from its primary key.
     """
 
     def authenticate(self, request, username=None, password=None):
@@ -31,8 +21,8 @@ class ODataAuthenticationBackend(BaseBackend): #TODO: put a link to application 
 
             If admin is trying to connect then check password and log in if correct.
             If a player is trying to connect:
-                - And it is his first connection, then check credentials with odata flow and create user if success.
-                - If it is not the first connection, then retrieve user associated with the game (via Player model) and check his password.
+            - And it is his first connection, then check credentials with odata flow and create user if success.
+            - If it is not the first connection, then retrieve user associated with the game (via Player model) and check his password.
 
             :param request: Request information from browser
             :type request: WSGIRequest

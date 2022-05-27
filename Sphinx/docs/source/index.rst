@@ -73,8 +73,6 @@ Indices and tables
 
 .. rubric:: Notes
 
-Toto
-
 .. [#f1] BOT : Agent informatique capable de jouer en autonomie
 
 ================

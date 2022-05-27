@@ -192,7 +192,7 @@ def get_max_sim_date(sql_conn, table, id_game):
 
         It returns the last tuple (`round`, `step`) in the database.
 
-        :param sql_conn: SQL connector created in :py:function:store_table
+        :param sql_conn: SQL connector created in :py:func:`store_table`
         :type sql_conn: 
         :param table: Odata Table to reach
         :type table: str
@@ -214,7 +214,7 @@ def generate_statement_data(sql_conn, table, response, id_game):
         It creates `list_data` which each tuple contains one line of data of the odata flow. 
         It creates the insert statement for the next insertion. 
 
-        :param sql_conn: SQL connector created in :py:function:store_table
+        :param sql_conn: SQL connector created in :py:func:`store_table`
         :type sql_conn: 
         :param table: Odata Table to reach
         :type table: str
@@ -254,7 +254,7 @@ def add_data_into_mysql(sql_conn, query, data):
     """
         Push data into sql database
 
-        :param sql_conn: SQL connector created in :py:function:store_table
+        :param sql_conn: SQL connector created in :py:func:`store_table`
         :type sql_conn: 
         :param query: Insert Statement
         :type query: str

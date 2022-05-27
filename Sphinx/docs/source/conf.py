@@ -10,13 +10,25 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+import django
+from django.conf import settings
 from pathlib import Path
 import sys
+import os
+
+
 
 p = Path(__file__).parents[3].resolve()
 src_p = p / 'django_server'
 sys.path.insert(0, src_p.resolve().as_posix())
 print(src_p.resolve().as_posix())
+
+# Specify settings module
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_server.settings')
+
+# Setup Djangoimport django
+# settings.configure()
+django.setup()
 
 # -- Project information -----------------------------------------------------
 

@@ -71,6 +71,16 @@ services:
       - ./django_server:/ERPsim-helper/django_server
     ports:
       - "9000:9000"
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE=${DATABASE}
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - DJANGO_DATABASE=${DJANGO_DATABASE}
+      - REDIS_HOST=cache
+    depends_on:
+      - db
 
   docs:
     build: 
