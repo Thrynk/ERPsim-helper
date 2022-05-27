@@ -196,6 +196,9 @@ Une amélioration possible de la stratégie serait de trouver une méthode pour 
 Résultats et Analyse de la stratégie
 ====================================
 
+Les bénéfices pour l'utilisateur
+--------------------------------
+
 D'un point de vue visuel, nous pouvons trouver, sur :ref:`l'interface utilisateur <joueur>`, des conseils sur les prix, les transferts de stocks, et une vue plus générale 
 de l'état de l'entreprise au premier coup d'oeil. Cette vue permet de prendre des décisions plus rapidement puisque toutes les informations sont centralisées.
 
@@ -207,6 +210,14 @@ De la même manière, le tableau des prix, en bas à droite de la page, permet d
 qu'il peut y avoir entre ERPSIM et ERPSIM Helper. En effet, le temps que les données soient récupérées et affichées sur l'interface, il se peut 
 qu'un jour soit passé sur ERPSIM. Il faut donc bien vérifier sur ERPSIM Helper, le Round et le Jour en cours, de manière à pas changer le prix 
 deux fois. 
+
+Méthode d'évaluation
+--------------------
+
+
+
+Résultats finaux
+----------------
 
 En termes de Company Valuation, nous pouvons voir ci-dessous, que cette dernière monte très vite au départ puis se stabilise à une bonne valeur. 
 
@@ -229,6 +240,9 @@ la même, mais nous arrivons, avec ce score, à nous placer 3ème du classement.
 Ce dernier résultat est vraiment à prendre avec précaution, le calcul de la Company Valuation n'est pas le même dans ces deux scénarios. De plus, 
 nous ne savons pas si la Company Valuation est "plafonnée" par un jeu parfait, qui pourrait différer en fonction des variables initiales de la partie. 
 Cette remarque est donc là pour information, plus que pour montrer l'intérêt de notre solution.
+
+Analyse de la stratégie
+-----------------------
 
 ==========================================
 Développement de la solution ERPSIM Helper
