@@ -6,23 +6,23 @@ Documentation du Code
 .. note::
     Expliquer tout le code dans le détail, comment ça fonctionne ?  
 
-====
-Auth
-====
+================
+Authentification
+================
 
 .. automodule:: erpsim_helper.auth.backend
     :members:
 
-=====
-Forms
-=====
+========================
+Formulaires de connexion
+========================
 
 .. automodule:: erpsim_helper.forms.LoginForm
     :members:
 
-=====
-Plots
-=====
+=====================
+Affichage des graphes
+=====================
 
 .. automodule:: erpsim_helper.plots.drawFigures
     :members:
@@ -44,23 +44,23 @@ Admin
 .. automodule:: erpsim_helper.admin
     :members:
 
-======
-Models
-======
+==================
+Modèles de données
+==================
 
 .. automodule:: erpsim_helper.models
     :members:
 
-=====
-Tasks
-=====
+======================
+Tâches de rechargement
+======================
 
 .. automodule:: erpsim_helper.tasks
     :members:
 
-=====
-Views
-=====
+=====================
+Vues Django Interface
+=====================
 
 .. automodule:: erpsim_helper.views
     :members:
