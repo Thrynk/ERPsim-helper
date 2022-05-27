@@ -1,87 +1,35 @@
-from datetime import datetime
-from dis import Instruction
-import mysql.connector
 import pandas as pd
-import os
-from math import floor
-# from django.shortcuts import render, redirect
-# from django.forms import ModelForm, Textarea
-# from django import forms
-# from django.urls import reverse
-# from django.http import HttpResponse
-# from django.contrib import messages
-from collections import defaultdict
-import sys 
+from math import floor 
 
-#######################################
-# Find the matrice
-#######################################
-
-def trouverParametres(df,Materials,Localisations,precision=80):
+def get_sales_repartition(df,materials,localisations,precision=80):
     """
-        Find the parameters for the repartition matrice
+        Get the repartition of sales of each product in each region based on historical data
 
-        It returns a dict, with datas for each product
+        :param df: Previous sales
+        :type df: pd.DataFrame
+        :param materials: list of products
+        :type materials: list
+        :param localisations: name of the 3 locations (north, south and west here)
+        :type localisations: list
 
-        :param df: sales datas
-        :type df: dataframe
-        :param sales_organization: name of the team
-        :type sales_organization: str
-        :param Materials: all the products
-        :type Materials: list
-        :param Localisations: name of the 3 locations (north, south and west here)
-        :type Localisations: list
-        :param precision: numerical coef to ponderate the final matrice
-        :type precision: int
-
-        :return: ListeSalesJoueur
+        :return: sales_repartition_dict
         :rtype: dict
     """
 
+    # If the dataframe is empty, it means we don't have sales yet, then we send a default dict
     if df.empty:
-        return {material: [1,1,1] for material in Materials}
+        return {material: [0,0,0] for material in materials}
 
-    #Affichage
-    print("Les parametres tendent vers : ")
-    print(" ")
-
+    # We calculate the sales proportion for each product in each region
     df_sales_repartition = df.groupby(["material_label", "area"])["quantity"].sum() / df.groupby(["material_label"])["quantity"].sum()
 
+    # We convert the dataframe into a dict for future usage
     sales_repartition_dict = {material: [0,0,0] for material in Materials}
 
-    print(df_sales_repartition.reset_index())
     for index, row in df_sales_repartition.reset_index().iterrows():
-        sales_repartition_dict[row.material_label][Localisations.index(row.area)] = round(row.quantity, 2)
+        sales_repartition_dict[row.material_label][localisations.index(row.area)] = round(row.quantity, 2)
 
-    print(sales_repartition_dict)
     return sales_repartition_dict
-
-
-
-def prediction(sales, products, locations=["North","South","West"]):
-    """
-        Get the repartition matrice, by product and by zone
-
-        It uses the trouverParametres() function
-
-        :param sales: sales datas
-        :type sales: list
-        :param company: name of the team
-        :type company: str
-        :param products: all the products
-        :type producs: list
-        :param locations: name of the 3 locations (north, south and west here)
-        :type locations: list
-
-        :return: findParameters
-        :rtype: dict
-    """
-
-    dfSales = pd.DataFrame(list(sales.values()))
-
-    findParameters = trouverParametres(dfSales,products,locations)
-
-    return findParameters
 
 def getReapro(materials):
     """
@@ -145,7 +93,7 @@ def getCostPrices(materials):
 
     return cost_prices
 
-def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
+def getMatriceStock(prediction, materials, stock_actuel):
     """
         Give the stock dispatch advices that must be applied as push in ERP Sim
 
@@ -157,23 +105,14 @@ def getMatriceStock(prediction, materials, stock_actuel, equipe, jour_du_cycle):
         :type materials: list
         :param stock_actuel: current stock in the warehourses
         :type stock_actuel: dict
-        :param equipe: name of the team
-        :type equipe: str
-        :param jour_du_cycle: day since last main warahouse delivery
-        :type jour_du_cycle: int
 
         :return: matrice_stock
         :rtype: dict
     """
-    #reapro=getReapro(materials)
-
-    #if jour_du_cycle != 1:
-    #  return 0
 
     matrice_stock={}
 
     for element in materials:
-        #somme_coef = prediction[element][0] + prediction[element][1] + prediction[element][2]
         #Dispatch du produit "element" dans les 3 entrepots
         dispatch_element=[]
         for i in range (0,3):

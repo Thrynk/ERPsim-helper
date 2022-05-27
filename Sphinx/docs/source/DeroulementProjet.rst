@@ -106,18 +106,89 @@ définir.
 Stratégie d'ERPSIM Helper
 -------------------------
 
-Dans un premier temps le flux d'entrée de donnée est basé sur le flux odata. les données sont transformées en dataframe afin de pouvoir les 
-exploiter.
+La stratégie doit générer 2 tableaux permettant à l'utilisateur de savoir 
+quelles actions effectuer sur les 2 paramètres modifiables du scénario Logistics Introduction du jeu ERPSIM :
 
-Le but final est d'afficher deux tableaux de prédictions : un avec les prédictions d'inventaire et l'autre avec les prédictions de prix 
-(car ce sont les variables que le joueur controle). Ainsi qu'une liste de tips pour avoir une partie écrite.
+* Un tableau retournant l'information de la quantité de stock à envoyer dans chaque entrepôt pour chaque produit
+* Un autre tableau nous disant à quel prix vendre chaque produit
 
-Lorsqu'on recoit les données et en dataframe, nous calculons la matrice de prévision grâces aux différentes ventes effectuées pour chaque produit 
-dans chaque région. Cette matrice va nous aider et nous guider pour tous les calculs.
-Pour la suite nous calculons la prévision des stocks grâces aux calculs prévisionels des ventes. Nous pouvons avec de plus en plus de précision 
-au fil de la partie prévoir l'inventaire et le besoin de chaque entrepots. Enfin pour la gestion du prix , le but est de trouver le prix d'équilibre 
-et ainsi augmenter le prix si les stocks le permettent pour augmenter la rentabilité et baisser les prix si les stocks sont trop grand ou que le 
-produit se vend bien dans un autre entrepot.
+L'aide ERPSIM helper retranscrira également les aides sous forme de phrases aidant le joueur à interpréter ces tableaux.
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Calcul de la prédiction des stocks à envoyer dans chaque région
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Répartition des ventes
+""""""""""""""""""""""
+
+Afin de savoir quelle quantité de chaque produit envoyer dans chaque entrepôt, nous devons nous baser sur la demande Client. |br|
+L'information nous permettant de déduire quelle est la demande pour chaque produit, est l'historique des ventes. |br|
+Nous calculons alors la quantité de ventes du produit dans la région puis le divisions par 
+la quantité de ventes de ce produit dans toutes les régions, 
+ce qui nous donne une proportion de ventes pour chaque région Nord, Sud et Ouest.
+
+:math:`proportion \, des \, ventes \, de \, p \, dans \, la \, région \, r = \frac{ventes_{p,r}}{ventes_{p}}`
+
+Avec :
+
+* :math:`p` : Le produit
+* :math:`r` : La région
+
+Cette proportion nous aide à savoir combien envoyer dans chaque région pour chaque produit.
+
+Calcul de la quantité à envoyer dans chaque région
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Nous calculons ensuite, combien envoyer de l'entrepôt principal aux entrepôts régionaux de la manière suivante : |br|
+
+:math:`\forall p \in produits\quad \forall r \in régions`
+
+Si
+    :math:`ventes_{p,r} * stock_{p,entrepôt \, principal} > stock_{p,r}`
+
+Sinon
+    :math:`0` : Nous n'envoyons rien car nous avons assez de stock dans l'entrepôt régional.
+    Les entrepôts régionaux qui sont plus dans le besoin seront grâce à cela, plus réapprovisionnés que celui-ci.
+
+:math:`\forall p \in produits`
+
+    Nous envoyons le reste du stock de l'entrepôt principal en le dispatchant proportionnellement à :math:`ventes_{p,r}`
+
+Cette stratégie permet d'envoyer le nombre de produits dans chaque région proportionnellement à la demande dans chacune de celles-ci.
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Calcul du prix à appliquer pour chaque produit
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Nous utilisons pour calculer cela :
+
+* Les ventes passées afin de savoir combien nous vendons par jour en moyenne
+* Les prix actuels, pour savoir à combien, nous vendons actuellement nos produits
+* La fréquence de réapprovisionnement du scénario (5 par défaut pour le scénario Logistics Introduction) et le jour courant dans ce cycle permettant de calculer le nombre de jours restants avant le prochain réapprovisionnement.
+* Les stocks actuels
+
+:math:`\forall p \in produits\quad \forall r \in régions`
+
+**Si** le nombre moyen de ventes par jour > au stock restant par jour restant avant le prochain réapprovisionnement
+
+    On augmente le prix de 10%.
+
+**Sinon si** le nombre moyen de ventes par jour < 80% du stock restant par jour restant avant le prochain réapprovisionnement, nous ne vendons pas assez
+
+    **Alors si** 0.9 * le prix actuel du produit > prix de revient
+
+        Nous ne baissons pas le prix pour ne pas vendre à perte.
+
+    **Sinon**
+
+        Nous baissons le prix de 10% pour vendre plus.
+
+**Sinon**
+
+    Nous ne laissons les prix actuels.
+
+Nous avons fixé à 10% dans un premier temps pour simplifier la complexité du problème, et pour simplifier les manipulations du joueur. |br|
+Une amélioration possible de la stratégie serait de trouver une méthode pour estimer ce pourcentage, avec par exemple les NPS Surveys.
 
 .. _resultats:
 

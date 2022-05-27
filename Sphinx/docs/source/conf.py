@@ -63,3 +63,10 @@ html_static_path = ['_static']
 
 # To make pdf files
 # pdf_stylesheets = ['twocolumn']
+
+rst_prolog = """
+.. # define a hard line break for HTML
+.. |br| raw:: html
+
+   <br />
+"""

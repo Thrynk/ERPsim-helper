@@ -3,6 +3,7 @@ from django.forms import Form, CharField, PasswordInput
 from django.http import HttpResponse
 from django.contrib import messages
 from django.db.models import Max
+import pandas as pd
 
 from django.contrib.auth.decorators import login_required
 
@@ -10,24 +11,10 @@ from .models import Game, Player, Sales, Inventory, PricingConditions, CompanyVa
 from .tasks import get_game_latest_data
 from .plots.plotly_plot import plotly_plot_sales, plotly_plot_stocks
 
-from .strategies.alexis_charles import prediction, getMatriceStock, getMatricePrix
-
-# Create your views here.
-class ContactForm(Form):
-    """
-        The ContactForm object is usefull for login. 
-
-        To be connected with the odata flow, we have to fill : 
-        * The number of the game (Game ID)
-        * The login 
-        * The password
-    """
-    gameNumber = CharField(max_length=200)
-    login = CharField(max_length=200)
-    password = CharField(widget=PasswordInput, max_length=200)
+from .strategies.alexis_charles import getMatriceStock, getMatricePrix, get_sales_repartition
 
 @login_required
-def index(request):     # TO DO
+def index(request):
     """
         Redirect if user is not logged in, else display dashboard page. 
 
@@ -116,9 +103,13 @@ def index(request):     # TO DO
         prices_matrix_name_converted = None
         day = 1
     else:
-        parameters = prediction(sales, products)
+        sales_repartiton = get_sales_repartition(
+            pd.DataFrame(list(sales.values())),
+            products,
+            ["North","South","West"]
+        )
 
-        stock_matrix = getMatriceStock(parameters, products, stocks_per_storage_per_material, company_name, day % procurement_frequency)
+        stock_matrix = getMatriceStock(sales_repartiton, products, stocks_per_storage_per_material)
         print(stock_matrix)
 
         prices_matrix = getMatricePrix(
@@ -155,21 +146,6 @@ def index(request):     # TO DO
 
     # Render the HTML template index.html with the data in the context variable.
     return render(request, 'index.html', context=context)
-
-    #return HttpResponse(f"Hello, Player : {request.user.username} from company {company_name}. \n Your associated game is {player_associated_with_user.game_id}.")
-
-
-def game(request, game_id):     # TO DO
-    """
-        Get the current game. 
-
-        :param request:
-        :type request:
-        :param game_id: ID of the game that we want to reach the data 
-        :type game_id: int 
-    """
-    game = Game.objects.get(pk=game_id)
-    return HttpResponse(f"Game page : {game.id} \n Flux odata : {game.odata_flow}.")
 
 @login_required
 def strategy_test(request):
@@ -252,10 +228,13 @@ def strategy_test(request):
         prices_matrix_name_converted = None
         day = 1
     else:
-        parameters = prediction(sales, products)
-        print(parameters)
+        sales_repartiton = get_sales_repartition(
+            pd.DataFrame(list(sales.values())),
+            products,
+            ["North","South","West"]
+        )
 
-        stock_matrix = getMatriceStock(parameters, products, stocks_per_storage_per_material, company_name, day % procurement_frequency)
+        stock_matrix = getMatriceStock(sales_repartiton, products, stocks_per_storage_per_material)
         print(stock_matrix)
 
         prices_matrix = getMatricePrix(
