@@ -220,17 +220,18 @@ Vous y trouverez aussi 2 boutons pour vous renvoyer, soit sur les graphiques d'�
 
 .. _tips:
 
-Tips
-""""
+Conseils de départ
+""""""""""""""""""
 
 .. figure:: ../_static/img/TipsInterfaceJoueur.png
    :align: center
    :target: ../../_images/TipsInterfaceJoueur.png
 
-   *Conseils donnés au joueur sous forme de texte*
+   *Conseils donnés au joueur pour démarrer la partie*
 
-La partie *Tips* consiste juste à regrouper les conseils de la page sous forme de texte et non de graphique. Le but est toujours 
-de faciliter la compréhension de l'interface pour le joueur. 
+La partie *Tips* consiste à donner des conseils au joueur avant que la partie ne commence. En effet, il est recommadé de faire
+des modifications sur les prix avant même que le jeu ne commence. Il faut aussi par ailleurs, dispatcher les produits de l'entrpôt 
+principal vers les entrepôts régionaux. 
 
 Cette partie est l'objet d'amélioration que vous pouvez trouver dans la partie :ref:`perspective d'évolutions <evolution>`.
 

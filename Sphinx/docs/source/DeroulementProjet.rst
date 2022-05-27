@@ -215,7 +215,6 @@ Pour la partie affichage des graphiques,
 * FP 2 : Afficher les ventes de chaque produit pour chaque région
 * FP 3 : Afficher un tableau décrivant comment répartir les stocks de l'entrepôt principal
 * FP 4 : Afficher un tableau décrivant comment modifier les prix des produits 
-* FP 5 : Afficher des *tips*, sous forme de phrase pour condenser les actions que le joueur doit faire
 
 * FC 1 : La page ne doit pas s'alourdir au fil des Jours
 * FC 2 : La page doit se rafraîchir en moins de 10 secondes
