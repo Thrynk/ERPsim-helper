@@ -197,6 +197,14 @@ tbody .tableau2tr {
     background-color:white;
 }
 
+#tableau1thead {
+  height: 100px;
+}
+
+#tableau2thead {
+  height: 100px;
+}
+
 
 /* LIST */
 

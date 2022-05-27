@@ -335,7 +335,7 @@ est affiché dans la colonne *A METTRE*.
    le prix très vite dans *ERPSIM* en cochant les produits à augmenter et en appliquant 10% d'augmentation sur ceux-ci, ou en cochant les 
    produits à baisser et en appliquant 10% de diminution sur ceux-ci. 
 
-   On pourrait tout de même prévoir, dans la partie :ref:`perspective d'évolution <evolution>`, optimiser cette partie pour augmenter 
+   On pourrait tout de même prévoir, dans la partie :ref:`perspective d'évolution <evolution>`, d'optimiser cette partie pour augmenter 
    ou diminuer le prix d'un certain coefficient pour chaque produit. 
 
 .. warning:: 

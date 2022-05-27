@@ -1,11 +1,12 @@
 .graph {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin : 10px;
+    margin-bottom: 20px;
 }
 
 .firstrow {
     display : flex;
-    display-position : row;v
+    justify-content: space-evenly;
 
 }
 

@@ -140,7 +140,8 @@ def index(request):     # TO DO
         # generate dict with key: OO-T01, because this is the format in ERPsim to change prices
         prices_matrix_name_converted = {}
         for material_description, material_number in name_conversion_for_material.items():
-            prices_matrix_name_converted[material_number] = prices_matrix[material_description]
+            prices_matrix_name_converted[str( material_number +  " ("+ material_description +  ") ")] = prices_matrix[material_description]
+            print(prices_matrix_name_converted)
 
     context = {
         'sales_evolution_plot': sales_evolution_plot,
