@@ -138,4 +138,4 @@ Docker installe lui-même toutes les librairies nécessaires grâce au fichier `
 Lecture suivante
 ================
 
-Dans la :ref:`section suivante <usage>`, vous trouverez un tutoriel pour utiliser notre aide pour ERPsim. 
+Dans la :ref:`section suivante <fonctionnement>`, vous trouverez un tutoriel pour utiliser notre aide pour ERPsim. 

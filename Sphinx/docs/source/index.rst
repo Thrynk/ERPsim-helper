@@ -47,7 +47,7 @@ ERP (Enterprise Ressource Planning ou Progiciel de Gestion Intégré en françai
 
    Ce projet est encore en développement.
 
-Check out the :doc:`PartieUtilisateur/Usage` section for further information, including how to
+Check out the :doc:`PartieUtilisateur/Joueur` section for further information, including how to
 :ref:`install <installation>` the project.
 
 .. _contents:
@@ -58,6 +58,7 @@ Check out the :doc:`PartieUtilisateur/Usage` section for further information, in
    HistoireProjet/DemarrageProjet
    HistoireProjet/ConstructionStrategie
    HistoireProjet/DeveloppementErpsimHelper
+   HistoireProjet/ResultatsProjet
    HistoireProjet/DifficultesRencontres
    HistoireProjet/PerspectivesEvolution
 
@@ -66,6 +67,13 @@ Check out the :doc:`PartieUtilisateur/Usage` section for further information, in
 
    PartieUtilisateur/Administrateur
    PartieUtilisateur/Joueur
+
+.. toctree::
+   :caption: Technique
+
+   PartieTechnique/Installation
+   PartieTechnique/Architecture
+   PartieTechnique/CodeSource
 
 .. toctree::
    :caption: A propos du projet
