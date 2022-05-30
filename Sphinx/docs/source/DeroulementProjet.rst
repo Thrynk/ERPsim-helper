@@ -46,9 +46,74 @@ Il y a alors une première contrainte puisque seul le professeur semble capable 
 
 Ensuite, nous devons être capable avec des instructions de code, d'effectuer une action sur l'environnement ERPSIM (ie. baisser le prix d'un produit). |br|
 Nous avons alors cherché de quelle manière l'interface SAP Fiori intéragit avec SAP 4/HANA. |br|
-l'interface ERPSIM développée à l'aide de SAP Fiori, semble intéragir avec SAP HANA via des services OData. |br| 
+L'interface ERPSIM développée à l'aide de SAP Fiori, semble intéragir avec SAP HANA via des services OData. |br| 
 Cependant, sans avoir de spécifications concernant ces services et comment les utiliser, il est difficile de pouvoir programmatiquement intéragir avec SAP HANA directement. |br|
-Nous avons essayé de faire du reverse engineering de l'app Fiori, mais n'avons pas compris comment pouvoir intéragir directement avec SAP HANA. Nous pouvons récupérer les informations sur la partie via le flux OData fourni ou encore par les CDS Views de SAP. Mais lorsqu'il s'agit d'effectuer des actions comme changer les prix des produits, nous n'avons pas réussi à cibler quelles requêtes effectuent ces actions avec certitude, ni comment les utiliser.
+Nous avons essayé de faire du reverse engineering [#f2]_ de l'app Fiori, mais n'avons pas compris comment pouvoir intéragir directement avec SAP HANA. |br|
+Nous pouvons récupérer les informations sur la partie via le flux OData fourni ou encore par les `CDS Views de SAP <https://help.sap.com/docs/SAP_HANA_PLATFORM/b3d0daf2a98e49ada00bf31b7ca7a42e/b4080c0883c24d2dae38a60d7fbf07c8.html?version=2.0.04&locale=en-US>`_. 
+
+.. figure:: _static/img/CompanyValuationRequest.png
+    :align: center 
+    :target: ../_images/CompanyValuationRequest.png
+
+    *Reverse Engineering de la récupération des données de la Company Valuation*
+
+Résultats de la requête :
+
+.. code-block:: console
+
+    {
+        "d": {
+            "results": [
+                {
+                    "__metadata": {
+                        "id": "https://e03lp1.ucc.in.tum.de:8100/sap/opu/odata/sap/ZCDS_V_SSB_COMPVAL_CDS/ZCDS_V_SSB_COMPVAL('.10~EUR')",
+                        "uri": "https://e03lp1.ucc.in.tum.de:8100/sap/opu/odata/sap/ZCDS_V_SSB_COMPVAL_CDS/ZCDS_V_SSB_COMPVAL   ('.10~EUR')",
+                        "type": "ZCDS_V_SSB_COMPVAL_CDS.ZCDS_V_SSB_COMPVALType"
+                    },
+                    "CURRENCY": "EUR",
+                    "DELTA": "1470997.90"
+                }
+            ]
+        }
+    }
+
+On voit que SAP Fiori récupère les données de SAP 4/HANA via les CDS Views servies par un service OData.
+
+Mais lorsqu'il s'agit d'effectuer des actions comme changer les prix des produits, nous n'avons pas réussi à cibler quelles requêtes effectuent ces actions avec certitude, ni comment les utiliser.
+
+.. figure:: _static/img/ChangeConditionsRequest.png
+    :align: center 
+    :target: ../_images/ChangeConditionsRequest.png
+
+    *Reverse Engineering de l'action changement de prix*
+
+Payload de la requête :
+
+.. code-block:: console
+
+    [
+        {
+            "content":"3.90",
+            "post":"value/wnd[0]/usr/ssubUEBERSICHT_SUB1:SAPMV13A:3011/tblSAPMV13ATCTRL_D3011/txtKONP-KBETR[2,1]"
+        },
+        {
+            "post":"action/304/wnd[0]/usr/subHEADER:SAPLV13F:0100/txtLV13F-VAKET3",
+            "content":"position=0",
+            "logic":"ignore"
+        },
+        {
+            "post":"focus/wnd[0]/usr/subHEADER:SAPLV13F:0100/txtLV13F-VAKET3",
+            "logic":"ignore"
+        },
+        {
+            "post":"action/3/wnd[0]/tbar[0]/btn[11]"
+        },
+        {
+            "get":"state/ur"
+        }
+    ]
+
+Nous n'avons pas compris comment pouvoir utiliser ces requêtes pour comprendre comment intéragir avec SAP HANA.
 
 Nous avons donc conclu, qu'il ne serait pas possible sans de plus amples connaissances sur SAP HANA et Fiori de pouvoir intéragir directement avec SAP HANA, et donc de développer un système d'intelligence artificielle par renforcement.
 
@@ -131,10 +196,8 @@ Mode opératoire
 Conclusion
 ^^^^^^^^^^
 
-Cette stratégie nous a permis de conclure 2 choses. La première confirme le fait que les marchés sont bien indépendants entre les équipes. En effet,
-le jeu en mode Logistic Introduction, possède une option pour avoir un marché unique pour toutes les équipes ou un marché par équipe. Pour cette dernière
-option, il faut noter que les marchés de chaque équipe sont identiques, seulement si l'équipe A vend beaucoup, l'équipe B peut aussi vendre beaucoup. Les ventes ne sont pas
-réparties entre les équipes, contrairement à la première option. 
+Cette stratégie nous a permis de conclure 3 choses. |br|
+La première confirme le fait que les marchés sont bien indépendants entre les équipes. En effet, le jeu en mode Logistics Introduction, possède une option pour avoir un marché unique pour toutes les équipes ou un marché par équipe. Pour cette dernière option, il faut noter que les marchés de chaque équipe sont identiques, seulement si l'équipe A vend beaucoup, l'équipe B peut aussi vendre beaucoup. Les ventes ne sont pas réparties entre les équipes, contrairement à la première option. 
 
 Ce choix avait été fait pour faciliter la compréhension du jeu dans un premier temps. 
 
@@ -142,6 +205,8 @@ La deuxième conclusion à tirer de cette expérience, est qu'un produit, à un 
 même si aucun paramètre ne change (prix ou stock). Cette fluctuation est donc à prendre en compte pour notre stratégie finale afin de conseiller le joueur 
 non pas sur ses ventes de la veille, mais sur les ventes des jours précédents. Le nombre de jours de ventes à prendre en compte dans la stratégie reste à
 définir. 
+
+La troisième conclusion : il faut éviter d'avoir trop de stocks et de tomber en rupture de stock, car on ne fait plus de profit, la Company Valuation chutte alors fortement.
 
 Stratégie d'ERPSIM Helper
 -------------------------
@@ -334,7 +399,7 @@ La récupération des données est une étape indispensable pour réaliser notre
 principales et fonctions contraintes afin de développer cette extraction de la meilleure des manières. 
 
 * FP 1 : Extraire les données du flux oData 
-* FP 2 : Stocker les données dans une base de données 
+* FP 2 : Stocker les données dans une base de données (afin de pouvoir analyser les parties une fois jouées sans être impacté par les changements de scénario du professeur). 
 
 * FC 1 : L'authentification du joueur doit se faire avec ses identifiants ERPSIM pour se connecter au flux oData
 * FC 2 : Le rechargement doit s'opérer de manière automatique 
@@ -345,19 +410,26 @@ principales et fonctions contraintes afin de développer cette extraction de la 
 * FC 3 : Le processus d'extraction et de stockage des données doit prendre moins d'une minute. 
 * FC 4 : La base de données doit être disponible le plus longtemps possible
 
-Connaissant l'objectif et les contraintes de cette partie, nous avons décidé d'utiliser Django Server. En effet, les modèles Django 
-permettent de créer des tables dans une base de données, et de les alimenter. Django permet aussi, de gérer l'authentification des utilisateurs 
-via un formulaire personnalisable. Cet outil nous permettait donc de gérer presque l'ensemble de cette partie extraction. 
+^^^^^^^^^^^^^^^^^^^^
+Choix architecturaux
+^^^^^^^^^^^^^^^^^^^^
 
-En plus de Django, nous avons utilisé `Huey <https://huey.readthedocs.io/en/latest/>`_. Cette bibliothèque, permet de créer des `tasks`, utiles 
-pour les tâches de rechargements. Nous pouvions grâce à cela, créer les tâches de rechargements pour chaque table du flux, et les lancer en 
-parralèle, avec du multi-threading, de manière à augmenter la rapidité de l'extraction. Huey nous permet aussi de `scheduler` les tâches, pour 
-les exécuter tous les :math:`x` minutes. Huey, pour stocker les tâches utilise `Redis <https://redis.io/>`_.
+Une fois les données stockées, nous devons les contextualiser par partie, et associer l'utilisateur aux données de sa partie. |br|
+Nous avons pour cela, décidé d'utiliser Django Server. |br| 
+En effet, les modèles Django permettent de créer des tables dans une base de données, et de les alimenter. Django permet aussi, de gérer l'authentification des utilisateurs via un formulaire personnalisable.
 
-Pour stocker les données, nous avons choisi d'utiliser une base MySQL, qui est utilisable avec Python grâce à la 
-libraie `mysql-connector-python <https://dev.mysql.com/doc/connector-python/en/>`_.
+En plus de Django, nous avons utilisé `Huey <https://huey.readthedocs.io/en/latest/>`_. |br|
+Cette bibliothèque, s'associant avec Django, permet de créer des tâches de rechargements planifiées. |br| 
+Nous pouvions grâce à cela, créer les tâches de rechargements pour chaque table du flux, et les lancer en parralèle, avec du multi-threading, de manière à augmenter la rapidité de l'extraction. |br|
+Huey nous permet aussi de `scheduler` les tâches, pour les exécuter tous les :math:`x` minutes. |br|
+Huey, pour stocker les tâches utilise `Redis <https://redis.io/>`_. |br|
 
-Enfin, pour extraire les données du flux oData, nous avons utilisé la librairie `pyodata <https://github.com/SAP/python-pyodata>`_. 
+Pour stocker les données, nous avons choisi d'utiliser une base MySQL, qui est utilisable avec Python grâce à la librarie `mysql-connector-python <https://dev.mysql.com/doc/connector-python/en/>`_. |br|
+MySQL est une base relationnelle avec laquelle nous avons des connaissances et permettant de stocker des données tabulaires relationnelles comme les données venant du flux OData.
+
+Enfin, pour extraire les données du flux oData, nous avons utilisé la librairie `pyodata <https://github.com/SAP/python-pyodata>`_, nous permettant de faire des requêtes au flux OData simplement.
+
+Cette solution nous permet de mettre en place la synchronisation avec le flux OData, dans les temps impartis afin de pouvoir rapidement tester la stratégie.
 
 Critères pour l'affichage des graphiques
 ----------------------------------------
@@ -373,6 +445,14 @@ Pour la partie affichage des graphiques,
 * FC 2 : La page doit se rafraîchir en moins de 10 secondes
 * FC 3 : La page ne doit pas "ne pas répondre" pendant l'actualisation des données
 
+^^^^^^^^^^^^^^^^^^^^
+Choix architecturaux
+^^^^^^^^^^^^^^^^^^^^
+
+Nous avons décidé d'utiliser la librairie `plotly <https://plotly.com/>` afin de créer des graphiques interactifs en Python puis de les envoyer depuis Django au navigateur Web. |br|
+Cette librairie open-source nous permet d'afficher des graphiques qui puissent être intéractifs afin de pouvoir filtrer par produit car nos graphiques risquaient d'être chargés si l'on avait pas la possibilité de filtrer par produit. |br|
+Elle s'intègre également facilement avec Django et Pandas (nous permettant de faire des calculs facilement sur les données).
+
 Critères pour la stratégie conseillée
 -------------------------------------
 
@@ -383,6 +463,12 @@ Critères pour la stratégie conseillée
 * FC 3 : La stratégie doit adapter le stock dans les entrepôts régionaux en fonction des ventes de chaque région 
 * FC 4 : Le calcul de la stratégie doit prendre moins de 30 secondes
 
+^^^^^^^^^^^^^^^^^^^^
+Choix architecturaux
+^^^^^^^^^^^^^^^^^^^^
+
+Pour la stratégie, nous avons décidé d'utiliser la librairie Pandas afin de pouvoir effectuer nos calculs facilement sur les données de la partie.
+
 .. _difficultees:
 
 ========================
@@ -392,8 +478,10 @@ Difficultées rencontrées
 La complexité de SAP
 --------------------
 
-D'une manière générale, *ERPSIM*, et donc SAP, sont assez difficiles à comprendre pour un public non averti comme nous. 
-En effet, nous avons du jouer plusieurs parties afin de comprendre le mécanisme du jeu, mettre en évidence les :ref:`paramètres du jeu <paramètres_jeu>`. 
+SAP, est difficile à comprendre pour un public non averti comme nous. |br|
+Nous avions peu de temps pour réaliser la partie fonctionnel du projet, nous avions peu de marge de manoeuvre, nous permettant de faire des recherches sur SAP. |br|
+Une grande partie de notre temps consacré à l'apprentissage de nouvelles connaissances a été dédié au jeu *ERPSIM*. |br|
+Nous avons du jouer plusieurs parties afin de comprendre le mécanisme du jeu, mettre en évidence les :ref:`paramètres du jeu <paramètres_jeu>`. 
 Nous avons aussi essayé de comprendre ce qui influençait la *company valuation* qui est ni plus ni moins que notre score sur le jeu en essayant différentes stratégies. 
 
 
@@ -429,6 +517,13 @@ Difficultés techniques
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Récupération des données
 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Les principales difficultés nous ayant freinées dans le développement de la récupération des données :
+
+* Pouvoir arrêter des tâches planifiées lorsque le professeur met une partie en pause, puis les ré-exécuter lorsqu'il décide de reprendre la partie. |br|
+Huey ne permet pas de faire ça, nous pouvons stopper les tâches planifiées mais lorsque nous les ré-exécuterons, le Scheduler les éxecutera car leur échéance d'exécution sera arrivée à terme (et nous ne pouvons pas re planifier ces tâches). |br|
+Il faut alors les stopper (avec Huey) puis sauvegarder les paramètres avec lesquels elles ont été lancé dans Redis puis de re-créer des nouvelles tâches avec ces paramètres lorsque le professeur relance la partie.
+* Pour Django, créer un processus d'authentification personnalisé, utilisant les identifiants OData, nous a demandé d'effectuer des recherches et de mieux comprendre le fonctionnement de Django, et cela nous a pris du temps.
 
 ^^^^^^^^^
 Affichage
@@ -560,5 +655,7 @@ La robustesse de l'extraction des données
 -----------------------------------------
 
 .. rubric:: Notes
+
+.. [#f2] `Reverse Engineering <https://en.wikipedia.org/wiki/Reverse_engineering>`_ : Processus visant à comprendre par déduction comment un logiciel accomplit une tâche avec peu d'informations sur comment celui-ci le fait.
 
 .. [#f1] NPS : Net Promoter Score
