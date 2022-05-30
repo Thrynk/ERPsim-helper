@@ -24,7 +24,7 @@ def get_sales_repartition(df,materials,localisations,precision=80):
     df_sales_repartition = df.groupby(["material_label", "area"])["quantity"].sum() / df.groupby(["material_label"])["quantity"].sum()
 
     # We convert the dataframe into a dict for future usage
-    sales_repartition_dict = {material: [0,0,0] for material in Materials}
+    sales_repartition_dict = {material: [0,0,0] for material in materials}
 
     for index, row in df_sales_repartition.reset_index().iterrows():
         sales_repartition_dict[row.material_label][localisations.index(row.area)] = round(row.quantity, 2)
