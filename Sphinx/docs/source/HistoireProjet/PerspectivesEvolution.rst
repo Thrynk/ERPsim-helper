@@ -121,6 +121,4 @@ La robustesse de l'extraction des données
 
 .. rubric:: Notes
 
-.. [#f2] `Reverse Engineering <https://en.wikipedia.org/wiki/Reverse_engineering>`_ : Processus visant à comprendre par déduction comment un logiciel accomplit une tâche avec peu d'informations sur comment celui-ci le fait.
-
 .. [#f1] NPS : Net Promoter Score

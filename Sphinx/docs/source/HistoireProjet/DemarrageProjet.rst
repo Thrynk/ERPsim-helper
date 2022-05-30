@@ -42,7 +42,7 @@ Ensuite, nous devons être capable avec des instructions de code, d'effectuer un
 Nous avons alors cherché de quelle manière l'interface SAP Fiori intéragit avec SAP 4/HANA. |br|
 L'interface ERPSIM développée à l'aide de SAP Fiori, semble intéragir avec SAP HANA via des services OData. |br| 
 Cependant, sans avoir de spécifications concernant ces services et comment les utiliser, il est difficile de pouvoir programmatiquement intéragir avec SAP HANA directement. |br|
-Nous avons essayé de faire du reverse engineering [#f2]_ de l'app Fiori, mais n'avons pas compris comment pouvoir intéragir directement avec SAP HANA. |br|
+Nous avons essayé de faire du reverse engineering [#f1]_ de l'app Fiori, mais n'avons pas compris comment pouvoir intéragir directement avec SAP HANA. |br|
 Nous pouvons récupérer les informations sur la partie via le flux OData fourni ou encore par les `CDS Views de SAP <https://help.sap.com/docs/SAP_HANA_PLATFORM/b3d0daf2a98e49ada00bf31b7ca7a42e/b4080c0883c24d2dae38a60d7fbf07c8.html?version=2.0.04&locale=en-US>`_. 
 
 .. figure:: ../_static/img/CompanyValuationRequest.png
@@ -130,3 +130,7 @@ nous influons les ventes et les stocks :
     :target: ../../_images/ParamètresERPSIM.png
 
     *Liste des paramètres d'entrées et de sortie du jeu ERPSIM*
+
+.. rubric:: Notes
+
+.. [#f1] `Reverse Engineering <https://en.wikipedia.org/wiki/Reverse_engineering>`_ : Processus visant à comprendre par déduction comment un logiciel accomplit une tâche avec peu d'informations sur comment celui-ci le fait.
