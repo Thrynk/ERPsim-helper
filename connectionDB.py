@@ -1,0 +1,195 @@
+import mysql.connector
+import pandas as pd
+import os
+
+#######################################
+# Parameters 
+#######################################
+
+#Connection a la BDD SQL 
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="odata",
+  password="xGf#57PsB?td",
+  port="3306"
+)
+
+#Creation des parametres en INPUT 
+joueur = "L"
+set = "9"
+
+Materials = ["Milk","Cream","Yoghurt","Cheese","Butter","Ice Cream"]
+Localisations = ["North","South","West"]
+LocalisationsInventaire = ["03","03N","03S","03W"]
+
+
+#######################################
+# Cursor 
+#######################################
+
+#Function to transform a cursor to a dataframe
+def cursorToCsv(cursor,cursorName):
+  liste =[]
+  column = []
+  for x in cursor:
+    liste.append(x)
+  for y in cursorName:
+    column.append(y[0])
+  df = pd.DataFrame(liste,columns=column)
+  return df
+
+
+def createDf(mydb,table):
+  #Creation du cursor qui va pointer vers la collection 
+  Cursor = mydb.cursor(buffered=True)
+  Cursor.execute("USE erpsim_games_flux")
+  cmd = str("SELECT * FROM "+table)
+  Cursor.execute(cmd)
+
+  CursorName = mydb.cursor()
+  CursorName.execute("USE erpsim_games_flux")
+  cmd = str("SELECT column_name FROM information_schema.columns WHERE table_schema='erpsim_games_flux' AND table_name='"+table+"'")
+  CursorName.execute(cmd)
+
+  df = cursorToCsv(Cursor,CursorName)
+  return df
+  
+def test(db , company):
+    Cursor = db.cursor()
+    Cursor.execute("USE erpsim_games_flux")
+    cmd = str("SELECT MAX(sim_round) FROM company_valuation WHERE company_code = '"+company+"'")
+    Cursor.execute(cmd)
+    rnd = list(Cursor)[0][0]
+    Cursor.close()
+
+    if rnd :
+
+        Cursor2 = db.cursor()
+        Cursor2.execute("USE erpsim_games_flux")
+        cmd = str("SELECT MAX(sim_step)  FROM company_valuation WHERE company_code = '"+company+"'" + " AND sim_round = "+ str(rnd))
+        Cursor2.execute(cmd)
+        jour= list(Cursor2)[0][0]
+
+        return rnd,jour
+    else :
+        return 0,0
+#######################################
+# Find the matrice 
+#######################################
+
+def trouverParametres(df,sales_organization,precision=80):
+
+    #Affichage
+    print("Les parametres tendent vers : ")
+    print(" ")
+
+    ListeSalesJoueur =[]
+
+    df=df[df["sales_organization"]==sales_organization]
+
+    #Iteration Matériaux et Localisation
+    for material in Materials:
+        dfSalesJoueurMaterial = df[df['material_label']==material]
+        tmp=[]
+        for localisation in Localisations:
+            if len(dfSalesJoueurMaterial[dfSalesJoueurMaterial["area"]==localisation]["quantity"])==0:
+                tmp.append(0)
+            else:
+                tmp.append(round(dfSalesJoueurMaterial[dfSalesJoueurMaterial["area"]==localisation]["quantity"].sum()/precision,0))
+       
+        print(material,tmp)
+        ListeSalesJoueur.append(tmp)
+    
+    return ListeSalesJoueur
+
+
+  
+
+
+
+
+
+#Donner une approximation des parametres
+dfSales = createDf(mydb,"sales")
+dfInventory = createDf(mydb,"inventory")
+os.system('clear')
+
+company = str(joueur+set)
+
+rounds, jours = test(mydb,company)
+print("Round : ",rounds,"   Jour : ",jours)
+print("")
+trouverParametres(dfSales,company)
+
+
+
+#Calcul du prix fonction du stock
+
+reaproMilk = 900
+reaproCream = 300
+reaproYoghurt = 700
+reaproCheese = 350
+reaproButter = 400
+reaproIceCream = 300
+
+matriceReapro = [reaproMilk, reaproCream, reaproYoghurt, reaproCheese, reaproButter, reaproIceCream]
+freqReapro = 5
+matriceVentes = [170,60,150,65,40,50]
+
+
+def modificationPrix(ventes, quantiteReapro, frequenceReapro):
+  matriceModificationPrix = []
+  for i in range (0,len(quantiteReapro)):
+    if (ventes[i]>=quantiteReapro[i]/frequenceReapro):
+      matriceModificationPrix.append(1.05)
+    elif (ventes[i]<0.8*quantiteReapro[i]/frequenceReapro):
+      matriceModificationPrix.append(0.95)
+    else:
+      matriceModificationPrix.append(1)
+
+  return(matriceModificationPrix)
+
+
+matriceModif=modificationPrix(matriceVentes,matriceReapro,freqReapro)
+print("Voici les coefficients à appliquer à chacun des prix :")
+print("Milk : " , matriceModif[0])
+print("Cream : " , matriceModif[1])
+print("Yoghurt : " , matriceModif[2])
+print("Cheese : " , matriceModif[3])
+print("Butter : " , matriceModif[4])
+print("Ice cream : " , matriceModif[5])
+
+dfPrices = createDf(mydb,"pricing_conditions")
+
+def getCurrentPrices(df, sales_organization):
+
+  df=df[df["sales_organization"]==sales_organization]
+  matriceCurrentPrices=[]
+
+  for materials in Materials:
+    dfPricingConditionMaterial = df[df['material_description']==materials]
+    matriceCurrentPrices.append(dfPricingConditionMaterial['price'].iloc[-1])
+
+  return(matriceCurrentPrices)
+
+curentPrices=getCurrentPrices(dfPrices,company)
+
+def giveNewPrices(coefficients,currentPrices):
+  matriceNewPrices=[]
+
+  for i in range (0,6):
+    matriceNewPrices.append(round(currentPrices[i]*coefficients[i],2))
+
+  return matriceNewPrices
+
+newPrices=giveNewPrices(matriceModif, curentPrices)
+
+print(curentPrices)  
+
+print("Voici les nouveaux prix :")  
+print("Milk : " , newPrices[0])
+print("Cream : " , newPrices[1])
+print("Yoghurt : " , newPrices[2])
+print("Cheese : " , newPrices[3])
+print("Butter : " , newPrices[4])
+print("Ice cream : " , newPrices[5])
