@@ -1,0 +1,31 @@
+ID;ROW_NUMBER;PURCHASING_ORGANIZATION;MATERIAL_NUMBER;MATERIAL_DESCRIPTION;VENDOR_CODE;VENDOR_NAME;NET_PRICE;CURRENCY
+.1~1;1;A9;AA-T01;Milk;V04;Dairy Cooperative;22,95;EUR
+.1~2;2;A9;AA-T02;Cream;V04;Dairy Cooperative;72,07;EUR
+.1~3;3;A9;AA-T03;Yoghurt;V04;Dairy Cooperative;25,85;EUR
+.1~4;4;A9;AA-T04;Cheese;V04;Dairy Cooperative;82,68;EUR
+.1~5;5;A9;AA-T05;Butter;V04;Dairy Cooperative;59,88;EUR
+.1~6;6;A9;AA-T06;Ice Cream;V04;Dairy Cooperative;43,15;EUR
+.1~7;7;B9;BB-T01;Milk;V04;Dairy Cooperative;22,95;EUR
+.1~8;8;B9;BB-T02;Cream;V04;Dairy Cooperative;72,07;EUR
+.1~9;9;B9;BB-T03;Yoghurt;V04;Dairy Cooperative;25,85;EUR
+.1~10;10;B9;BB-T04;Cheese;V04;Dairy Cooperative;82,68;EUR
+.1~11;11;B9;BB-T05;Butter;V04;Dairy Cooperative;59,88;EUR
+.1~12;12;B9;BB-T06;Ice Cream;V04;Dairy Cooperative;43,15;EUR
+.1~13;13;C9;CC-T01;Milk;V04;Dairy Cooperative;22,95;EUR
+.1~14;14;C9;CC-T02;Cream;V04;Dairy Cooperative;72,07;EUR
+.1~15;15;C9;CC-T03;Yoghurt;V04;Dairy Cooperative;25,85;EUR
+.1~16;16;C9;CC-T04;Cheese;V04;Dairy Cooperative;82,68;EUR
+.1~17;17;C9;CC-T05;Butter;V04;Dairy Cooperative;59,88;EUR
+.1~18;18;C9;CC-T06;Ice Cream;V04;Dairy Cooperative;43,15;EUR
+.1~19;19;D9;DD-T01;Milk;V04;Dairy Cooperative;22,95;EUR
+.1~20;20;D9;DD-T02;Cream;V04;Dairy Cooperative;72,07;EUR
+.1~21;21;D9;DD-T03;Yoghurt;V04;Dairy Cooperative;25,85;EUR
+.1~22;22;D9;DD-T04;Cheese;V04;Dairy Cooperative;82,68;EUR
+.1~23;23;D9;DD-T05;Butter;V04;Dairy Cooperative;59,88;EUR
+.1~24;24;D9;DD-T06;Ice Cream;V04;Dairy Cooperative;43,15;EUR
+.1~25;25;E9;EE-T01;Milk;V04;Dairy Cooperative;22,95;EUR
+.1~26;26;E9;EE-T02;Cream;V04;Dairy Cooperative;72,07;EUR
+.1~27;27;E9;EE-T03;Yoghurt;V04;Dairy Cooperative;25,85;EUR
+.1~28;28;E9;EE-T04;Cheese;V04;Dairy Cooperative;82,68;EUR
+.1~29;29;E9;EE-T05;Butter;V04;Dairy Cooperative;59,88;EUR
+.1~30;30;E9;EE-T06;Ice Cream;V04;Dairy Cooperative;43,15;EUR

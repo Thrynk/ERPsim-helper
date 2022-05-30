@@ -1,0 +1,7 @@
+Scénario : Logistique Introduction
+5 équipes + 2 developpeurs
+Equipe Jc : Entreprise C
+Identifiant : C_1
+Mot de passe : ISEN2022
+Réaprovisionnement tous les 5 jours, dans ce scénario c'est toujours le cas.
+Prix de départ fixé à +20% du prix initial
