@@ -520,9 +520,7 @@ Récupération des données
 
 Les principales difficultés nous ayant freinées dans le développement de la récupération des données :
 
-* Pouvoir arrêter des tâches planifiées lorsque le professeur met une partie en pause, puis les ré-exécuter lorsqu'il décide de reprendre la partie. |br|
-Huey ne permet pas de faire ça, nous pouvons stopper les tâches planifiées mais lorsque nous les ré-exécuterons, le Scheduler les éxecutera car leur échéance d'exécution sera arrivée à terme (et nous ne pouvons pas re planifier ces tâches). |br|
-Il faut alors les stopper (avec Huey) puis sauvegarder les paramètres avec lesquels elles ont été lancé dans Redis puis de re-créer des nouvelles tâches avec ces paramètres lorsque le professeur relance la partie.
+* Pouvoir arrêter des tâches planifiées lorsque le professeur met une partie en pause, puis les ré-exécuter lorsqu'il décide de reprendre la partie. |br| Huey ne permet pas de faire ça, nous pouvons stopper les tâches planifiées mais lorsque nous les ré-exécuterons, le Scheduler les éxecutera car leur échéance d'exécution sera arrivée à terme (et nous ne pouvons pas re planifier ces tâches). |br| Il faut alors les stopper (avec Huey) puis sauvegarder les paramètres avec lesquels elles ont été lancé dans Redis puis de re-créer des nouvelles tâches avec ces paramètres lorsque le professeur relance la partie.
 * Pour Django, créer un processus d'authentification personnalisé, utilisant les identifiants OData, nous a demandé d'effectuer des recherches et de mieux comprendre le fonctionnement de Django, et cela nous a pris du temps.
 
 ^^^^^^^^^
