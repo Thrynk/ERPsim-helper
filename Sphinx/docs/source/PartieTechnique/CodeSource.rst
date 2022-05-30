@@ -34,7 +34,7 @@ Affichage des graphes
 Strategies
 ==========
 
-.. automodule:: erpsim_helper.strategies.alexis_charles
+.. automodule:: erpsim_helper.strategies.logistics_introduction_baseline
     :members:
 
 =====

@@ -11,7 +11,7 @@ from .models import Game, Player, Sales, Inventory, PricingConditions, CompanyVa
 from .tasks import get_game_latest_data
 from .plots.plotly_plot import plotly_plot_sales, plotly_plot_stocks
 
-from .strategies.alexis_charles import getMatriceStock, getMatricePrix, get_sales_repartition
+from .strategies.logistics_introduction_baseline import getMatriceStock, getMatricePrix, get_sales_repartition
 
 @login_required
 def index(request):
