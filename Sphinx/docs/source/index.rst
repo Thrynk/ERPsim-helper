@@ -53,18 +53,24 @@ Check out the :doc:`PartieUtilisateur/Usage` section for further information, in
 .. _contents:
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Table des matières
+   :caption: Histoire du Projet
 
-   DeroulementProjet
-   PartieUtilisateur/Usage
-   PartieTechnique/index
+   HistoireProjet/DemarrageProjet
+   HistoireProjet/ConstructionStrategie
+   HistoireProjet/DeveloppementErpsimHelper
+   HistoireProjet/DifficultesRencontres
+   HistoireProjet/PerspectivesEvolution
+
+.. toctree::
+   :caption: Tutoriels
+
+   PartieUtilisateur/Administrateur
+   PartieUtilisateur/Joueur
+
+.. toctree::
+   :caption: A propos du projet
+   
    CadreProjet
-
-Resultats du Projet
-===================
-
-
 
 Indices and tables
 ==================
