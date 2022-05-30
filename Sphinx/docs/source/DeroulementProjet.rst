@@ -527,9 +527,13 @@ Les principales difficultés nous ayant freinées dans le développement de la r
 Affichage
 ^^^^^^^^^
 
+* Passage de matplotlib à plotly pour des raisons de performance et pour ajouter de l'interactivité aux graphiques.
+
 ^^^^^^^^^^^^^^^^^^^^
 Stratégie conseillée
 ^^^^^^^^^^^^^^^^^^^^
+
+* Ne pas pouvoir directement tester la stratégie en direct avant d'avoir un système de récupération des données fiable.
 
 .. _evolution:
 
