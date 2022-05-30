@@ -93,7 +93,9 @@ def index(request):
 
     day = CompanyValuation.objects.filter(id_game=game.id, company_code=company_name).aggregate(sim_elapsed_steps=Max('sim_elapsed_steps'))["sim_elapsed_steps"]
     simulation_date = CompanyValuation.objects.filter(id_game=game.id, company_code=company_name).aggregate(sim_calendar_date=Max('sim_calendar_date'))["sim_calendar_date"]
-    simulation_date = simulation_date.strftime("%e %b %Y")
+    
+    if simulation_date is not None :
+        simulation_date = simulation_date.strftime("%e %b %Y")
 
     print(f"day: {day}")
 
@@ -134,13 +136,16 @@ def index(request):
             prices_matrix_name_converted[str( material_number +  " ("+ material_description +  ") ")] = prices_matrix[material_description]
             print(prices_matrix_name_converted)
 
+    game_round = int(day/10) if day%10 == 0 else int(day/10)+1
+    game_step = 10 if day%10 == 0 else day%10
+
     context = {
         'sales_evolution_plot': sales_evolution_plot,
         'sales_distribution_plot': sales_distribution_plot,
         'stock_evolution_plot': stock_evolution_plot,
         'username': request.user.username,
-        'round': int(day / 8) + 1 if int(day / 8) == 0 else int(day / 8),
-        'step': day % 10,
+        'round': game_round,
+        'step': game_step,
         'sim_elapsed_steps': day,
         'simulation_date': simulation_date,
         'material': products,
