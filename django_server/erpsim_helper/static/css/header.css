@@ -1,0 +1,61 @@
+body {
+
+    color: #1a1f36;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    background-color: beige;
+  }
+
+html {
+      scroll-behavior: smooth;
+}
+
+#header2 {
+    position: sticky;
+    top: 20px;
+    z-index:50;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-bottom:30px;
+    margin-top:20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+    padding-top:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: white;
+  }
+
+.headerdiv {
+   font-size : 15px;
+   align-items: center;
+    text-align :center;
+    justify-content  :center;
+    margin-bottom:-17px;
+}
+
+#informations{
+ display:flex;
+ flex-direction:column;
+ margin-bottom:10px;
+
+}
+
+#blockListGraphs{
+}
+
+#blockListStart {
+    height :170px;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:40px;
+    margin-bottom:20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: white;
+}

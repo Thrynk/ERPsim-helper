@@ -1,4 +1,4 @@
-from huey.contrib.djhuey import task, enqueue
+from huey.contrib.djhuey import task, enqueue, scheduled
 
 import pyodata
 from pyodata.v2.service import GetEntitySetFilter as esf
@@ -43,6 +43,28 @@ except :
 
 @task()
 def get_game_latest_data(game_id, odata_flow, game_set, team, is_running, odata_user, odata_password):
+    """
+        Build group of tasks in order to get the data. 
+
+        This function is used to create one task for each table in the BDD. Moreover, 
+        it creates one task one table for each 60 seconds. (One day in the simulation is 1 minute). 
+        So, we have, a group of tasks, with a table to reach and a datetime to execute it. 
+
+        :param game_id: ID of the game that we want to reach the data 
+        :type game_id: int 
+        :param odata_flow: It is the address of the flow which contains the data. 
+        :type odata_flow: str 
+        :param game_set: Set used for the game 
+        :type game_set: int
+        :param team: All the teams they are playing the game (A, B, C, ...)
+        :type team: list['str']
+        :param is_running: True if the game is running, False otherwise.
+        :type is_running: Boolean
+        :param odata_user: Credentials, Log In
+        :type odata_user: str
+        :param odata_password: Credentials
+        :type odata_password: str
+    """
     logger.info('-- game_id : {} flow : {} set : {} team : {} is_running : {} --'.format(game_id, odata_flow, game_set, team, is_running))
 
     global odata_service
@@ -72,8 +94,45 @@ def get_game_latest_data(game_id, odata_flow, game_set, team, is_running, odata_
     logger.info(f"Execution time of all tasks : {time.time() - d1}")    
 
 @task()
-def store_table(table, game_id, game_set, team):
+def launch_fetching_tasks(game, team, user, password):
+    logger.info('-- game_id : {} flow : {} set : {} team : {} is_running : {} --'.format(game.id, game.odata_flow, game.game_set, team, game.is_running))
+    # CONNEXION ODATA
+    global odata_service
 
+    session = requests.Session()
+    session.auth = (user, password)
+    odata_service = pyodata.Client(game.odata_flow, session)
+
+    TABLES_SQL = TABLE_SOCIETE.keys()  
+
+    # launch store_table tasks
+    d1 = time.time()
+    tasks_group = []
+    for table in TABLES_SQL:
+        # schedule tasks to fetch data every minute (every round day in ERPSim)
+        for i in range(100): # 8 rounds of 10 virtual days (+ 20 if round duration = 1'30)
+            eta = datetime.datetime.now() + datetime.timedelta(seconds=60 * i)
+            tasks_group.append(store_table.schedule((table, game.id, game.game_set, team), eta=eta))   
+
+    logger.info(f"Execution time to create all tasks : {time.time() - d1}")    
+
+@task()
+def store_table(table, game_id, game_set, team):
+    """
+        Store the data into sql database. 
+
+        This function is used to reach data on the odata flow. It enables to have the 
+        data at one time, for one table, of all teams on one game. 
+
+        :param table: Odata Table to reach
+        :type table: str
+        :param game_id: ID of the game that we want to reach the data 
+        :type game_id: int 
+        :param game_set: Set used for the game 
+        :type game_set: int
+        :param team: All the teams they are playing the game (A, B, C, ...)
+        :type team: list['str']
+    """
     entity_set_names = [es.name for es in odata_service.schema.entity_sets]
 
     sql_conn = mysql.connector.connect(pool_name = "odata_pool")
@@ -118,23 +177,55 @@ def store_table(table, game_id, game_set, team):
     logger.info(f"\n--- Execution time for table {table} : {time.time()-d1}")
     return True
 
-"""
-Fonction get_max_sim_round qui prend en argument une table 
-Elle renvoie le dernier couple (round, step) inséré en base. 
-"""
+def reschedule_fetching_tasks():
+    tasks = scheduled()
+    print(tasks)
+
+    for task in tasks:
+        if task.name == "store_table":
+            print(task.eta)
+
+
 def get_max_sim_date(sql_conn, table, id_game):
+    """
+        Get max simulation date.
+
+        It returns the last tuple (`round`, `step`) in the database.
+
+        :param sql_conn: SQL connector created in :py:func:`store_table`
+        :type sql_conn: 
+        :param table: Odata Table to reach
+        :type table: str
+        :param game_id: ID of the game that we want to reach the data 
+        :type game_id: int 
+
+        :return: (`round`, `step`)
+        :rtype: tuple()
+    """
     mycursor = sql_conn.cursor()
     mycursor.execute(f"SELECT max(sim_calendar_date) FROM {table} WHERE id_game={str(id_game)};")
     return mycursor.fetchone()
 
-"""
-Fonction generate_statement_data qui prend en argument une table et les données envoyées par le flux odata
-Elle crée list_data, une liste de tuples, chaque tuple contient une ligne de données du flux odata. 
-Elle crée aussi insert_statement qui correspond à la requete SQL pour insérer les données en base 
-Renvoie insert_statement et list_data
-"""
-def generate_statement_data(sql_conn, table, response, id_game):
 
+def generate_statement_data(sql_conn, table, response, id_game):
+    """
+        Generate statement ton insert data into sql database
+
+        It creates `list_data` which each tuple contains one line of data of the odata flow. 
+        It creates the insert statement for the next insertion. 
+
+        :param sql_conn: SQL connector created in :py:func:`store_table`
+        :type sql_conn: 
+        :param table: Odata Table to reach
+        :type table: str
+        :param response: Data
+        :type response: dict
+        :param game_id: ID of the game that we want to reach the data 
+        :type game_id: int 
+
+        :return: (SQL statement, data) to push in the database
+        :rtype: tuple()
+    """
     mycursor = sql_conn.cursor()
     mycursor.execute(f"\
         SELECT \
@@ -160,6 +251,16 @@ def generate_statement_data(sql_conn, table, response, id_game):
 Fonction add_data_into_mysql pour push les données dans la base de données
 """
 def add_data_into_mysql(sql_conn, query, data):
+    """
+        Push data into sql database
+
+        :param sql_conn: SQL connector created in :py:func:`store_table`
+        :type sql_conn: 
+        :param query: Insert Statement
+        :type query: str
+        :param data: Data
+        :type data: Dict
+    """
     try : 
         mycursor = sql_conn.cursor()
         mycursor.executemany(query, data)
