@@ -8,26 +8,11 @@
 ERPsim Helper Documentation
 ==================================
 
-.. figure:: _static/img/SAP.png
+.. figure:: _static/img/IllustrationProjet.png
    :align: center 
-   :target: _images/SAP.png
-   :scale: 30
+   :target: _images/IllustrationProjet.png
 
-   *Logo SAP*
-
-.. figure:: _static/img/ERP.png
-   :align: center 
-   :target: _images/ERP.png
-   :scale: 30
-
-   *Image illustrant un ERP*
-
-.. figure:: _static/img/HEC.png
-   :align: center 
-   :target: _images/HEC.png
-   :scale: 30
-
-   *Logo HEC Montréal*
+   *Acteurs de ce projet*
 
 
 **ERPsim helper** est une aide pour le jeu *ERPsim* développé par `HEC Montréal <https://www.hec.ca/>`_. 
