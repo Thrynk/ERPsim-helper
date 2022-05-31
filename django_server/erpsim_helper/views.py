@@ -18,7 +18,7 @@ def index(request):
     """
         Redirect if user is not logged in, else display dashboard page. 
 
-        :param request:
+        :param request: Request object
         :type request: django.http.HttpRequest
 
         :return: Http response

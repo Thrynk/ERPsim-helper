@@ -70,9 +70,9 @@ def getCostPrices(materials):
         It returns a dict
 
         :param materials: names of the sold items
-        :type sales: list
+        :type materials: list
 
-        :return: reapro
+        :return: Minimum price for each product
         :rtype: dict
     """
 

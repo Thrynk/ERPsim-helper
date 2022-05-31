@@ -42,12 +42,7 @@ class Game(models.Model):
 
     def save(self, *args, **kwargs):
         """
-            Save a game. 
-
-            :param args:
-            :type args: str
-            :param kwargs: 
-            :type kwargs: list['str']
+            Save a game.
         """
         super(Game, self).save(*args, **kwargs)
         #get_game_latest_data(self.id, self.odata_flow, self.game_set, self.team)
