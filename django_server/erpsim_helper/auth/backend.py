@@ -21,8 +21,9 @@ class ODataAuthenticationBackend(BaseBackend): #TODO: put a link to application 
 
             If admin is trying to connect then check password and log in if correct.
             If a player is trying to connect:
-            - And it is his first connection, then check credentials with odata flow and create user if success.
-            - If it is not the first connection, then retrieve user associated with the game (via Player model) and check his password.
+            
+            * And it is his first connection, then check credentials with odata flow and create user if success.
+            * If it is not the first connection, then retrieve user associated with the game (via Player model) and check his password.
 
             :param request: Request information from browser
             :type request: WSGIRequest

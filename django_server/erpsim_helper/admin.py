@@ -73,9 +73,6 @@ class GameAdmin(admin.ModelAdmin):
             :type form_url: str (empty by default)
             :param extra_context: Context of the object 
             :type extra_context: ... (None by default)
-
-            :return: 
-            :rtype: 
         """
         # Change the context in order to show or not specifics buttons
         extra_context = extra_context or {}
@@ -99,9 +96,6 @@ class GameAdmin(admin.ModelAdmin):
             :type form_url: str (empty by default)
             :param extra_context: Context of the object 
             :type obj: ... (None by default)
-
-            :return: 
-            :rtype: 
         """
         game = Game.objects.get(pk=object_id)
 
