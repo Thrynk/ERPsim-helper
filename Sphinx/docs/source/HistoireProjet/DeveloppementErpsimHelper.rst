@@ -70,8 +70,8 @@ Pour la partie affichage des graphiques,
 Choix architecturaux
 ^^^^^^^^^^^^^^^^^^^^
 
-Nous avons décidé d'utiliser la librairie `plotly <https://plotly.com/>` afin de créer des graphiques interactifs en Python puis de les envoyer depuis Django au navigateur Web. |br|
-Cette librairie open-source nous permet d'afficher des graphiques qui puissent être intéractifs afin de pouvoir filtrer par produit car nos graphiques risquaient d'être chargés si l'on avait pas la possibilité de filtrer par produit. |br|
+Nous avons décidé d'utiliser la librairie `plotly <https://plotly.com/>`_ afin de créer des graphiques interactifs en Python puis de les envoyer depuis Django au navigateur Web. |br|
+Cette librairie open-source nous permet d'afficher des graphiques qui puissent être intéractifs afin de pouvoir filtrer par produit car nos graphiques risquaient d'être chargés si nous n'avions pas la possibilité de filtrer par produit. |br|
 Elle s'intègre également facilement avec Django et Pandas (nous permettant de faire des calculs facilement sur les données).
 
 Critères pour la stratégie conseillée
