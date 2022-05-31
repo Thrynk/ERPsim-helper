@@ -181,3 +181,9 @@ est affiché dans la colonne *A METTRE*.
 
    Attention à la latence qu'il peut y avoir entre *ERPSIM* et ERPSIM Helper. Il ne faut pas faire diminuer le prix d'un produit 2 fois 
    dans la même journée. N'oubliez donc pas de vérifier le Jour et le Round en cours, notés en haut de page.
+
+**Lecture suivante**
+
+Maintenant que vous savez utiliser le projet, nous allons passer à la partie technique du projet. 
+
+Prochaine section : :doc:`../PartieTechnique/Installation`.

@@ -63,3 +63,7 @@ Stratégie conseillée
 ^^^^^^^^^^^^^^^^^^^^
 
 * Ne pas pouvoir directement tester la stratégie en direct avant d'avoir un système de récupération des données fiable.
+
+**Lecture suivante**
+
+Prochaine section : :doc:`PerspectivesEvolution`.

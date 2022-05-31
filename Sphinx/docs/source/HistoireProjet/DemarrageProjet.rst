@@ -134,3 +134,8 @@ nous influons les ventes et les stocks :
 .. rubric:: Notes
 
 .. [#f1] `Reverse Engineering <https://en.wikipedia.org/wiki/Reverse_engineering>`_ : Processus visant à comprendre par déduction comment un logiciel accomplit une tâche avec peu d'informations sur comment celui-ci le fait.
+
+
+**Lecture suivante**
+
+Prochaine section : :doc:`ConstructionStrategie`.

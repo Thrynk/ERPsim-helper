@@ -158,3 +158,7 @@ Nous utilisons pour calculer cela :
 
 Nous avons fixé à 10% dans un premier temps pour simplifier la complexité du problème, et pour simplifier les manipulations du joueur. |br|
 Une amélioration possible de la stratégie serait de trouver une méthode pour estimer ce pourcentage, avec par exemple les NPS Surveys.
+
+**Lecture suivante**
+
+Prochaine section : :doc:`DeveloppementErpsimHelper`.

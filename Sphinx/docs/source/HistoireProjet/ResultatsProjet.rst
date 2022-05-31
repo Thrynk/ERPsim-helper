@@ -77,3 +77,7 @@ Cependant, nous constatons que certains produits semblent saisonniers (i.e Milk)
 La stratégie ne prend donc pas en compte les effets saisonniers, on voit alors qu'après une période de forte vente dans l'Ouest, le Milk est réapprovisionné à tort dans l'Ouest.
 
 Sur la Company Valuation, la stratégie semble bonne, même si elle peut sûrement être perfectionnée, en anticipant de manière plus intelligente, les variations de la demande Client. Une des pistes possible est d'exploiter les NPS Surveys.
+
+**Lecture suivante**
+
+Prochaine section : :doc:`DifficultesRencontres`.

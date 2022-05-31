@@ -93,5 +93,4 @@ Indices and tables
 Lecture suivante
 ================
 
-Dans la :ref:`section suivante <installation>`, vous trouverez comment installer les modules et langages pour faire fonctionner 
-le projet. 
+Prochaine section : :doc:`HistoireProjet/DemarrageProjet`.

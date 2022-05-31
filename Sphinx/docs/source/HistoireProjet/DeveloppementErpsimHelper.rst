@@ -89,3 +89,8 @@ Choix architecturaux
 ^^^^^^^^^^^^^^^^^^^^
 
 Pour la stratégie, nous avons décidé d'utiliser la librairie Pandas afin de pouvoir effectuer nos calculs facilement sur les données de la partie.
+
+
+**Lecture suivante**
+
+Prochaine section : :doc:`ResultatsProjet`.

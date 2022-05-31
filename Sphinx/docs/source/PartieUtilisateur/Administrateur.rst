@@ -147,3 +147,8 @@ La fin d'une partie peut-être déclenchée par 3 moyens
 1. Nous avons atteint le Jour 10 du Round 8, la partie s'arrête. 
 2. L'enseignant clique sur le bouton "Stop", la partie s'arrête. 
 3. La partie a été lancée il y a plus de 7 jours, le programme considère que c'est un oubli et la partie est arrêtée.  
+
+
+**Lecture suivante**
+
+Prochaine section : :doc:`Joueur`.

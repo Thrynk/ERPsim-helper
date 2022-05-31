@@ -122,3 +122,9 @@ La robustesse de l'extraction des données
 .. rubric:: Notes
 
 .. [#f1] NPS : Net Promoter Score
+
+**Lecture suivante**
+
+Nous allons maintenant passer aux différents tutoriels pour utiliser le projet. 
+
+Prochaine section : :doc:`../PartieUtilisateur/Administrateur`.
