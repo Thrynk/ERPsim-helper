@@ -59,6 +59,7 @@ Check out the :doc:`PartieUtilisateur/Joueur` section for further information, i
    PartieTechnique/Installation
    PartieTechnique/Architecture
    PartieTechnique/CodeSource
+   PartieTechnique/Deploiement
 
 .. toctree::
    :caption: A propos du projet

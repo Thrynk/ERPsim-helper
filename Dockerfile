@@ -10,3 +10,5 @@ COPY requirements.txt /app/
 RUN pip install -r requirements.txt
 
 COPY ./django_server /app/django_server/
+
+COPY ./Sphinx/docs/build /app/docs
