@@ -4,7 +4,7 @@ WORKDIR /ERPsim-helper
 
 COPY ./django_server django_server/
 
-COPY requirements.txt /ERPsim-helper/requirements.txt
+COPY ./Sphinx/docs/requirements.docs.txt /ERPsim-helper/requirements.txt
 
 RUN pip install -r requirements.txt
 

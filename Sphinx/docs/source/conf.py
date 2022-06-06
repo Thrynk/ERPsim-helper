@@ -24,7 +24,7 @@ sys.path.insert(0, src_p.resolve().as_posix())
 print(src_p.resolve().as_posix())
 
 # Specify settings module
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_server.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_server.settings_for_docs')
 
 # Setup Djangoimport django
 # settings.configure()
