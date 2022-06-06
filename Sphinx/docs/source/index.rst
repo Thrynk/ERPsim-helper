@@ -8,26 +8,11 @@
 ERPsim Helper Documentation
 ==================================
 
-.. figure:: _static/img/SAP.png
+.. figure:: _static/img/IllustrationProjet.png
    :align: center 
-   :target: _images/SAP.png
-   :scale: 30
+   :target: _images/IllustrationProjet.png
 
-   *Logo SAP*
-
-.. figure:: _static/img/ERP.png
-   :align: center 
-   :target: _images/ERP.png
-   :scale: 30
-
-   *Image illustrant un ERP*
-
-.. figure:: _static/img/HEC.png
-   :align: center 
-   :target: _images/HEC.png
-   :scale: 30
-
-   *Logo HEC Montréal*
+   *Acteurs de ce projet*
 
 
 **ERPsim helper** est une aide pour le jeu *ERPsim* développé par `HEC Montréal <https://www.hec.ca/>`_. 
@@ -47,24 +32,38 @@ ERP (Enterprise Ressource Planning ou Progiciel de Gestion Intégré en françai
 
    Ce projet est encore en développement.
 
-Check out the :doc:`PartieUtilisateur/Usage` section for further information, including how to
+Check out the :doc:`PartieUtilisateur/Joueur` section for further information, including how to
 :ref:`install <installation>` the project.
 
 .. _contents:
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Table des matières
+   :caption: Histoire du Projet
 
-   DeroulementProjet
-   PartieUtilisateur/Usage
-   PartieTechnique/index
+   HistoireProjet/DemarrageProjet
+   HistoireProjet/ConstructionStrategie
+   HistoireProjet/DeveloppementErpsimHelper
+   HistoireProjet/ResultatsProjet
+   HistoireProjet/DifficultesRencontres
+   HistoireProjet/PerspectivesEvolution
+
+.. toctree::
+   :caption: Tutoriels
+
+   PartieUtilisateur/Administrateur
+   PartieUtilisateur/Joueur
+
+.. toctree::
+   :caption: Technique
+
+   PartieTechnique/Installation
+   PartieTechnique/Architecture
+   PartieTechnique/CodeSource
+
+.. toctree::
+   :caption: A propos du projet
+   
    CadreProjet
-
-Resultats du Projet
-===================
-
-
 
 Indices and tables
 ==================
@@ -79,5 +78,4 @@ Indices and tables
 Lecture suivante
 ================
 
-Dans la :ref:`section suivante <installation>`, vous trouverez comment installer les modules et langages pour faire fonctionner 
-le projet. 
+Prochaine section : :doc:`HistoireProjet/DemarrageProjet`.

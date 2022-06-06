@@ -65,8 +65,8 @@ Vues Django Interface
 .. automodule:: erpsim_helper.views
     :members:
 
-================
-Lecture suivante
-================
+**Lecture suivante**
 
-Dans la :ref:`section suivante <cadre_projet>`, vous retrouverez le cadre du projet. 
+Nous voilà à la fin de cette documentation, pour en savoir plus sur le cadre du projet :
+
+Prochaine section : :doc:`../CadreProjet`.

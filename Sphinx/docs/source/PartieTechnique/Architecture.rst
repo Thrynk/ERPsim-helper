@@ -108,8 +108,6 @@ joueur.
 
 .. [#f1] Redis : Redis est un système de gestion de base de données *(Wikipédia)*
 
-================
-Lecture suivante
-================
+**Lecture suivante**
 
-Dans la :ref:`section suivante<code_source>`, vous retrouverez le code source du projet. 
+Prochaine section : :doc:`CodeSource`.

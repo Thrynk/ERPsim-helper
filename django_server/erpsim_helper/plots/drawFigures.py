@@ -8,10 +8,15 @@ def addNoSalesData(dataframe, products, dateRange=None, storage=False):
     Add data in the dataframe on day where there is no sales. Use to plot curve of sales
 
     :param dataframe: Sales dataframe
-    :param dateRange: dateRange object
-    :param products: string or list of products to display
+    :type dataframe: dataframe
+    :param dateRange: dates
+    :type dateRange: dateRange object
+    :param products: products to display
+    :type products: str or list
     :param storage: boolean if the function is called to display storage distribution
+    :type storage: boolean
     :return: New dataframe with no sales line added, group by day and product
+    :rtype: dataframe
     """
     if isinstance(products, str): products = [products]
 
@@ -42,11 +47,17 @@ def drawSalesDistribution(dataframe_company, products, startDate=None, endDate=N
     Display one graph of the distribution of the sales in the storage
 
     :param dataframe: Sales dataframe
+    :type dataframe: dataframe
     :param company: Company name
-    :param products: String or list of products to display
+    :type company: str
+    :param products: products to display
+    :type products: str or list
     :param startDate: First day to display
+    :type startDate: date
     :param endDate: Last day to display
+    :type endDate: date
     :return: New dataframe of sales group by storage location and products and display the plot
+    :rtype: dataframe
     """
     dataframe_company = dataframe_company.reset_index(drop=True)
     storages = ["03N", "03S", "03W"]
@@ -103,12 +114,16 @@ def drawSalesEvolution(dataframe_company, products, startDate=None, endDate=None
     """
     Display one graph of the evolution of the sales
 
-    :param dataframe: Sales dataframe
-    :param company: Company name
-    :param products: String or list of products to display
+    :param dataframe_company: Sales dataframe
+    :type dataframe_company: dataframe
+    :param products: products to display
+    :type products: str or list
     :param startDate: First day to display
+    :type startDate: date
     :param endDate: Last day to display
+    :type endDate: date
     :return: New dataframe of sales group by day and products and display the plot
+    :rtype: dataframe
     """
     
     dataframe_company = dataframe_company.reset_index(drop=True)
@@ -167,12 +182,16 @@ def drawStocks(dataframe_company, products, startDate=None, endDate=None):
     """
     Gives 4 dataframes of stock evolution by storage location and display the graph
 
-    :param dataframe: Stock dataframe
-    :param company: Company name
-    :param products: String or list of products to display
+    :param dataframe_company: Stock dataframe
+    :type dataframe_company: dataframe
+    :param products: products to display
+    :type products: str or list
     :param startDate: First day to display
+    :type startDate: date
     :param endDate: Last day to display
+    :type endDate: date
     :return: New dataframe of stock evolution group by storage location and display the plot
+    :rtype: dataframe
     """
     warehouse_names = ["général", "Nord", "Sud", "Ouest"]
     dataframe_company = dataframe_company.reset_index(drop=True)
@@ -270,6 +289,7 @@ def drawEmptySales():
     Generate empty figures for sales evolution and distribution with text "Pas de données à afficher" displayed.
 
     :return: Two empty figures for sales evolution and sales distribution.
+    :rtype: Figure
     """
     empty_sales_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
     empty_sales_evolution.add_annotation(x=0, y=0, text="Pas de données à afficher", font=dict(family="sans serif", size=25,
@@ -287,6 +307,7 @@ def drawEmptySales():
             color="RebeccaPurple"
         )
     )
+    
     empty_sales_distribution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
     empty_sales_distribution.add_annotation(x=0, y=0, text="Pas de données à afficher", font=dict(family="sans serif", size=25,
                                                                               color="crimson"), showarrow=False, yshift=10)
@@ -313,6 +334,7 @@ def drawEmptyStocks():
     Generate empty figures for stocks distribution graph with text "Pas de données à afficher" displayed.
     
     :return: One empty figure for stock evolution in warehouses.
+    :rtype: Figure
     """
     empty_stock_evolution = go.Figure().add_trace(go.Scatter(x=[0], y=[0], marker=dict(color="crimson")))
     empty_stock_evolution.add_annotation(x=0, y=0, text="Pas de données à afficher",

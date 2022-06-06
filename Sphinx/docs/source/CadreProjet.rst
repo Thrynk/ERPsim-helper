@@ -26,6 +26,7 @@ Organisateurs
 Ce projet a été organisé par :
 
 * CHENEVERT Gabriel
+* SRIGADA Manoj Kumar
 * VANDENDRIESSCHE Pierre
 
 .. _developpeurs:

@@ -30,6 +30,8 @@ class GameAdmin(admin.ModelAdmin):
 
             This function, when a game is started, add to the readonly fields, others fields in order to forbide their modification.
 
+            :param request: Request object
+            :type request: django.http.HttpRequest
             :param obj: The object, the current game.
             :type obj: Game (None by default)
             :return: readonly_field
@@ -65,15 +67,12 @@ class GameAdmin(admin.ModelAdmin):
             This function hides `show_save_and_add_another` and `show_save_and_continue` buttons in order to 
             show save button only. 
 
-            :param request: 
-            :type request: 
-            :param form_url: 
+            :param request: Request object
+            :type request: django.http.HttpRequest
+            :param form_url: form url
             :type form_url: str (empty by default)
             :param extra_context: Context of the object 
             :type extra_context: ... (None by default)
-
-            :return: 
-            :rtype: 
         """
         # Change the context in order to show or not specifics buttons
         extra_context = extra_context or {}
@@ -89,17 +88,14 @@ class GameAdmin(admin.ModelAdmin):
             With this function we are able to stop the game or pause, replay the game. When the game's state changes,
             the value is updated in the BDD.
 
-            :param request: 
-            :type request: 
+            :param request: Request object
+            :type request: django.http.HttpRequest
             :param object_id: Game id
             :type object_id: int 
-            :param form_url: 
+            :param form_url: form url
             :type form_url: str (empty by default)
             :param extra_context: Context of the object 
             :type obj: ... (None by default)
-
-            :return: 
-            :rtype: 
         """
         game = Game.objects.get(pk=object_id)
 
