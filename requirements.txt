@@ -13,3 +13,4 @@ django-plotly-dash==1.7.2
 channels==2.4.0
 plotly==5.8.0
 channels-redis==3.4.0
+django-docs
