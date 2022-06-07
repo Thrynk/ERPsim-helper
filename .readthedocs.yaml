@@ -7,7 +7,7 @@ version: 2
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
-   configuration: Sphinx/docs/conf.py
+   configuration: Sphinx/docs/source/conf.py
 
 python:
    install:
