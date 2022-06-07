@@ -119,6 +119,17 @@ le joueur peut comparer ces valeurs à celles de l'interface du *Serious Game* p
 La robustesse de l'extraction des données
 -----------------------------------------
 
+Actuellement, nous utilisons la librairie `Huey <https://huey.readthedocs.io/en/latest/index.html>`_ comme expliqué dans la partie :ref:`developpement-erpsim-helper`. |br|
+Cette librairie nous a permis de mettre en place rapidement l'extraction des données du flux OData, nous permet de faire du multi-threading et de répondre à nos fonctions principales et contraintes. |br|
+Cependant, cette solution n'est pas forcément scalable, si le projet venait à être utilisé par plusieurs établissements, avec plusieurs parties simultanément alors nous ferions face à des contraintes concernant la connexions à la base de données.
+
+Nous avons alors pensé, sans pouvoir expérimenter à améliorer la robustesse grâce à `Kafka Connect <https://docs.confluent.io/platform/current/connect/index.html>`_. |br|
+Kafka Connect est un framework qui permet de créer des connecteurs à différentes sources de données et d'envoyer ces données dans le système streaming `Apache Kafka <https://kafka.apache.org/documentation/>`_. Ces connecteurs peuvent également être partagés.
+
+L'entreprise *INIT Individuelle Softwareentwicklung & Beratung GmbH* a déjà créé un connecteur `kafka-connect-odata <https://www.confluent.io/hub/init/kafka-connect-odata>`_ permettant de répliquer les données de flux OData dans Apache Kafka. |br|
+Une perspective d'évolution serait d'apprendre à utiliser ce connecteur et l'environnement Kafka/Kafka Connect afin de construire une solution plus dynamique (récupération potentiellement plus rapide) et scalable.
+
+
 .. rubric:: Notes
 
 .. [#f1] NPS : Net Promoter Score

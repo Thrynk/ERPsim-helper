@@ -2,13 +2,6 @@
 
 Installation
 ============
-
-.. note::
-    Requierements – qu'est-ce qu’il faut installer ? Comment l’installer ? Comment lancer le projet ?  
-
-.. note::
-
-    Expliquer comment installer sur un serveur. Prévoir si nous nous occupons plus du projet. 
     
 .. _Lancement_general:
 

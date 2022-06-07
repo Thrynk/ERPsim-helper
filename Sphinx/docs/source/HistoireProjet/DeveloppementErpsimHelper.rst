@@ -1,3 +1,5 @@
+.. _developpement-erpsim-helper:
+
 ==========================================
 Développement de la solution ERPSIM Helper
 ==========================================

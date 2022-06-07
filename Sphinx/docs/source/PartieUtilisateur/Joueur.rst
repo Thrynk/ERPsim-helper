@@ -21,10 +21,6 @@ par l'enseignant.
    changer lors de votre première connexion au jeu. Pour accéder à l'aide, il faut bien entrer
    le NOUVEAU mot de passe que vous avez saisi. 
 
-.. note:: 
-   N'importe quelle personne de l'équipe peut se connecter à l'aide. Par contre, il ne peut
-   y avoir qu'une seule connexion à l'aide par équipe en simultané.
-
 Quand l'utilisateur se connecte, il est redirigé vers une `page <http://127.0.0.1:8000/admin/>`_ où il trouvera toutes les
 informations utiles pour l'aider à jouer. 
 
